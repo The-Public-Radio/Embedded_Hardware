@@ -1,0 +1,45 @@
+Partlist
+
+Exported from PR5003.sch at 1/14/14 3:28 PM
+
+EAGLE Version 6.5.0 Copyright (c) 1988-2013 CadSoft
+
+Assembly variant: 
+
+Part         Value                      Device                     Package                    Library             Sheet
+
+ANT/POT_VOL  OSTVN04                    OSTVN04                    OSTVN04                    OSTVN On-Shore Term 1
+BATT_IN      KEYSTONE_2479_3XAAA_BOTTOM KEYSTONE_2479_3XAAA_BOTTOM KEYSTONE_2479_3XAAA_BOTTOM Batteries           1
+C_AMP_BYP    1uF                        C-USC0603                  C0603                      resistor            1
+C_AMP_BYP_1  10uF                       C-USC0603                  C0603                      resistor            1
+C_AMP_IN+    1uF                        C-USC0603                  C0603                      resistor            1
+C_AMP_IN-    1uF                        C-USC0603                  C0603                      resistor            1
+C_ANT        4.7pF                      C-USC0805                  C0805                      resistor            1
+C_CLK_1      22pF                       C-USC0603                  C0603                      resistor            1
+C_CLK_2      22pF                       C-USC0603                  C0603                      resistor            1
+C_FM_VA_BYP  22nF                       C-USC0603                  C0603                      resistor            1
+C_FM_VIO_BYP 100nF                      C-USC0603                  C0603                      resistor            1
+C_OUTPT      2.2uF                      VISHAY_TR3C                VISHAY_TR3C                capacitor-wima      1
+C_VREG_IN    1uF                        C-USC0603                  C0603                      resistor            1
+C__VREG_BYP  470pF                      C-USC0603                  C0603                      resistor            1
+ISP                                     M06LOCK_LONGPADS           1X06_LOCK_LONGPADS         SparkFun-Connectors 1
+L_AMP_VCC                               INDUCTOR0603               0603                       SparkFun-Passives   1
+L_ANT                                   INDUCTOR0805               0805                       SparkFun-Passives   1
+L_FM_VA                                 INDUCTOR0603               0603                       SparkFun-Passives   1
+L_FM_VIO                                INDUCTOR0603               0603                       SparkFun-Passives   1
+L_PRO_VCC                               INDUCTOR0603               0603                       SparkFun-Passives   1
+POT_SW                                  OSTVN02                    OSTVN02                    OSTVN On-Shore Term 1
+PRO_MINI     ARDUINO_PRO_MINI           ARDUINO_PRO_MINI           ARDUINO_PRO_MINI           Sparkfun_MODIFIED   1
+R_AMP_IN-    59K                        R-US_R0603                 R0603                      resistor            1
+R_AMP_IN1    59k                        R-US_R0603                 R0603                      resistor            1
+R_FM_RST     330                        R-US_R0603                 R0603                      resistor            1
+R_FM_RST_DN  10K                        R-US_R0603                 R0603                      resistor            1
+R_I2C_SCLK   330                        R-US_R0603                 R0603                      resistor            1
+R_I2C_SDIO   330                        R-US_R0603                 R0603                      resistor            1
+R_SCLK_UP    4.7K                       R-US_R0603                 R0603                      resistor            1
+R_SDIO_UP    4.7K                       R-US_R0603                 R0603                      resistor            1
+SPKR                                    OSTVN02                    OSTVN02                    OSTVN On-Shore Term 1
+U1           MIC5219 3.3V               V_REG_MIC52193.3V          SOT23-5                    SparkFun-PowerIC    1
+U2           SI470X                     SI470X                     SI470X                     SparkFun-RF         1
+U3           TPA2005D1DGN               TPA2005D1DGN               POWER-SOP8                 SparkFun-AnalogIC   1
+Y1           32.768KHz                  CRYSTAL32-SMD              CRYSTAL-32KHZ-SMD          SparkFun-FreqCtrl   1
