@@ -1499,14 +1499,10 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <library name="OSTVN On-Shore Term">
 <packages>
 <package name="OSTVN04">
-<hole x="-1.27" y="0" drill="1.3"/>
-<hole x="1.27" y="0" drill="1.3"/>
-<hole x="3.81" y="0" drill="1.3"/>
-<hole x="-3.81" y="0" drill="1.3"/>
-<pad name="P$1" x="-3.81" y="0" drill="1.3" shape="long" rot="R90"/>
-<pad name="P$2" x="-1.27" y="0" drill="1.3" shape="long" rot="R90"/>
-<pad name="P$3" x="1.27" y="0" drill="1.3" shape="long" rot="R90"/>
-<pad name="P$4" x="3.81" y="0" drill="1.3" shape="long" rot="R90"/>
+<pad name="P$1" x="-3.81" y="0" drill="1.3" diameter="1.778" shape="long" rot="R90"/>
+<pad name="P$2" x="-1.27" y="0" drill="1.3" diameter="1.778" shape="long" rot="R90"/>
+<pad name="P$3" x="1.27" y="0" drill="1.3" diameter="1.778" shape="long" rot="R90"/>
+<pad name="P$4" x="3.81" y="0" drill="1.3" diameter="1.778" shape="long" rot="R90"/>
 <wire x1="-5.08" y1="-3.175" x2="5.08" y2="-3.175" width="0.127" layer="21"/>
 <wire x1="5.08" y1="-3.175" x2="5.08" y2="-2.54" width="0.127" layer="21"/>
 <wire x1="5.08" y1="-2.54" x2="5.08" y2="3.175" width="0.127" layer="21"/>
@@ -1515,6 +1511,10 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <wire x1="-5.08" y1="-2.54" x2="-5.08" y2="-3.175" width="0.127" layer="21"/>
 <wire x1="-5.08" y1="-2.54" x2="5.08" y2="-2.54" width="0.127" layer="21"/>
 <text x="-5.08" y="-5.08" size="1.27" layer="21">&gt;VALUE</text>
+<hole x="-3.81" y="0" drill="1.3"/>
+<hole x="-1.27" y="0" drill="1.3"/>
+<hole x="1.27" y="0" drill="1.3"/>
+<hole x="3.81" y="0" drill="1.3"/>
 </package>
 </packages>
 </library>
@@ -2015,10 +2015,10 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="9.33" y1="28.885" x2="11.43" y2="28.885" width="0.254" layer="1"/>
 <wire x1="11.43" y1="28.885" x2="11.43" y2="29.21" width="0.254" layer="1"/>
 <via x="32.7025" y="4.1275" extent="1-16" drill="0.5"/>
-<via x="39.37" y="5.08" extent="1-16" drill="0.5"/>
-<wire x1="36.895" y1="5.965" x2="38.485" y2="5.965" width="0.254" layer="1"/>
-<wire x1="38.485" y1="5.965" x2="39.37" y2="5.08" width="0.254" layer="1"/>
-<wire x1="39.37" y1="5.08" x2="35.56" y2="5.715" width="0" layer="19" extent="1-16"/>
+<wire x1="34.225" y1="4.965" x2="34.81" y2="4.965" width="0.1524" layer="1"/>
+<wire x1="34.81" y1="4.965" x2="35.56" y2="5.715" width="0.1524" layer="1" curve="90"/>
+<wire x1="36.895" y1="5.965" x2="35.81" y2="5.965" width="0.1524" layer="1"/>
+<wire x1="35.81" y1="5.965" x2="35.56" y2="5.715" width="0.1524" layer="1" curve="90"/>
 </signal>
 <signal name="N$4">
 <contactref element="R_FM_RST" pad="2"/>

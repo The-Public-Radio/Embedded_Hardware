@@ -365,7 +365,7 @@ UsedLibrary="/Users/snwright/Documents/eagle/LB_Libraries/Sparkfun_MODIFIED_2.lb
 
 [Win_1]
 Type="Control Panel"
-Loc="62 66 1251 686"
+Loc="86 185 685 584"
 State=2
 Number=0
 
