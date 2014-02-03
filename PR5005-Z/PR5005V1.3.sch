@@ -6091,9 +6091,7 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <connect gate="G$1" pin="2" pad="X2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="PROD_ID" value="XTAL-07894" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="5X3" package="CRYSTAL-SMD-5X3">
@@ -8163,6 +8161,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R8" library="resistor" deviceset="R-US_" device="R0603" value="10K"/>
 <part name="P+5" library="supply1" deviceset="VCC" device=""/>
+<part name="C11" library="resistor" deviceset="C-US" device="C0603" value="10uf"/>
+<part name="GND12" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8215,6 +8215,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="GND11" gate="1" x="-12.7" y="33.02"/>
 <instance part="R8" gate="G$1" x="116.84" y="106.68" rot="R90"/>
 <instance part="P+5" gate="VCC" x="116.84" y="114.3"/>
+<instance part="C11" gate="G$1" x="109.22" y="99.06"/>
+<instance part="GND12" gate="1" x="104.14" y="93.98" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -8303,6 +8305,11 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="-12.7" y1="38.1" x2="-10.16" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="38.1" x2="-12.7" y2="35.56" width="0.1524" layer="91"/>
 <junction x="-12.7" y="38.1"/>
+</segment>
+<segment>
+<pinref part="C11" gate="G$1" pin="2"/>
+<pinref part="GND12" gate="1" pin="GND"/>
+<wire x1="106.68" y1="93.98" x2="109.22" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -8532,6 +8539,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="116.84" y1="101.6" x2="116.84" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="SHUTDOWN"/>
 <wire x1="116.84" y1="91.44" x2="121.92" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+<wire x1="109.22" y1="101.6" x2="116.84" y2="101.6" width="0.1524" layer="91"/>
+<junction x="116.84" y="101.6"/>
 </segment>
 </net>
 </nets>
