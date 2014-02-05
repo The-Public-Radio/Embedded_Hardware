@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.125" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.03125" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -141,6 +141,8 @@
 <vertex x="10.25" y="40.5"/>
 <vertex x="11.75" y="40.5"/>
 </polygon>
+<text x="15.0625" y="34.90625" size="1.27" layer="25" rot="SR270">PUBLIC.RADIO 
+      1.3</text>
 </plain>
 <libraries>
 <library name="PublicRadioICs">
@@ -1503,21 +1505,21 @@ We've spent an enormous amount of time creating and checking these footprints an
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default">
-<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+<designrules name="PCBCart-Standard">
+<description language="fr">&lt;b&gt;EAGLE Design Rules for PCBCart (Standard PCB)&lt;/b&gt;
+&lt;p&gt;&lt;b&gt;Characteristics:&lt;/b&gt;&lt;/p&gt;
 &lt;p&gt;
-Die Standard-Design-Rules sind so gewählt, dass sie für 
-die meisten Anwendungen passen. Sollte ihre Platine 
-besondere Anforderungen haben, treffen Sie die erforderlichen
-Einstellungen hier und speichern die Design Rules unter 
-einem neuen Namen ab.</description>
-<description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
-&lt;p&gt;
-The default Design Rules have been set to cover
-a wide range of applications. Your particular design
-may have different requirements, so please make the
-necessary adjustments and save your customized
-design rules under a new name.</description>
+&lt;ul&gt;
+&lt;li&gt;Minimum Trace/Spacing: 8mil (0.2mm)&lt;/li&gt;
+&lt;li&gt;Minimum Annular Ring: 12mil (0.3mm)&lt;/li&gt;
+&lt;li&gt;Minimum Drill: 0.4mm (16mil)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;Hole Tolerances&lt;/b&gt; (for reference only):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;+/- 0.1mm for PTH holes&lt;/li&gt;
+&lt;li&gt;+/- 0.075mm for NPTH holes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;</description>
 <param name="layerSetup" value="(1*16)"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
 <param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
@@ -1532,12 +1534,12 @@ design rules under a new name.</description>
 <param name="mdSmdSmd" value="8mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="40mil"/>
+<param name="mdCopperDimension" value="20mil"/>
 <param name="mdDrill" value="8mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="10mil"/>
-<param name="msDrill" value="24mil"/>
-<param name="msMicroVia" value="9.99mm"/>
+<param name="msWidth" value="8mil"/>
+<param name="msDrill" value="0.4mm"/>
+<param name="msMicroVia" value="999mil"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
@@ -1546,36 +1548,36 @@ design rules under a new name.</description>
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="10mil"/>
+<param name="rlMinPadTop" value="8mil"/>
 <param name="rlMaxPadTop" value="20mil"/>
-<param name="rlMinPadInner" value="10mil"/>
+<param name="rlMinPadInner" value="8mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="10mil"/>
+<param name="rlMinPadBottom" value="8mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="8mil"/>
+<param name="rlMinViaOuter" value="10mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="8mil"/>
+<param name="rlMinViaInner" value="10mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
-<param name="rlMinMicroViaOuter" value="4mil"/>
-<param name="rlMaxMicroViaOuter" value="20mil"/>
-<param name="rlMinMicroViaInner" value="4mil"/>
-<param name="rlMaxMicroViaInner" value="20mil"/>
+<param name="rlMinMicroViaOuter" value="99mil"/>
+<param name="rlMaxMicroViaOuter" value="999mil"/>
+<param name="rlMinMicroViaInner" value="99mil"/>
+<param name="rlMaxMicroViaInner" value="999mil"/>
 <param name="psTop" value="-1"/>
 <param name="psBottom" value="-1"/>
 <param name="psFirst" value="-1"/>
 <param name="psElongationLong" value="100"/>
 <param name="psElongationOffset" value="100"/>
-<param name="mvStopFrame" value="1"/>
+<param name="mvStopFrame" value="0"/>
 <param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="4mil"/>
-<param name="mlMaxStopFrame" value="4mil"/>
+<param name="mlMinStopFrame" value="3mil"/>
+<param name="mlMaxStopFrame" value="8mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
-<param name="mlMaxCreamFrame" value="0mil"/>
+<param name="mlMaxCreamFrame" value="8mil"/>
 <param name="mlViaStopLimit" value="0mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
-<param name="slThermalIsolate" value="10mil"/>
+<param name="slThermalIsolate" value="8mil"/>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
@@ -1723,7 +1725,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="44.767" y="53.301" size="0.8128" layer="27" rot="R90"/>
 </element>
 <element name="C4" library="resistor" package="C0603" value=".1uf" x="40.15" y="54.09" smashed="yes" rot="R270">
-<attribute name="NAME" x="39.412" y="51.729" size="0.8128" layer="25"/>
+<attribute name="NAME" x="39.94325" y="51.94775" size="0.8128" layer="25"/>
 <attribute name="VALUE" x="38.118" y="54.979" size="0.8128" layer="27" rot="R270"/>
 </element>
 <element name="R4" library="resistor" package="R0603" value="10K" x="35.53" y="64.16" smashed="yes" rot="R90">
@@ -1848,7 +1850,7 @@ design rules under a new name.</description>
 <wire x1="39.31" y1="54.94" x2="39" y2="55.25" width="0.3048" layer="1"/>
 <wire x1="39" y1="55.25" x2="36.645" y2="55.25" width="0.3048" layer="1"/>
 <via x="17.75" y="37" extent="1-16" drill="0.6"/>
-<via x="14.5" y="28.5" extent="1-16" drill="0.6"/>
+<via x="12.21875" y="25.46875" extent="1-16" drill="0.6"/>
 <via x="23" y="10" extent="1-16" drill="0.6"/>
 <via x="35.75" y="17.5" extent="1-16" drill="0.6"/>
 <via x="45.75" y="9.5" extent="1-16" drill="0.6"/>
@@ -1856,11 +1858,11 @@ design rules under a new name.</description>
 <via x="55.75" y="36.5" extent="1-16" drill="0.6"/>
 <via x="16" y="56.75" extent="1-16" drill="0.6"/>
 <via x="33.25" y="58" extent="1-16" drill="0.6"/>
-<via x="50.5" y="61.75" extent="1-16" drill="0.6"/>
+<via x="46.75" y="62.25" extent="1-16" drill="0.6"/>
 <contactref element="SI1" pad="12"/>
 <wire x1="31.15" y1="53.855" x2="31.15" y2="53.205" width="0.3048" layer="1"/>
 <via x="23.875" y="16.875" extent="1-16" drill="0.5"/>
-<via x="37.5" y="52" extent="1-16" drill="0.5"/>
+<via x="38.25" y="52.53125" extent="1-16" drill="0.5"/>
 <via x="31" y="51.875" extent="1-16" drill="0.6"/>
 <via x="29.875" y="4.25" extent="1-16" drill="0.6"/>
 <contactref element="R10" pad="1"/>
@@ -1930,7 +1932,7 @@ design rules under a new name.</description>
 <signal name="N$1">
 <contactref element="AMP" pad="3"/>
 <contactref element="R7" pad="2"/>
-<wire x1="35.325" y1="5.9" x2="35.325" y2="4.675" width="0.6096" layer="1"/>
+<wire x1="35.325" y1="5.9" x2="35.325" y2="4.675" width="0.4064" layer="1"/>
 <wire x1="35.325" y1="4.675" x2="35.5" y2="4.5" width="0.6096" layer="1"/>
 <wire x1="35.5" y1="4.5" x2="39.15" y2="4.5" width="0.6096" layer="1"/>
 </signal>
@@ -2001,12 +2003,13 @@ design rules under a new name.</description>
 <contactref element="R4" pad="1"/>
 <contactref element="SI1" pad="2"/>
 <contactref element="LED1" pad="C"/>
-<wire x1="31.15" y1="59.705" x2="30.295" y2="59.705" width="0.3048" layer="1"/>
-<wire x1="30.295" y1="59.705" x2="29.625" y2="60.375" width="0.3048" layer="1"/>
-<wire x1="29.625" y1="60.375" x2="29.625" y2="61.425" width="0.3048" layer="1"/>
 <wire x1="29.625" y1="61.425" x2="30.91" y2="62.71" width="0.3048" layer="1"/>
 <wire x1="30.91" y1="62.71" x2="34.93" y2="62.71" width="0.4064" layer="1"/>
 <wire x1="34.93" y1="62.71" x2="35.53" y2="63.31" width="0.4064" layer="1"/>
+<wire x1="31.15" y1="59.705" x2="30.4825" y2="59.705" width="0.3048" layer="1"/>
+<wire x1="29.625" y1="60.4375" x2="29.625" y2="61.425" width="0.254" layer="1"/>
+<wire x1="30.4825" y1="59.705" x2="30.3575" y2="59.705" width="0.254" layer="1"/>
+<wire x1="30.3575" y1="59.705" x2="29.625" y2="60.4375" width="0.254" layer="1"/>
 </signal>
 <signal name="N$11">
 <contactref element="LED1" pad="A"/>
@@ -2202,4 +2205,10 @@ design rules under a new name.</description>
 </signals>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
