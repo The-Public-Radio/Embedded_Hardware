@@ -6091,9 +6091,7 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <connect gate="G$1" pin="2" pad="X2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="PROD_ID" value="XTAL-07894" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="5X3" package="CRYSTAL-SMD-5X3">
@@ -7680,29 +7678,6 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <text x="-0.762" y="2.921" size="0.4064" layer="25">&gt;Name</text>
 <pad name="1" x="2.5019" y="0" drill="0.8128" diameter="1.651"/>
 </package>
-<package name="SRN6045">
-<smd name="1" x="-2.175" y="-0.175" dx="6" dy="2.5" layer="1" rot="R90"/>
-<smd name="2" x="2.125" y="-0.175" dx="6" dy="2.5" layer="1" rot="R90"/>
-<wire x1="-2.175" y1="-3.175" x2="-3.175" y2="-2.175" width="0.127" layer="51"/>
-<wire x1="-3.175" y1="-2.175" x2="-3.175" y2="1.825" width="0.127" layer="51"/>
-<wire x1="-3.175" y1="1.825" x2="-2.175" y2="2.825" width="0.127" layer="51"/>
-<wire x1="-2.175" y1="2.825" x2="2.125" y2="2.825" width="0.127" layer="51"/>
-<wire x1="2.125" y1="2.825" x2="3.125" y2="1.825" width="0.127" layer="51"/>
-<wire x1="3.125" y1="1.825" x2="3.125" y2="-2.175" width="0.127" layer="51"/>
-<wire x1="3.125" y1="-2.175" x2="2.125" y2="-3.175" width="0.127" layer="51"/>
-<wire x1="2.125" y1="-3.175" x2="-2.175" y2="-3.175" width="0.127" layer="51"/>
-<text x="-4.175" y="3.825" size="1.27" layer="25">&gt;NAME</text>
-<text x="-4.175" y="-5.175" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="SDR0403">
-<description>Footprint for Bourns SDR0403 family inductors</description>
-<smd name="P$1" x="-1.65" y="0" dx="4.5" dy="1.8" layer="1" rot="R90"/>
-<smd name="P$2" x="1.65" y="0" dx="4.5" dy="1.8" layer="1" rot="R90"/>
-<wire x1="-0.5" y1="2" x2="0.5" y2="2" width="0.127" layer="21"/>
-<wire x1="-0.5" y1="-2" x2="0.5" y2="-2" width="0.127" layer="21"/>
-<text x="-0.762" y="-0.254" size="0.4064" layer="27">&gt;VALUE</text>
-<text x="-0.889" y="1.016" size="0.4064" layer="25">&gt;NAME</text>
-</package>
 </packages>
 <symbols>
 <symbol name="INDUCTOR">
@@ -7722,10 +7697,8 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 </symbols>
 <devicesets>
 <deviceset name="INDUCTOR" prefix="L" uservalue="yes">
-<description>&lt;b&gt;Inductors&lt;/b&gt;&lt;p&gt;
-Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly between part numbers.&lt;br&gt;
-SRN6045- 33uH, 20% 1.4A&lt;BR&gt;
-SDR0403-560KL - 56uH, 10%, 500mA RMS/740mA peak</description>
+<description>&lt;b&gt;Inductors&lt;/b&gt;
+Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly between part numbers.</description>
 <gates>
 <gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
 </gates>
@@ -7784,16 +7757,13 @@ SDR0403-560KL - 56uH, 10%, 500mA RMS/740mA peak</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="68UH-1A" package="CR75">
+<device name="CR75" package="CR75">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="PROD_ID" value="NDUC-09739"/>
-<attribute name="VALUE" value="68uH"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="1210" package="1210">
@@ -7929,42 +7899,6 @@ SDR0403-560KL - 56uH, 10%, 500mA RMS/740mA peak</description>
 </connects>
 <technologies>
 <technology name=""/>
-</technologies>
-</device>
-<device name="BOURNS_SRN6045" package="SRN6045">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="NDUC-11627"/>
-<attribute name="VALUE" value="33uH"/>
-</technology>
-</technologies>
-</device>
-<device name="SDR0403-560KL" package="SDR0403">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DIST" value="DIGIKEY"/>
-<attribute name="DIST_ID" value="SDR0403-560KLCT-ND"/>
-<attribute name="VALUE" value="56uH"/>
-</technology>
-</technologies>
-</device>
-<device name="30OHM,1.8A" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-07859"/>
-</technology>
 </technologies>
 </device>
 </devices>
@@ -8219,13 +8153,14 @@ We've spent an enormous amount of time creating and checking these footprints an
 <library name="PRTrimmer">
 <packages>
 <package name="BI-25XR_TRIMMER">
-<pad name="1" x="-2.54" y="1.27" drill="0.46"/>
-<pad name="3" x="2.54" y="1.27" drill="0.46"/>
+<pad name="3" x="-2.54" y="1.27" drill="0.46"/>
+<pad name="1" x="2.54" y="1.27" drill="0.46"/>
 <pad name="2" x="0" y="-1.27" drill="0.46"/>
 <wire x1="-3.68" y1="2.41" x2="3.68" y2="2.41" width="0.127" layer="21"/>
 <wire x1="3.68" y1="2.41" x2="3.68" y2="-2.41" width="0.127" layer="21"/>
 <wire x1="3.68" y1="-2.41" x2="-3.68" y2="-2.41" width="0.127" layer="21"/>
 <wire x1="-3.68" y1="-2.41" x2="-3.68" y2="2.41" width="0.127" layer="21"/>
+<text x="1.27" y="0" size="0.6096" layer="22" rot="MR0">TUNE</text>
 </package>
 </packages>
 <symbols>
@@ -8250,7 +8185,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="BI-25XR_TRIMMER">
+<deviceset name="BI-25XR_TRIMMER" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="BI-25XR_TRIMMER" x="-17.78" y="17.78"/>
 </gates>
@@ -8680,7 +8615,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="17.78" y1="50.8" x2="17.78" y2="68.58" width="0.1524" layer="91"/>
 <junction x="5.08" y="50.8"/>
 <pinref part="SI1" gate="G$1" pin="FMI"/>
-<wire x1="17.78" y1="68.58" x2="22.86" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="68.58" x2="22.86" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
