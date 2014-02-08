@@ -4,15 +4,15 @@ PUBLIC RADIO 5006 Layout, Circuit Topology
 
 Overview 
 
-The Public Radio version 1.3 (herein referred to as PR1.3) is a mechanically tuned, single station FM radio.  The radio is delivered pre-tuned to the listeners chosen FM station.  The radio includes a class-D amplifier, small (roughly 1”) speaker and switched potentiometer for power and and volume control.  The radio runs at 3V off of two AA batteries that are fixed to the bottom of the PCB.  Reception is permitted through the use of either a telescoping antenna or a fixed, solid stainless steel rod.  The assembly is housed in a mason jar and attached to a custom lid.  
+The Public Radio board version 5006 (herein referred to as PR5006) is a mechanically tuned, single station FM radio.  The radio is delivered pre-tuned to the listeners chosen FM station.  The radio includes a class-D amplifier, small (roughly 1”) speaker and switched potentiometer for power and and volume control.  The radio runs at 3V off of two AA batteries that are fixed to the bottom of the PCB.  Reception is permitted through the use of either a telescoping antenna or a fixed, solid stainless steel rod.  The assembly is housed in a mason jar and attached to a custom lid.  
 
 Board and Layout 
 
-PRV1.3 is a circular PCB with an OD of 70mm and an internal, circular cutout at its center of 23 mm.  While the top of the speaker is screwed to the bottom side of the lid, it’s backside passes through the internal cutout of the board allowing it’s solder pins to pass through the board.  The antenna and trim pot are additionally mounted directly to the board and pass through the top of the lid.  Four AA battery clips are mounted on the bottom side of the board to house the two AA batteries.  
+PR5006 is a circular PCB with an OD of 70mm and an internal, circular cutout at its center of 23 mm.  While the top of the speaker is screwed to the bottom side of the lid, it’s backside passes through the internal cutout of the board allowing it’s solder pins to pass through the board.  The antenna and trim pot are additionally mounted directly to the board and pass through the top of the lid.  Four AA battery clips are mounted on the bottom side of the board to house the two AA batteries.  
 
 Si4831 FM Receiver 
 
-PRV1.3 utilizes the Si4831 chip in a 24 pin, SSOP package, which is a mechanically tuned digital CMOS AM/FM receiver.  Note PRV1.3 only utilizes the FM functionality of the radio.  Our understanding of the circuit topology as implemented for PRV1.3 is as follows:  
+PR5006 utilizes the Si4831 chip in a 24 pin, SSOP package, which is a mechanically tuned digital CMOS AM/FM receiver.  Note PR5006 only utilizes the FM functionality of the radio.  Our understanding of the circuit topology as implemented for PR5006 is as follows:  
 
 Pins 1 & 2 - indicate stereo signal and station reception, respectively.  Pin 1 is left floating since we are only functioning in mono mode.  Pin 2 is tied high via R4 to set the radio in “volume mode” as opposed to “bass/treble mode” and tied high through R5 in series with an LED to indicate reception.  
 
@@ -39,7 +39,7 @@ Pins 20, 21, 22 - are the power and bypass pins.  Pins 20 and 21 - VDD1 and VDD2
 Pins 23 and 24 - left out and right out signal to the audio amplifier
 
 TPA2005d1 1.4 W Mono Audio Amp
-PRV1.3 uses this class-d audio amp to power it’s 1” full range driver.  
+PR5006 uses this class-d audio amp to power it’s 1” full range driver.  
 
 Pin 1 - shutdown pin which is tied high through R8 inline with C10 to ground for a roughly 1/4 second delayed power up.  
 
@@ -58,6 +58,6 @@ Pin 7 - GND
 Pin 8 - negative output, connected to the speaker 
 
 Notes!  
-PRV1.3 has no reverse polarity protection.  The bottom solder mask design aims to provide the correct battery orientation.  The following version will, most likely, incorporate a synchronous rectifier.
+PR5006 has no reverse polarity protection.  The bottom solder mask design aims to provide the correct battery orientation.  The following version will, most likely, incorporate a synchronous rectifier.
 
  
