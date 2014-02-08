@@ -1,4 +1,4 @@
-PUBLIC RADIO V1.3 Layout, Circuit Topology  
+PUBLIC RADIO 5006 Layout, Circuit Topology  
 
 ———————
 
