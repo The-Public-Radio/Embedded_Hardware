@@ -8681,7 +8681,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <junction x="5.08" y="50.8"/>
 <pinref part="SI1" gate="G$1" pin="FMI"/>
 <wire x1="17.78" y1="68.58" x2="22.86" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="68.58" x2="22.86" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
