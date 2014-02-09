@@ -8401,6 +8401,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="22.86" y1="63.5" x2="22.86" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="SI1" gate="G$1" pin="NC3"/>
 <junction x="22.86" y="63.5"/>
+<pinref part="SI1" gate="G$1" pin="AMI"/>
+<wire x1="22.86" y1="58.42" x2="22.86" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C12" gate="G$1" pin="2"/>

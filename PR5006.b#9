@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.125" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1869,6 +1869,8 @@ design rules under a new name.</description>
 <wire x1="30.225" y1="53.855" x2="30.225" y2="53.205" width="0.3048" layer="1"/>
 <via x="35" y="21.25" extent="1-16" drill="0.5"/>
 <via x="37.5" y="52" extent="1-16" drill="0.5"/>
+<via x="31" y="50" extent="1-16" drill="0.6"/>
+<via x="24.5" y="54" extent="1-16" drill="0.6"/>
 </signal>
 <signal name="VCC">
 <contactref element="R4" pad="2"/>
