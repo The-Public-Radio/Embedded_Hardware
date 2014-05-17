@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -7991,9 +7991,9 @@ SDR0403-560KL - 56uH, 10%, 500mA RMS/740mA peak</description>
 </package>
 <package name="P170_BOURNS_POT_SW">
 <circle x="0" y="0" radius="8.25" width="0.1" layer="21"/>
-<pad name="WIPER" x="0" y="-8" drill="1.4" shape="octagon"/>
-<pad name="SIGNAL" x="4" y="-7" drill="1.4" shape="octagon"/>
-<pad name="GND" x="-4" y="-7" drill="1.4" shape="octagon"/>
+<pad name="WIPER" x="0" y="-8" drill="1.4" shape="long" rot="R90"/>
+<pad name="SIGNAL" x="4" y="-7" drill="1.4" shape="long" rot="R90"/>
+<pad name="GND" x="-4" y="-7" drill="1.4" shape="long" rot="R90"/>
 <pad name="SW_OUT" x="-8.25" y="0" drill="2.5" shape="long" rot="R90"/>
 <pad name="SW_IN" x="8.25" y="0" drill="2.5" shape="long" rot="R90"/>
 </package>
@@ -8047,9 +8047,9 @@ SDR0403-560KL - 56uH, 10%, 500mA RMS/740mA peak</description>
 <wire x1="3.429" y1="2.286" x2="3.429" y2="-2.286" width="0.127" layer="21"/>
 <wire x1="3.429" y1="-2.286" x2="-3.429" y2="-2.286" width="0.127" layer="21"/>
 <wire x1="-3.429" y1="-2.286" x2="-3.429" y2="-2.032" width="0.127" layer="21"/>
-<pad name="3" x="-2.54" y="1.27" drill="0.6"/>
-<pad name="1" x="2.54" y="1.27" drill="0.6"/>
-<pad name="2" x="0" y="-1.27" drill="0.6"/>
+<pad name="3" x="-2.54" y="1.27" drill="0.8" diameter="1.4224" shape="long" rot="R180"/>
+<pad name="1" x="2.54" y="1.27" drill="0.8" diameter="1.4224" shape="long"/>
+<pad name="2" x="0" y="-1.27" drill="0.8" diameter="1.4224" shape="long"/>
 <wire x1="-3.429" y1="-2.032" x2="-3.429" y2="-0.762" width="0.127" layer="21"/>
 <wire x1="-3.429" y1="-0.762" x2="-3.429" y2="2.286" width="0.127" layer="21"/>
 <wire x1="-3.429" y1="-2.032" x2="-4.318" y2="-2.032" width="0.127" layer="21"/>
