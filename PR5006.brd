@@ -5105,7 +5105,7 @@ grid 2.54 mm, diameter 5 mm</description>
 <element name="L1" library="SparkFun-Passives" package="0603" value="56nH" x="29" y="54.9" smashed="yes" rot="R270">
 <attribute name="VALUE" x="27.856996875" y="55.916" size="0.4064" layer="27" font="vector" rot="R270"/>
 </element>
-<element name="C3" library="resistor" package="C0603" value="1nF" x="26.6" y="54.9" smashed="yes" rot="R90">
+<element name="C3" library="resistor" package="C0603" value="200pF" x="26.6" y="54.9" smashed="yes" rot="R90">
 <attribute name="NAME" x="25.670096875" y="52.268584375" size="0.6096" layer="25"/>
 <attribute name="VALUE" x="28.632" y="54.010996875" size="1.27" layer="27" rot="R90"/>
 </element>

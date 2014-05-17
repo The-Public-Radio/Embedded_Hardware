@@ -14785,7 +14785,7 @@ grid 2.54 mm, diameter 5 mm</description>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="L1" library="SparkFun-Passives" deviceset="INDUCTOR" device="0603" value="56nH"/>
-<part name="C3" library="resistor" deviceset="C-US" device="C0603" value="1nF"/>
+<part name="C3" library="resistor" deviceset="C-US" device="C0603" value="200pF"/>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="L2" library="SparkFun-Passives" deviceset="INDUCTOR" device="0603"/>
