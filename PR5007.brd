@@ -4122,7 +4122,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="NAME" x="51.3081" y="21.843" size="0.6096" layer="25" ratio="16"/>
 <attribute name="VALUE" x="54.816" y="24.2905" size="0.4064" layer="27" rot="R180"/>
 </element>
-<element name="U$4" library="PR_Libraries" package="SI4831_FM_IC" value="SI4831_FM_IC" x="34" y="56.8"/>
+<element name="U$4" library="PR_Libraries" package="SI4831_FM_IC" value="SI4831_FM_IC" x="34" y="56.8" locked="yes"/>
 </elements>
 <signals>
 <signal name="GND">
