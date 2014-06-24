@@ -4007,11 +4007,11 @@ We've spent an enormous amount of time creating and checking these footprints an
 <attribute name="NAME" x="33.73" y="4.14" size="0.6096" layer="25" ratio="16"/>
 <attribute name="VALUE" x="37.04" y="6.73" size="0.4064" layer="27" rot="R90"/>
 </element>
-<element name="R7" library="resistor" package="R0603" value="33K" x="40" y="6.7" smashed="yes" rot="R270">
+<element name="R7" library="resistor" package="R0603" value="40.2K" x="40" y="6.7" smashed="yes" rot="R270">
 <attribute name="NAME" x="39.361" y="4.339" size="0.6096" layer="25" ratio="16"/>
 <attribute name="VALUE" x="40.968" y="5.589" size="0.8128" layer="27" rot="R270"/>
 </element>
-<element name="R9" library="resistor" package="R0603" value="33K" x="37.8" y="6.7" smashed="yes" rot="R270">
+<element name="R9" library="resistor" package="R0603" value="40.2K" x="37.8" y="6.7" smashed="yes" rot="R270">
 <attribute name="NAME" x="36.761" y="4.364" size="0.6096" layer="25" ratio="16"/>
 <attribute name="VALUE" x="38.268" y="7.089" size="0.8128" layer="27" rot="R270"/>
 </element>

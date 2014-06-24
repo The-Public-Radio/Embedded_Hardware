@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -14428,8 +14428,8 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="AMP" library="SparkFun-AnalogIC" deviceset="TPA2005D1" device="DGN"/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R7" library="resistor" deviceset="R-US_" device="R0603" value="33K"/>
-<part name="R9" library="resistor" deviceset="R-US_" device="R0603" value="33K"/>
+<part name="R7" library="resistor" deviceset="R-US_" device="R0603" value="40.2K"/>
+<part name="R9" library="resistor" deviceset="R-US_" device="R0603" value="40.2K"/>
 <part name="C9" library="resistor" deviceset="C-US" device="C0603" value=".033uf"/>
 <part name="C11" library="resistor" deviceset="C-US" device="C0603" value=".033uf"/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
