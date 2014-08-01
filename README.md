@@ -19,18 +19,7 @@ As a piece of hardware, it was intended to be as simple as possible. One midrang
 
 Early on in the project, we planned on building a custom aluminum enclosure, but decided to protoype using an off-the-shelf container - a Ball brand mason jar. The enclosure requires one custom manufactured part: a replacement lid, to which the speaker, potentiometer, and electronics mount.
 
-As I write this, the electronics consist primarily of off-the-shelf components: Arduino Pro Mini, Sparkfun breakout & evaluation boards. Our plan for the next few months includes stripping the hardware down to its barest components and discarding the prototyping tools we've used to get ourselves off the ground.
 
-The firmware required to run The Public Radio is simple. The main Arduino sketch does the following:
-
-* Defines three output pins
-* Defines "channel" (FM frequency) and "volume" variables
-* Instantiates the class Public_Radio
-* Enables the Si4703 FM receiver chip
-* Tunes to the defined frequency 
-* Sets the volume
-
-Also included are stripped down versions of the Si4703 written by Sparkfun and available at https://github.com/sparkfun/Si4703_FM_Tuner_Evaluation_Board. As my understanding of these is limited, I'll reserve description until a later date.
 
 ## CONTAINED HEREIN
 * Industrial design files: These are mostly outdated, and were created in SolidWorks. Current versions, created primarily in Autodesk Inventor, still need to be folded into this repo.
