@@ -1,6 +1,6 @@
 # PR_Public_Radio
 Created 2013.12.17
-by Spencer Wright
+by Spencer Wright |
 Updated by Zach Dunham 2014.08.01
 
 ## LICENSE
