@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -14387,6 +14387,8 @@ Source: www.kingbright.com</description>
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="-5.08" y1="76.2" x2="-10.16" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="76.2" x2="-20.32" y2="76.2" width="0.1524" layer="91"/>
+<junction x="-20.32" y="76.2"/>
+<junction x="-10.16" y="76.2"/>
 </segment>
 <segment>
 <pinref part="C11" gate="G$1" pin="1"/>
@@ -14403,6 +14405,7 @@ Source: www.kingbright.com</description>
 <pinref part="C21" gate="G$1" pin="1"/>
 <pinref part="R13" gate="G$1" pin="1"/>
 <wire x1="83.82" y1="43.18" x2="78.74" y2="43.18" width="0.1524" layer="91"/>
+<junction x="78.74" y="43.18"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="BATT" pin="NEG"/>
@@ -14484,6 +14487,7 @@ Source: www.kingbright.com</description>
 <wire x1="76.2" y1="86.36" x2="83.82" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="DBYP"/>
 <junction x="53.34" y="81.28"/>
+<junction x="76.2" y="86.36"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -14497,6 +14501,7 @@ Source: www.kingbright.com</description>
 <pinref part="U$4" gate="G$1" pin="XTALI"/>
 <junction x="53.34" y="73.66"/>
 <wire x1="93.98" y1="71.12" x2="96.52" y2="71.12" width="0.1524" layer="91"/>
+<junction x="96.52" y="71.12"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -14645,6 +14650,7 @@ Source: www.kingbright.com</description>
 <junction x="58.42" y="93.98"/>
 <pinref part="C15" gate="G$1" pin="2"/>
 <pinref part="C16" gate="G$1" pin="2"/>
+<junction x="53.34" y="93.98"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -14680,6 +14686,13 @@ Source: www.kingbright.com</description>
 <wire x1="-5.08" y1="83.82" x2="-5.08" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="-10.16" y1="83.82" x2="-10.16" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="-33.02" y1="88.9" x2="-33.02" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="99.06" x2="0" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="0" y1="99.06" x2="0" y2="86.36" width="0.1524" layer="91"/>
+<junction x="0" y="86.36"/>
+<junction x="-5.08" y="86.36"/>
+<junction x="-10.16" y="86.36"/>
 </segment>
 </net>
 <net name="N$31" class="0">
@@ -14726,27 +14739,12 @@ Source: www.kingbright.com</description>
 <wire x1="76.2" y1="119.38" x2="73.66" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$21" class="0">
-<segment>
-<pinref part="U$1" gate="BATT" pin="POS"/>
-<pinref part="U$5" gate="G$1" pin="SW_OUT"/>
-<wire x1="60.96" y1="119.38" x2="55.88" y2="119.38" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$30" class="0">
 <segment>
 <pinref part="U$5" gate="G$1" pin="SW_IN"/>
 <pinref part="FET" gate="G$1" pin="DRAIN"/>
 <wire x1="50.8" y1="119.38" x2="50.8" y2="122.428" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="122.428" x2="46.482" y2="122.428" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$35" class="0">
-<segment>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="-33.02" y1="88.9" x2="-33.02" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="-33.02" y1="109.22" x2="0" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="0" y1="109.22" x2="0" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$32" class="0">
@@ -14757,11 +14755,25 @@ Source: www.kingbright.com</description>
 <wire x1="76.2" y1="53.34" x2="78.74" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="R13" gate="G$1" pin="2"/>
 <wire x1="78.74" y1="53.34" x2="83.82" y2="53.34" width="0.1524" layer="91"/>
+<junction x="78.74" y="53.34"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="U$1" gate="BATT" pin="POS"/>
+<pinref part="U$5" gate="G$1" pin="SW_OUT"/>
+<wire x1="60.96" y1="119.38" x2="55.88" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,139.954,104.14,AMP,VDD,N$17,,,"/>
+<approved hash="115,1,91.44,72.3688,XTAL,,,,,"/>
+<approved hash="115,1,79.9126,53.6194,LID,,,,,"/>
+<approved hash="115,1,10.4817,92.71,LED,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

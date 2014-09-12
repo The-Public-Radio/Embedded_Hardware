@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -15285,6 +15285,11 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="-5.08" y1="83.82" x2="-5.08" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="-10.16" y1="83.82" x2="-10.16" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="-33.02" y1="88.9" x2="-33.02" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="109.22" x2="0" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="0" y1="109.22" x2="0" y2="86.36" width="0.1524" layer="91"/>
+<junction x="0" y="86.36"/>
 </segment>
 </net>
 <net name="N$31" class="0">
@@ -15343,14 +15348,6 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="FET" gate="G$1" pin="DRAIN"/>
 <wire x1="50.8" y1="119.38" x2="50.8" y2="122.428" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="122.428" x2="46.482" y2="122.428" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$35" class="0">
-<segment>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="-33.02" y1="88.9" x2="-33.02" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="-33.02" y1="109.22" x2="0" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="0" y1="109.22" x2="0" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$32" class="0">

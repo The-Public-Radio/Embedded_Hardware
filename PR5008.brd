@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4526,6 +4526,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="21.77" y1="64.27" x2="24.34" y2="64.27" width="0.4064" layer="1"/>
 <wire x1="21.77" y1="64.27" x2="18.2" y2="60.7" width="0.4064" layer="1"/>
 <wire x1="18.2" y1="60.7" x2="18.2" y2="58.85" width="0.4064" layer="1"/>
+<contactref element="R3" pad="2"/>
+<wire x1="18.2" y1="58.85" x2="20.4" y2="58.85" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$31">
 <contactref element="C15" pad="1"/>
@@ -4588,9 +4590,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <contactref element="FET" pad="3"/>
 <wire x1="59" y1="23" x2="60.5" y2="24.5" width="0.8128" layer="1"/>
 <wire x1="59" y1="23" x2="54.3" y2="23" width="0.8128" layer="1"/>
-</signal>
-<signal name="N$35">
-<contactref element="R3" pad="2"/>
 </signal>
 <signal name="N$32">
 <contactref element="C21" pad="2"/>
