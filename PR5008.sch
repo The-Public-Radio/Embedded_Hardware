@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -14864,9 +14864,9 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="C20" gate="G$1" x="167.64" y="106.68" rot="R180"/>
 <instance part="U$3" gate="G$1" x="147.32" y="83.82" rot="MR270"/>
 <instance part="LED" gate="G$1" x="10.16" y="93.98"/>
-<instance part="FET" gate="G$1" x="40.64" y="121.92" rot="R270"/>
+<instance part="FET" gate="G$1" x="40.894" y="121.158" rot="R270"/>
 <instance part="U$4" gate="G$1" x="33.02" y="86.36"/>
-<instance part="GND18" gate="1" x="33.02" y="121.92"/>
+<instance part="GND18" gate="1" x="33.02" y="121.158"/>
 <instance part="GND19" gate="1" x="-10.16" y="93.98"/>
 <instance part="P+7" gate="VCC" x="-2.54" y="99.06"/>
 <instance part="JP2" gate="G$1" x="-10.16" y="104.14" rot="R270"/>
@@ -15003,7 +15003,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <segment>
 <pinref part="FET" gate="G$1" pin="GATE"/>
 <pinref part="GND18" gate="1" pin="GND"/>
-<wire x1="35.814" y1="124.46" x2="33.02" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="36.068" y1="123.698" x2="33.02" y2="123.698" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND19" gate="1" pin="GND"/>
@@ -15041,7 +15041,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <segment>
 <pinref part="FET" gate="G$1" pin="SOURCE"/>
 <pinref part="P+6" gate="VCC" pin="VCC"/>
-<wire x1="35.814" y1="120.142" x2="27.94" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="36.068" y1="119.38" x2="27.94" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="119.38" x2="27.94" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="C14" gate="G$1" pin="+"/>
 <junction x="27.94" y="119.38"/>
@@ -15346,8 +15346,8 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <segment>
 <pinref part="U$5" gate="G$1" pin="SW_IN"/>
 <pinref part="FET" gate="G$1" pin="DRAIN"/>
-<wire x1="50.8" y1="119.38" x2="50.8" y2="122.428" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="122.428" x2="46.482" y2="122.428" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="119.38" x2="50.8" y2="121.666" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="121.666" x2="46.736" y2="121.666" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$32" class="0">
