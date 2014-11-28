@@ -9522,17 +9522,6 @@ Metric Code Size 5664</description>
 <pad name="SW_OUT" x="-10.5" y="0" drill="2.8" shape="long" rot="R90"/>
 <pad name="SW_IN" x="10.5" y="0" drill="2.8" shape="long" rot="R90"/>
 </package>
-<package name="CE32A_DAYTON_SPKR">
-<circle x="0" y="0" radius="11.1125" width="0.127" layer="20"/>
-<pad name="+" x="-12.5" y="-7.2" drill="2.5" shape="offset" rot="R300"/>
-<pad name="-" x="12.5" y="-7.2" drill="2.6" shape="offset" rot="R240"/>
-<text x="-15.5" y="-12" size="2.54" layer="25">+</text>
-<text x="14.5" y="-12.5" size="2.54" layer="25">-</text>
-<wire x1="-16" y1="-16" x2="16" y2="-16" width="0.127" layer="21"/>
-<wire x1="16" y1="-16" x2="16" y2="16" width="0.127" layer="21"/>
-<wire x1="16" y1="16" x2="-16" y2="16" width="0.127" layer="21"/>
-<wire x1="-16" y1="16" x2="-16" y2="-16" width="0.127" layer="21"/>
-</package>
 </packages>
 <symbols>
 <symbol name="M3_SCREW_POST">
@@ -9552,19 +9541,6 @@ Metric Code Size 5664</description>
 <pin name="SIGNAL" x="-7.62" y="0" visible="pad" length="short"/>
 <pin name="SW_IN" x="10.16" y="2.54" visible="pad" length="short" rot="R180"/>
 <pin name="SW_OUT" x="10.16" y="-2.54" visible="pad" length="short" rot="R180"/>
-</symbol>
-<symbol name="CE32A_DAYTON_SPKR">
-<wire x1="0" y1="5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-5.08" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-7.62" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
-<pin name="+" x="-2.54" y="2.54" length="short" swaplevel="1"/>
-<pin name="-" x="-2.54" y="-2.54" length="short" swaplevel="1"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -9595,22 +9571,6 @@ Metric Code Size 5664</description>
 <connect gate="G$1" pin="SW_IN" pad="SW_IN"/>
 <connect gate="G$1" pin="SW_OUT" pad="SW_OUT"/>
 <connect gate="G$1" pin="WIPER" pad="WIPER"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="CE32A_DAYTON_SPKR">
-<gates>
-<gate name="G$1" symbol="CE32A_DAYTON_SPKR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="CE32A_DAYTON_SPKR">
-<connects>
-<connect gate="G$1" pin="+" pad="+"/>
-<connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -11628,7 +11588,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND22" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND23" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="ESD" library="PubRadioLib" deviceset="CM1213A-01S" device=""/>
-<part name="U$3" library="PR_Libraries" deviceset="CE32A_DAYTON_SPKR" device=""/>
 <part name="FET" library="PubRadioLib" deviceset="SI2333DDS" device=""/>
 <part name="GND24" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="U2" library="SparkFun-DigitalIC" deviceset="ATTINY45" device="TINY85-20-SMT" value="Tiny85-20-SMT"/>
@@ -11687,8 +11646,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R10" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10K"/>
 <part name="FM_AOUT" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="C19" library="SparkFun-Passives" deviceset="CAP_POL" device="C" value="220uF"/>
-<part name="SDIO" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
-<part name="SCLK" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="SDIO_BUS" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="SCLK_BUS" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="C20" library="SparkFun-Passives" deviceset="CAP" device="0805"/>
 <part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
 </parts>
@@ -11793,7 +11752,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="-20.574" y="19.7866" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-15.748" y="17.2466" size="1.778" layer="96"/>
 </instance>
-<instance part="U$3" gate="G$1" x="207.01" y="26.924" rot="MR270"/>
 <instance part="FET" gate="G$1" x="-9.398" y="128.524" rot="R270"/>
 <instance part="GND24" gate="1" x="-18.288" y="128.524"/>
 <instance part="U2" gate="G$1" x="176.276" y="124.46"/>
@@ -11807,8 +11765,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="197.612" y="114.554" size="1.778" layer="95"/>
 </instance>
 <instance part="GND13" gate="1" x="211.074" y="105.664"/>
-<instance part="AMP_O" gate="G$1" x="246.38" y="71.12" smashed="yes">
-<attribute name="NAME" x="243.84" y="76.962" size="1.778" layer="95"/>
+<instance part="AMP_O" gate="G$1" x="230.886" y="42.164" smashed="yes" rot="R180">
+<attribute name="NAME" x="233.426" y="36.322" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="J1" gate="G$1" x="209.55" y="127"/>
 <instance part="LED1" gate="G$1" x="204.978" y="100.33"/>
@@ -11920,11 +11878,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="-31.75" y="123.063" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-32.512" y="120.269" size="1.778" layer="96"/>
 </instance>
-<instance part="SDIO" gate="G$1" x="17.272" y="60.96" smashed="yes" rot="R270">
-<attribute name="NAME" x="14.986" y="64.008" size="1.778" layer="95"/>
+<instance part="SDIO_BUS" gate="G$1" x="15.748" y="60.96" smashed="yes" rot="R270">
+<attribute name="NAME" x="5.588" y="63.754" size="1.778" layer="95"/>
 </instance>
-<instance part="SCLK" gate="G$1" x="24.13" y="60.96" smashed="yes" rot="R270">
-<attribute name="NAME" x="21.844" y="64.008" size="1.778" layer="95"/>
+<instance part="SCLK_BUS" gate="G$1" x="22.86" y="60.96" smashed="yes" rot="R270">
+<attribute name="NAME" x="19.812" y="64.008" size="1.778" layer="95"/>
 </instance>
 <instance part="C20" gate="G$1" x="48.514" y="112.776" smashed="yes">
 <attribute name="NAME" x="41.402" y="112.903" size="1.778" layer="95"/>
@@ -12172,30 +12130,30 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <wire x1="50.8" y1="40.64" x2="41.148" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="41.148" y1="47.752" x2="41.148" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="41.148" y1="40.64" x2="24.13" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="41.148" y1="40.64" x2="22.86" y2="40.64" width="0.1524" layer="91"/>
 <junction x="41.148" y="40.64"/>
 <pinref part="U1" gate="G$1" pin="SCLK"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="24.13" y1="40.64" x2="7.62" y2="40.64" width="0.1524" layer="91"/>
-<junction x="24.13" y="40.64"/>
-<pinref part="SCLK" gate="G$1" pin="1"/>
-<wire x1="24.13" y1="53.34" x2="24.13" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="40.64" x2="7.62" y2="40.64" width="0.1524" layer="91"/>
+<junction x="22.86" y="40.64"/>
+<pinref part="SCLK_BUS" gate="G$1" pin="1"/>
+<wire x1="22.86" y1="53.34" x2="22.86" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SDIO-L" class="0">
 <segment>
 <wire x1="50.8" y1="38.1" x2="34.798" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="34.798" y1="47.498" x2="34.798" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="34.798" y1="38.1" x2="17.272" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="34.798" y1="38.1" x2="15.748" y2="38.1" width="0.1524" layer="91"/>
 <junction x="34.798" y="38.1"/>
 <pinref part="U1" gate="G$1" pin="SDIO"/>
 <pinref part="R13" gate="G$1" pin="1"/>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="17.272" y1="38.1" x2="7.62" y2="38.1" width="0.1524" layer="91"/>
-<junction x="17.272" y="38.1"/>
-<pinref part="SDIO" gate="G$1" pin="1"/>
-<wire x1="17.272" y1="53.34" x2="17.272" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="15.748" y1="38.1" x2="7.62" y2="38.1" width="0.1524" layer="91"/>
+<junction x="15.748" y="38.1"/>
+<pinref part="SDIO_BUS" gate="G$1" pin="1"/>
+<wire x1="15.748" y1="53.34" x2="15.748" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="!RST" class="0">
@@ -12462,28 +12420,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="OUT-" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="+"/>
-<wire x1="204.47" y1="29.464" x2="204.47" y2="39.624" width="0.1524" layer="91"/>
 <pinref part="AMP" gate="G$1" pin="OUT-"/>
-<wire x1="192.024" y1="39.624" x2="204.47" y2="39.624" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="AMP_O" gate="G$1" pin="1"/>
-<wire x1="254" y1="71.12" x2="259.08" y2="71.12" width="0.1524" layer="91"/>
-<label x="259.08" y="71.12" size="1.778" layer="95"/>
+<wire x1="192.024" y1="39.624" x2="223.266" y2="39.624" width="0.1524" layer="91"/>
+<pinref part="AMP_O" gate="G$1" pin="2"/>
+<label x="224.028" y="39.116" size="2.1844" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="OUT+" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="-"/>
-<wire x1="209.55" y1="29.464" x2="209.55" y2="42.164" width="0.1524" layer="91"/>
 <pinref part="AMP" gate="G$1" pin="OUT+"/>
-<wire x1="192.024" y1="42.164" x2="209.55" y2="42.164" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="AMP_O" gate="G$1" pin="2"/>
-<wire x1="254" y1="73.66" x2="259.08" y2="73.66" width="0.1524" layer="91"/>
-<label x="259.08" y="73.66" size="1.778" layer="95"/>
+<wire x1="192.024" y1="42.164" x2="223.266" y2="42.164" width="0.1524" layer="91"/>
+<pinref part="AMP_O" gate="G$1" pin="1"/>
+<label x="224.028" y="44.45" size="2.1844" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="N$34" class="0">
