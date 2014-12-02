@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1459,8 +1459,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 &lt;/BODY&gt;&lt;/HTML&gt;</description>
 <packages>
 <package name="R0603">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
-chip</description>
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
 <wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
 <wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
 <wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
@@ -1469,15 +1468,14 @@ chip</description>
 <wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
 <smd name="1" x="-0.85" y="0" dx="1" dy="1.1" layer="1"/>
 <smd name="2" x="0.85" y="0" dx="1" dy="1.1" layer="1"/>
-<text x="-0.889" y="0.889" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.889" y="-2.032" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="51"/>
 <rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
 </package>
 <package name="C0603">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-chip</description>
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
 <wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
 <wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
 <wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
@@ -1486,8 +1484,8 @@ chip</description>
 <wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
 <smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
 <smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<text x="-0.889" y="0.762" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.889" y="-2.032" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
@@ -1867,6 +1865,9 @@ design rules under a new name.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -1981,27 +1982,27 @@ design rules under a new name.</description>
 <element name="J1" library="SparkFun-Connectors" package="2X3-NS" value="AVR_SPI_PRG_6NS" x="10.16" y="12.192" rot="R180"/>
 <element name="LED1" library="led" package="SML0603" value="" x="3.048" y="2.54" rot="R180"/>
 <element name="R5" library="resistor" package="R0603" value="1K" x="3.048" y="4.826"/>
-<element name="C8" library="SparkFun-Capacitors" package="0805" value="" x="21.59" y="51.816" rot="R180">
+<element name="C8" library="SparkFun-Capacitors" package="0805" value="1.0uF" x="21.59" y="51.816" rot="R180">
 <attribute name="PROD_ID" value="CAP-11625" x="-46.99" y="129.286" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="L1" library="SparkFun-Passives" package="0805" value="" x="21.59" y="49.53" rot="R180"/>
-<element name="C10" library="SparkFun-Capacitors" package="0805" value="" x="24.638" y="50.546" rot="R270">
+<element name="C10" library="SparkFun-Capacitors" package="0805" value="1.0uF" x="24.638" y="50.546" rot="R270">
 <attribute name="PROD_ID" value="CAP-11625" x="-52.832" y="-21.844" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C13" library="SparkFun-Capacitors" package="0805" value="" x="27.94" y="39.116">
+<element name="C13" library="SparkFun-Capacitors" package="0805" value="1.0uF" x="27.94" y="39.116">
 <attribute name="PROD_ID" value="CAP-11625" x="43.18" y="-42.164" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C1" library="SparkFun-Capacitors" package="0805" value="" x="27.94" y="45.974">
+<element name="C1" library="SparkFun-Capacitors" package="0805" value="1.0uF" x="27.94" y="45.974">
 <attribute name="PROD_ID" value="CAP-11625" x="85.09" y="-31.496" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C2" library="SparkFun-Capacitors" package="0805" value="" x="27.94" y="44.45">
+<element name="C2" library="SparkFun-Capacitors" package="0805" value="1.0uF" x="27.94" y="44.45">
 <attribute name="PROD_ID" value="CAP-11625" x="88.9" y="-33.02" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C6" library="SparkFun-Capacitors" package="0805" value="" x="27.94" y="40.894">
+<element name="C6" library="SparkFun-Capacitors" package="0805" value="1.0uF" x="27.94" y="40.894">
 <attribute name="PROD_ID" value="CAP-11625" x="92.71" y="-36.576" size="1.778" layer="27" display="off"/>
 </element>
 <element name="PWRIN" library="SparkFun-Connectors" package="1X02_LONGPADS" value="M02PTH3" x="30.988" y="75.438"/>
-<element name="C14" library="SparkFun-Capacitors" package="0805" value="4.7uF" x="18.034" y="42.418" rot="R270">
+<element name="C14" library="SparkFun-Capacitors" package="0805" value="1.0uF" x="18.034" y="42.418" rot="R270">
 <attribute name="PROD_ID" value="CAP-11625" x="-55.626" y="-12.192" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R6" library="SparkFun-Passives" package="0805" value="4.7K" x="12.446" y="45.212" rot="R270"/>
