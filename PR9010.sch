@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -9736,6 +9736,17 @@ Metric Code Size 5664</description>
 <rectangle x1="-27.94" y1="-5.08" x2="-15.24" y2="5.08" layer="41"/>
 <rectangle x1="15.24" y1="-5.08" x2="27.94" y2="5.08" layer="41"/>
 </package>
+<package name="CE32A_DAYTON_SPKR">
+<circle x="0" y="0" radius="11.1125" width="0.127" layer="20"/>
+<pad name="+" x="-12.5" y="-7.2" drill="2.5" shape="offset" rot="R300"/>
+<pad name="-" x="12.5" y="-7.2" drill="2.6" shape="offset" rot="R240"/>
+<text x="-15.5" y="-12" size="2.54" layer="25">+</text>
+<text x="14.5" y="-12.5" size="2.54" layer="25">-</text>
+<wire x1="-16" y1="-16" x2="16" y2="-16" width="0.127" layer="21"/>
+<wire x1="16" y1="-16" x2="16" y2="16" width="0.127" layer="21"/>
+<wire x1="16" y1="16" x2="-16" y2="16" width="0.127" layer="21"/>
+<wire x1="-16" y1="16" x2="-16" y2="-16" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="M3_SCREW_POST">
@@ -9764,6 +9775,19 @@ Metric Code Size 5664</description>
 <pin name="NEG" x="-7.62" y="0" visible="off" length="short"/>
 <pin name="POS" x="5.08" y="0" visible="off" length="short" rot="R180"/>
 <text x="-6.35" y="5.08" size="1.778" layer="95">BATT</text>
+</symbol>
+<symbol name="CE32A_DAYTON_SPKR">
+<wire x1="0" y1="5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<pin name="+" x="-2.54" y="2.54" length="short" swaplevel="1"/>
+<pin name="-" x="-2.54" y="-2.54" length="short" swaplevel="1"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -9810,6 +9834,22 @@ Metric Code Size 5664</description>
 <connects>
 <connect gate="BATT" pin="NEG" pad="NEG NEG@2"/>
 <connect gate="BATT" pin="POS" pad="POS POS@2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CE32A_DAYTON_SPKR">
+<gates>
+<gate name="G$1" symbol="CE32A_DAYTON_SPKR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CE32A_DAYTON_SPKR">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -11895,6 +11935,7 @@ DIO-10647</description>
 <part name="JP5" library="PR_Libraries" deviceset="BK-92_MPD_AA_BATT_CLIP" device=""/>
 <part name="JP6" library="PR_Libraries" deviceset="BK-92_MPD_AA_BATT_CLIP" device=""/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="U$3" library="PR_Libraries" deviceset="CE32A_DAYTON_SPKR" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12136,6 +12177,7 @@ DIO-10647</description>
 <instance part="JP5" gate="BATT" x="25.4" y="117.602" rot="R180"/>
 <instance part="JP6" gate="BATT" x="25.4" y="104.14" rot="R180"/>
 <instance part="GND10" gate="1" x="33.02" y="96.266"/>
+<instance part="U$3" gate="G$1" x="228.346" y="25.146" rot="MR180"/>
 </instances>
 <busses>
 </busses>
@@ -12641,17 +12683,27 @@ DIO-10647</description>
 <net name="OUT-" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="OUT-"/>
-<wire x1="192.024" y1="39.624" x2="223.266" y2="39.624" width="0.1524" layer="91"/>
+<wire x1="192.024" y1="39.624" x2="220.218" y2="39.624" width="0.1524" layer="91"/>
 <pinref part="JP13" gate="G$1" pin="2"/>
 <label x="224.028" y="39.116" size="2.1844" layer="95" rot="R180"/>
+<wire x1="220.218" y1="39.624" x2="223.266" y2="39.624" width="0.1524" layer="91"/>
+<wire x1="220.218" y1="39.624" x2="220.218" y2="22.606" width="0.1524" layer="91"/>
+<junction x="220.218" y="39.624"/>
+<pinref part="U$3" gate="G$1" pin="+"/>
+<wire x1="225.806" y1="22.606" x2="220.218" y2="22.606" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="OUT+" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="OUT+"/>
-<wire x1="192.024" y1="42.164" x2="223.266" y2="42.164" width="0.1524" layer="91"/>
+<wire x1="192.024" y1="42.164" x2="222.504" y2="42.164" width="0.1524" layer="91"/>
 <pinref part="JP13" gate="G$1" pin="1"/>
 <label x="224.028" y="44.45" size="2.1844" layer="95" rot="R180"/>
+<wire x1="223.266" y1="42.164" x2="222.504" y2="42.164" width="0.1524" layer="91"/>
+<wire x1="222.504" y1="42.164" x2="222.504" y2="27.686" width="0.1524" layer="91"/>
+<wire x1="222.504" y1="27.686" x2="225.806" y2="27.686" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="-"/>
+<junction x="222.504" y="42.164"/>
 </segment>
 </net>
 <net name="N$34" class="0">
