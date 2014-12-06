@@ -2459,15 +2459,15 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$15">
 <contactref element="R1" pad="SW_OUT"/>
-<contactref element="JP4" pad="1"/>
 <contactref element="JP5" pad="POS"/>
 <contactref element="JP5" pad="POS@2"/>
-<wire x1="44.45" y1="78.486" x2="52.324" y2="78.486" width="0.8128" layer="1"/>
 <wire x1="52.324" y1="78.486" x2="59.944" y2="78.486" width="0.8128" layer="1"/>
 <wire x1="59.944" y1="78.486" x2="63.246" y2="78.486" width="0.8128" layer="16"/>
 <wire x1="63.246" y1="78.486" x2="80.01" y2="61.722" width="0.8128" layer="16"/>
 <wire x1="80.01" y1="61.722" x2="80.01" y2="49.87" width="0.8128" layer="16"/>
 <wire x1="80.01" y1="49.87" x2="78.74" y2="48.6" width="0.8128" layer="16"/>
+<contactref element="JP4" pad="1"/>
+<wire x1="44.45" y1="78.486" x2="52.324" y2="78.486" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$17">
 <contactref element="C2" pad="1"/>
