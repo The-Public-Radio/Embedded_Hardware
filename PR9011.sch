@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -15330,8 +15330,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="FB1" library="rcl" deviceset="R-EU_" device="R0805"/>
 <part name="FB2" library="rcl" deviceset="R-EU_" device="R0805"/>
 <part name="FB3" library="rcl" deviceset="R-EU_" device="R0805"/>
-<part name="U$1" library="PR_Libraries" deviceset="CE32A_DAYTON_SPKR" device=""/>
-<part name="D2" library="SparkFun-DiscreteSemi" deviceset="BAV99" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15577,8 +15575,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="FB1" gate="G$1" x="38.1" y="33.02"/>
 <instance part="FB2" gate="G$1" x="198.12" y="40.64"/>
 <instance part="FB3" gate="G$1" x="198.12" y="38.1" rot="R180"/>
-<instance part="U$1" gate="G$1" x="246.38" y="20.32" rot="MR180"/>
-<instance part="D2" gate="G$1" x="-25.4" y="5.08" rot="R180"/>
 </instances>
 <busses>
 </busses>
