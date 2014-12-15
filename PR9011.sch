@@ -11924,6 +11924,9 @@ DIO-10647</description>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
+<class number="1" name="antenna" width="0" drill="0">
+<clearance class="1" value="1.27"/>
+</class>
 </classes>
 <parts>
 <part name="FMIC" library="FM-Meter-Driver-v11" deviceset="SPARKFUN_SI470X" device="" value="SI4703"/>
@@ -12942,7 +12945,7 @@ DIO-10647</description>
 <wire x1="2.54" y1="137.16" x2="20.32" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="N$14" class="1">
 <segment>
 <pinref part="J1" gate="G$1" pin="ANT"/>
 <pinref part="D1" gate="G$1" pin="COM"/>
@@ -12955,7 +12958,7 @@ DIO-10647</description>
 <junction x="7.62" y="33.02"/>
 </segment>
 </net>
-<net name="N$16" class="0">
+<net name="N$16" class="1">
 <segment>
 <pinref part="L1" gate="G$1" pin="1"/>
 <pinref part="C3" gate="G$1" pin="2"/>
