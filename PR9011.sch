@@ -12063,7 +12063,8 @@ DIO-10647</description>
 <text x="40.64" y="147.574" size="2.54" layer="96">Lid Decoupling</text>
 <text x="160.02" y="76.2" size="2.54" layer="96">Audio Amplifier </text>
 <text x="157.48" y="144.78" size="2.54" layer="96">MCU</text>
-<text x="-27.94" y="162.56" size="3.81" layer="96">PUBLIC RADIO PR9010</text>
+<text x="-27.94" y="162.56" size="3.81" layer="96">PUBLIC RADIO PR9011
+Development Board </text>
 <text x="77.978" y="147.574" size="2.54" layer="96">GND Pads </text>
 </plain>
 <instances>
@@ -13016,4 +13017,10 @@ DIO-10647</description>
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
