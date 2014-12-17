@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -54,7 +54,7 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
@@ -1911,6 +1911,9 @@ design rules under a new name.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -2086,17 +2089,17 @@ design rules under a new name.</description>
 <attribute name="NAME" x="36.6415" y="36.172" size="0.6096" layer="25" rot="R180"/>
 <attribute name="VALUE" x="33.919" y="38.876" size="0.4064" layer="27" rot="R270"/>
 </element>
-<element name="C8" library="SparkFun-Capacitors" package="0805" value="1.0uF" x="21.136" y="42.21" smashed="yes" rot="R180">
+<element name="C8" library="SparkFun-Capacitors" package="0805" value=".1uF" x="21.136" y="42.21" smashed="yes" rot="R180">
 <attribute name="PROD_ID" value="CAP-11625" x="5.896" y="123.49" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="17.2845" y="42.452" size="0.6096" layer="25" rot="R180"/>
 <attribute name="VALUE" x="22.152" y="43.607" size="0.4064" layer="27" rot="R180"/>
 </element>
-<element name="C10" library="SparkFun-Capacitors" package="0805" value="1.0uF" x="20.986" y="31.768" smashed="yes" rot="R180">
+<element name="C10" library="SparkFun-Capacitors" package="0805" value="22nF" x="20.986" y="31.768" smashed="yes" rot="R180">
 <attribute name="PROD_ID" value="CAP-11625" x="-36.164" y="109.238" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="17.6925" y="31.802" size="0.6096" layer="25" rot="R180"/>
 <attribute name="VALUE" x="22.002" y="33.165" size="0.4064" layer="27" rot="R180"/>
 </element>
-<element name="C11" library="SparkFun-Capacitors" package="0805" value="1.0uF" x="20.986" y="29.544" smashed="yes" rot="R180">
+<element name="C11" library="SparkFun-Capacitors" package="0805" value="4.7uF" x="20.986" y="29.544" smashed="yes" rot="R180">
 <attribute name="PROD_ID" value="CAP-11625" x="-39.974" y="107.014" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="17.5685" y="29.752" size="0.6096" layer="25" rot="R180"/>
 <attribute name="VALUE" x="22.002" y="30.941" size="0.4064" layer="27" rot="R180"/>

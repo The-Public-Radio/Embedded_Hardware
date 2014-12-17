@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -11986,9 +11986,9 @@ DIO-10647</description>
 <part name="L1" library="SparkFun-Passives" deviceset="INDUCTOR" device="0805"/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="1.0UF-25V-+80/-20(0805)" device="" value="1.0uF"/>
 <part name="GND21" library="SparkFun" deviceset="GND" device=""/>
-<part name="C8" library="SparkFun-Capacitors" deviceset="1.0UF-25V-+80/-20(0805)" device="" value="1.0uF"/>
-<part name="C10" library="SparkFun-Capacitors" deviceset="1.0UF-25V-+80/-20(0805)" device="" value="1.0uF"/>
-<part name="C11" library="SparkFun-Capacitors" deviceset="1.0UF-25V-+80/-20(0805)" device="" value="1.0uF"/>
+<part name="C8" library="SparkFun-Capacitors" deviceset="1.0UF-25V-+80/-20(0805)" device="" value=".1uF"/>
+<part name="C10" library="SparkFun-Capacitors" deviceset="1.0UF-25V-+80/-20(0805)" device="" value="22nF"/>
+<part name="C11" library="SparkFun-Capacitors" deviceset="1.0UF-25V-+80/-20(0805)" device="" value="4.7uF"/>
 <part name="C7" library="SparkFun-Capacitors" deviceset="1.0UF-25V-+80/-20(0805)" device="" value="1.0uF"/>
 <part name="GND16" library="SparkFun" deviceset="GND" device=""/>
 <part name="PWR" library="SparkFun-Connectors" deviceset="M02" device="PTH3"/>
