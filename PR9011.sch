@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -9779,16 +9779,18 @@ Metric Code Size 5664</description>
 <rectangle x1="-27.94" y1="-5.08" x2="-15.24" y2="5.08" layer="41"/>
 <rectangle x1="15.24" y1="-5.08" x2="27.94" y2="5.08" layer="41"/>
 </package>
-<package name="CE32A_DAYTON_SPKR">
+<package name="CE32A_FOR_JST">
 <circle x="0" y="0" radius="11.1125" width="0.127" layer="20"/>
-<pad name="+" x="-12.5" y="-7.2" drill="2.5" shape="offset" rot="R300"/>
-<pad name="-" x="12.5" y="-7.2" drill="2.6" shape="offset" rot="R240"/>
-<text x="-15.5" y="-12" size="2.54" layer="25">+</text>
-<text x="14.5" y="-12.5" size="2.54" layer="25">-</text>
-<wire x1="-16" y1="-16" x2="16" y2="-16" width="0.127" layer="21"/>
-<wire x1="16" y1="-16" x2="16" y2="16" width="0.127" layer="21"/>
-<wire x1="16" y1="16" x2="-16" y2="16" width="0.127" layer="21"/>
-<wire x1="-16" y1="16" x2="-16" y2="-16" width="0.127" layer="21"/>
+<hole x="-12.3698" y="12.3698" drill="2"/>
+<hole x="12.3698" y="12.3698" drill="2"/>
+<hole x="12.3698" y="-12.3698" drill="2"/>
+<hole x="-12.3698" y="-12.3698" drill="2"/>
+<wire x1="-16.002" y1="-16.002" x2="16.002" y2="-16.002" width="0.127" layer="21"/>
+<wire x1="16.002" y1="-16.002" x2="16.002" y2="16.002" width="0.127" layer="21"/>
+<wire x1="16.002" y1="16.002" x2="-16.002" y2="16.002" width="0.127" layer="21"/>
+<wire x1="-16.002" y1="16.002" x2="-16.002" y2="-16.002" width="0.127" layer="21"/>
+<hole x="-12.4968" y="-7.1882" drill="3.2"/>
+<hole x="12.4968" y="-7.1882" drill="3.2"/>
 </package>
 </packages>
 <symbols>
@@ -9818,19 +9820,6 @@ Metric Code Size 5664</description>
 <pin name="NEG" x="-7.62" y="0" visible="off" length="short"/>
 <pin name="POS" x="5.08" y="0" visible="off" length="short" rot="R180"/>
 <text x="-6.35" y="5.08" size="1.778" layer="95">BATT</text>
-</symbol>
-<symbol name="CE32A_DAYTON_SPKR">
-<wire x1="0" y1="5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-5.08" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-7.62" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
-<pin name="+" x="-2.54" y="2.54" length="short" swaplevel="1"/>
-<pin name="-" x="-2.54" y="-2.54" length="short" swaplevel="1"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -9884,16 +9873,11 @@ Metric Code Size 5664</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CE32A_DAYTON_SPKR">
+<deviceset name="CE32A_FOR_JST">
 <gates>
-<gate name="G$1" symbol="CE32A_DAYTON_SPKR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="CE32A_DAYTON_SPKR">
-<connects>
-<connect gate="G$1" pin="+" pad="+"/>
-<connect gate="G$1" pin="-" pad="-"/>
-</connects>
+<device name="" package="CE32A_FOR_JST">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -12206,7 +12190,6 @@ DIO-10647</description>
 <part name="JP5" library="PR_Libraries" deviceset="BK-92_MPD_AA_BATT_CLIP" device=""/>
 <part name="JP6" library="PR_Libraries" deviceset="BK-92_MPD_AA_BATT_CLIP" device=""/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="U$3" library="PR_Libraries" deviceset="CE32A_DAYTON_SPKR" device=""/>
 <part name="FB1" library="SparkFun-Passives" deviceset="INDUCTOR" device="0805"/>
 <part name="FB2" library="SparkFun-Passives" deviceset="INDUCTOR" device="0805"/>
 <part name="FB3" library="SparkFun-Passives" deviceset="INDUCTOR" device="0805"/>
@@ -12218,6 +12201,7 @@ DIO-10647</description>
 <part name="U$1" library="adafruit" deviceset="FIDUCIAL" device=""/>
 <part name="U$2" library="adafruit" deviceset="FIDUCIAL" device=""/>
 <part name="U$4" library="adafruit" deviceset="FIDUCIAL" device=""/>
+<part name="U$5" library="PR_Libraries" deviceset="CE32A_FOR_JST" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12457,7 +12441,6 @@ Development Board </text>
 <instance part="JP5" gate="BATT" x="20.32" y="129.54" rot="R90"/>
 <instance part="JP6" gate="BATT" x="20.32" y="114.3" rot="R90"/>
 <instance part="GND10" gate="1" x="20.32" y="101.6"/>
-<instance part="U$3" gate="G$1" x="220.98" y="22.86" rot="MR180"/>
 <instance part="FB1" gate="G$1" x="38.1" y="33.02" smashed="yes" rot="R90">
 <attribute name="NAME" x="38.1" y="33.02" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="43.18" y="35.56" size="1.778" layer="96" rot="R90"/>
@@ -13024,13 +13007,9 @@ Development Board </text>
 </net>
 <net name="OUT-" class="0">
 <segment>
-<wire x1="205.74" y1="38.1" x2="205.74" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="+"/>
-<wire x1="218.44" y1="20.32" x2="205.74" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="FB3" gate="G$1" pin="1"/>
 <pinref part="JST_CONN" gate="G$1" pin="1"/>
 <wire x1="223.52" y1="38.1" x2="205.74" y2="38.1" width="0.1524" layer="91"/>
-<junction x="205.74" y="38.1"/>
 </segment>
 </net>
 <net name="N$34" class="0">
@@ -13184,14 +13163,9 @@ Development Board </text>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="-"/>
-<wire x1="218.44" y1="25.4" x2="208.28" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="25.4" x2="208.28" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="FB2" gate="G$1" pin="2"/>
-<wire x1="208.28" y1="40.64" x2="205.74" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="JST_CONN" gate="G$1" pin="2"/>
-<wire x1="208.28" y1="40.64" x2="223.52" y2="40.64" width="0.1524" layer="91"/>
-<junction x="208.28" y="40.64"/>
+<wire x1="205.74" y1="40.64" x2="223.52" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
