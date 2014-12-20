@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1718,6 +1718,49 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <smd name="4" x="-2" y="-0.8" dx="1" dy="1" layer="1"/>
 <smd name="3" x="-2" y="0.8" dx="1" dy="1" layer="1"/>
 </package>
+<package name="JST-PH-2-SMT-RA">
+<description>2-Pin JST PH Series Right-Angle Connector (+/- for batteries)</description>
+<wire x1="-4" y1="3" x2="4" y2="3" width="0.2032" layer="51"/>
+<wire x1="4" y1="3" x2="4" y2="-4.5" width="0.2032" layer="51"/>
+<wire x1="-4" y1="-4.5" x2="-4" y2="3" width="0.2032" layer="51"/>
+<wire x1="3.2" y1="-2" x2="-3.2" y2="-2" width="0.2032" layer="51"/>
+<wire x1="-3.2" y1="-2" x2="-3.2" y2="-4.5" width="0.2032" layer="51"/>
+<wire x1="-3.2" y1="-4.5" x2="-4" y2="-4.5" width="0.2032" layer="51"/>
+<wire x1="4" y1="-4.5" x2="3.2" y2="-4.5" width="0.2032" layer="51"/>
+<wire x1="3.2" y1="-4.5" x2="3.2" y2="-2" width="0.2032" layer="51"/>
+<wire x1="-2.25" y1="3" x2="2.25" y2="3" width="0.127" layer="21"/>
+<wire x1="4" y1="-0.5" x2="4" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="4" y1="-4.5" x2="3.15" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="3.15" y1="-4.5" x2="3.15" y2="-2" width="0.127" layer="21"/>
+<wire x1="3.15" y1="-2" x2="1.75" y2="-2" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="-2" x2="-3.15" y2="-2" width="0.127" layer="21"/>
+<wire x1="-3.15" y1="-2" x2="-3.15" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="-3.15" y1="-4.5" x2="-4" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="-4" y1="-4.5" x2="-4" y2="-0.5" width="0.127" layer="21"/>
+<smd name="2" x="-1" y="-3.7" dx="1" dy="4.6" layer="1"/>
+<smd name="1" x="1" y="-3.7" dx="1" dy="4.6" layer="1"/>
+<smd name="NC1" x="-3.4" y="1.5" dx="3.4" dy="1.6" layer="1" rot="R90"/>
+<smd name="NC2" x="3.4" y="1.5" dx="3.4" dy="1.6" layer="1" rot="R90"/>
+<text x="-2.54" y="3.81" size="1.27" layer="25" font="vector">&gt;Name</text>
+<text x="-2.54" y="-7.62" size="1.27" layer="27" font="vector">&gt;Value</text>
+<text x="2.286" y="-6.096" size="1.4224" layer="21" ratio="12">+</text>
+<text x="-3.429" y="-6.096" size="1.4224" layer="21" ratio="12">-</text>
+</package>
+<package name="FIDUCIAL_1MM">
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" stop="no" cream="no"/>
+<polygon width="0.127" layer="29">
+<vertex x="-1" y="0" curve="90"/>
+<vertex x="0" y="-1" curve="90"/>
+<vertex x="1" y="0" curve="90"/>
+<vertex x="0" y="1" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="41">
+<vertex x="-1" y="0" curve="90"/>
+<vertex x="0" y="-1" curve="90"/>
+<vertex x="1" y="0" curve="90"/>
+<vertex x="0" y="1" curve="90"/>
+</polygon>
+</package>
 </packages>
 </library>
 <library name="led">
@@ -1911,9 +1954,6 @@ design rules under a new name.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
-<param name="AutoGrid" value="1"/>
-<param name="Efforts" value="0"/>
-<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -2062,7 +2102,6 @@ design rules under a new name.</description>
 <attribute name="NAME" x="120.304" y="69.136" size="1.27" layer="25"/>
 </element>
 <element name="SW1" library="adafruit" package="KMR2" value="SPST_TACT-KMR2" x="137.092" y="50.266" smashed="yes" rot="R90"/>
-<element name="SPK" library="SparkFun-Connectors" package="1X02_LONGPADS" value="M02PTH3" x="99.684" y="5.408" rot="R270"/>
 <element name="ISP" library="SparkFun-Connectors" package="2X3-NS" value="AVR_SPI_PRG_6NS" x="137.348" y="66.802" locked="yes" smashed="yes" rot="R270">
 <attribute name="NAME" x="140.523" y="70.612" size="1.27" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="132.903" y="70.612" size="1.27" layer="27" rot="R270"/>
@@ -2224,6 +2263,10 @@ design rules under a new name.</description>
 <attribute name="NAME" x="114.211" y="55.961" size="0.6096" layer="25" rot="R90"/>
 <attribute name="VALUE" x="117.132" y="55.961" size="1.27" layer="27" rot="R90"/>
 </element>
+<element name="JST_CONN" library="adafruit" package="JST-PH-2-SMT-RA" value="" x="104.05" y="6.45" rot="R90"/>
+<element name="U$1" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="128.6" y="42.2"/>
+<element name="U$2" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="6.1" y="90.7"/>
+<element name="U$4" library="adafruit" package="FIDUCIAL_1MM" value="FIDUCIAL" x="20.6" y="10.6"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -2757,16 +2800,16 @@ design rules under a new name.</description>
 <wire x1="129.092" y1="17.376" x2="129.092" y2="19.49" width="0.254" layer="1"/>
 </signal>
 <signal name="OUT-">
-<contactref element="SPK" pad="2"/>
 <contactref element="U$3" pad="+"/>
 <contactref element="FB3" pad="1"/>
-<wire x1="114.8" y1="12.6" x2="114.8" y2="6.05" width="0.6096" layer="1"/>
-<wire x1="114.8" y1="6.05" x2="111.618" y2="2.868" width="0.6096" layer="1"/>
-<wire x1="111.618" y1="2.868" x2="99.684" y2="2.868" width="0.6096" layer="1"/>
-<wire x1="99.684" y1="2.868" x2="76.482" y2="2.868" width="0.6096" layer="1"/>
-<wire x1="76.482" y1="2.868" x2="72.4" y2="6.95" width="0.6096" layer="1"/>
-<wire x1="72.4" y1="6.95" x2="72.4" y2="19.34" width="0.6096" layer="1"/>
-<wire x1="72.4" y1="19.34" x2="60.84" y2="30.9" width="0.6096" layer="1"/>
+<wire x1="114.8" y1="12.6" x2="114.8" y2="6.05" width="0.8128" layer="1"/>
+<contactref element="JST_CONN" pad="2"/>
+<wire x1="114.8" y1="6.05" x2="114.2" y2="5.45" width="0.8128" layer="1"/>
+<wire x1="114.2" y1="5.45" x2="107.75" y2="5.45" width="0.8128" layer="1"/>
+<wire x1="107.75" y1="5.45" x2="78.75" y2="5.45" width="0.8128" layer="1"/>
+<wire x1="78.75" y1="5.45" x2="72" y2="12.2" width="0.8128" layer="1"/>
+<wire x1="72" y1="12.2" x2="72" y2="19.74" width="0.8128" layer="1"/>
+<wire x1="72" y1="19.74" x2="60.84" y2="30.9" width="0.8128" layer="1"/>
 </signal>
 <signal name="N$34">
 <contactref element="R1" pad="SW_IN"/>
@@ -2920,18 +2963,22 @@ design rules under a new name.</description>
 <wire x1="116.614" y1="15.2" x2="116.564" y2="15.2" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$9">
-<contactref element="SPK" pad="1"/>
-<contactref element="FB2" pad="2"/>
 <contactref element="U$3" pad="-"/>
-<wire x1="114.764" y1="15.2" x2="113.45" y2="15.2" width="0.6096" layer="1"/>
-<wire x1="113.45" y1="15.2" x2="112.05" y2="13.8" width="0.6096" layer="1"/>
-<wire x1="112.05" y1="13.8" x2="112.05" y2="7.25" width="0.6096" layer="1"/>
-<wire x1="112.05" y1="7.25" x2="110.208" y2="5.408" width="0.6096" layer="1"/>
-<wire x1="110.208" y1="5.408" x2="99.684" y2="5.408" width="0.6096" layer="1"/>
-<wire x1="99.684" y1="5.408" x2="78.592" y2="5.408" width="0.6096" layer="1"/>
-<wire x1="78.592" y1="5.408" x2="76.45" y2="7.55" width="0.6096" layer="1"/>
-<wire x1="76.45" y1="7.55" x2="76.45" y2="21.51" width="0.6096" layer="1"/>
-<wire x1="76.45" y1="21.51" x2="85.84" y2="30.9" width="0.6096" layer="1"/>
+<contactref element="FB2" pad="2"/>
+<contactref element="JST_CONN" pad="1"/>
+<wire x1="107.75" y1="7.45" x2="108.3" y2="7.45" width="0.6096" layer="1"/>
+<wire x1="108.3" y1="7.45" x2="111.95" y2="7.45" width="0.8128" layer="1"/>
+<wire x1="111.95" y1="7.45" x2="112.7" y2="8.2" width="0.8128" layer="1"/>
+<wire x1="112.7" y1="8.2" x2="112.7" y2="14.35" width="0.8128" layer="1"/>
+<wire x1="112.7" y1="14.35" x2="113.6" y2="15.25" width="0.8128" layer="1"/>
+<wire x1="113.6" y1="15.25" x2="114.714" y2="15.25" width="0.6096" layer="1"/>
+<wire x1="114.714" y1="15.25" x2="114.764" y2="15.2" width="0.6096" layer="1"/>
+<wire x1="85.84" y1="30.9" x2="85.84" y2="30.34" width="0.8128" layer="1"/>
+<wire x1="85.84" y1="30.34" x2="75.5" y2="20" width="0.8128" layer="1"/>
+<wire x1="75.5" y1="20" x2="75.5" y2="14.3" width="0.8128" layer="1"/>
+<wire x1="75.5" y1="14.3" x2="82.4" y2="7.4" width="0.8128" layer="1"/>
+<wire x1="82.4" y1="7.4" x2="108.25" y2="7.4" width="0.8128" layer="1"/>
+<wire x1="108.25" y1="7.4" x2="108.3" y2="7.45" width="0.6096" layer="1"/>
 </signal>
 </signals>
 <errors>
