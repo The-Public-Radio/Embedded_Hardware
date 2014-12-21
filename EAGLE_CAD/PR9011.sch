@@ -9720,65 +9720,6 @@ Metric Code Size 5664</description>
 </library>
 <library name="PR_Libraries">
 <packages>
-<package name="M3_SCREW_POST">
-<pad name="P$1" x="0" y="0" drill="3.2" diameter="10"/>
-<circle x="0" y="0" radius="7.5" width="0.127" layer="41"/>
-<circle x="0" y="0" radius="7.5" width="0.127" layer="42"/>
-</package>
-<package name="RV170SF_TAIWANA_POT_SW">
-<circle x="0" y="0" radius="10.5" width="0.1" layer="21"/>
-<pad name="WIPER" x="0" y="-10.5" drill="1.6" shape="offset" rot="R90"/>
-<pad name="SIGNAL" x="5.25" y="-9.09" drill="1.6" shape="offset" rot="R90"/>
-<pad name="GND" x="-5.25" y="-9.09" drill="1.6" shape="offset" rot="R90"/>
-<pad name="SW_OUT" x="-10.5" y="0" drill="2.8" shape="long" rot="R90"/>
-<pad name="SW_IN" x="10.5" y="0" drill="2.8" shape="long" rot="R90"/>
-</package>
-<package name="BK-92_MPD_AA_BATT_CLIP">
-<pad name="NEG@2" x="-16.764" y="0" drill="1.778" shape="long" rot="R180"/>
-<pad name="POS" x="16.764" y="0" drill="1.778" shape="long"/>
-<pad name="POS@2" x="24.384" y="0" drill="1.778" shape="long"/>
-<pad name="NEG" x="-24.384" y="0" drill="1.778" shape="long"/>
-<wire x1="-27.686" y1="6.985" x2="-27.686" y2="4.699" width="0.127" layer="21"/>
-<wire x1="-27.686" y1="-4.699" x2="-27.686" y2="-6.985" width="0.127" layer="21"/>
-<wire x1="-27.686" y1="6.985" x2="-15.748" y2="6.985" width="0.127" layer="21"/>
-<wire x1="15.748" y1="6.985" x2="27.686" y2="6.985" width="0.127" layer="21"/>
-<wire x1="27.686" y1="6.985" x2="27.686" y2="4.699" width="0.127" layer="21"/>
-<wire x1="27.686" y1="4.699" x2="27.686" y2="-4.699" width="0.127" layer="21"/>
-<wire x1="27.686" y1="-4.699" x2="27.686" y2="-6.985" width="0.127" layer="21"/>
-<wire x1="27.686" y1="-6.985" x2="15.748" y2="-6.985" width="0.127" layer="21"/>
-<wire x1="-15.748" y1="-6.985" x2="-27.686" y2="-6.985" width="0.127" layer="21"/>
-<wire x1="-15.748" y1="-6.985" x2="-15.748" y2="-4.699" width="0.127" layer="21"/>
-<wire x1="-15.748" y1="4.699" x2="-15.748" y2="6.985" width="0.127" layer="21"/>
-<wire x1="15.748" y1="6.985" x2="15.748" y2="4.699" width="0.127" layer="21"/>
-<wire x1="15.748" y1="-4.699" x2="15.748" y2="-6.985" width="0.127" layer="21"/>
-<wire x1="-15.748" y1="4.699" x2="-27.686" y2="4.699" width="0.127" layer="21"/>
-<wire x1="-27.686" y1="4.699" x2="-27.686" y2="-4.699" width="0.127" layer="21"/>
-<wire x1="-27.686" y1="-4.699" x2="-15.748" y2="-4.699" width="0.127" layer="21"/>
-<wire x1="15.748" y1="4.699" x2="27.686" y2="4.699" width="0.127" layer="21"/>
-<wire x1="27.686" y1="-4.699" x2="15.748" y2="-4.699" width="0.127" layer="21"/>
-<wire x1="3.81" y1="3.81" x2="3.81" y2="-3.81" width="0.2032" layer="21"/>
-<wire x1="7.62" y1="2.032" x2="7.62" y2="-2.032" width="1.016" layer="21" style="longdash"/>
-<wire x1="5.588" y1="0" x2="9.652" y2="0" width="1.016" layer="21"/>
-<wire x1="-12.7" y1="3.556" x2="-12.7" y2="-3.556" width="0.2032" layer="21"/>
-<wire x1="-12.7" y1="-3.556" x2="-12.446" y2="-3.81" width="0.2032" layer="21" curve="90"/>
-<wire x1="-12.446" y1="-3.81" x2="3.81" y2="-3.81" width="0.2032" layer="21"/>
-<wire x1="-12.7" y1="3.556" x2="-12.446" y2="3.81" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-12.446" y1="3.81" x2="3.81" y2="3.81" width="0.2032" layer="21"/>
-<wire x1="3.81" y1="3.81" x2="11.176" y2="3.81" width="0.2032" layer="21"/>
-<wire x1="11.176" y1="3.81" x2="11.43" y2="3.556" width="0.2032" layer="21" curve="-90"/>
-<wire x1="11.43" y1="3.556" x2="11.43" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="11.43" y1="1.905" x2="11.43" y2="-1.905" width="0.2032" layer="21"/>
-<wire x1="11.43" y1="-1.905" x2="11.43" y2="-3.556" width="0.2032" layer="21"/>
-<wire x1="11.43" y1="-3.556" x2="11.176" y2="-3.81" width="0.2032" layer="21" curve="-90"/>
-<wire x1="11.176" y1="-3.81" x2="3.81" y2="-3.81" width="0.2032" layer="21"/>
-<wire x1="11.43" y1="1.905" x2="12.446" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="12.446" y1="1.905" x2="12.7" y2="1.651" width="0.2032" layer="21" curve="-90"/>
-<wire x1="12.7" y1="1.651" x2="12.7" y2="-1.651" width="0.2032" layer="21"/>
-<wire x1="12.7" y1="-1.651" x2="12.446" y2="-1.905" width="0.2032" layer="21" curve="-90"/>
-<wire x1="12.446" y1="-1.905" x2="11.43" y2="-1.905" width="0.2032" layer="21"/>
-<rectangle x1="-27.94" y1="-5.08" x2="-15.24" y2="5.08" layer="41"/>
-<rectangle x1="15.24" y1="-5.08" x2="27.94" y2="5.08" layer="41"/>
-</package>
 <package name="CE32A_FOR_JST">
 <circle x="0" y="0" radius="11.1125" width="0.127" layer="20"/>
 <hole x="-12.3698" y="12.3698" drill="2"/>
@@ -9794,85 +9735,8 @@ Metric Code Size 5664</description>
 </package>
 </packages>
 <symbols>
-<symbol name="M3_SCREW_POST">
-<wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
-<pin name="ANT" x="0" y="-5.08" length="short" rot="R90"/>
-</symbol>
-<symbol name="P170_BOURNS_POT_SW">
-<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
-<pin name="GND" x="-7.62" y="5.08" visible="pad" length="short"/>
-<pin name="WIPER" x="-7.62" y="-5.08" visible="pad" length="short"/>
-<pin name="SIGNAL" x="-7.62" y="0" visible="pad" length="short"/>
-<pin name="SW_IN" x="10.16" y="2.54" visible="pad" length="short" rot="R180"/>
-<pin name="SW_OUT" x="10.16" y="-2.54" visible="pad" length="short" rot="R180"/>
-</symbol>
-<symbol name="AA_BATTERY">
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
-<pin name="NEG" x="-7.62" y="0" visible="off" length="short"/>
-<pin name="POS" x="5.08" y="0" visible="off" length="short" rot="R180"/>
-<text x="-6.35" y="5.08" size="1.778" layer="95">BATT</text>
-</symbol>
 </symbols>
 <devicesets>
-<deviceset name="M3_SCREW_POST" prefix="J">
-<gates>
-<gate name="G$1" symbol="M3_SCREW_POST" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="M3_SCREW_POST">
-<connects>
-<connect gate="G$1" pin="ANT" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="RV170SF_TAIWANA_POT_SW" prefix="R">
-<gates>
-<gate name="G$1" symbol="P170_BOURNS_POT_SW" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="RV170SF_TAIWANA_POT_SW">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="SIGNAL" pad="SIGNAL"/>
-<connect gate="G$1" pin="SW_IN" pad="SW_IN"/>
-<connect gate="G$1" pin="SW_OUT" pad="SW_OUT"/>
-<connect gate="G$1" pin="WIPER" pad="WIPER"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="BK-92_MPD_AA_BATT_CLIP" prefix="JP">
-<gates>
-<gate name="BATT" symbol="AA_BATTERY" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="BK-92_MPD_AA_BATT_CLIP">
-<connects>
-<connect gate="BATT" pin="NEG" pad="NEG NEG@2"/>
-<connect gate="BATT" pin="POS" pad="POS POS@2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="CE32A_FOR_JST">
 <gates>
 </gates>
@@ -12079,6 +11943,150 @@ DIO-10647</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="PR_Parts_Library">
+<packages>
+<package name="BK-92_MPD_AA_BATT_CLIP">
+<pad name="NEG@2" x="-16.764" y="0" drill="1.778" shape="long" rot="R180"/>
+<pad name="POS" x="16.764" y="0" drill="1.778" shape="long"/>
+<pad name="POS@2" x="24.384" y="0" drill="1.778" shape="long"/>
+<pad name="NEG" x="-24.384" y="0" drill="1.778" shape="long"/>
+<wire x1="-27.686" y1="6.985" x2="-27.686" y2="4.699" width="0.127" layer="21"/>
+<wire x1="-27.686" y1="-4.699" x2="-27.686" y2="-6.985" width="0.127" layer="21"/>
+<wire x1="-27.686" y1="6.985" x2="-15.748" y2="6.985" width="0.127" layer="21"/>
+<wire x1="15.748" y1="6.985" x2="27.686" y2="6.985" width="0.127" layer="21"/>
+<wire x1="27.686" y1="6.985" x2="27.686" y2="4.699" width="0.127" layer="21"/>
+<wire x1="27.686" y1="4.699" x2="27.686" y2="-4.699" width="0.127" layer="21"/>
+<wire x1="27.686" y1="-4.699" x2="27.686" y2="-6.985" width="0.127" layer="21"/>
+<wire x1="27.686" y1="-6.985" x2="15.748" y2="-6.985" width="0.127" layer="21"/>
+<wire x1="-15.748" y1="-6.985" x2="-27.686" y2="-6.985" width="0.127" layer="21"/>
+<wire x1="-15.748" y1="-6.985" x2="-15.748" y2="-4.699" width="0.127" layer="21"/>
+<wire x1="-15.748" y1="4.699" x2="-15.748" y2="6.985" width="0.127" layer="21"/>
+<wire x1="15.748" y1="6.985" x2="15.748" y2="4.699" width="0.127" layer="21"/>
+<wire x1="15.748" y1="-4.699" x2="15.748" y2="-6.985" width="0.127" layer="21"/>
+<wire x1="-15.748" y1="4.699" x2="-27.686" y2="4.699" width="0.127" layer="21"/>
+<wire x1="-27.686" y1="4.699" x2="-27.686" y2="-4.699" width="0.127" layer="21"/>
+<wire x1="-27.686" y1="-4.699" x2="-15.748" y2="-4.699" width="0.127" layer="21"/>
+<wire x1="15.748" y1="4.699" x2="27.686" y2="4.699" width="0.127" layer="21"/>
+<wire x1="27.686" y1="-4.699" x2="15.748" y2="-4.699" width="0.127" layer="21"/>
+<wire x1="3.81" y1="3.81" x2="3.81" y2="-3.81" width="0.2032" layer="21"/>
+<wire x1="7.62" y1="2.032" x2="7.62" y2="-2.032" width="1.016" layer="21" style="longdash"/>
+<wire x1="5.588" y1="0" x2="9.652" y2="0" width="1.016" layer="21"/>
+<wire x1="-12.7" y1="3.556" x2="-12.7" y2="-3.556" width="0.2032" layer="21"/>
+<wire x1="-12.7" y1="-3.556" x2="-12.446" y2="-3.81" width="0.2032" layer="21" curve="90"/>
+<wire x1="-12.446" y1="-3.81" x2="3.81" y2="-3.81" width="0.2032" layer="21"/>
+<wire x1="-12.7" y1="3.556" x2="-12.446" y2="3.81" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-12.446" y1="3.81" x2="3.81" y2="3.81" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="3.81" x2="11.176" y2="3.81" width="0.2032" layer="21"/>
+<wire x1="11.176" y1="3.81" x2="11.43" y2="3.556" width="0.2032" layer="21" curve="-90"/>
+<wire x1="11.43" y1="3.556" x2="11.43" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="11.43" y1="1.905" x2="11.43" y2="-1.905" width="0.2032" layer="21"/>
+<wire x1="11.43" y1="-1.905" x2="11.43" y2="-3.556" width="0.2032" layer="21"/>
+<wire x1="11.43" y1="-3.556" x2="11.176" y2="-3.81" width="0.2032" layer="21" curve="-90"/>
+<wire x1="11.176" y1="-3.81" x2="3.81" y2="-3.81" width="0.2032" layer="21"/>
+<wire x1="11.43" y1="1.905" x2="12.446" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="12.446" y1="1.905" x2="12.7" y2="1.651" width="0.2032" layer="21" curve="-90"/>
+<wire x1="12.7" y1="1.651" x2="12.7" y2="-1.651" width="0.2032" layer="21"/>
+<wire x1="12.7" y1="-1.651" x2="12.446" y2="-1.905" width="0.2032" layer="21" curve="-90"/>
+<wire x1="12.446" y1="-1.905" x2="11.43" y2="-1.905" width="0.2032" layer="21"/>
+<rectangle x1="-27.94" y1="-5.08" x2="-15.24" y2="5.08" layer="41"/>
+<rectangle x1="15.24" y1="-5.08" x2="27.94" y2="5.08" layer="41"/>
+</package>
+<package name="M3_SCREW_POST">
+<pad name="P$1" x="0" y="0" drill="3.2" diameter="10"/>
+<circle x="0" y="0" radius="7.5" width="0.127" layer="41"/>
+<circle x="0" y="0" radius="7.5" width="0.127" layer="42"/>
+</package>
+<package name="RV170SF_TAIWANA_POT_SW">
+<circle x="0" y="0" radius="10.5" width="0.1" layer="21"/>
+<pad name="WIPER" x="0" y="-10.5" drill="1.6" shape="offset" rot="R90"/>
+<pad name="SIGNAL" x="5.25" y="-9.09" drill="1.6" shape="offset" rot="R90"/>
+<pad name="GND" x="-5.25" y="-9.09" drill="1.6" shape="offset" rot="R90"/>
+<pad name="SW_OUT" x="-10.5" y="0" drill="2.8" shape="long" rot="R90"/>
+<pad name="SW_IN" x="10.5" y="0" drill="2.8" shape="long" rot="R90"/>
+</package>
+</packages>
+<symbols>
+<symbol name="AA_BATTERY">
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<pin name="NEG" x="-7.62" y="0" visible="off" length="short"/>
+<pin name="POS" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+<text x="-6.35" y="5.08" size="1.778" layer="95">BATT</text>
+</symbol>
+<symbol name="M3_SCREW_POST">
+<wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<pin name="ANT" x="0" y="-5.08" length="short" rot="R90"/>
+</symbol>
+<symbol name="P170_BOURNS_POT_SW">
+<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<pin name="GND" x="-7.62" y="5.08" visible="pad" length="short"/>
+<pin name="WIPER" x="-7.62" y="-5.08" visible="pad" length="short"/>
+<pin name="SIGNAL" x="-7.62" y="0" visible="pad" length="short"/>
+<pin name="SW_IN" x="10.16" y="2.54" visible="pad" length="short" rot="R180"/>
+<pin name="SW_OUT" x="10.16" y="-2.54" visible="pad" length="short" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BK-92_MPD_AA_BATT_CLIP" prefix="JP">
+<gates>
+<gate name="BATT" symbol="AA_BATTERY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BK-92_MPD_AA_BATT_CLIP">
+<connects>
+<connect gate="BATT" pin="NEG" pad="NEG NEG@2"/>
+<connect gate="BATT" pin="POS" pad="POS POS@2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="M3_SCREW_POST" prefix="J">
+<gates>
+<gate name="G$1" symbol="M3_SCREW_POST" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="M3_SCREW_POST">
+<connects>
+<connect gate="G$1" pin="ANT" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RV170SF_TAIWANA_POT_SW" prefix="R">
+<gates>
+<gate name="G$1" symbol="P170_BOURNS_POT_SW" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RV170SF_TAIWANA_POT_SW">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SIGNAL" pad="SIGNAL"/>
+<connect gate="G$1" pin="SW_IN" pad="SW_IN"/>
+<connect gate="G$1" pin="SW_OUT" pad="SW_OUT"/>
+<connect gate="G$1" pin="WIPER" pad="WIPER"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12121,8 +12129,8 @@ DIO-10647</description>
 <part name="GND24" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
-<part name="J1" library="PR_Libraries" deviceset="M3_SCREW_POST" device=""/>
-<part name="R1" library="PR_Libraries" deviceset="RV170SF_TAIWANA_POT_SW" device=""/>
+<part name="J1" library="PR_Parts_Library" deviceset="M3_SCREW_POST" device=""/>
+<part name="R1" library="PR_Parts_Library" deviceset="RV170SF_TAIWANA_POT_SW" device=""/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND12" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -12187,8 +12195,8 @@ DIO-10647</description>
 <part name="C6" library="SparkFun-Passives" deviceset="CAP" device="0805"/>
 <part name="R10" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
 <part name="D1" library="SparkFun-DiscreteSemi" deviceset="BAV99" device=""/>
-<part name="JP5" library="PR_Libraries" deviceset="BK-92_MPD_AA_BATT_CLIP" device=""/>
-<part name="JP6" library="PR_Libraries" deviceset="BK-92_MPD_AA_BATT_CLIP" device=""/>
+<part name="JP5" library="PR_Parts_Library" deviceset="BK-92_MPD_AA_BATT_CLIP" device=""/>
+<part name="JP6" library="PR_Parts_Library" deviceset="BK-92_MPD_AA_BATT_CLIP" device=""/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="FB1" library="SparkFun-Passives" deviceset="INDUCTOR" device="0805"/>
 <part name="FB2" library="SparkFun-Passives" deviceset="INDUCTOR" device="0805"/>
@@ -12201,7 +12209,6 @@ DIO-10647</description>
 <part name="U$1" library="adafruit" deviceset="FIDUCIAL" device=""/>
 <part name="U$2" library="adafruit" deviceset="FIDUCIAL" device=""/>
 <part name="U$4" library="adafruit" deviceset="FIDUCIAL" device=""/>
-<part name="U$5" library="PR_Libraries" deviceset="CE32A_FOR_JST" device=""/>
 </parts>
 <sheets>
 <sheet>
