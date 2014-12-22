@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -12762,6 +12762,15 @@ Development Board </text>
 <label x="-20.32" y="53.34" size="1.778" layer="95"/>
 <pinref part="FMHEADER" gate="G$1" pin="3"/>
 </segment>
+<segment>
+<pinref part="ISP" gate="G$1" pin="1"/>
+<pinref part="MCU" gate="G$1" pin="PB1(MISO)"/>
+<wire x1="187.96" y1="129.54" x2="208.28" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="129.54" x2="213.36" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="129.54" x2="208.28" y2="139.7" width="0.1524" layer="91"/>
+<junction x="208.28" y="129.54"/>
+<label x="208.28" y="139.7" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="!SEN" class="0">
 <segment>
@@ -13063,13 +13072,6 @@ Development Board </text>
 <pinref part="R15" gate="G$1" pin="2"/>
 <wire x1="200.66" y1="121.92" x2="200.66" y2="119.38" width="0.1524" layer="91"/>
 <junction x="200.66" y="119.38"/>
-</segment>
-</net>
-<net name="PB1" class="0">
-<segment>
-<pinref part="ISP" gate="G$1" pin="1"/>
-<pinref part="MCU" gate="G$1" pin="PB1(MISO)"/>
-<wire x1="187.96" y1="129.54" x2="213.36" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
