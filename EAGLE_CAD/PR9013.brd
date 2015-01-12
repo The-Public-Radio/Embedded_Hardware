@@ -1372,7 +1372,8 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 &lt;/BODY&gt;&lt;/HTML&gt;</description>
 <packages>
 <package name="R0603">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
+chip</description>
 <wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
 <wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
 <wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
@@ -1381,14 +1382,15 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
 <smd name="1" x="-0.85" y="0" dx="1" dy="1.1" layer="1"/>
 <smd name="2" x="0.85" y="0" dx="1" dy="1.1" layer="1"/>
-<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-0.889" y="0.889" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.889" y="-2.032" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="51"/>
 <rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
 </package>
 <package name="C0603">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
+chip</description>
 <wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
 <wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
 <wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
@@ -1397,8 +1399,8 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
 <smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
 <smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-0.889" y="0.762" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.889" y="-2.032" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
@@ -1551,24 +1553,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </library>
 <library name="adafruit">
 <packages>
-<package name="KMR2">
-<wire x1="-2.1" y1="1.4" x2="2.1" y2="1.4" width="0.127" layer="21"/>
-<wire x1="2.1" y1="1.4" x2="2.1" y2="-1.4" width="0.127" layer="21"/>
-<wire x1="2.1" y1="-1.4" x2="-2.1" y2="-1.4" width="0.127" layer="21"/>
-<wire x1="-2.1" y1="-1.4" x2="-2.1" y2="1.4" width="0.127" layer="21"/>
-<wire x1="-0.5" y1="-0.8" x2="-1.1" y2="-0.2" width="0.127" layer="21" curve="-90"/>
-<wire x1="-1.1" y1="-0.2" x2="-1.1" y2="0.2" width="0.127" layer="21"/>
-<wire x1="-1.1" y1="0.2" x2="-0.5" y2="0.8" width="0.127" layer="21" curve="-90"/>
-<wire x1="-0.5" y1="0.8" x2="0.5" y2="0.8" width="0.127" layer="21"/>
-<wire x1="0.5" y1="0.8" x2="1.1" y2="0.2" width="0.127" layer="21" curve="-90"/>
-<wire x1="1.1" y1="0.2" x2="1.1" y2="-0.2" width="0.127" layer="21"/>
-<wire x1="1.1" y1="-0.2" x2="0.5" y2="-0.8" width="0.127" layer="21" curve="-90"/>
-<wire x1="0.5" y1="-0.8" x2="-0.5" y2="-0.8" width="0.127" layer="21"/>
-<smd name="1" x="2" y="0.8" dx="1" dy="1" layer="1"/>
-<smd name="2" x="2" y="-0.8" dx="1" dy="1" layer="1"/>
-<smd name="4" x="-2" y="-0.8" dx="1" dy="1" layer="1"/>
-<smd name="3" x="-2" y="0.8" dx="1" dy="1" layer="1"/>
-</package>
 <package name="JST-PH-2-SMT-RA">
 <description>2-Pin JST PH Series Right-Angle Connector (+/- for batteries)</description>
 <wire x1="-4" y1="3" x2="4" y2="3" width="0.2032" layer="51"/>
@@ -1738,6 +1722,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pad name="GND" x="-5.25" y="-9.09" drill="1.6" shape="offset" rot="R90"/>
 <pad name="SW_OUT" x="-10.5" y="0" drill="2.8" shape="long" rot="R90"/>
 <pad name="SW_IN" x="10.5" y="0" drill="2.8" shape="long" rot="R90"/>
+</package>
+<package name="C&amp;K_TACTILE_SWITCH">
+<wire x1="0" y1="0" x2="9.5" y2="0" width="0.127" layer="20"/>
+<wire x1="9.5" y1="0" x2="9.5" y2="-6" width="0.127" layer="20"/>
+<wire x1="9.5" y1="-6" x2="0" y2="-6" width="0.127" layer="20"/>
+<wire x1="0" y1="-6" x2="0" y2="0" width="0.127" layer="20"/>
+<smd name="P$1" x="0.8" y="-0.6" dx="1.55" dy="1.3" layer="1"/>
+<smd name="P$3" x="0.8" y="-5.2" dx="1.55" dy="1.3" layer="1"/>
+<smd name="P$4" x="8.7" y="-5.2" dx="1.55" dy="1.3" layer="1"/>
+<smd name="P$2" x="8.7" y="-0.6" dx="1.55" dy="1.3" layer="1"/>
 </package>
 </packages>
 </library>
@@ -1985,7 +1979,6 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="47.549" y="56.704" size="0.4064" layer="27" rot="R90"/>
 <attribute name="NAME" x="43.564" y="61.504" size="1.27" layer="25" rot="R90"/>
 </element>
-<element name="SW1" library="adafruit" package="KMR2" value="SPST_TACT-KMR2" x="55.608" y="59.934" smashed="yes" rot="R315"/>
 <element name="ISP" library="SparkFun-Connectors" package="2X3-NS" value="AVR_SPI_PRG_6NS" x="45.848" y="63.702" smashed="yes">
 <attribute name="NAME" x="42.038" y="66.877" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="42.038" y="59.257" size="1.27" layer="27"/>
@@ -2071,6 +2064,7 @@ design rules under a new name.</description>
 <element name="R6" library="SparkFun-Passives" package="0603-RES" value="" x="39.7" y="52.7" rot="R180"/>
 <element name="C10" library="SparkFun-Passives" package="0603-CAP" value="" x="21.4" y="57.3" rot="R270"/>
 <element name="C11" library="SparkFun-Passives" package="0603-CAP" value="" x="19" y="57.3" rot="R270"/>
+<element name="U$1" library="PR_Parts_Library" package="C&amp;K_TACTILE_SWITCH" value="C&amp;KPTS6465" x="61" y="69" rot="R315"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -2092,7 +2086,6 @@ design rules under a new name.</description>
 <contactref element="C6" pad="2"/>
 <contactref element="FET1" pad="1"/>
 <contactref element="MCU" pad="4"/>
-<contactref element="SW1" pad="2"/>
 <contactref element="ISP" pad="6"/>
 <contactref element="LED1" pad="C"/>
 <contactref element="L1" pad="2"/>
@@ -2168,11 +2161,12 @@ design rules under a new name.</description>
 </polygon>
 <via x="63.35" y="21.7" extent="1-16" drill="0.6"/>
 <via x="50.75" y="32.6" extent="1-16" drill="0.6"/>
-<via x="53.9" y="58.65" extent="1-16" drill="0.6"/>
-<via x="45.4" y="66.65" extent="1-16" drill="0.6"/>
+<via x="32.9" y="67.65" extent="1-16" drill="0.6"/>
 <via x="27.8" y="60.65" extent="1-16" drill="0.6"/>
 <via x="24.8" y="62.15" extent="1-16" drill="0.6"/>
-<wire x1="27.19" y1="56.932" x2="27.2" y2="56.95" width="0" layer="19" extent="1-1"/>
+<contactref element="U$1" pad="P$1"/>
+<wire x1="66.65" y1="44.2" x2="61.14141875" y2="68.01005" width="0" layer="19" extent="1-1"/>
+<wire x1="27.2" y1="56.95" x2="27.19" y2="56.932" width="0" layer="19" extent="1-1"/>
 <wire x1="38.16" y1="2.332" x2="33.1" y2="2.5" width="0" layer="19" extent="1-1"/>
 <wire x1="57.768" y1="6.568" x2="59.384" y2="16.5" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -2564,14 +2558,9 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$11">
 <contactref element="MCU" pad="2"/>
-<contactref element="SW1" pad="1"/>
 <wire x1="49.5302" y1="57.339" x2="48.561" y2="57.339" width="0.254" layer="1"/>
-<wire x1="49.5302" y1="57.339" x2="55.161" y2="57.339" width="0.4064" layer="1"/>
-<wire x1="55.161" y1="57.339" x2="56" y2="56.5" width="0.4064" layer="1"/>
-<wire x1="56" y1="56.5" x2="56.5" y2="56.5" width="0.4064" layer="1"/>
-<wire x1="56.5" y1="56.5" x2="58" y2="58" width="0.4064" layer="1"/>
-<wire x1="58" y1="58" x2="58" y2="58.673365625" width="0.4064" layer="1"/>
-<wire x1="58" y1="58.673365625" x2="57.587896875" y2="59.08546875" width="0.4064" layer="1"/>
+<contactref element="U$1" pad="P$3"/>
+<wire x1="49.5302" y1="57.339" x2="57.888728125" y2="64.75735625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$12">
 <contactref element="R14" pad="2"/>
