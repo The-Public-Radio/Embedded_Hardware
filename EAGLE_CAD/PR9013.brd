@@ -1646,7 +1646,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <library name="PR_Parts_Library">
 <packages>
 <package name="CE32A_FOR_JST">
-<circle x="0" y="0" radius="13.1445" width="0.127" layer="42"/>
 <hole x="-12.3698" y="12.3698" drill="2"/>
 <hole x="12.3698" y="12.3698" drill="2"/>
 <hole x="12.3698" y="-12.3698" drill="2"/>
@@ -1659,7 +1658,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <circle x="12.3698" y="12.3698" radius="5.08" width="0.127" layer="42"/>
 <circle x="12.3698" y="-12.3698" radius="5.08" width="0.127" layer="42"/>
 <circle x="-12.3698" y="-12.3698" radius="5.08" width="0.127" layer="42"/>
-<circle x="0" y="0" radius="13.1445" width="0.127" layer="41"/>
+<circle x="0" y="0" radius="11.5062" width="0.127" layer="20"/>
+<hole x="-12.4968" y="-7.1882" drill="3.2"/>
+<hole x="12.4968" y="-7.1882" drill="3.2"/>
 </package>
 <package name="BK-92_MPD_AA_BATT_CLIP">
 <pad name="NEG@2" x="-16.764" y="0" drill="1.778" shape="long" rot="R180"/>
