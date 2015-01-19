@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -156,26 +156,26 @@
 <wire x1="-27.686" y1="-4.699" x2="-15.748" y2="-4.699" width="0.127" layer="21"/>
 <wire x1="15.748" y1="4.699" x2="27.686" y2="4.699" width="0.127" layer="21"/>
 <wire x1="27.686" y1="-4.699" x2="15.748" y2="-4.699" width="0.127" layer="21"/>
-<wire x1="3.81" y1="3.81" x2="3.81" y2="-3.81" width="0.2032" layer="21"/>
-<wire x1="7.62" y1="2.032" x2="7.62" y2="-2.032" width="1.016" layer="21" style="longdash"/>
-<wire x1="5.588" y1="0" x2="9.652" y2="0" width="1.016" layer="21"/>
-<wire x1="-12.7" y1="3.556" x2="-12.7" y2="-3.556" width="0.2032" layer="21"/>
-<wire x1="-12.7" y1="-3.556" x2="-12.446" y2="-3.81" width="0.2032" layer="21" curve="90"/>
-<wire x1="-12.446" y1="-3.81" x2="3.81" y2="-3.81" width="0.2032" layer="21"/>
-<wire x1="-12.7" y1="3.556" x2="-12.446" y2="3.81" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-12.446" y1="3.81" x2="3.81" y2="3.81" width="0.2032" layer="21"/>
-<wire x1="3.81" y1="3.81" x2="11.176" y2="3.81" width="0.2032" layer="21"/>
-<wire x1="11.176" y1="3.81" x2="11.43" y2="3.556" width="0.2032" layer="21" curve="-90"/>
-<wire x1="11.43" y1="3.556" x2="11.43" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="11.43" y1="1.905" x2="11.43" y2="-1.905" width="0.2032" layer="21"/>
-<wire x1="11.43" y1="-1.905" x2="11.43" y2="-3.556" width="0.2032" layer="21"/>
-<wire x1="11.43" y1="-3.556" x2="11.176" y2="-3.81" width="0.2032" layer="21" curve="-90"/>
-<wire x1="11.176" y1="-3.81" x2="3.81" y2="-3.81" width="0.2032" layer="21"/>
-<wire x1="11.43" y1="1.905" x2="12.446" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="12.446" y1="1.905" x2="12.7" y2="1.651" width="0.2032" layer="21" curve="-90"/>
-<wire x1="12.7" y1="1.651" x2="12.7" y2="-1.651" width="0.2032" layer="21"/>
-<wire x1="12.7" y1="-1.651" x2="12.446" y2="-1.905" width="0.2032" layer="21" curve="-90"/>
-<wire x1="12.446" y1="-1.905" x2="11.43" y2="-1.905" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="3.81" x2="3.81" y2="-3.81" width="0.2032" layer="26"/>
+<wire x1="7.62" y1="2.032" x2="7.62" y2="-2.032" width="1.016" layer="26" style="longdash"/>
+<wire x1="5.588" y1="0" x2="9.652" y2="0" width="1.016" layer="26"/>
+<wire x1="-12.7" y1="3.556" x2="-12.7" y2="-3.556" width="0.2032" layer="26"/>
+<wire x1="-12.7" y1="-3.556" x2="-12.446" y2="-3.81" width="0.2032" layer="26" curve="90"/>
+<wire x1="-12.446" y1="-3.81" x2="3.81" y2="-3.81" width="0.2032" layer="26"/>
+<wire x1="-12.7" y1="3.556" x2="-12.446" y2="3.81" width="0.2032" layer="26" curve="-90"/>
+<wire x1="-12.446" y1="3.81" x2="3.81" y2="3.81" width="0.2032" layer="26"/>
+<wire x1="3.81" y1="3.81" x2="11.176" y2="3.81" width="0.2032" layer="26"/>
+<wire x1="11.176" y1="3.81" x2="11.43" y2="3.556" width="0.2032" layer="26" curve="-90"/>
+<wire x1="11.43" y1="3.556" x2="11.43" y2="1.905" width="0.2032" layer="26"/>
+<wire x1="11.43" y1="1.905" x2="11.43" y2="-1.905" width="0.2032" layer="26"/>
+<wire x1="11.43" y1="-1.905" x2="11.43" y2="-3.556" width="0.2032" layer="26"/>
+<wire x1="11.43" y1="-3.556" x2="11.176" y2="-3.81" width="0.2032" layer="26" curve="-90"/>
+<wire x1="11.176" y1="-3.81" x2="3.81" y2="-3.81" width="0.2032" layer="26"/>
+<wire x1="11.43" y1="1.905" x2="12.446" y2="1.905" width="0.2032" layer="26"/>
+<wire x1="12.446" y1="1.905" x2="12.7" y2="1.651" width="0.2032" layer="26" curve="-90"/>
+<wire x1="12.7" y1="1.651" x2="12.7" y2="-1.651" width="0.2032" layer="26"/>
+<wire x1="12.7" y1="-1.651" x2="12.446" y2="-1.905" width="0.2032" layer="26" curve="-90"/>
+<wire x1="12.446" y1="-1.905" x2="11.43" y2="-1.905" width="0.2032" layer="26"/>
 <rectangle x1="-27.94" y1="-5.08" x2="-15.24" y2="5.08" layer="41"/>
 <rectangle x1="15.24" y1="-5.08" x2="27.94" y2="5.08" layer="41"/>
 </package>
@@ -552,14 +552,14 @@ MSOP&lt;br&gt;
 </symbol>
 <symbol name="ABS25XTAL">
 <wire x1="-2.54" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="94"/>
-<pin name="P$1" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
+<pin name="P$1" x="0" y="-5.08" visible="off" length="short" swaplevel="1" rot="R90"/>
 <wire x1="0" y1="-1.27" x2="2.54" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="-3.175" y1="-0.635" x2="3.175" y2="-0.635" width="0.254" layer="94"/>
 <wire x1="3.175" y1="-0.635" x2="3.175" y2="0.635" width="0.254" layer="94"/>
 <wire x1="3.175" y1="0.635" x2="-3.175" y2="0.635" width="0.254" layer="94"/>
 <wire x1="-3.175" y1="0.635" x2="-3.175" y2="-0.635" width="0.254" layer="94"/>
 <wire x1="2.54" y1="1.27" x2="0" y2="1.27" width="0.254" layer="94"/>
-<pin name="P$4" x="0" y="5.08" visible="off" length="short" rot="R270"/>
+<pin name="P$4" x="0" y="5.08" visible="off" length="short" swaplevel="1" rot="R270"/>
 <wire x1="0" y1="1.27" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.254" layer="94"/>
 <wire x1="0" y1="-2.54" x2="0" y2="-1.27" width="0.254" layer="94"/>
@@ -879,7 +879,7 @@ MFG# UUD1C221MCL1GS</description>
 <description>4PIN 32.768 Xtal 
 MFG# ABS25-32.768KHZ-T</description>
 <gates>
-<gate name="G$1" symbol="ABS25XTAL" x="0" y="-2.54"/>
+<gate name="G$1" symbol="ABS25XTAL" x="0" y="-2.54" swaplevel="1"/>
 </gates>
 <devices>
 <device name="" package="ABS25XTAL">
