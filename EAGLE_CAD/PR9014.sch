@@ -8828,14 +8828,14 @@ DIO-10647</description>
 <smd name="P$2" x="-0.1" y="-2.4" dx="3" dy="1.5" layer="1" rot="R90"/>
 </package>
 <package name="ABS25XTAL">
-<smd name="P$4" x="-2.84" y="1.54" dx="1.3" dy="1.9" layer="1"/>
-<smd name="P$3" x="2.68" y="1.54" dx="1.3" dy="1.9" layer="1"/>
-<smd name="P$2" x="2.68" y="-1.74" dx="1.3" dy="1.9" layer="1"/>
-<smd name="P$1" x="-2.84" y="-1.74" dx="1.3" dy="1.9" layer="1"/>
-<wire x1="-4.1" y1="1.8" x2="-4.1" y2="-2.1" width="0.127" layer="21"/>
-<wire x1="-4.1" y1="1.8" x2="3.9" y2="1.8" width="0.127" layer="21"/>
-<wire x1="-4.1" y1="-2.1" x2="3.9" y2="-2.1" width="0.127" layer="21"/>
-<wire x1="3.9" y1="-2.1" x2="3.9" y2="1.8" width="0.127" layer="21"/>
+<smd name="P$4" x="-2.75" y="1.6" dx="1.3" dy="1.9" layer="1"/>
+<smd name="P$3" x="2.75" y="1.6" dx="1.3" dy="1.9" layer="1"/>
+<smd name="P$2" x="2.75" y="-1.6" dx="1.3" dy="1.9" layer="1"/>
+<smd name="P$1" x="-2.75" y="-1.6" dx="1.3" dy="1.9" layer="1"/>
+<wire x1="-4.1" y1="1.9" x2="-4.1" y2="-1.9" width="0.127" layer="21"/>
+<wire x1="-4.1" y1="1.9" x2="3.9" y2="1.9" width="0.127" layer="21"/>
+<wire x1="-4.1" y1="-1.9" x2="3.9" y2="-1.9" width="0.127" layer="21"/>
+<wire x1="3.9" y1="-1.9" x2="3.9" y2="1.9" width="0.127" layer="21"/>
 </package>
 <package name="SI470X">
 <wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="51"/>
