@@ -8490,7 +8490,7 @@ MSOP&lt;br&gt;
 <circle x="0" y="0" radius="11.5062" width="0.127" layer="20"/>
 <hole x="-12.4968" y="-7.1882" drill="3.2"/>
 <hole x="12.4968" y="-7.1882" drill="3.2"/>
-<pad name="LID_GND" x="-12.3698" y="-12.3698" drill="2"/>
+<pad name="LID_GND" x="-12.3698" y="-12.3698" drill="2" diameter="5"/>
 </package>
 </packages>
 <symbols>

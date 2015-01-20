@@ -1523,7 +1523,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <circle x="0" y="0" radius="11.5062" width="0.127" layer="20"/>
 <hole x="-12.4968" y="-7.1882" drill="3.2"/>
 <hole x="12.4968" y="-7.1882" drill="3.2"/>
-<pad name="LID_GND" x="-12.3698" y="-12.3698" drill="2"/>
+<pad name="LID_GND" x="-12.3698" y="-12.3698" drill="2" diameter="5"/>
 </package>
 <package name="BK-92_MPD_AA_BATT_CLIP">
 <pad name="NEG@2" x="-16.764" y="0" drill="1.778" shape="long" rot="R180"/>
@@ -2302,7 +2302,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="24.4" y="59.45" extent="1-16" drill="0.6"/>
 <via x="22.8" y="62.55" extent="1-16" drill="0.6"/>
 <via x="36.5" y="51.65" extent="1-16" drill="0.6"/>
-<wire x1="24.25" y1="52" x2="22.8" y2="52" width="0.8128" layer="1"/>
+<wire x1="24.25" y1="52" x2="22.8" y2="52" width="0.4064" layer="1"/>
 <wire x1="22.8" y1="52" x2="22.2" y2="52.6" width="0.8128" layer="1"/>
 <contactref element="SW1" pad="P$2"/>
 <via x="50.2" y="59.15" extent="1-16" drill="0.6"/>
@@ -2739,18 +2739,18 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="D1" pad="3"/>
 <contactref element="C2" pad="1"/>
 <contactref element="C3" pad="1"/>
-<wire x1="17.677815625" y1="42.72218125" x2="22.62218125" y2="42.72218125" width="1.016" layer="1"/>
+<wire x1="17.677815625" y1="42.72218125" x2="22.62218125" y2="42.72218125" width="0.8128" layer="1"/>
 <wire x1="9.5" y1="35" x2="9.955634375" y2="35" width="0.8128" layer="1"/>
 <wire x1="9.955634375" y1="35" x2="17.677815625" y2="42.72218125" width="0.8128" layer="1"/>
 <wire x1="25.55" y1="53.2" x2="25.55" y2="52" width="0.8128" layer="1"/>
-<wire x1="22.62218125" y1="42.72218125" x2="25.55" y2="45.65" width="1.016" layer="1"/>
-<wire x1="25.55" y1="45.65" x2="25.55" y2="52" width="1.016" layer="1"/>
+<wire x1="22.62218125" y1="42.72218125" x2="25.55" y2="45.65" width="0.8128" layer="1"/>
+<wire x1="25.55" y1="45.65" x2="25.55" y2="52" width="0.8128" layer="1"/>
 </signal>
 <signal name="N$16" class="1">
 <contactref element="L1" pad="1"/>
 <contactref element="FB1" pad="1"/>
 <contactref element="C3" pad="2"/>
-<wire x1="24.25" y1="54.4" x2="24.25" y2="53.2" width="0.8128" layer="1"/>
+<wire x1="24.25" y1="54.4" x2="24.25" y2="53.2" width="0.4064" layer="1"/>
 <wire x1="24.25" y1="54.4" x2="22.2" y2="54.4" width="0.8128" layer="1"/>
 </signal>
 <signal name="N$17">
@@ -2815,7 +2815,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U$1" pad="LID_GND"/>
 <contactref element="R10" pad="2"/>
 <wire x1="30.75" y1="17.6" x2="25.6198" y2="22.6302" width="0.4064" layer="1"/>
-<wire x1="22.6302" y1="22.6302" x2="25.6198" y2="22.6302" width="0" layer="19" extent="1-1"/>
+<wire x1="25.6198" y1="22.6302" x2="22.6302" y2="22.6302" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$10">
 <contactref element="FMIC" pad="17"/>
