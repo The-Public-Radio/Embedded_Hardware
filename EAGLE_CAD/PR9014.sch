@@ -9713,7 +9713,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="TP15" library="testpad" deviceset="TP" device="TP20R" value="TPTP20R"/>
 <part name="TP16" library="testpad" deviceset="TP" device="TP20R" value="TPTP20R"/>
 <part name="TP17" library="testpad" deviceset="TP" device="TP20R" value="TPTP20R"/>
-<part name="TP18" library="testpad" deviceset="TP" device="TP20R" value="TPTP20R"/>
 </parts>
 <sheets>
 <sheet>
@@ -9921,7 +9920,6 @@ Development Board </text>
 <instance part="TP15" gate="G$1" x="76.2" y="99.06"/>
 <instance part="TP16" gate="G$1" x="86.36" y="99.06"/>
 <instance part="TP17" gate="G$1" x="96.52" y="99.06"/>
-<instance part="TP18" gate="G$1" x="104.14" y="99.06"/>
 </instances>
 <busses>
 </busses>
@@ -10542,11 +10540,6 @@ Development Board </text>
 <wire x1="7.62" y1="33.02" x2="12.7" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="33.02" x2="7.62" y2="33.02" width="0.1524" layer="91"/>
 <label x="-20.32" y="40.64" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<pinref part="TP18" gate="G$1" pin="TP"/>
-<wire x1="104.14" y1="96.52" x2="104.14" y2="93.98" width="0.1524" layer="91"/>
-<label x="104.14" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$16" class="1">
