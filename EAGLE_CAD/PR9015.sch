@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -8492,6 +8492,23 @@ MSOP&lt;br&gt;
 <hole x="12.4968" y="-7.1882" drill="3.2"/>
 <pad name="LID_GND" x="-12.3698" y="-12.3698" drill="2" diameter="5"/>
 </package>
+<package name="C0402_WORTHINGTON">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
+chip</description>
+<wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
+<wire x1="0.245" y1="-0.224" x2="-0.245" y2="-0.224" width="0.1524" layer="51"/>
+<wire x1="-1.473" y1="0.483" x2="1.473" y2="0.483" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.483" x2="1.473" y2="-0.483" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.483" x2="-1.473" y2="-0.483" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.483" x2="-1.473" y2="0.483" width="0.0508" layer="39"/>
+<smd name="1" x="-0.5071" y="0" dx="0.5842" dy="0.7112" layer="1"/>
+<smd name="2" x="0.5071" y="0" dx="0.5842" dy="0.7112" layer="1"/>
+<text x="-0.635" y="0.762" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
+<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+</package>
 </packages>
 <symbols>
 <symbol name="AA_BATTERY">
@@ -8657,6 +8674,14 @@ MSOP&lt;br&gt;
 <wire x1="10.16" y1="7.62" x2="7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="5.08" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+</symbol>
+<symbol name="CAP_SMT">
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<pin name="1" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<text x="1.016" y="0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.016" y="-4.191" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -8888,6 +8913,22 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 </technologies>
 </device>
 <device name="QZFCE_32X32" package="CE32A_FOR_JST">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CAP_SMT">
+<gates>
+<gate name="G$1" symbol="CAP_SMT" x="0" y="0" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="C0402_WORTHINGTON">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -9612,7 +9653,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND27" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R11" library="resistor" deviceset="R-US_" device="R0402" value="40.2K"/>
 <part name="R13" library="resistor" deviceset="R-US_" device="R0402" value="40.2K"/>
-<part name="C13" library="resistor" deviceset="C-US" device="C0402" value=".033uf"/>
+<part name="C13" library="PR_Parts_Library" deviceset="CAP_SMT" device="" value=".033uf"/>
 <part name="C16" library="resistor" deviceset="C-US" device="C0402" value=".033uf"/>
 <part name="GND26" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND28" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
