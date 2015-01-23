@@ -9654,7 +9654,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="R11" library="resistor" deviceset="R-US_" device="R0402" value="40.2K"/>
 <part name="R13" library="resistor" deviceset="R-US_" device="R0402" value="40.2K"/>
 <part name="C13" library="PR_Parts_Library" deviceset="CAP_SMT" device="" value=".033uf"/>
-<part name="C16" library="resistor" deviceset="C-US" device="C0402" value=".033uf"/>
+<part name="C16" library="PR_Parts_Library" deviceset="CAP_SMT" device="" value=".033uf"/>
 <part name="GND26" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND28" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -9690,9 +9690,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="L1" library="SparkFun-Passives" deviceset="INDUCTOR" device="0805" value="180nH"/>
 <part name="GND21" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND16" library="SparkFun" deviceset="GND" device=""/>
-<part name="C12" library="resistor" deviceset="C-US" device="C0402" value=".1uf"/>
-<part name="C19" library="resistor" deviceset="C-US" device="C0402" value=".1uf"/>
-<part name="C20" library="resistor" deviceset="C-US" device="C0402" value="100pf"/>
+<part name="C12" library="PR_Parts_Library" deviceset="CAP_SMT" device="" value=".1uf"/>
+<part name="C19" library="PR_Parts_Library" deviceset="CAP_SMT" device="" value=".1uf"/>
+<part name="C20" library="PR_Parts_Library" deviceset="CAP_SMT" device="" value="100pf"/>
 <part name="R10" library="resistor" deviceset="R-US_" device="R0805"/>
 <part name="D1" library="SparkFun-DiscreteSemi" deviceset="BAV99" device=""/>
 <part name="JP5" library="PR_Parts_Library" deviceset="BK-92_MPD_AA_BATT_CLIP" device=""/>
@@ -9705,11 +9705,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="JST_CONN" library="adafruit" deviceset="JST_2PIN" device="-SMT-RA"/>
 <part name="C2" library="resistor" deviceset="C-US" device="C0402"/>
-<part name="C3" library="resistor" deviceset="C-US" device="C0402" value="47p"/>
-<part name="C4" library="resistor" deviceset="C-US" device="C0402" value="22pF"/>
-<part name="C5" library="resistor" deviceset="C-US" device="C0402" value="22p"/>
-<part name="C7" library="resistor" deviceset="C-US" device="C0402" value="22n"/>
-<part name="C8" library="resistor" deviceset="C-US" device="C0402" value=".1u"/>
+<part name="C3" library="PR_Parts_Library" deviceset="CAP_SMT" device="" value="47p"/>
+<part name="C4" library="PR_Parts_Library" deviceset="CAP_SMT" device="" value="22pF"/>
+<part name="C5" library="PR_Parts_Library" deviceset="CAP_SMT" device="" value="22p"/>
+<part name="C7" library="PR_Parts_Library" deviceset="CAP_SMT" device="" value="22n"/>
+<part name="C8" library="PR_Parts_Library" deviceset="CAP_SMT" device="" value=".1u"/>
 <part name="R2" library="resistor" deviceset="R-US_" device="R0402" value="330"/>
 <part name="R4" library="resistor" deviceset="R-US_" device="R0402" value="330"/>
 <part name="R5" library="resistor" deviceset="R-US_" device="R0402" value="330"/>
@@ -9717,8 +9717,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="R9" library="resistor" deviceset="R-US_" device="R0402" value="4.7k"/>
 <part name="R7" library="resistor" deviceset="R-US_" device="R0402" value="4.7k"/>
 <part name="R6" library="resistor" deviceset="R-US_" device="R0402" value="10k"/>
-<part name="C10" library="resistor" deviceset="C-US" device="C0402" value="22n"/>
-<part name="C11" library="resistor" deviceset="C-US" device="C0402" value=".1u"/>
+<part name="C10" library="PR_Parts_Library" deviceset="CAP_SMT" device="" value="22n"/>
+<part name="C11" library="PR_Parts_Library" deviceset="CAP_SMT" device="" value=".1u"/>
 <part name="SW1" library="PR_Parts_Library" deviceset="C&amp;K_PTS645" device=""/>
 <part name="C1" library="PR_Parts_Library" deviceset="NICHICON_SERIESUD" device="" value="220uF"/>
 <part name="TP1" library="testpad" deviceset="TP" device="TP20R" value="TPTP20R"/>
@@ -9746,8 +9746,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="C18" library="resistor" deviceset="C-US" device="C0603" value="10uF"/>
 <part name="C14" library="resistor" deviceset="C-US" device="C0603" value="10uF"/>
 <part name="C15" library="resistor" deviceset="C-US" device="C0603" value="10uF"/>
-<part name="C17" library="resistor" deviceset="C-US" device="C0402" value="1uf"/>
-<part name="C9" library="resistor" deviceset="C-US" device="C0402" value="1uF"/>
+<part name="C17" library="PR_Parts_Library" deviceset="CAP_SMT" device="" value="1uf"/>
+<part name="C9" library="PR_Parts_Library" deviceset="CAP_SMT" device="" value="1uF"/>
 <part name="FET2" library="PR_Parts_Library" deviceset="AO3435" device=""/>
 <part name="U$1" library="PR_Parts_Library" deviceset="CE32A_FOR_JST" device=""/>
 <part name="TP14" library="testpad" deviceset="TP" device="TP20R" value="TPTP20R"/>
