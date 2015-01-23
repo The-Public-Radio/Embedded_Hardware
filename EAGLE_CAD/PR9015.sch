@@ -478,6 +478,41 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <text x="-0.762" y="2.921" size="0.4064" layer="25">&gt;Name</text>
 <pad name="1" x="2.5019" y="0" drill="0.8128" diameter="1.651"/>
 </package>
+<package name="SRN6045">
+<smd name="1" x="-2.175" y="-0.175" dx="6" dy="2.5" layer="1" rot="R90"/>
+<smd name="2" x="2.125" y="-0.175" dx="6" dy="2.5" layer="1" rot="R90"/>
+<wire x1="-2.175" y1="-3.175" x2="-3.175" y2="-2.175" width="0.127" layer="51"/>
+<wire x1="-3.175" y1="-2.175" x2="-3.175" y2="1.825" width="0.127" layer="51"/>
+<wire x1="-3.175" y1="1.825" x2="-2.175" y2="2.825" width="0.127" layer="51"/>
+<wire x1="-2.175" y1="2.825" x2="2.125" y2="2.825" width="0.127" layer="51"/>
+<wire x1="2.125" y1="2.825" x2="3.125" y2="1.825" width="0.127" layer="51"/>
+<wire x1="3.125" y1="1.825" x2="3.125" y2="-2.175" width="0.127" layer="51"/>
+<wire x1="3.125" y1="-2.175" x2="2.125" y2="-3.175" width="0.127" layer="51"/>
+<wire x1="2.125" y1="-3.175" x2="-2.175" y2="-3.175" width="0.127" layer="51"/>
+<text x="-4.175" y="3.825" size="1.27" layer="25">&gt;NAME</text>
+<text x="-4.175" y="-5.175" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="SDR0403">
+<description>Footprint for Bourns SDR0403 family inductors</description>
+<smd name="P$1" x="-1.65" y="0" dx="4.5" dy="1.8" layer="1" rot="R90"/>
+<smd name="P$2" x="1.65" y="0" dx="4.5" dy="1.8" layer="1" rot="R90"/>
+<wire x1="-0.5" y1="2" x2="0.5" y2="2" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="-2" x2="0.5" y2="-2" width="0.127" layer="21"/>
+<text x="-0.762" y="-0.254" size="0.4064" layer="27">&gt;VALUE</text>
+<text x="-0.889" y="1.016" size="0.4064" layer="25">&gt;NAME</text>
+</package>
+<package name="INDUCTOR-SRP4020">
+<smd name="P$1" x="-2.05" y="0" dx="1.5" dy="1.9" layer="1" rot="R90"/>
+<smd name="P$2" x="2.05" y="0" dx="1.5" dy="1.9" layer="1" rot="R90"/>
+<wire x1="-2" y1="2" x2="2" y2="2" width="0.127" layer="21"/>
+<wire x1="2" y1="-2" x2="-2" y2="-2" width="0.127" layer="21"/>
+<wire x1="-2" y1="2" x2="-2" y2="1.5" width="0.127" layer="21"/>
+<wire x1="2" y1="2" x2="2" y2="1.5" width="0.127" layer="21"/>
+<wire x1="2" y1="-2" x2="2" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-2" y1="-2" x2="-2" y2="-1.5" width="0.127" layer="21"/>
+<text x="-2.032" y="2.286" size="0.8128" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-2.032" y="-3.048" size="0.8128" layer="25" font="vector" ratio="15">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="INDUCTOR">
@@ -497,8 +532,10 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 </symbols>
 <devicesets>
 <deviceset name="INDUCTOR" prefix="L" uservalue="yes">
-<description>&lt;b&gt;Inductors&lt;/b&gt;
-Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly between part numbers.</description>
+<description>&lt;b&gt;Inductors&lt;/b&gt;&lt;p&gt;
+Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly between part numbers.&lt;br&gt;
+SRN6045- 33uH, 20% 1.4A&lt;BR&gt;
+SDR0403-560KL - 56uH, 10%, 500mA RMS/740mA peak</description>
 <gates>
 <gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
 </gates>
@@ -557,13 +594,16 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 <technology name=""/>
 </technologies>
 </device>
-<device name="CR75" package="CR75">
+<device name="68UH-1A" package="CR75">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="NDUC-09739"/>
+<attribute name="VALUE" value="68uH"/>
+</technology>
 </technologies>
 </device>
 <device name="1210" package="1210">
@@ -701,6 +741,51 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 <technology name=""/>
 </technologies>
 </device>
+<device name="BOURNS_SRN6045" package="SRN6045">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="NDUC-11627"/>
+<attribute name="VALUE" value="33uH"/>
+</technology>
+</technologies>
+</device>
+<device name="SDR0403-560KL" package="SDR0403">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DIST_ID" value="SDR0403-560KLCT-ND"/>
+<attribute name="VALUE" value="56uH"/>
+</technology>
+</technologies>
+</device>
+<device name="30OHM,1.8A" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-07859"/>
+</technology>
+</technologies>
+</device>
+<device name="" package="INDUCTOR-SRP4020">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 </devicesets>
@@ -714,7 +799,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <packages>
 </packages>
 <symbols>
-<symbol name="VCC2">
+<symbol name="VCC">
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
 <text x="-1.016" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
@@ -730,7 +815,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <deviceset name="VCC" prefix="SUPPLY">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
-<gate name="1" symbol="VCC2" x="0" y="0"/>
+<gate name="G$1" symbol="VCC" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -900,6 +985,21 @@ We've spent an enormous amount of time creating and checking these footprints an
 <rectangle x1="4.826" y1="2.286" x2="5.334" y2="2.794" layer="51"/>
 <rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
 </package>
+<package name="2X3_TEST_POINTS">
+<pad name="1" x="-2.54" y="-1.27" drill="0.508" stop="no"/>
+<pad name="2" x="-2.54" y="1.27" drill="0.508" stop="no"/>
+<pad name="3" x="0" y="-1.27" drill="0.508" stop="no"/>
+<pad name="4" x="0" y="1.27" drill="0.508" stop="no"/>
+<pad name="5" x="2.54" y="-1.27" drill="0.508" stop="no"/>
+<pad name="6" x="2.54" y="1.27" drill="0.508" stop="no"/>
+<wire x1="-2.8956" y1="-2.0574" x2="-2.2098" y2="-2.0574" width="0.2032" layer="21"/>
+<circle x="-2.54" y="1.27" radius="0.61065625" width="0" layer="29"/>
+<circle x="0" y="1.27" radius="0.61065625" width="0" layer="29"/>
+<circle x="2.54" y="1.27" radius="0.61065625" width="0" layer="29"/>
+<circle x="-2.54" y="-1.27" radius="0.61065625" width="0" layer="29"/>
+<circle x="0" y="-1.27" radius="0.61065625" width="0" layer="29"/>
+<circle x="2.54" y="-1.27" radius="0.61065625" width="0" layer="29"/>
+</package>
 </packages>
 <symbols>
 <symbol name="AVR_SPI_PROGRAMMER_6">
@@ -926,7 +1026,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <devicesets>
 <deviceset name="AVR_SPI_PRG_6" prefix="J">
 <description>&lt;b&gt;AVR ISP 6 Pin&lt;/b&gt;
-This is the reduced ISP connector for AVR programming. Common on Arduino. This footprint will take up less PCB space and can be used with a 10-pin to 6-pin adapter such as SKU: BOB-08508</description>
+This is the reduced ISP connector for AVR programming. Common on Arduino. This footprint will take up less PCB space and can be used with a 10-pin to 6-pin adapter such as SKU: BOB-08508
+
+&lt;b&gt;**Special note about "TEST_POINT" package.&lt;/b&gt; The stop mask is on the top side, so if you want your programming test points to be on the bottom of your board, make sure to place this package on the bottom side of the board. This also ensure that the orientation to program from the bottom side will be correct.</description>
 <gates>
 <gate name="G$1" symbol="AVR_SPI_PROGRAMMER_6" x="0" y="0"/>
 </gates>
@@ -971,6 +1073,19 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </technologies>
 </device>
 <device name="2X3_LOCK" package="2X3_LOCK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TESTPOINTS" package="2X3_TEST_POINTS">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -8683,6 +8798,21 @@ chip</description>
 <text x="1.016" y="0.635" size="1.778" layer="95">&gt;NAME</text>
 <text x="1.016" y="-4.191" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="RES_SMT">
+<wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="-1.524" y1="-1.016" x2="-0.889" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="-0.889" y1="1.016" x2="-0.254" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="-0.254" y1="-1.016" x2="0.381" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="0.381" y1="1.016" x2="1.016" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="1.016" y1="-1.016" x2="1.651" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="1.651" y1="1.016" x2="2.286" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="2.286" y1="-1.016" x2="2.54" y2="0" width="0.2032" layer="94"/>
+<text x="-3.81" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="BK-92_MPD_AA_BATT_CLIP" prefix="JP">
@@ -8922,6 +9052,22 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 <deviceset name="CAP_SMT">
 <gates>
 <gate name="G$1" symbol="CAP_SMT" x="0" y="0" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="C0402_WORTHINGTON">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RES_SMT" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="RES_SMT" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="C0402_WORTHINGTON">
@@ -9651,8 +9797,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="AMP" library="PR_Parts_Library" deviceset="TPA2005D1" device="DGN"/>
 <part name="GND27" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R11" library="resistor" deviceset="R-US_" device="R0402" value="40.2K"/>
-<part name="R13" library="resistor" deviceset="R-US_" device="R0402" value="40.2K"/>
+<part name="R11" library="PR_Parts_Library" deviceset="RES_SMT" device="" value="40.2K"/>
+<part name="R13" library="PR_Parts_Library" deviceset="RES_SMT" device="" value="40.2K"/>
 <part name="C13" library="PR_Parts_Library" deviceset="CAP_SMT" device="" value=".033uf"/>
 <part name="C16" library="PR_Parts_Library" deviceset="CAP_SMT" device="" value=".033uf"/>
 <part name="GND26" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -9663,7 +9809,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
 <part name="GND29" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R12" library="resistor" deviceset="R-US_" device="R0402" value="10K"/>
+<part name="R12" library="PR_Parts_Library" deviceset="RES_SMT" device="" value="10K"/>
 <part name="GND24" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="J1" library="PR_Parts_Library" deviceset="M3_SCREW_POST" device=""/>
@@ -9685,7 +9831,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND30" library="SparkFun" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND32" library="SparkFun" deviceset="GND" device=""/>
-<part name="R14" library="resistor" deviceset="R-US_" device="R0402" value="1K"/>
+<part name="R14" library="PR_Parts_Library" deviceset="RES_SMT" device="" value="1K"/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="L1" library="SparkFun-Passives" deviceset="INDUCTOR" device="0805" value="180nH"/>
 <part name="GND21" library="SparkFun" deviceset="GND" device=""/>
@@ -9701,7 +9847,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="FB1" library="resistor" deviceset="R-US_" device="R0402"/>
 <part name="FB2" library="SparkFun-Passives" deviceset="INDUCTOR" device="0805"/>
 <part name="FB3" library="SparkFun-Passives" deviceset="INDUCTOR" device="0805"/>
-<part name="R15" library="resistor" deviceset="R-US_" device="R0402" value="10K"/>
+<part name="R15" library="PR_Parts_Library" deviceset="RES_SMT" device="" value="10K"/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="JST_CONN" library="adafruit" deviceset="JST_2PIN" device="-SMT-RA"/>
 <part name="C2" library="resistor" deviceset="C-US" device="C0402"/>
@@ -9710,12 +9856,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="C5" library="PR_Parts_Library" deviceset="CAP_SMT" device="" value="22p"/>
 <part name="C7" library="PR_Parts_Library" deviceset="CAP_SMT" device="" value="22n"/>
 <part name="C8" library="PR_Parts_Library" deviceset="CAP_SMT" device="" value=".1u"/>
-<part name="R2" library="resistor" deviceset="R-US_" device="R0402" value="330"/>
-<part name="R4" library="resistor" deviceset="R-US_" device="R0402" value="330"/>
-<part name="R5" library="resistor" deviceset="R-US_" device="R0402" value="330"/>
-<part name="R8" library="resistor" deviceset="R-US_" device="R0402" value="4.7k"/>
-<part name="R9" library="resistor" deviceset="R-US_" device="R0402" value="4.7k"/>
-<part name="R7" library="resistor" deviceset="R-US_" device="R0402" value="4.7k"/>
+<part name="R2" library="PR_Parts_Library" deviceset="RES_SMT" device="" value="330"/>
+<part name="R4" library="PR_Parts_Library" deviceset="RES_SMT" device="" value="330"/>
+<part name="R5" library="PR_Parts_Library" deviceset="RES_SMT" device="" value="330"/>
+<part name="R8" library="PR_Parts_Library" deviceset="RES_SMT" device="" value="4.7k"/>
+<part name="R9" library="PR_Parts_Library" deviceset="RES_SMT" device="" value="4.7k"/>
+<part name="R7" library="PR_Parts_Library" deviceset="RES_SMT" device="" value="4.7k"/>
 <part name="R6" library="resistor" deviceset="R-US_" device="R0402" value="10k"/>
 <part name="C10" library="PR_Parts_Library" deviceset="CAP_SMT" device="" value="22n"/>
 <part name="C11" library="PR_Parts_Library" deviceset="CAP_SMT" device="" value=".1u"/>
@@ -9804,7 +9950,7 @@ Development Board </text>
 <instance part="GND17" gate="1" x="91.44" y="60.96" rot="R90"/>
 <instance part="GND20" gate="1" x="91.44" y="66.04" rot="R90"/>
 <instance part="GND9" gate="1" x="27.94" y="15.24"/>
-<instance part="SUPPLY5" gate="1" x="10.16" y="73.66"/>
+<instance part="SUPPLY5" gate="G$1" x="10.16" y="73.66"/>
 <instance part="AMP" gate="G$1" x="172.72" y="40.64"/>
 <instance part="GND27" gate="1" x="167.64" y="22.86"/>
 <instance part="R11" gate="G$1" x="147.32" y="40.64" smashed="yes">
@@ -9847,17 +9993,17 @@ Development Board </text>
 <instance part="GND12" gate="1" x="45.72" y="124.46"/>
 <instance part="GND3" gate="1" x="-27.94" y="129.54"/>
 <instance part="MCU" gate="G$1" x="175.26" y="124.46"/>
-<instance part="SUPPLY8" gate="1" x="154.94" y="132.08"/>
+<instance part="SUPPLY8" gate="G$1" x="154.94" y="132.08"/>
 <instance part="GND25" gate="1" x="154.94" y="116.84"/>
 <instance part="GND23" gate="1" x="139.7" y="121.92"/>
 <instance part="GND22" gate="1" x="129.54" y="121.92"/>
-<instance part="SUPPLY6" gate="1" x="129.54" y="139.7"/>
-<instance part="SUPPLY7" gate="1" x="139.7" y="139.7"/>
+<instance part="SUPPLY6" gate="G$1" x="129.54" y="139.7"/>
+<instance part="SUPPLY7" gate="G$1" x="139.7" y="139.7"/>
 <instance part="GND31" gate="1" x="226.06" y="106.68"/>
 <instance part="ISP" gate="G$1" x="220.98" y="127"/>
 <instance part="LED1" gate="G$1" x="205.74" y="101.6"/>
 <instance part="GND30" gate="1" x="205.74" y="91.44"/>
-<instance part="SUPPLY9" gate="1" x="231.14" y="137.16"/>
+<instance part="SUPPLY9" gate="G$1" x="231.14" y="137.16"/>
 <instance part="GND32" gate="1" x="231.14" y="116.84"/>
 <instance part="R14" gate="G$1" x="198.12" y="104.14" smashed="yes" rot="R180">
 <attribute name="NAME" x="195.326" y="101.1174" size="1.778" layer="95"/>
@@ -9903,7 +10049,7 @@ Development Board </text>
 <attribute name="NAME" x="203.6826" y="124.206" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="205.994" y="123.952" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SUPPLY1" gate="1" x="200.66" y="139.7"/>
+<instance part="SUPPLY1" gate="G$1" x="200.66" y="139.7"/>
 <instance part="JST_CONN" gate="G$1" x="220.98" y="38.1"/>
 <instance part="C2" gate="G$1" x="7.62" y="30.48"/>
 <instance part="C3" gate="G$1" x="15.24" y="33.02" rot="R90"/>
@@ -10337,33 +10483,33 @@ Development Board </text>
 </segment>
 <segment>
 <pinref part="MCU" gate="G$1" pin="VCC"/>
-<pinref part="SUPPLY8" gate="1" pin="VCC"/>
+<pinref part="SUPPLY8" gate="G$1" pin="VCC"/>
 <wire x1="160.02" y1="132.08" x2="154.94" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="L2" gate="G$1" pin="1"/>
-<pinref part="SUPPLY5" gate="1" pin="VCC"/>
+<pinref part="SUPPLY5" gate="G$1" pin="VCC"/>
 <wire x1="17.78" y1="73.66" x2="10.16" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="ISP" gate="G$1" pin="2"/>
 <wire x1="231.14" y1="137.16" x2="231.14" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="SUPPLY9" gate="1" pin="VCC"/>
+<pinref part="SUPPLY9" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="SUPPLY6" gate="1" pin="VCC"/>
+<pinref part="SUPPLY6" gate="G$1" pin="VCC"/>
 <pinref part="C12" gate="G$1" pin="1"/>
 <wire x1="129.54" y1="139.7" x2="129.54" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SUPPLY7" gate="1" pin="VCC"/>
+<pinref part="SUPPLY7" gate="G$1" pin="VCC"/>
 <wire x1="139.7" y1="139.7" x2="139.7" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="C14" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="R15" gate="G$1" pin="1"/>
 <wire x1="200.66" y1="132.08" x2="200.66" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="SUPPLY1" gate="1" pin="VCC"/>
+<pinref part="SUPPLY1" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
 <pinref part="TP4" gate="G$1" pin="TP"/>
