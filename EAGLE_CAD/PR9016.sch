@@ -10219,7 +10219,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="R12" library="PR_Parts_Library" deviceset="RES_SMT" device="" value="10K"/>
 <part name="GND24" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
-<part name="J1" library="PR_Parts_Library" deviceset="M3_SCREW_POST" device=""/>
+<part name="ANT_MOUNT" library="PR_Parts_Library" deviceset="M3_SCREW_POST" device=""/>
 <part name="R1" library="PR_Parts_Library" deviceset="RV170SF_TAIWANA_POT_SW" device=""/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -10292,17 +10292,17 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="TP11" library="testpad" deviceset="TP" device="TP20R" value="TPTP20R"/>
 <part name="TP12" library="testpad" deviceset="TP" device="TP20R" value="TPTP20R"/>
 <part name="TP13" library="testpad" deviceset="TP" device="TP20R" value="TPTP20R"/>
-<part name="U$3" library="adafruit" deviceset="FIDUCIAL" device=""/>
-<part name="U$4" library="adafruit" deviceset="FIDUCIAL" device=""/>
-<part name="U$5" library="adafruit" deviceset="FIDUCIAL" device=""/>
-<part name="U$6" library="PR_Parts_Library" deviceset="ABS25XTAL" device=""/>
+<part name="MARK1" library="adafruit" deviceset="FIDUCIAL" device=""/>
+<part name="MARK2" library="adafruit" deviceset="FIDUCIAL" device=""/>
+<part name="MARK3" library="adafruit" deviceset="FIDUCIAL" device=""/>
+<part name="Y1" library="PR_Parts_Library" deviceset="ABS25XTAL" device=""/>
 <part name="C18" library="resistor" deviceset="C-US" device="C0603" value="10uF"/>
 <part name="C14" library="resistor" deviceset="C-US" device="C0603" value="10uF"/>
 <part name="C15" library="resistor" deviceset="C-US" device="C0603" value="10uF"/>
 <part name="C17" library="PR_Parts_Library" deviceset="CAP_SMT" device="" value="1uf"/>
 <part name="C9" library="PR_Parts_Library" deviceset="CAP_SMT" device="" value="1uF"/>
-<part name="FET2" library="PR_Parts_Library" deviceset="AO3435" device=""/>
-<part name="U$1" library="PR_Parts_Library" deviceset="CE32A_FOR_JST" device=""/>
+<part name="FET1" library="PR_Parts_Library" deviceset="AO3435" device=""/>
+<part name="SPKR_PLACE" library="PR_Parts_Library" deviceset="CE32A_FOR_JST" device=""/>
 <part name="TP14" library="testpad" deviceset="TP" device="TP20R" value="TPTP20R"/>
 <part name="TP15" library="testpad" deviceset="TP" device="TP20R" value="TPTP20R"/>
 <part name="TP16" library="testpad" deviceset="TP" device="TP20R" value="TPTP20R"/>
@@ -10393,7 +10393,7 @@ Development Board </text>
 </instance>
 <instance part="GND24" gate="1" x="152.4" y="45.72"/>
 <instance part="P+1" gate="VCC" x="-35.56" y="139.7"/>
-<instance part="J1" gate="G$1" x="-25.4" y="33.02" smashed="yes" rot="R90"/>
+<instance part="ANT_MOUNT" gate="G$1" x="-25.4" y="33.02" smashed="yes" rot="R90"/>
 <instance part="R1" gate="G$1" x="-10.16" y="109.22" smashed="yes" rot="R90"/>
 <instance part="GND5" gate="1" x="-20.32" y="99.06"/>
 <instance part="GND2" gate="1" x="-35.56" y="111.76"/>
@@ -10493,10 +10493,10 @@ Development Board </text>
 <instance part="TP11" gate="G$1" x="76.2" y="109.22"/>
 <instance part="TP12" gate="G$1" x="86.36" y="109.22"/>
 <instance part="TP13" gate="G$1" x="96.52" y="109.22"/>
-<instance part="U$3" gate="G$1" x="25.4" y="104.14"/>
-<instance part="U$4" gate="G$1" x="33.02" y="104.14"/>
-<instance part="U$5" gate="G$1" x="40.64" y="104.14"/>
-<instance part="U$6" gate="G$1" x="40.64" y="22.86" rot="R270"/>
+<instance part="MARK1" gate="G$1" x="25.4" y="104.14"/>
+<instance part="MARK2" gate="G$1" x="33.02" y="104.14"/>
+<instance part="MARK3" gate="G$1" x="40.64" y="104.14"/>
+<instance part="Y1" gate="G$1" x="40.64" y="22.86" rot="R270"/>
 <instance part="C18" gate="G$1" x="208.28" y="50.8" smashed="yes">
 <attribute name="NAME" x="205.486" y="59.055" size="1.778" layer="95"/>
 <attribute name="VALUE" x="205.486" y="56.769" size="1.778" layer="96"/>
@@ -10508,8 +10508,8 @@ Development Board </text>
 <attribute name="VALUE" x="199.136" y="56.769" size="1.778" layer="96"/>
 </instance>
 <instance part="C9" gate="G$1" x="88.9" y="30.48" rot="R90"/>
-<instance part="FET2" gate="G$1" x="-20.32" y="129.54" rot="R270"/>
-<instance part="U$1" gate="G$1" x="22.86" y="132.08" rot="R90"/>
+<instance part="FET1" gate="G$1" x="-20.32" y="129.54" rot="R270"/>
+<instance part="SPKR_PLACE" gate="G$1" x="22.86" y="132.08" rot="R90"/>
 <instance part="TP14" gate="G$1" x="66.04" y="99.06"/>
 <instance part="TP15" gate="G$1" x="76.2" y="99.06"/>
 <instance part="TP16" gate="G$1" x="86.36" y="99.06"/>
@@ -10606,7 +10606,7 @@ Development Board </text>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="-25.4" y1="132.08" x2="-27.94" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="FET2" gate="G$1" pin="GATE"/>
+<pinref part="FET1" gate="G$1" pin="GATE"/>
 </segment>
 <segment>
 <pinref part="MCU" gate="G$1" pin="GND"/>
@@ -10707,7 +10707,7 @@ Development Board </text>
 <wire x1="50.8" y1="27.94" x2="35.56" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="FMIC" gate="G$1" pin="RCLK"/>
 <pinref part="C4" gate="G$1" pin="1"/>
-<pinref part="U$6" gate="G$1" pin="P$1"/>
+<pinref part="Y1" gate="G$1" pin="P$1"/>
 <wire x1="35.56" y1="17.78" x2="35.56" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="22.86" x2="35.56" y2="27.94" width="0.1524" layer="91"/>
 </segment>
@@ -10886,7 +10886,7 @@ Development Board </text>
 <wire x1="-35.56" y1="127" x2="-35.56" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="P$1"/>
 <junction x="-35.56" y="127"/>
-<pinref part="FET2" gate="G$1" pin="SOURCE"/>
+<pinref part="FET1" gate="G$1" pin="SOURCE"/>
 </segment>
 <segment>
 <pinref part="MCU" gate="G$1" pin="VCC"/>
@@ -11003,7 +11003,7 @@ Development Board </text>
 <segment>
 <pinref part="R1" gate="G$1" pin="SW_IN"/>
 <wire x1="-12.7" y1="119.38" x2="-12.7" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="FET2" gate="G$1" pin="DRAIN"/>
+<pinref part="FET1" gate="G$1" pin="DRAIN"/>
 <label x="-12.7" y="134.62" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -11126,7 +11126,7 @@ Development Board </text>
 </net>
 <net name="ANT" class="1">
 <segment>
-<pinref part="J1" gate="G$1" pin="ANT"/>
+<pinref part="ANT_MOUNT" gate="G$1" pin="ANT"/>
 <pinref part="D1" gate="G$1" pin="COM"/>
 <wire x1="-20.32" y1="33.02" x2="-10.16" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="1"/>
@@ -11190,7 +11190,7 @@ Development Board </text>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="LID_GND"/>
+<pinref part="SPKR_PLACE" gate="G$1" pin="LID_GND"/>
 <pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="22.86" y1="129.54" x2="30.48" y2="129.54" width="0.1524" layer="91"/>
 </segment>
@@ -11198,7 +11198,7 @@ Development Board </text>
 <net name="N$10" class="0">
 <segment>
 <pinref part="FMIC" gate="G$1" pin="GPIO3"/>
-<pinref part="U$6" gate="G$1" pin="P$4"/>
+<pinref part="Y1" gate="G$1" pin="P$4"/>
 <wire x1="50.8" y1="22.86" x2="45.72" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="45.72" y1="22.86" x2="45.72" y2="17.78" width="0.1524" layer="91"/>
