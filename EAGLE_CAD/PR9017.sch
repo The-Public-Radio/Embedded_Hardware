@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -9853,7 +9853,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="C6" library="PR_Parts_Library" deviceset="CAP_SMT" device="" value=".22uf"/>
 <part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R3" library="PR_Parts_Library" deviceset="RES_SMT" device="" value="40.2K"/>
-<part name="U$1" library="PR_Parts_Library" deviceset="TPA6203A1" device=""/>
+<part name="AMP2" library="PR_Parts_Library" deviceset="TPA6203A1" device=""/>
 <part name="R11" library="PR_Parts_Library" deviceset="RES_SMT" device="" value="100K"/>
 <part name="R16" library="PR_Parts_Library" deviceset="RES_SMT" device="" value="100K"/>
 <part name="GND18" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -9884,7 +9884,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <text x="22.86" y="147.574" size="2.54" layer="96">Lid Decoupling</text>
 <text x="160.02" y="76.2" size="2.54" layer="96">Audio Amplifier </text>
 <text x="157.48" y="144.78" size="2.54" layer="96">MCU</text>
-<text x="-27.94" y="162.56" size="3.81" layer="96">PUBLIC RADIO PR9013
+<text x="-27.94" y="162.56" size="3.81" layer="96">PUBLIC RADIO PR9017
 Development Board </text>
 <text x="22.098" y="109.474" size="2.54" layer="96">Fiducials </text>
 <text x="71.12" y="147.574" size="2.54" layer="96">Test Points </text>
@@ -10072,7 +10072,7 @@ Development Board </text>
 <attribute name="NAME" x="214.122" y="56.9214" size="1.778" layer="95"/>
 <attribute name="VALUE" x="214.122" y="54.61" size="1.778" layer="96"/>
 </instance>
-<instance part="U$1" gate="G$1" x="200.66" y="30.48"/>
+<instance part="AMP2" gate="G$1" x="200.66" y="30.48"/>
 <instance part="R11" gate="G$1" x="223.52" y="38.1" smashed="yes" rot="R270">
 <attribute name="NAME" x="217.3986" y="41.402" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="222.25" y="36.322" size="1.778" layer="96" rot="R90"/>
@@ -10249,7 +10249,7 @@ Development Board </text>
 <wire x1="45.72" y1="129.54" x2="45.72" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="GND@2"/>
+<pinref part="AMP2" gate="G$1" pin="GND@2"/>
 <pinref part="GND18" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -10267,7 +10267,7 @@ Development Board </text>
 <wire x1="177.8" y1="22.86" x2="162.56" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="GND@1"/>
+<pinref part="AMP2" gate="G$1" pin="GND@1"/>
 <wire x1="185.42" y1="27.94" x2="185.42" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="GND15" gate="1" pin="GND"/>
 </segment>
@@ -10501,7 +10501,7 @@ Development Board </text>
 <segment>
 <pinref part="R12" gate="G$1" pin="1"/>
 <pinref part="C15" gate="G$1" pin="1"/>
-<pinref part="U$1" gate="G$1" pin="SHUTDOWN"/>
+<pinref part="AMP2" gate="G$1" pin="SHUTDOWN"/>
 <wire x1="185.42" y1="35.56" x2="185.42" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="48.26" x2="170.18" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="48.26" x2="170.18" y2="45.72" width="0.1524" layer="91"/>
@@ -10514,11 +10514,6 @@ Development Board </text>
 <pinref part="R1" gate="G$1" pin="WIPER"/>
 <wire x1="-5.08" y1="101.6" x2="-5.08" y2="96.52" width="0.1524" layer="91"/>
 <label x="-7.62" y="93.98" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C13" gate="G$1" pin="1"/>
-<wire x1="203.2" y1="50.8" x2="195.58" y2="50.8" width="0.1524" layer="91"/>
-<label x="193.04" y="52.578" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="TP17" gate="G$1" pin="TP"/>
@@ -10562,6 +10557,11 @@ Development Board </text>
 <pinref part="TP16" gate="G$1" pin="TP"/>
 <wire x1="86.36" y1="96.52" x2="86.36" y2="93.98" width="0.1524" layer="91"/>
 <label x="83.82" y="91.44" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="C13" gate="G$1" pin="1"/>
+<wire x1="203.2" y1="50.8" x2="195.58" y2="50.8" width="0.1524" layer="91"/>
+<label x="193.04" y="52.578" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -10679,12 +10679,27 @@ Development Board </text>
 <wire x1="66.04" y1="124.46" x2="66.04" y2="119.38" width="0.1524" layer="91"/>
 <label x="60.96" y="116.84" size="1.27" layer="95"/>
 </segment>
+<segment>
+<pinref part="FB2" gate="G$1" pin="2"/>
+<wire x1="248.92" y1="33.02" x2="254" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="254" y1="33.02" x2="254" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="JST_CONN" gate="G$1" pin="1"/>
+<wire x1="254" y1="30.48" x2="261.62" y2="30.48" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="SPK_OUT-" class="0">
 <segment>
 <pinref part="TP7" gate="G$1" pin="TP"/>
 <wire x1="76.2" y1="124.46" x2="76.2" y2="119.38" width="0.1524" layer="91"/>
 <label x="71.12" y="116.84" size="1.27" layer="95"/>
+</segment>
+<segment>
+<pinref part="FB3" gate="G$1" pin="1"/>
+<wire x1="248.92" y1="25.4" x2="254" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="254" y1="25.4" x2="254" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="JST_CONN" gate="G$1" pin="2"/>
+<wire x1="254" y1="27.94" x2="259.08" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="27.94" x2="259.08" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -10717,7 +10732,7 @@ Development Board </text>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="IN-"/>
+<pinref part="AMP2" gate="G$1" pin="IN-"/>
 <wire x1="218.44" y1="27.94" x2="220.98" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="R13" gate="G$1" pin="2"/>
 <wire x1="220.98" y1="12.7" x2="220.98" y2="15.24" width="0.1524" layer="91"/>
@@ -10729,7 +10744,7 @@ Development Board </text>
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="IN+"/>
+<pinref part="AMP2" gate="G$1" pin="IN+"/>
 <wire x1="218.44" y1="30.48" x2="220.98" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="220.98" y1="30.48" x2="220.98" y2="43.18" width="0.1524" layer="91"/>
@@ -10752,7 +10767,7 @@ Development Board </text>
 <junction x="167.64" y="30.48"/>
 <pinref part="L3" gate="G$1" pin="2"/>
 <junction x="162.56" y="30.48"/>
-<pinref part="U$1" gate="G$1" pin="VDD"/>
+<pinref part="AMP2" gate="G$1" pin="VDD"/>
 <wire x1="177.8" y1="30.48" x2="185.42" y2="30.48" width="0.1524" layer="91"/>
 <junction x="177.8" y="30.48"/>
 <wire x1="162.56" y1="30.48" x2="157.48" y2="30.48" width="0.1524" layer="91"/>
@@ -10763,28 +10778,9 @@ Development Board </text>
 <junction x="157.48" y="30.48"/>
 </segment>
 </net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="FB3" gate="G$1" pin="1"/>
-<wire x1="248.92" y1="25.4" x2="254" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="254" y1="25.4" x2="254" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="JST_CONN" gate="G$1" pin="2"/>
-<wire x1="254" y1="27.94" x2="259.08" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="27.94" x2="259.08" y2="27.94" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$17" class="0">
-<segment>
-<pinref part="FB2" gate="G$1" pin="2"/>
-<wire x1="248.92" y1="33.02" x2="254" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="254" y1="33.02" x2="254" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="JST_CONN" gate="G$1" pin="1"/>
-<wire x1="254" y1="30.48" x2="261.62" y2="30.48" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="BYPASS"/>
+<pinref part="AMP2" gate="G$1" pin="BYPASS"/>
 <wire x1="185.42" y1="33.02" x2="182.88" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="33.02" x2="182.88" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="2"/>
@@ -10793,7 +10789,7 @@ Development Board </text>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="OUT+"/>
+<pinref part="AMP2" gate="G$1" pin="OUT+"/>
 <pinref part="R11" gate="G$1" pin="2"/>
 <wire x1="223.52" y1="33.02" x2="218.44" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="FB2" gate="G$1" pin="1"/>
@@ -10803,7 +10799,7 @@ Development Board </text>
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="OUT-"/>
+<pinref part="AMP2" gate="G$1" pin="OUT-"/>
 <pinref part="R16" gate="G$1" pin="1"/>
 <wire x1="223.52" y1="25.4" x2="218.44" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="FB3" gate="G$1" pin="2"/>
