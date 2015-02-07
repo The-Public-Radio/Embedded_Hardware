@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -756,11 +756,11 @@ chip</description>
 <text x="-10.16" y="10.16" size="1.778" layer="95" rot="MR180">&gt;VALUE</text>
 <text x="-9.144" y="-8.128" size="1.27" layer="95" ratio="10">GND PAD</text>
 <pin name="VDD" x="-15.24" y="0" length="middle" direction="pwr"/>
-<pin name="IN+" x="17.78" y="0" length="middle" rot="R180"/>
-<pin name="IN-" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="IN+" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="IN-" x="17.78" y="5.08" length="middle" rot="R180"/>
 <pin name="GND@1" x="-15.24" y="-2.54" length="middle" direction="pwr"/>
 <pin name="OUT+" x="17.78" y="2.54" length="middle" rot="R180"/>
-<pin name="OUT-" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="OUT-" x="17.78" y="0" length="middle" rot="R180"/>
 <pin name="SHUTDOWN" x="-15.24" y="5.08" length="middle" direction="in" function="dot"/>
 <pin name="GND@2" x="-5.08" y="-12.7" visible="off" length="short" direction="pwr" rot="R90"/>
 <pin name="BYPASS" x="-15.24" y="2.54" length="middle"/>
