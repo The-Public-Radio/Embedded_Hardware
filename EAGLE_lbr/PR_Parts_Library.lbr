@@ -1286,6 +1286,8 @@ MFG# UUD1C221MCL1GS</description>
 <technologies>
 <technology name="">
 <attribute name="MFG_PN" value="UUD1C221MCL1GS"/>
+<attribute name="TOL" value="" constant="no"/>
+<attribute name="VOLTAGE" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1426,6 +1428,7 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 </devices>
 </deviceset>
 <deviceset name="C_SMT" uservalue="yes">
+<description>SMT capacitor</description>
 <gates>
 <gate name="G$1" symbol="CAP_SMT" x="0" y="0" swaplevel="1"/>
 </gates>
@@ -1438,6 +1441,8 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 <technologies>
 <technology name="">
 <attribute name="MFG_PN" value="" constant="no"/>
+<attribute name="TOL" value="" constant="no"/>
+<attribute name="VOLTAGE" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1449,6 +1454,8 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 <technologies>
 <technology name="">
 <attribute name="MFG_PN" value="" constant="no"/>
+<attribute name="TOL" value="" constant="no"/>
+<attribute name="VOLTAGE" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1460,6 +1467,8 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 <technologies>
 <technology name="">
 <attribute name="MFG_PN" value="" constant="no"/>
+<attribute name="TOL" value="" constant="no"/>
+<attribute name="VOLTAGE" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1479,6 +1488,8 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 <technologies>
 <technology name="">
 <attribute name="MFG_PN" value="" constant="no"/>
+<attribute name="POWER" value="" constant="no"/>
+<attribute name="TOL" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1490,6 +1501,8 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 <technologies>
 <technology name="">
 <attribute name="MFG_PN" value="" constant="no"/>
+<attribute name="POWER" value="" constant="no"/>
+<attribute name="TOL" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1501,6 +1514,8 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 <technologies>
 <technology name="">
 <attribute name="MFG_PN" value="" constant="no"/>
+<attribute name="POWER" value="" constant="no"/>
+<attribute name="TOL" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1519,7 +1534,10 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 </connects>
 <technologies>
 <technology name="">
+<attribute name="CURRENT" value="" constant="no"/>
+<attribute name="DCR" value="" constant="no"/>
 <attribute name="MFG_PN" value="" constant="no"/>
+<attribute name="TOL" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1530,7 +1548,10 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 </connects>
 <technologies>
 <technology name="">
+<attribute name="CURRENT" value="" constant="no"/>
+<attribute name="DCR" value="" constant="no"/>
 <attribute name="MFG_PN" value="" constant="no"/>
+<attribute name="TOL" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1541,7 +1562,10 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 </connects>
 <technologies>
 <technology name="">
+<attribute name="CURRENT" value="" constant="no"/>
+<attribute name="DCR" value="" constant="no"/>
 <attribute name="MFG_PN" value="" constant="no"/>
+<attribute name="TOL" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
