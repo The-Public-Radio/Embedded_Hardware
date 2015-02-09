@@ -1574,13 +1574,17 @@ MFG# ABS25-32.768KHZ-T</description>
 <part name="GND9" library="SparkFun" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="R21" library="PR_Parts_Library" deviceset="R_SMT" device="_R0603_CPL" value="12K">
+<attribute name="MFG_PN" value="RMCF0603FT12K0"/>
+<attribute name="POWER" value="1/10W"/>
 <attribute name="TOL" value="1%"/>
 </part>
 <part name="C22" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value=".22uF">
+<attribute name="MFG_PN" value="C1608X7R1C224K080AC"/>
 <attribute name="TOL" value="10%"/>
 <attribute name="VOLTAGE" value="16V"/>
 </part>
 <part name="C21" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value=".22uF">
+<attribute name="MFG_PN" value="C1608X7R1C224K080AC"/>
 <attribute name="TOL" value="10%"/>
 <attribute name="VOLTAGE" value="16V"/>
 </part>
@@ -1589,15 +1593,18 @@ MFG# ABS25-32.768KHZ-T</description>
 <part name="L02" library="PR_Parts_Library" deviceset="L_SMT" device="_0603_CPL" value="2.2k@100MHz">
 <attribute name="CURRENT" value="150mA"/>
 <attribute name="DCR" value="2.3"/>
+<attribute name="MFG_PN" value="HZ0603A222R-10"/>
 </part>
-<part name="L3" library="PR_Parts_Library" deviceset="L_SMT" device="_0603_CPL" value="2.2 kOhm @ 100MHz">
-<attribute name="CURRENT" value="150m"/>
+<part name="L03" library="PR_Parts_Library" deviceset="L_SMT" device="_0603_CPL" value="2.2k@100MHz">
+<attribute name="CURRENT" value="150mA"/>
 <attribute name="DCR" value="2.3"/>
+<attribute name="MFG_PN" value="HZ0603A222R-10"/>
 </part>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
 <part name="GND29" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R20" library="PR_Parts_Library" deviceset="R_SMT" device="_R0603_CPL" value="10K">
+<attribute name="MFG_PN" value="ERJ-3GEYJ103V"/>
 <attribute name="POWER" value="1/10W"/>
 <attribute name="TOL" value="5%"/>
 </part>
@@ -1625,6 +1632,7 @@ MFG# ABS25-32.768KHZ-T</description>
 <part name="SUPPLY9" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND32" library="SparkFun" deviceset="GND" device=""/>
 <part name="R31" library="PR_Parts_Library" deviceset="R_SMT" device="_R0603_CPL" value="1K">
+<attribute name="MFG_PN" value="ERJ-3EKF1001V"/>
 <attribute name="POWER" value="1/10W"/>
 <attribute name="TOL" value="1%"/>
 </part>
@@ -1632,18 +1640,23 @@ MFG# ABS25-32.768KHZ-T</description>
 <part name="L01" library="PR_Parts_Library" deviceset="L_SMT" device="_0805_ADAFRUIT" value="180nH">
 <attribute name="CURRENT" value="400mA"/>
 <attribute name="DCR" value="640m"/>
+<attribute name="MFG_PN" value="AISC-0805-R18J-T"/>
 <attribute name="TOL" value="5%"/>
 </part>
 <part name="GND16" library="SparkFun" deviceset="GND" device=""/>
 <part name="C33" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value=".1uF">
+<attribute name="MFG_PN" value="CL05B104KO5NNNC"/>
 <attribute name="TOL" value="10%"/>
 <attribute name="VOLTAGE" value="16V"/>
 </part>
 <part name="C23" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value=".1uF">
+<attribute name="MFG_PN" value="CL05B104KO5NNNC"/>
 <attribute name="TOL" value="10%"/>
 <attribute name="VOLTAGE" value="16V"/>
 </part>
-<part name="R40" library="PR_Parts_Library" deviceset="R_SMT" device="_R0603_CPL" value="DNP"/>
+<part name="R40" library="PR_Parts_Library" deviceset="R_SMT" device="_R0603_CPL" value="DNP">
+<attribute name="MFG_PN" value="ERJ-3GEY0R00V"/>
+</part>
 <part name="D1" library="PR_Parts_Library" deviceset="BAV99" device="">
 <attribute name="MFG_PN" value="BAV99,215"/>
 </part>
@@ -1653,67 +1666,87 @@ MFG# ABS25-32.768KHZ-T</description>
 <part name="FB2" library="PR_Parts_Library" deviceset="L_SMT" device="_0805_ADAFRUIT">
 <attribute name="CURRENT" value="2A"/>
 <attribute name="DCR" value="45m"/>
+<attribute name="MFG_PN" value="HI0805R800R-10"/>
 </part>
 <part name="FB3" library="PR_Parts_Library" deviceset="L_SMT" device="_0805_ADAFRUIT">
 <attribute name="CURRENT" value="2A"/>
 <attribute name="DCR" value="45m"/>
+<attribute name="MFG_PN" value="HI0805R800R-10"/>
 </part>
 <part name="R30" library="PR_Parts_Library" deviceset="R_SMT" device="_R0603_CPL" value="10K">
+<attribute name="MFG_PN" value="ERJ-3GEYJ103V"/>
 <attribute name="POWER" value="1/10W"/>
 <attribute name="TOL" value="5%"/>
 </part>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="JST_CONN" library="PR_Parts_Library" deviceset="JST_2PIN" device="-SMT-RA"/>
 <part name="C05" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value="DNP">
+<attribute name="MFG_PN" value="DNP"/>
 <attribute name="TOL" value="2%"/>
 <attribute name="VOLTAGE" value="50V"/>
 </part>
-<part name="C14" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value="47pF"/>
+<part name="C14" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value="47pF">
+<attribute name="MFG_PN" value="CL10C470JB8NCNC"/>
+<attribute name="TOL" value="5%"/>
+<attribute name="VOLTAGE" value="50V"/>
+</part>
 <part name="C11" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value="22pF">
+<attribute name="MFG_PN" value="C1608C0G1H220J080AA"/>
 <attribute name="TOL" value="5%"/>
 <attribute name="VOLTAGE" value="50V"/>
 </part>
 <part name="C10" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value="22pF">
+<attribute name="MFG_PN" value="C1608C0G1H220J080AA"/>
 <attribute name="TOL" value="5%"/>
 <attribute name="VOLTAGE" value="50V"/>
 </part>
 <part name="C01" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value="22nF">
+<attribute name="MFG_PN" value="CL10B223KB8NNNC"/>
 <attribute name="TOL" value="10%"/>
 <attribute name="VOLTAGE" value="16V"/>
 </part>
 <part name="C03" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value=".1uF">
+<attribute name="MFG_PN" value="CL05B104KO5NNNC"/>
 <attribute name="TOL" value="10%"/>
 <attribute name="VOLTAGE" value="16V"/>
 </part>
 <part name="R02" library="PR_Parts_Library" deviceset="R_SMT" device="_R0603_CPL" value="330">
+<attribute name="MFG_PN" value="MCR03ERTJ331"/>
 <attribute name="POWER" value="1/10W"/>
 <attribute name="TOL" value="5%"/>
 </part>
 <part name="R04" library="PR_Parts_Library" deviceset="R_SMT" device="_R0603_CPL" value="330">
+<attribute name="MFG_PN" value="MCR03ERTJ331"/>
 <attribute name="POWER" value="1/10W"/>
 <attribute name="TOL" value="5%"/>
 </part>
 <part name="R05" library="PR_Parts_Library" deviceset="R_SMT" device="_R0603_CPL" value="330">
+<attribute name="MFG_PN" value="MCR03ERTJ331"/>
 <attribute name="POWER" value="1/10W"/>
 <attribute name="TOL" value="5%"/>
 </part>
 <part name="R07" library="PR_Parts_Library" deviceset="R_SMT" device="_R0603_CPL" value="4.7K">
+<attribute name="MFG_PN" value="ERJ-3EKF4701V"/>
 <attribute name="POWER" value="1/10W"/>
 <attribute name="TOL" value="1%"/>
 </part>
 <part name="R03" library="PR_Parts_Library" deviceset="R_SMT" device="_R0603_CPL" value="4.7K">
+<attribute name="MFG_PN" value="ERJ-3EKF4701V"/>
 <attribute name="POWER" value="1/10W"/>
 <attribute name="TOL" value="1%"/>
 </part>
 <part name="R08" library="PR_Parts_Library" deviceset="R_SMT" device="_R0603_CPL" value="4.7K">
+<attribute name="MFG_PN" value="ERJ-3EKF4701V"/>
 <attribute name="POWER" value="1/10W"/>
 <attribute name="TOL" value="1%"/>
 </part>
 <part name="R6" library="PR_Parts_Library" deviceset="R_SMT" device="_R0603_CPL" value="10K">
+<attribute name="MFG_PN" value="ERJ-3GEYJ103V"/>
 <attribute name="POWER" value="1/10W"/>
 <attribute name="TOL" value="5%"/>
 </part>
 <part name="C02" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value="22nF">
+<attribute name="MFG_PN" value="CL10B223KB8NNNC"/>
 <attribute name="TOL" value="10%"/>
 <attribute name="VOLTAGE" value="16V"/>
 </part>
@@ -1745,18 +1778,22 @@ MFG# ABS25-32.768KHZ-T</description>
 <part name="MARK3" library="PR_Parts_Library" deviceset="FIDUCIAL" device="" value=""/>
 <part name="X1" library="PR_Parts_Library" deviceset="ABS25XTAL" device="" value=""/>
 <part name="C25" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value="10uF">
+<attribute name="MFG_PN" value="CL10A106MQ8NNNC"/>
 <attribute name="TOL" value="20%"/>
 <attribute name="VOLTAGE" value="6.3V"/>
 </part>
 <part name="C32" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value="10uF">
+<attribute name="MFG_PN" value="CL10A106MQ8NNNC"/>
 <attribute name="TOL" value="20%"/>
 <attribute name="VOLTAGE" value="6.3V"/>
 </part>
 <part name="C24" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value="1uF">
+<attribute name="MFG_PN" value="CL10B105KP8NNNC"/>
 <attribute name="TOL" value="10%"/>
 <attribute name="VOLTAGE" value="10V"/>
 </part>
 <part name="C08" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value="1uF">
+<attribute name="MFG_PN" value="CL10B105KP8NNNC"/>
 <attribute name="TOL" value="10%"/>
 <attribute name="VOLTAGE" value="10V"/>
 </part>
@@ -1768,17 +1805,27 @@ MFG# ABS25-32.768KHZ-T</description>
 <part name="TP15" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
 <part name="TP16" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
 <part name="TP17" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
-<part name="C20" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value=".22uF"/>
+<part name="C20" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value=".22uF">
+<attribute name="MFG_PN" value="C1608X7R1C224K080AC"/>
+<attribute name="TOL" value="10%"/>
+<attribute name="VOLTAGE" value="16V"/>
+</part>
 <part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R22" library="PR_Parts_Library" deviceset="R_SMT" device="_R0603_CPL" value="12K">
+<attribute name="MFG_PN" value="RMCF0603FT12K0"/>
+<attribute name="POWER" value="1/10W"/>
 <attribute name="TOL" value="1%"/>
 </part>
 <part name="AMP" library="PR_Parts_Library" deviceset="TPA6203A1" device="" value=""/>
 <part name="R24" library="PR_Parts_Library" deviceset="R_SMT" device="_R0603_CPL" value="100K">
+<attribute name="MFG_PN" value="RMCF0603FT100K"/>
+<attribute name="POWER" value="1/10W"/>
 <attribute name="TOL" value="1%"/>
 </part>
 <part name="GND18" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R23" library="PR_Parts_Library" deviceset="R_SMT" device="_R0603_CPL" value="100K">
+<attribute name="MFG_PN" value="RMCF0603FT100K"/>
+<attribute name="POWER" value="1/10W"/>
 <attribute name="TOL" value="1%"/>
 </part>
 </parts>
@@ -1854,7 +1901,7 @@ Development Board </text>
 <attribute name="NAME" x="25.4" y="69.342" size="1.778" layer="95"/>
 <attribute name="VALUE" x="33.02" y="78.74" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="L3" gate="G$1" x="146.05" y="38.1" smashed="yes">
+<instance part="L03" gate="G$1" x="146.05" y="38.1" smashed="yes">
 <attribute name="NAME" x="142.24" y="31.75" size="1.778" layer="95"/>
 <attribute name="VALUE" x="149.86" y="29.21" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -2351,7 +2398,7 @@ Development Board </text>
 </net>
 <net name="VCC" class="0">
 <segment>
-<pinref part="L3" gate="G$1" pin="1"/>
+<pinref part="L03" gate="G$1" pin="1"/>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
 <wire x1="146.05" y1="45.72" x2="146.05" y2="48.26" width="0.1524" layer="91"/>
 </segment>
@@ -2645,7 +2692,7 @@ Development Board </text>
 <segment>
 <pinref part="C25" gate="G$1" pin="1"/>
 <junction x="157.48" y="30.48"/>
-<pinref part="L3" gate="G$1" pin="2"/>
+<pinref part="L03" gate="G$1" pin="2"/>
 <wire x1="157.48" y1="30.48" x2="146.05" y2="30.48" width="0.1524" layer="91"/>
 <junction x="157.48" y="30.48"/>
 <pinref part="C24" gate="G$1" pin="1"/>

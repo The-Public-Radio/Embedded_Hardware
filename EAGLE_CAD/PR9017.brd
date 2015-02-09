@@ -2894,44 +2894,44 @@ Please make sure your boards conform to these design rules.</description>
 <element name="R21" library="PR_Parts_Library" package="0603_CPL" value="12K" x="41.9" y="8.3" smashed="yes" rot="R180">
 <attribute name="NAME" x="43.411" y="7.989" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="42.789" y="10.332" size="1.27" layer="27" rot="R180"/>
-<attribute name="MFG_PN" value="" x="41.9" y="8.3" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG_PN" value="RMCF0603FT12K0" x="41.9" y="8.3" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOL" value="1%" x="41.9" y="8.3" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="POWER" value="" x="41.9" y="8.3" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="POWER" value="1/10W" x="41.9" y="8.3" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C22" library="PR_Parts_Library" package="0603_CPL" value=".22uF" x="39.4" y="12.3" smashed="yes">
 <attribute name="NAME" x="37.361" y="13.012" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="38.511" y="10.268" size="1.27" layer="27"/>
-<attribute name="MFG_PN" value="" x="39.4" y="12.3" size="1.778" layer="27" display="off"/>
+<attribute name="MFG_PN" value="C1608X7R1C224K080AC" x="39.4" y="12.3" size="1.778" layer="27" display="off"/>
 <attribute name="TOL" value="10%" x="39.4" y="12.3" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="16V" x="39.4" y="12.3" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C21" library="PR_Parts_Library" package="0603_CPL" value=".22uF" x="42.5" y="9.6" smashed="yes" rot="R180">
 <attribute name="NAME" x="44.261" y="9.362" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="43.389" y="11.632" size="1.27" layer="27" rot="R180"/>
-<attribute name="MFG_PN" value="" x="42.5" y="9.6" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG_PN" value="C1608X7R1C224K080AC" x="42.5" y="9.6" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOL" value="10%" x="42.5" y="9.6" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VOLTAGE" value="16V" x="42.5" y="9.6" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="L02" library="PR_Parts_Library" package="0603_CPL" value="2.2k@100MHz" x="34.7" y="61.3" smashed="yes" rot="R270">
 <attribute name="NAME" x="34.156" y="63.083" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
 <attribute name="VALUE" x="33.557" y="62.316" size="0.4064" layer="27" font="vector" rot="R270"/>
-<attribute name="MFG_PN" value="" x="34.7" y="61.3" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFG_PN" value="HZ0603A222R-10" x="34.7" y="61.3" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="CURRENT" value="150mA" x="34.7" y="61.3" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="TOL" value="" x="34.7" y="61.3" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DCR" value="2.3" x="34.7" y="61.3" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="L3" library="PR_Parts_Library" package="0603_CPL" value="2.2 kOhm @ 100MHz" x="34.7" y="15.8" smashed="yes" rot="R180">
+<element name="L03" library="PR_Parts_Library" package="0603_CPL" value="2.2k@100MHz" x="34.7" y="15.8" smashed="yes" rot="R180">
 <attribute name="NAME" x="34.639" y="14.238" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="35.716" y="16.943" size="0.4064" layer="27" font="vector" rot="R180"/>
-<attribute name="MFG_PN" value="" x="34.7" y="15.8" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="CURRENT" value="150m" x="34.7" y="15.8" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG_PN" value="HZ0603A222R-10" x="34.7" y="15.8" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="CURRENT" value="150mA" x="34.7" y="15.8" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOL" value="" x="34.7" y="15.8" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DCR" value="2.3" x="34.7" y="15.8" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R20" library="PR_Parts_Library" package="0603_CPL" value="10K" x="38.7" y="4" smashed="yes" rot="R180">
 <attribute name="NAME" x="39.661" y="3.261" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
 <attribute name="VALUE" x="39.589" y="6.032" size="1.27" layer="27" rot="R180"/>
-<attribute name="MFG_PN" value="" x="38.7" y="4" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG_PN" value="ERJ-3GEYJ103V" x="38.7" y="4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOL" value="5%" x="38.7" y="4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="POWER" value="1/10W" x="38.7" y="4" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
@@ -2958,14 +2958,14 @@ Please make sure your boards conform to these design rules.</description>
 <element name="R31" library="PR_Parts_Library" package="0603_CPL" value="1K" x="62" y="50" smashed="yes" rot="R90">
 <attribute name="NAME" x="60.788990625" y="47.588978125" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="64.032003125" y="49.11101875" size="1.27" layer="27" rot="R90"/>
-<attribute name="MFG_PN" value="" x="62" y="50" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFG_PN" value="ERJ-3EKF1001V" x="62" y="50" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="TOL" value="1%" x="62" y="50" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="POWER" value="1/10W" x="62" y="50" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="L01" library="PR_Parts_Library" package="0805_ADAFRUIT" value="180nH" x="22" y="53.2" smashed="yes" rot="R270">
 <attribute name="NAME" x="20.6755" y="50.812" size="0.6096" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="20.603" y="54.216" size="0.4064" layer="27" rot="R270"/>
-<attribute name="MFG_PN" value="" x="22" y="53.2" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFG_PN" value="AISC-0805-R18J-T" x="22" y="53.2" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="CURRENT" value="400mA" x="22" y="53.2" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="TOL" value="5%" x="22" y="53.2" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DCR" value="640m" x="22" y="53.2" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2973,21 +2973,21 @@ Please make sure your boards conform to these design rules.</description>
 <element name="C33" library="PR_Parts_Library" package="0603_CPL" value=".1uF" x="40.6" y="51.7" smashed="yes" rot="R180">
 <attribute name="NAME" x="38.988" y="49.8755" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="41.616" y="53.097" size="0.4064" layer="27" rot="R180"/>
-<attribute name="MFG_PN" value="" x="40.6" y="51.7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG_PN" value="CL05B104KO5NNNC" x="40.6" y="51.7" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOL" value="10%" x="40.6" y="51.7" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VOLTAGE" value="16V" x="40.6" y="51.7" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C23" library="PR_Parts_Library" package="0603_CPL" value=".1uF" x="31.1" y="9.1" smashed="yes" rot="R180">
 <attribute name="NAME" x="27.3255" y="8.262" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="32.116" y="10.497" size="0.4064" layer="27" rot="R180"/>
-<attribute name="MFG_PN" value="" x="31.1" y="9.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG_PN" value="CL05B104KO5NNNC" x="31.1" y="9.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOL" value="10%" x="31.1" y="9.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VOLTAGE" value="16V" x="31.1" y="9.1" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R40" library="PR_Parts_Library" package="0603_CPL" value="DNP" x="31.6" y="17.6" smashed="yes" rot="R180">
 <attribute name="NAME" x="30.665" y="18.47" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="32.235" y="20.14" size="1.27" layer="27" rot="R180"/>
-<attribute name="MFG_PN" value="" x="31.6" y="17.6" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG_PN" value="ERJ-3GEY0R00V" x="31.6" y="17.6" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOL" value="" x="31.6" y="17.6" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="POWER" value="" x="31.6" y="17.6" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
@@ -3005,7 +3005,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="FB2" library="PR_Parts_Library" package="0805_ADAFRUIT" value="" x="31.1" y="12.1" smashed="yes" rot="R180">
 <attribute name="NAME" x="29.865" y="13.22" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="31.735" y="14.64" size="1.27" layer="27" rot="R180"/>
-<attribute name="MFG_PN" value="" x="31.1" y="12.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG_PN" value="HI0805R800R-10" x="31.1" y="12.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="CURRENT" value="2A" x="31.1" y="12.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOL" value="" x="31.1" y="12.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DCR" value="45m" x="31.1" y="12.1" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3013,7 +3013,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="FB3" library="PR_Parts_Library" package="0805_ADAFRUIT" value="" x="31.11" y="5.94" smashed="yes">
 <attribute name="NAME" x="29.775" y="4.01" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="30.475" y="3.4" size="1.27" layer="27"/>
-<attribute name="MFG_PN" value="" x="31.11" y="5.94" size="1.778" layer="27" display="off"/>
+<attribute name="MFG_PN" value="HI0805R800R-10" x="31.11" y="5.94" size="1.778" layer="27" display="off"/>
 <attribute name="CURRENT" value="2A" x="31.11" y="5.94" size="1.778" layer="27" display="off"/>
 <attribute name="TOL" value="" x="31.11" y="5.94" size="1.778" layer="27" display="off"/>
 <attribute name="DCR" value="45m" x="31.11" y="5.94" size="1.778" layer="27" display="off"/>
@@ -3021,7 +3021,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="R30" library="PR_Parts_Library" package="0603_CPL" value="10K" x="47.3" y="52" smashed="yes">
 <attribute name="NAME" x="46.411" y="50.289" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="46.411" y="49.968" size="1.27" layer="27"/>
-<attribute name="MFG_PN" value="" x="47.3" y="52" size="1.778" layer="27" display="off"/>
+<attribute name="MFG_PN" value="ERJ-3GEYJ103V" x="47.3" y="52" size="1.778" layer="27" display="off"/>
 <attribute name="TOL" value="5%" x="47.3" y="52" size="1.778" layer="27" display="off"/>
 <attribute name="POWER" value="1/10W" x="47.3" y="52" size="1.778" layer="27" display="off"/>
 </element>
@@ -3033,98 +3033,98 @@ Please make sure your boards conform to these design rules.</description>
 <element name="C05" library="PR_Parts_Library" package="0603_CPL" value="DNP" x="24.6" y="52.7" smashed="yes" rot="R180">
 <attribute name="NAME" x="23.865" y="51.135" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="25.235" y="54.605" size="1.27" layer="27" rot="R180"/>
-<attribute name="MFG_PN" value="" x="24.6" y="52.7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG_PN" value="DNP" x="24.6" y="52.7" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOL" value="2%" x="24.6" y="52.7" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VOLTAGE" value="50V" x="24.6" y="52.7" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C14" library="PR_Parts_Library" package="0603_CPL" value="47pF" x="24.6" y="54" smashed="yes" rot="R180">
 <attribute name="NAME" x="26.265" y="53.835" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="25.235" y="55.905" size="1.27" layer="27" rot="R180"/>
-<attribute name="MFG_PN" value="" x="24.6" y="54" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TOL" value="" x="24.6" y="54" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VOLTAGE" value="" x="24.6" y="54" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG_PN" value="CL10C470JB8NCNC" x="24.6" y="54" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TOL" value="5%" x="24.6" y="54" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE" value="50V" x="24.6" y="54" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C11" library="PR_Parts_Library" package="0603_CPL" value="22pF" x="29" y="61.3" smashed="yes" rot="R180">
 <attribute name="NAME" x="28.995" y="62.675" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
 <attribute name="VALUE" x="29.635" y="63.205" size="1.27" layer="27" rot="R180"/>
-<attribute name="MFG_PN" value="" x="29" y="61.3" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG_PN" value="C1608C0G1H220J080AA" x="29" y="61.3" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOL" value="5%" x="29" y="61.3" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VOLTAGE" value="50V" x="29" y="61.3" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C10" library="PR_Parts_Library" package="0603_CPL" value="22pF" x="24.7" y="61.3" smashed="yes">
 <attribute name="NAME" x="23.265" y="61.685" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
 <attribute name="VALUE" x="24.065" y="59.395" size="1.27" layer="27"/>
-<attribute name="MFG_PN" value="" x="24.7" y="61.3" size="1.778" layer="27" display="off"/>
+<attribute name="MFG_PN" value="C1608C0G1H220J080AA" x="24.7" y="61.3" size="1.778" layer="27" display="off"/>
 <attribute name="TOL" value="5%" x="24.7" y="61.3" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="50V" x="24.7" y="61.3" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C01" library="PR_Parts_Library" package="0603_CPL" value="22nF" x="29.01" y="59.6" smashed="yes" rot="R180">
 <attribute name="NAME" x="30.555" y="59.155" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="29.645" y="61.505" size="1.27" layer="27" rot="R180"/>
-<attribute name="MFG_PN" value="" x="29.01" y="59.6" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG_PN" value="CL10B223KB8NNNC" x="29.01" y="59.6" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOL" value="10%" x="29.01" y="59.6" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VOLTAGE" value="16V" x="29.01" y="59.6" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C03" library="PR_Parts_Library" package="0603_CPL" value=".1uF" x="30.24" y="58.03" smashed="yes">
 <attribute name="NAME" x="31.185" y="57.745" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="29.605" y="56.125" size="1.27" layer="27"/>
-<attribute name="MFG_PN" value="" x="30.24" y="58.03" size="1.778" layer="27" display="off"/>
+<attribute name="MFG_PN" value="CL05B104KO5NNNC" x="30.24" y="58.03" size="1.778" layer="27" display="off"/>
 <attribute name="TOL" value="10%" x="30.24" y="58.03" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="16V" x="30.24" y="58.03" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R02" library="PR_Parts_Library" package="0603_CPL" value="330" x="29.5" y="53.1" smashed="yes" rot="R180">
 <attribute name="NAME" x="31.165" y="52.635" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="30.135" y="55.005" size="1.27" layer="27" rot="R180"/>
-<attribute name="MFG_PN" value="" x="29.5" y="53.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG_PN" value="MCR03ERTJ331" x="29.5" y="53.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOL" value="5%" x="29.5" y="53.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="POWER" value="1/10W" x="29.5" y="53.1" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R04" library="PR_Parts_Library" package="0603_CPL" value="330" x="34.8" y="54.4" smashed="yes" rot="R180">
 <attribute name="NAME" x="36.265" y="53.935" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="35.435" y="56.305" size="1.27" layer="27" rot="R180"/>
-<attribute name="MFG_PN" value="" x="34.8" y="54.4" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG_PN" value="MCR03ERTJ331" x="34.8" y="54.4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOL" value="5%" x="34.8" y="54.4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="POWER" value="1/10W" x="34.8" y="54.4" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R05" library="PR_Parts_Library" package="0603_CPL" value="330" x="34.8" y="56.8" smashed="yes" rot="R180">
 <attribute name="NAME" x="36.865" y="56.535" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="35.435" y="58.705" size="1.27" layer="27" rot="R180"/>
-<attribute name="MFG_PN" value="" x="34.8" y="56.8" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG_PN" value="MCR03ERTJ331" x="34.8" y="56.8" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOL" value="5%" x="34.8" y="56.8" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="POWER" value="1/10W" x="34.8" y="56.8" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R07" library="PR_Parts_Library" package="0603_CPL" value="4.7K" x="34.8" y="55.6" smashed="yes">
 <attribute name="NAME" x="37.165" y="54.935" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="34.165" y="53.695" size="1.27" layer="27"/>
-<attribute name="MFG_PN" value="" x="34.8" y="55.6" size="1.778" layer="27" display="off"/>
+<attribute name="MFG_PN" value="ERJ-3EKF4701V" x="34.8" y="55.6" size="1.778" layer="27" display="off"/>
 <attribute name="TOL" value="1%" x="34.8" y="55.6" size="1.778" layer="27" display="off"/>
 <attribute name="POWER" value="1/10W" x="34.8" y="55.6" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R03" library="PR_Parts_Library" package="0603_CPL" value="4.7K" x="30.6" y="54.4" smashed="yes">
 <attribute name="NAME" x="29.065" y="55.135" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="29.965" y="52.495" size="1.27" layer="27"/>
-<attribute name="MFG_PN" value="" x="30.6" y="54.4" size="1.778" layer="27" display="off"/>
+<attribute name="MFG_PN" value="ERJ-3EKF4701V" x="30.6" y="54.4" size="1.778" layer="27" display="off"/>
 <attribute name="TOL" value="1%" x="30.6" y="54.4" size="1.778" layer="27" display="off"/>
 <attribute name="POWER" value="1/10W" x="30.6" y="54.4" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R08" library="PR_Parts_Library" package="0603_CPL" value="4.7K" x="34.8" y="58" smashed="yes">
 <attribute name="NAME" x="36.865" y="57.635" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="34.165" y="56.095" size="1.27" layer="27"/>
-<attribute name="MFG_PN" value="" x="34.8" y="58" size="1.778" layer="27" display="off"/>
+<attribute name="MFG_PN" value="ERJ-3EKF4701V" x="34.8" y="58" size="1.778" layer="27" display="off"/>
 <attribute name="TOL" value="1%" x="34.8" y="58" size="1.778" layer="27" display="off"/>
 <attribute name="POWER" value="1/10W" x="34.8" y="58" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R6" library="PR_Parts_Library" package="0603_CPL" value="10K" x="29.5" y="51.7" smashed="yes" rot="R180">
 <attribute name="NAME" x="29.765" y="50.135" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="30.135" y="53.605" size="1.27" layer="27" rot="R180"/>
-<attribute name="MFG_PN" value="" x="29.5" y="51.7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG_PN" value="ERJ-3GEYJ103V" x="29.5" y="51.7" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOL" value="5%" x="29.5" y="51.7" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="POWER" value="1/10W" x="29.5" y="51.7" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C02" library="PR_Parts_Library" package="0603_CPL" value="22nF" x="24.7" y="59.6" smashed="yes">
 <attribute name="NAME" x="21.115" y="59.225" size="0.8128" layer="25" font="vector" ratio="18"/>
 <attribute name="VALUE" x="24.065" y="57.695" size="1.27" layer="27"/>
-<attribute name="MFG_PN" value="" x="24.7" y="59.6" size="1.778" layer="27" display="off"/>
+<attribute name="MFG_PN" value="CL10B223KB8NNNC" x="24.7" y="59.6" size="1.778" layer="27" display="off"/>
 <attribute name="TOL" value="10%" x="24.7" y="59.6" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="16V" x="24.7" y="59.6" size="1.778" layer="27" display="off"/>
 </element>
@@ -3216,28 +3216,28 @@ Please make sure your boards conform to these design rules.</description>
 <element name="C25" library="PR_Parts_Library" package="0603_CPL" value="10uF" x="31.1" y="7.8" smashed="yes" rot="R180">
 <attribute name="NAME" x="27.235" y="7.335" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="31.735" y="9.705" size="1.27" layer="27" rot="R180"/>
-<attribute name="MFG_PN" value="" x="31.1" y="7.8" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG_PN" value="CL10A106MQ8NNNC" x="31.1" y="7.8" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOL" value="20%" x="31.1" y="7.8" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VOLTAGE" value="6.3V" x="31.1" y="7.8" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C32" library="PR_Parts_Library" package="0603_CPL" value="10uF" x="43.6" y="51.7" smashed="yes">
 <attribute name="NAME" x="42.465" y="49.935" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="42.965" y="49.795" size="1.27" layer="27"/>
-<attribute name="MFG_PN" value="" x="43.6" y="51.7" size="1.778" layer="27" display="off"/>
+<attribute name="MFG_PN" value="CL10A106MQ8NNNC" x="43.6" y="51.7" size="1.778" layer="27" display="off"/>
 <attribute name="TOL" value="20%" x="43.6" y="51.7" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="6.3V" x="43.6" y="51.7" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C24" library="PR_Parts_Library" package="0603_CPL" value="1uF" x="31.1" y="10.3" smashed="yes" rot="R180">
 <attribute name="NAME" x="28.365" y="10.635" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="31.735" y="12.205" size="1.27" layer="27" rot="R180"/>
-<attribute name="MFG_PN" value="" x="31.1" y="10.3" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG_PN" value="CL10B105KP8NNNC" x="31.1" y="10.3" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOL" value="10%" x="31.1" y="10.3" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="31.1" y="10.3" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C08" library="PR_Parts_Library" package="0603_CPL" value="1uF" x="34.2" y="51.7" smashed="yes">
 <attribute name="NAME" x="33.265" y="50.235" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="33.565" y="49.795" size="1.27" layer="27"/>
-<attribute name="MFG_PN" value="" x="34.2" y="51.7" size="1.778" layer="27" display="off"/>
+<attribute name="MFG_PN" value="CL10B105KP8NNNC" x="34.2" y="51.7" size="1.778" layer="27" display="off"/>
 <attribute name="TOL" value="10%" x="34.2" y="51.7" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="10V" x="34.2" y="51.7" size="1.778" layer="27" display="off"/>
 </element>
@@ -3270,18 +3270,18 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MFG_PN" value="DNP" x="48" y="33" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="C20" library="PR_Parts_Library" package="0603_CPL" value=".22uF" x="41.9" y="7.1" smashed="yes" rot="R180">
-<attribute name="MFG_PN" value="" x="41.9" y="7.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG_PN" value="C1608X7R1C224K080AC" x="41.9" y="7.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="40.765" y="5.535" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="42.535" y="9.005" size="1.27" layer="27" rot="R180"/>
-<attribute name="TOL" value="" x="41.9" y="7.1" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VOLTAGE" value="" x="41.9" y="7.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TOL" value="10%" x="41.9" y="7.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VOLTAGE" value="16V" x="41.9" y="7.1" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R22" library="PR_Parts_Library" package="0603_CPL" value="12K" x="39.4" y="10.9" smashed="yes" rot="R180">
-<attribute name="MFG_PN" value="" x="39.4" y="10.9" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG_PN" value="RMCF0603FT12K0" x="39.4" y="10.9" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="41.065" y="10.635" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="40.035" y="12.805" size="1.27" layer="27" rot="R180"/>
 <attribute name="TOL" value="1%" x="39.4" y="10.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="POWER" value="" x="39.4" y="10.9" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="POWER" value="1/10W" x="39.4" y="10.9" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="AMP" library="PR_Parts_Library" package="8-MSOP" value="" x="36" y="8.1" smashed="yes" rot="R90">
 <attribute name="MFG_PN" value="TPA6203A1DGNR" x="36" y="8.1" size="1.778" layer="27" rot="R90" display="off"/>
@@ -3291,16 +3291,16 @@ Please make sure your boards conform to these design rules.</description>
 <element name="R24" library="PR_Parts_Library" package="0603_CPL" value="100K" x="36" y="5.7" smashed="yes">
 <attribute name="NAME" x="34.865" y="4.362" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="35.365" y="3.795" size="1.27" layer="27"/>
-<attribute name="MFG_PN" value="" x="36" y="5.7" size="1.778" layer="27" display="off"/>
+<attribute name="MFG_PN" value="RMCF0603FT100K" x="36" y="5.7" size="1.778" layer="27" display="off"/>
 <attribute name="TOL" value="1%" x="36" y="5.7" size="1.778" layer="27" display="off"/>
-<attribute name="POWER" value="" x="36" y="5.7" size="1.778" layer="27" display="off"/>
+<attribute name="POWER" value="1/10W" x="36" y="5.7" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R23" library="PR_Parts_Library" package="0603_CPL" value="100K" x="36" y="10.7" smashed="yes" rot="R180">
-<attribute name="MFG_PN" value="" x="36" y="10.7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG_PN" value="RMCF0603FT100K" x="36" y="10.7" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="35.265" y="11.535" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="36.635" y="12.605" size="1.27" layer="27" rot="R180"/>
 <attribute name="TOL" value="1%" x="36" y="10.7" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="POWER" value="" x="36" y="10.7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="POWER" value="1/10W" x="36" y="10.7" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 </elements>
 <signals>
@@ -3669,7 +3669,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="34.65" y1="60.4" x2="34.7" y2="60.45" width="0.4064" layer="1"/>
 </signal>
 <signal name="VCC">
-<contactref element="L3" pad="1"/>
+<contactref element="L03" pad="1"/>
 <contactref element="MCU" pad="8"/>
 <contactref element="L02" pad="1"/>
 <contactref element="ISP" pad="2"/>
@@ -3989,7 +3989,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="N$2">
 <contactref element="C25" pad="1"/>
-<contactref element="L3" pad="2"/>
+<contactref element="L03" pad="2"/>
 <contactref element="C24" pad="1"/>
 <contactref element="C23" pad="1"/>
 <contactref element="AMP" pad="6"/>
