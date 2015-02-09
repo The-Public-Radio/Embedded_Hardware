@@ -1576,11 +1576,11 @@ MFG# ABS25-32.768KHZ-T</description>
 <part name="R21" library="PR_Parts_Library" deviceset="R_SMT" device="_R0603_CPL" value="12K">
 <attribute name="TOL" value="1%"/>
 </part>
-<part name="C22" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value=".22uf">
+<part name="C22" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value=".22uF">
 <attribute name="TOL" value="10%"/>
 <attribute name="VOLTAGE" value="16V"/>
 </part>
-<part name="C21" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value=".22uf">
+<part name="C21" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value=".22uF">
 <attribute name="TOL" value="10%"/>
 <attribute name="VOLTAGE" value="16V"/>
 </part>
@@ -1635,11 +1635,11 @@ MFG# ABS25-32.768KHZ-T</description>
 <attribute name="TOL" value="5%"/>
 </part>
 <part name="GND16" library="SparkFun" deviceset="GND" device=""/>
-<part name="C33" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value=".1uf">
+<part name="C33" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value=".1uF">
 <attribute name="TOL" value="10%"/>
 <attribute name="VOLTAGE" value="16V"/>
 </part>
-<part name="C23" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value=".1uf">
+<part name="C23" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value=".1uF">
 <attribute name="TOL" value="10%"/>
 <attribute name="VOLTAGE" value="16V"/>
 </part>
@@ -1668,7 +1668,7 @@ MFG# ABS25-32.768KHZ-T</description>
 <attribute name="TOL" value="2%"/>
 <attribute name="VOLTAGE" value="50V"/>
 </part>
-<part name="C14" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value="47p"/>
+<part name="C14" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value="47pF"/>
 <part name="C11" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value="22pF">
 <attribute name="TOL" value="5%"/>
 <attribute name="VOLTAGE" value="50V"/>
@@ -1677,11 +1677,11 @@ MFG# ABS25-32.768KHZ-T</description>
 <attribute name="TOL" value="5%"/>
 <attribute name="VOLTAGE" value="50V"/>
 </part>
-<part name="C01" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value="22n">
+<part name="C01" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value="22nF">
 <attribute name="TOL" value="10%"/>
 <attribute name="VOLTAGE" value="16V"/>
 </part>
-<part name="C03" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value=".1u">
+<part name="C03" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value=".1uF">
 <attribute name="TOL" value="10%"/>
 <attribute name="VOLTAGE" value="16V"/>
 </part>
@@ -1697,23 +1697,23 @@ MFG# ABS25-32.768KHZ-T</description>
 <attribute name="POWER" value="1/10W"/>
 <attribute name="TOL" value="5%"/>
 </part>
-<part name="R07" library="PR_Parts_Library" deviceset="R_SMT" device="_R0603_CPL" value="4.7k">
+<part name="R07" library="PR_Parts_Library" deviceset="R_SMT" device="_R0603_CPL" value="4.7K">
 <attribute name="POWER" value="1/10W"/>
 <attribute name="TOL" value="1%"/>
 </part>
-<part name="R03" library="PR_Parts_Library" deviceset="R_SMT" device="_R0603_CPL" value="4.7k">
+<part name="R03" library="PR_Parts_Library" deviceset="R_SMT" device="_R0603_CPL" value="4.7K">
 <attribute name="POWER" value="1/10W"/>
 <attribute name="TOL" value="1%"/>
 </part>
-<part name="R08" library="PR_Parts_Library" deviceset="R_SMT" device="_R0603_CPL" value="4.7k">
+<part name="R08" library="PR_Parts_Library" deviceset="R_SMT" device="_R0603_CPL" value="4.7K">
 <attribute name="POWER" value="1/10W"/>
 <attribute name="TOL" value="1%"/>
 </part>
-<part name="R6" library="PR_Parts_Library" deviceset="R_SMT" device="_R0603_CPL" value="10k">
+<part name="R6" library="PR_Parts_Library" deviceset="R_SMT" device="_R0603_CPL" value="10K">
 <attribute name="POWER" value="1/10W"/>
 <attribute name="TOL" value="5%"/>
 </part>
-<part name="C02" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value="22n">
+<part name="C02" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value="22nF">
 <attribute name="TOL" value="10%"/>
 <attribute name="VOLTAGE" value="16V"/>
 </part>
@@ -1752,7 +1752,7 @@ MFG# ABS25-32.768KHZ-T</description>
 <attribute name="TOL" value="20%"/>
 <attribute name="VOLTAGE" value="6.3V"/>
 </part>
-<part name="C24" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value="1uf">
+<part name="C24" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value="1uF">
 <attribute name="TOL" value="10%"/>
 <attribute name="VOLTAGE" value="10V"/>
 </part>
@@ -1768,7 +1768,7 @@ MFG# ABS25-32.768KHZ-T</description>
 <part name="TP15" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
 <part name="TP16" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
 <part name="TP17" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
-<part name="C20" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value=".22uf"/>
+<part name="C20" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value=".22uF"/>
 <part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R22" library="PR_Parts_Library" deviceset="R_SMT" device="_R0603_CPL" value="12K">
 <attribute name="TOL" value="1%"/>
