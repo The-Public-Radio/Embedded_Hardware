@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -19,11 +19,11 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -2343,7 +2343,7 @@
 <rectangle x1="35.4965" y1="12.6365" x2="35.5727" y2="12.6619" layer="26" rot="R180"/>
 <rectangle x1="35.3949" y1="12.6365" x2="35.4711" y2="12.6619" layer="26" rot="R180"/>
 <rectangle x1="35.4203" y1="12.6619" x2="35.5981" y2="12.6873" layer="26" rot="R180"/>
-<text x="63.7286" y="42.037" size="0.8128" layer="26" font="vector" ratio="18" rot="MR270">Board # PR9014
+<text x="64.3286" y="43.937" size="0.8128" layer="26" font="vector" ratio="18" rot="MR270">Board # PR9017
 DVT/DFM Pre-production </text>
 </plain>
 <libraries>
@@ -2792,9 +2792,6 @@ Please make sure your boards conform to these design rules.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
-<param name="AutoGrid" value="1"/>
-<param name="Efforts" value="0"/>
-<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -2892,21 +2889,21 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MFG_PN" value="Si4702 C19 GMR" x="26.9" y="56.9" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R21" library="PR_Parts_Library" package="0603_CPL" value="12K" x="41.9" y="8.3" smashed="yes" rot="R180">
-<attribute name="NAME" x="43.611" y="8.289" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="NAME" x="43.411" y="7.989" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="42.789" y="10.332" size="1.27" layer="27" rot="R180"/>
 <attribute name="MFG_PN" value="" x="41.9" y="8.3" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOL" value="1%" x="41.9" y="8.3" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="POWER" value="" x="41.9" y="8.3" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C22" library="PR_Parts_Library" package="0603_CPL" value=".22uf" x="39.4" y="12.3" smashed="yes">
-<attribute name="NAME" x="41.361" y="12.012" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="NAME" x="37.361" y="13.012" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="38.511" y="10.268" size="1.27" layer="27"/>
 <attribute name="MFG_PN" value="" x="39.4" y="12.3" size="1.778" layer="27" display="off"/>
 <attribute name="TOL" value="10%" x="39.4" y="12.3" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="16V" x="39.4" y="12.3" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C21" library="PR_Parts_Library" package="0603_CPL" value=".22uf" x="42.5" y="9.6" smashed="yes" rot="R180">
-<attribute name="NAME" x="44.361" y="9.562" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="NAME" x="44.261" y="9.362" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="43.389" y="11.632" size="1.27" layer="27" rot="R180"/>
 <attribute name="MFG_PN" value="" x="42.5" y="9.6" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOL" value="10%" x="42.5" y="9.6" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2921,7 +2918,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="DCR" value="2.3" x="34.7" y="61.3" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="L3" library="PR_Parts_Library" package="0603_CPL" value="2.2 kOhm @ 100MHz" x="34.7" y="15.8" smashed="yes" rot="R180">
-<attribute name="NAME" x="34.839" y="14.438" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="NAME" x="34.639" y="14.238" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="35.716" y="16.943" size="0.4064" layer="27" font="vector" rot="R180"/>
 <attribute name="MFG_PN" value="" x="34.7" y="15.8" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="CURRENT" value="150m" x="34.7" y="15.8" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2978,7 +2975,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VOLTAGE" value="16V" x="40.6" y="51.7" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C23" library="PR_Parts_Library" package="0603_CPL" value=".1uf" x="31.1" y="9.1" smashed="yes" rot="R180">
-<attribute name="NAME" x="27.3255" y="8.162" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="NAME" x="27.3255" y="8.262" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="32.116" y="10.497" size="0.4064" layer="27" rot="R180"/>
 <attribute name="MFG_PN" value="" x="31.1" y="9.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOL" value="10%" x="31.1" y="9.1" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3026,7 +3023,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="POWER" value="1/10W" x="47.3" y="52" size="1.778" layer="27" display="off"/>
 </element>
 <element name="JST_CONN" library="PR_Parts_Library" package="JST-PH-2-SMT-RA" value="" x="24.2" y="9.4" smashed="yes">
-<attribute name="NAME" x="20.26" y="13.01" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="NAME" x="21.36" y="14.41" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="21.66" y="1.78" size="1.27" layer="27" font="vector"/>
 <attribute name="MFG_PN" value="S2B-PH-SM4-TB(LF)(SN)" x="24.2" y="9.4" size="1.778" layer="27" display="off"/>
 </element>
@@ -3162,12 +3159,12 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MFG_PN" value="DNP" x="37" y="61" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="TP6" library="PR_Parts_Library" package="TP20R" value="" x="30.3" y="15.2" smashed="yes" rot="MR0">
-<attribute name="NAME" x="30.6" y="16.7501" size="0.8128" layer="26" font="vector" ratio="16" rot="MR0"/>
+<attribute name="NAME" x="33.5" y="15.3501" size="0.8128" layer="26" font="vector" ratio="16" rot="MR0"/>
 <attribute name="VALUE" x="30.808" y="14.438" size="0.254" layer="28" rot="MR0"/>
 <attribute name="MFG_PN" value="DNP" x="30.3" y="15.2" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="TP7" library="PR_Parts_Library" package="TP20R" value="" x="28.8" y="2.7" smashed="yes" rot="MR0">
-<attribute name="NAME" x="28.3" y="0.5501" size="0.8128" layer="26" font="vector" ratio="16" rot="MR0"/>
+<attribute name="NAME" x="32.2" y="2.6501" size="0.8128" layer="26" font="vector" ratio="16" rot="MR0"/>
 <attribute name="VALUE" x="29.308" y="1.938" size="0.254" layer="28" rot="MR0"/>
 <attribute name="MFG_PN" value="DNP" x="28.8" y="2.7" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
@@ -3207,14 +3204,14 @@ Please make sure your boards conform to these design rules.</description>
 <element name="MARK2" library="PR_Parts_Library" package="FIDUCIAL_1MM" value="" x="33" y="67">
 <attribute name="MFG_PN" value="DNP" x="33" y="67" size="1.778" layer="27" display="off"/>
 </element>
-<element name="MARK3" library="PR_Parts_Library" package="FIDUCIAL_1MM" value="" x="65" y="35">
-<attribute name="MFG_PN" value="DNP" x="65" y="35" size="1.778" layer="27" display="off"/>
+<element name="MARK3" library="PR_Parts_Library" package="FIDUCIAL_1MM" value="" x="66.6" y="34.9">
+<attribute name="MFG_PN" value="DNP" x="66.6" y="34.9" size="1.778" layer="27" display="off"/>
 </element>
 <element name="X1" library="PR_Parts_Library" package="4-SOJ" value="" x="27.2" y="64.58">
 <attribute name="MFG_PN" value="ABS25-32.768KHZ-T" x="27.2" y="64.58" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C25" library="PR_Parts_Library" package="0603_CPL" value="10uF" x="31.1" y="7.8" smashed="yes" rot="R180">
-<attribute name="NAME" x="27.235" y="6.735" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="NAME" x="27.235" y="7.335" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="31.735" y="9.705" size="1.27" layer="27" rot="R180"/>
 <attribute name="MFG_PN" value="" x="31.1" y="7.8" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOL" value="20%" x="31.1" y="7.8" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3228,7 +3225,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VOLTAGE" value="6.3V" x="43.6" y="51.7" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C24" library="PR_Parts_Library" package="0603_CPL" value="1uf" x="31.1" y="10.3" smashed="yes" rot="R180">
-<attribute name="NAME" x="29.165" y="10.835" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="NAME" x="28.365" y="10.635" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="31.735" y="12.205" size="1.27" layer="27" rot="R180"/>
 <attribute name="MFG_PN" value="" x="31.1" y="10.3" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOL" value="10%" x="31.1" y="10.3" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3271,14 +3268,14 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="C20" library="PR_Parts_Library" package="0603_CPL" value=".22uf" x="41.9" y="7.1" smashed="yes" rot="R180">
 <attribute name="MFG_PN" value="" x="41.9" y="7.1" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="42.265" y="5.435" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="NAME" x="40.765" y="5.535" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="42.535" y="9.005" size="1.27" layer="27" rot="R180"/>
 <attribute name="TOL" value="" x="41.9" y="7.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VOLTAGE" value="" x="41.9" y="7.1" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R22" library="PR_Parts_Library" package="0603_CPL" value="12K" x="39.4" y="10.9" smashed="yes" rot="R180">
 <attribute name="MFG_PN" value="" x="39.4" y="10.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="41.565" y="10.635" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="NAME" x="41.065" y="10.635" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="40.035" y="12.805" size="1.27" layer="27" rot="R180"/>
 <attribute name="TOL" value="1%" x="39.4" y="10.9" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="POWER" value="" x="39.4" y="10.9" size="1.778" layer="27" rot="R180" display="off"/>
