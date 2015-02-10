@@ -2953,7 +2953,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="LED" library="PR_Parts_Library" package="0603_CPL" value="LED" x="64.2" y="50" smashed="yes" rot="R270">
 <attribute name="NAME" x="63.2500125" y="47.59999375" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="62.20001875" y="51.0000125" size="1.27" layer="27" rot="R270"/>
-<attribute name="MFG_PN" value="M20-9980346" x="64.2" y="50" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFG_PN" value="LY R976-PS-36" x="64.2" y="50" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R31" library="PR_Parts_Library" package="0603_CPL" value="1K" x="62" y="50" smashed="yes" rot="R90">
 <attribute name="NAME" x="60.788990625" y="47.588978125" size="0.8128" layer="25" font="vector" ratio="16"/>

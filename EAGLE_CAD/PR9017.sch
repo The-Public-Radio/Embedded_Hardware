@@ -1626,7 +1626,7 @@ MFG# ABS25-32.768KHZ-T</description>
 <part name="GND31" library="SparkFun" deviceset="GND" device=""/>
 <part name="ISP" library="PR_Parts_Library" deviceset="AVR_SPI_PRG_6" device="NS" value=""/>
 <part name="LED" library="PR_Parts_Library" deviceset="LED" device="">
-<attribute name="MFG_PN" value="M20-9980346"/>
+<attribute name="MFG_PN" value="LY R976-PS-36"/>
 </part>
 <part name="GND30" library="SparkFun" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
