@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -1645,12 +1645,12 @@ MFG# ABS25-32.768KHZ-T</description>
 </part>
 <part name="GND16" library="SparkFun" deviceset="GND" device=""/>
 <part name="C33" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value=".1uF">
-<attribute name="MFG_PN" value="CL05B104KO5NNNC"/>
+<attribute name="MFG_PN" value="CL10B104KB8SFNC"/>
 <attribute name="TOL" value="10%"/>
 <attribute name="VOLTAGE" value="16V"/>
 </part>
 <part name="C23" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value=".1uF">
-<attribute name="MFG_PN" value="CL05B104KO5NNNC"/>
+<attribute name="MFG_PN" value="CL10B104KB8SFNC"/>
 <attribute name="TOL" value="10%"/>
 <attribute name="VOLTAGE" value="16V"/>
 </part>
@@ -1706,7 +1706,7 @@ MFG# ABS25-32.768KHZ-T</description>
 <attribute name="VOLTAGE" value="16V"/>
 </part>
 <part name="C03" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value=".1uF">
-<attribute name="MFG_PN" value="CL05B104KO5NNNC"/>
+<attribute name="MFG_PN" value="CL10B104KB8SFNC"/>
 <attribute name="TOL" value="10%"/>
 <attribute name="VOLTAGE" value="16V"/>
 </part>

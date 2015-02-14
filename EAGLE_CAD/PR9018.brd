@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2792,9 +2792,6 @@ Please make sure your boards conform to these design rules.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
-<param name="AutoGrid" value="1"/>
-<param name="Efforts" value="0"/>
-<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -2973,14 +2970,14 @@ Please make sure your boards conform to these design rules.</description>
 <element name="C33" library="PR_Parts_Library" package="0603_CPL" value=".1uF" x="40.6" y="51.7" smashed="yes" rot="R180">
 <attribute name="NAME" x="38.988" y="49.8755" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="41.616" y="53.097" size="0.4064" layer="27" rot="R180"/>
-<attribute name="MFG_PN" value="CL05B104KO5NNNC" x="40.6" y="51.7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG_PN" value="CL10B104KB8SFNC" x="40.6" y="51.7" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOL" value="10%" x="40.6" y="51.7" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VOLTAGE" value="16V" x="40.6" y="51.7" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C23" library="PR_Parts_Library" package="0603_CPL" value=".1uF" x="31.1" y="9.1" smashed="yes" rot="R180">
 <attribute name="NAME" x="27.3255" y="8.262" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="32.116" y="10.497" size="0.4064" layer="27" rot="R180"/>
-<attribute name="MFG_PN" value="CL05B104KO5NNNC" x="31.1" y="9.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFG_PN" value="CL10B104KB8SFNC" x="31.1" y="9.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOL" value="10%" x="31.1" y="9.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VOLTAGE" value="16V" x="31.1" y="9.1" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
@@ -3068,7 +3065,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="C03" library="PR_Parts_Library" package="0603_CPL" value=".1uF" x="30.24" y="58.03" smashed="yes">
 <attribute name="NAME" x="31.185" y="57.745" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="29.605" y="56.125" size="1.27" layer="27"/>
-<attribute name="MFG_PN" value="CL05B104KO5NNNC" x="30.24" y="58.03" size="1.778" layer="27" display="off"/>
+<attribute name="MFG_PN" value="CL10B104KB8SFNC" x="30.24" y="58.03" size="1.778" layer="27" display="off"/>
 <attribute name="TOL" value="10%" x="30.24" y="58.03" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="16V" x="30.24" y="58.03" size="1.778" layer="27" display="off"/>
 </element>
