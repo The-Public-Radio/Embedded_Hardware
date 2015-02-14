@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -458,9 +458,15 @@ We've spent an enormous amount of time creating and checking these footprints an
 <circle x="12.3698" y="-12.3698" radius="5.08" width="0.127" layer="42"/>
 <circle x="-12.3698" y="-12.3698" radius="5.08" width="0.127" layer="42"/>
 <circle x="0" y="0" radius="11.5062" width="0.127" layer="20"/>
-<hole x="-12.4968" y="-7.1882" drill="3.2"/>
-<hole x="12.4968" y="-7.1882" drill="3.2"/>
 <pad name="LID_GND" x="-12.3698" y="-12.3698" drill="2" diameter="5"/>
+<wire x1="14.7" y1="-6.86" x2="14.7" y2="-4.54" width="0.127" layer="20"/>
+<wire x1="14.7" y1="-4.54" x2="12.16" y2="-2" width="0.127" layer="20" curve="90"/>
+<wire x1="12.16" y1="-2" x2="-12.16" y2="-2" width="0.127" layer="20"/>
+<wire x1="-12.16" y1="-2" x2="-14.7" y2="-4.54" width="0.127" layer="20" curve="90"/>
+<wire x1="-14.7" y1="-4.54" x2="-14.7" y2="-6.86" width="0.127" layer="20"/>
+<wire x1="-14.7" y1="-6.86" x2="-12.16" y2="-9.4" width="0.127" layer="20" curve="90"/>
+<wire x1="-12.16" y1="-9.4" x2="12.16" y2="-9.4" width="0.127" layer="20"/>
+<wire x1="12.16" y1="-9.4" x2="14.7" y2="-6.86" width="0.127" layer="20" curve="90"/>
 </package>
 <package name="0402_WAI">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
