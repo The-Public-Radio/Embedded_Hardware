@@ -1451,7 +1451,7 @@ MFG# ABS25-32.768KHZ-T</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="MFG_PN" value="S2B-PH-SM4-TB(LF)(SN)"/>
+<attribute name="MFG_PN" value="B2B-PH-SM4-TB(LF)(SN)"/>
 </technology>
 </technologies>
 </device>
