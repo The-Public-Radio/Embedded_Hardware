@@ -461,14 +461,14 @@ We've spent an enormous amount of time creating and checking these footprints an
 <circle x="-12.3698" y="-12.3698" radius="5.08" width="0.127" layer="42"/>
 <circle x="0" y="0" radius="11.5062" width="0.127" layer="20"/>
 <pad name="LID_GND" x="-12.3698" y="-12.3698" drill="2" diameter="5"/>
-<wire x1="14.7" y1="-6.86" x2="14.7" y2="-4.54" width="0.127" layer="20"/>
-<wire x1="14.7" y1="-4.54" x2="12.16" y2="-2" width="0.127" layer="20" curve="90"/>
-<wire x1="12.16" y1="-2" x2="-12.16" y2="-2" width="0.127" layer="20"/>
-<wire x1="-12.16" y1="-2" x2="-14.7" y2="-4.54" width="0.127" layer="20" curve="90"/>
-<wire x1="-14.7" y1="-4.54" x2="-14.7" y2="-6.86" width="0.127" layer="20"/>
-<wire x1="-14.7" y1="-6.86" x2="-12.16" y2="-9.4" width="0.127" layer="20" curve="90"/>
-<wire x1="-12.16" y1="-9.4" x2="12.16" y2="-9.4" width="0.127" layer="20"/>
-<wire x1="12.16" y1="-9.4" x2="14.7" y2="-6.86" width="0.127" layer="20" curve="90"/>
+<wire x1="-12.2" y1="-9.4" x2="12.2" y2="-9.4" width="0.127" layer="20"/>
+<wire x1="12.2" y1="-9.4" x2="14.7" y2="-6.9" width="0.127" layer="20" curve="90"/>
+<wire x1="14.7" y1="-6.9" x2="14.7" y2="-3.5" width="0.127" layer="20"/>
+<wire x1="14.7" y1="-3.5" x2="12.2" y2="-1" width="0.127" layer="20" curve="90"/>
+<wire x1="12.2" y1="-1" x2="-12.2" y2="-1" width="0.127" layer="20"/>
+<wire x1="-12.2" y1="-1" x2="-14.7" y2="-3.5" width="0.127" layer="20" curve="90"/>
+<wire x1="-14.7" y1="-3.5" x2="-14.7" y2="-6.9" width="0.127" layer="20"/>
+<wire x1="-14.7" y1="-6.9" x2="-12.2" y2="-9.4" width="0.127" layer="20" curve="90"/>
 </package>
 <package name="0402_WAI">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
@@ -1561,7 +1561,9 @@ MFG# ABS25-32.768KHZ-T</description>
 </class>
 </classes>
 <parts>
-<part name="U1" library="PR_Parts_Library" deviceset="SI4702-C19-GMR" device="" value=""/>
+<part name="U1" library="PR_Parts_Library" deviceset="SI4702-C19-GMR" device="" value="">
+<attribute name="MFG_PN" value="Si4702 C19 GM - supplied by CL Labs"/>
+</part>
 <part name="GND13" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND11" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND17" library="SparkFun" deviceset="GND" device=""/>
@@ -1606,7 +1608,9 @@ MFG# ABS25-32.768KHZ-T</description>
 <part name="GND24" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="ANT_MOUNT" library="PR_Parts_Library" deviceset="M3_SCREW_POST" device="" value="DNP"/>
-<part name="R1" library="PR_Parts_Library" deviceset="RV170SF_TAIWANA_POT_SW" device="" value=""/>
+<part name="R1" library="PR_Parts_Library" deviceset="RV170SF_TAIWANA_POT_SW" device="" value="">
+<attribute name="MFG_PN" value="RV170SF-43-20F-A10K - supplied by CL Labs"/>
+</part>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND12" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -1655,8 +1659,12 @@ MFG# ABS25-32.768KHZ-T</description>
 <part name="D1" library="PR_Parts_Library" deviceset="BAV99" device="">
 <attribute name="MFG_PN" value="BAV99,215"/>
 </part>
-<part name="JP5" library="PR_Parts_Library" deviceset="BK-92_MPD_AA_BATT_CLIP" device="" value=""/>
-<part name="JP6" library="PR_Parts_Library" deviceset="BK-92_MPD_AA_BATT_CLIP" device="" value=""/>
+<part name="JP5" library="PR_Parts_Library" deviceset="BK-92_MPD_AA_BATT_CLIP" device="" value="">
+<attribute name="MFG_PN" value="2 of BK92 - supplied by CL Labs"/>
+</part>
+<part name="JP6" library="PR_Parts_Library" deviceset="BK-92_MPD_AA_BATT_CLIP" device="" value="">
+<attribute name="MFG_PN" value="2 of BK92 - supplied by CL Labs"/>
+</part>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="FB2" library="PR_Parts_Library" deviceset="L_SMT" device="_0805_ADAFRUIT">
 <attribute name="CURRENT" value="2A"/>
@@ -1852,8 +1860,8 @@ ZONE 0x-1x</text>
 ZONE 2x</text>
 <text x="157.48" y="144.78" size="2.54" layer="96">MCU
 ZONE 3x</text>
-<text x="-27.94" y="162.56" size="3.81" layer="96">PUBLIC RADIO PR9017
-Development Board </text>
+<text x="-27.94" y="162.56" size="3.81" layer="96">PUBLIC RADIO PR9019
+Production Board </text>
 <text x="22.098" y="109.474" size="2.54" layer="96">Fiducials </text>
 <text x="71.12" y="147.574" size="2.54" layer="96">Test Points </text>
 <text x="60.96" y="101.6" size="1.27" layer="95">MISO</text>
