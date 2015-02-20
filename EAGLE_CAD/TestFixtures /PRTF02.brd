@@ -2434,6 +2434,66 @@ http://thepublicrad.io</text>
 <text x="-3.048" y="-3.048" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="-3.048" y="3.556" size="1.016" layer="21" font="vector">1</text>
 </package>
+<package name="1X10-BIG">
+<wire x1="-12.7" y1="1.27" x2="12.7" y2="1.27" width="0.127" layer="21"/>
+<wire x1="12.7" y1="1.27" x2="12.7" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-1.27" x2="-12.7" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-12.7" y1="-1.27" x2="-12.7" y2="1.27" width="0.127" layer="21"/>
+<pad name="1" x="-11.43" y="0" drill="1.016" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="2" x="-8.89" y="0" drill="1.016" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="3" x="-6.35" y="0" drill="1.016" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="4" x="-3.81" y="0" drill="1.016" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="5" x="-1.27" y="0" drill="1.016" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="6" x="1.27" y="0" drill="1.016" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="7" x="3.81" y="0" drill="1.016" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="8" x="6.35" y="0" drill="1.016" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="9" x="8.89" y="0" drill="1.016" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="10" x="11.43" y="0" drill="1.016" diameter="1.778" shape="octagon" rot="R90"/>
+<text x="-11.5062" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-11.43" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
+<rectangle x1="-6.604" y1="-0.254" x2="-6.096" y2="0.254" layer="51"/>
+<rectangle x1="-9.144" y1="-0.254" x2="-8.636" y2="0.254" layer="51"/>
+<rectangle x1="-11.684" y1="-0.254" x2="-11.176" y2="0.254" layer="51"/>
+<rectangle x1="6.096" y1="-0.254" x2="6.604" y2="0.254" layer="51"/>
+<rectangle x1="8.636" y1="-0.254" x2="9.144" y2="0.254" layer="51"/>
+<rectangle x1="11.176" y1="-0.254" x2="11.684" y2="0.254" layer="51"/>
+</package>
+</packages>
+</library>
+<library name="SparkFun-PowerIC">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find drivers, regulators, and amplifiers.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="SOT223">
+<description>&lt;b&gt;SOT-223&lt;/b&gt;</description>
+<wire x1="3.2766" y1="1.651" x2="3.2766" y2="-1.651" width="0.2032" layer="21"/>
+<wire x1="3.2766" y1="-1.651" x2="-3.2766" y2="-1.651" width="0.2032" layer="21"/>
+<wire x1="-3.2766" y1="-1.651" x2="-3.2766" y2="1.651" width="0.2032" layer="21"/>
+<wire x1="-3.2766" y1="1.651" x2="3.2766" y2="1.651" width="0.2032" layer="21"/>
+<smd name="1" x="-2.3114" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
+<smd name="2" x="0" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
+<smd name="3" x="2.3114" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
+<smd name="4" x="0" y="3.099" dx="3.6" dy="2.2" layer="1"/>
+<text x="-0.8255" y="4.5085" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.0795" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
+<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
+<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
+<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
+<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
+<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
+<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
+<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
+</package>
 </packages>
 </library>
 </libraries>
@@ -2770,8 +2830,10 @@ Please make sure your boards conform to these design rules.</description>
 <element name="U$18" library="PR_Parts_Library" package="0908MILL_MAX_SPRINGPIN" value="0908MILL_MAX_SPRINGPIN" x="48" y="37">
 <attribute name="MFG#" value="0908-1-15-20-75-14-11-0 " x="48" y="37" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U$19" library="adafruit" package="PJ-102A" value="2.1MMJACKTHM" x="121.3" y="52.9"/>
-<element name="ISP1" library="adafruit" package="AVRISP" value="AVRISP-6" x="122.6" y="65"/>
+<element name="U$19" library="adafruit" package="PJ-102A" value="2.1MMJACKTHM" x="122.7" y="62" rot="R270"/>
+<element name="ISP1" library="adafruit" package="AVRISP" value="AVRISP-6" x="96.7" y="64.6"/>
+<element name="U1" library="SparkFun-PowerIC" package="SOT223" value="V_REG_317SMD" x="106.2" y="65"/>
+<element name="U$20" library="adafruit" package="1X10-BIG" value="PINHD-1X10" x="12.6" y="-3.8"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -2779,8 +2841,6 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="T1" pad="TP"/>
 <contactref element="T2" pad="TP"/>
 <contactref element="T3" pad="TP"/>
-<contactref element="U$2" pad="P$1"/>
-<contactref element="U$3" pad="P$1"/>
 <contactref element="U$4" pad="P$1"/>
 <contactref element="ISP1" pad="6"/>
 <polygon width="0.4064" layer="1">
@@ -2796,6 +2856,7 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="128" y="71"/>
 <vertex x="0" y="71"/>
 </polygon>
+<contactref element="U$19" pad="RING"/>
 </signal>
 <signal name="!RST">
 <contactref element="T10" pad="TP"/>
@@ -2812,7 +2873,9 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U$5" pad="P$1"/>
 <contactref element="U$6" pad="P$1"/>
 <contactref element="ISP1" pad="2"/>
-<wire x1="60" y1="40" x2="123.87" y2="67.54" width="0" layer="19" extent="16-16"/>
+<contactref element="U1" pad="2"/>
+<wire x1="97.97" y1="67.14" x2="106.2" y2="61.9012" width="0" layer="19" extent="1-1"/>
+<wire x1="60" y1="40" x2="97.97" y2="67.14" width="0" layer="19" extent="16-16"/>
 <wire x1="34" y1="64" x2="60" y2="40" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="A_OUT">
@@ -2866,20 +2929,35 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="MISO">
 <contactref element="U$11" pad="P$1"/>
 <contactref element="ISP1" pad="1"/>
-<wire x1="49" y1="64" x2="121.33" y2="67.54" width="0" layer="19" extent="1-1"/>
+<wire x1="49" y1="64" x2="95.43" y2="67.14" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCK">
 <contactref element="U$12" pad="P$1"/>
 <contactref element="ISP1" pad="3"/>
-<wire x1="37" y1="67" x2="121.33" y2="65" width="0" layer="19" extent="1-1"/>
+<wire x1="37" y1="67" x2="95.43" y2="64.6" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MOSI">
 <contactref element="U$14" pad="P$1"/>
 <contactref element="ISP1" pad="4"/>
-<wire x1="39" y1="68" x2="123.87" y2="65" width="0" layer="19" extent="1-1"/>
+<wire x1="39" y1="68" x2="97.97" y2="64.6" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RST">
 <contactref element="ISP1" pad="5"/>
+</signal>
+<signal name="N$1">
+<contactref element="U$19" pad="TIP"/>
+<contactref element="U1" pad="3"/>
+<wire x1="108.5114" y1="61.9012" x2="113.41" y2="61.9" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="T2">
+<contactref element="U$3" pad="P$1"/>
+<contactref element="U$20" pad="2"/>
+<wire x1="3.71" y1="-3.8" x2="60" y2="35" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="T1">
+<contactref element="U$2" pad="P$1"/>
+<contactref element="U$20" pad="1"/>
+<wire x1="1.17" y1="-3.8" x2="10.6" y2="44.6" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <errors>

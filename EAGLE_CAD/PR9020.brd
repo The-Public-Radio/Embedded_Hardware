@@ -154,7 +154,7 @@
 <rectangle x1="35.4965" y1="12.6365" x2="35.5727" y2="12.6619" layer="26" rot="R180"/>
 <rectangle x1="35.3949" y1="12.6365" x2="35.4711" y2="12.6619" layer="26" rot="R180"/>
 <rectangle x1="35.4203" y1="12.6619" x2="35.5981" y2="12.6873" layer="26" rot="R180"/>
-<text x="64" y="35" size="0.8128" layer="26" font="vector" ratio="18" rot="MR270" align="center">PR9020
+<text x="64" y="35" size="0.8128" layer="26" font="vector" ratio="22" rot="MR270" align="center">PR9020
 Born + tuned in Brooklyn
 http://thepublicrad.io</text>
 <circle x="46.34" y="60.76" radius="0.5" width="0.8128" layer="26"/>
@@ -2923,7 +2923,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MFG_PN" value="Si4702 C19 GM - supplied by CL Labs" x="26.9" y="56.9" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R21" library="PR_Parts_Library" package="0603_CPL" value="12K" x="41.7" y="8.7" smashed="yes" rot="R180">
-<attribute name="NAME" x="43.551" y="8.389" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="NAME" x="43.851" y="8.389" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="42.589" y="10.732" size="1.27" layer="27" rot="R180"/>
 <attribute name="MFG_PN" value="RC0603FR-0712KL" x="41.7" y="8.7" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOL" value="1%" x="41.7" y="8.7" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2937,7 +2937,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VOLTAGE" value="16V" x="39.2" y="11.9" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C21" library="PR_Parts_Library" package="0603_CPL" value=".22uF" x="41.9" y="7.1" smashed="yes" rot="R180">
-<attribute name="NAME" x="43.861" y="6.762" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="NAME" x="43.761" y="6.762" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="42.789" y="9.132" size="1.27" layer="27" rot="R180"/>
 <attribute name="MFG_PN" value="C1608X7R1C224K080AC" x="41.9" y="7.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOL" value="10%" x="41.9" y="7.1" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3004,7 +3004,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VOLTAGE" value="16V" x="40.6" y="51.7" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C23" library="PR_Parts_Library" package="0603_CPL" value=".1uF" x="31.1" y="9.1" smashed="yes" rot="R180">
-<attribute name="NAME" x="26.8855" y="8.872" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="NAME" x="27.0855" y="8.972" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="32.116" y="10.497" size="0.4064" layer="27" rot="R180"/>
 <attribute name="MFG_PN" value="CL10B104KB8SFNC" x="31.1" y="9.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOL" value="10%" x="31.1" y="9.1" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3029,7 +3029,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MFG_PN" value="2 of BK92 - supplied by CL Labs" x="35" y="16.5" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="FB2" library="PR_Parts_Library" package="0805_ADAFRUIT" value="" x="31.1" y="12.1" smashed="yes" rot="R180">
-<attribute name="NAME" x="26.985" y="11.88" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="NAME" x="27.185" y="11.78" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="31.735" y="14.64" size="1.27" layer="27" rot="R180"/>
 <attribute name="MFG_PN" value="HI0805R800R-10" x="31.1" y="12.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="CURRENT" value="2A" x="31.1" y="12.1" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3037,7 +3037,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="DCR" value="45m" x="31.1" y="12.1" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="FB3" library="PR_Parts_Library" package="0805_ADAFRUIT" value="" x="31.11" y="5.94" smashed="yes">
-<attribute name="NAME" x="27.275" y="5.32" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="NAME" x="27.075" y="5.32" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="30.475" y="3.4" size="1.27" layer="27"/>
 <attribute name="MFG_PN" value="HI0805R800R-10" x="31.11" y="5.94" size="1.778" layer="27" display="off"/>
 <attribute name="CURRENT" value="2A" x="31.11" y="5.94" size="1.778" layer="27" display="off"/>
@@ -3229,8 +3229,8 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="39.508" y="67.238" size="0.254" layer="28" rot="MR0"/>
 <attribute name="MFG_PN" value="DNP" x="39" y="68" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="MARK1" library="PR_Parts_Library" package="FIDUCIAL_1MM" value="" x="17" y="9">
-<attribute name="MFG_PN" value="DNP" x="17" y="9" size="1.778" layer="27" display="off"/>
+<element name="MARK1" library="PR_Parts_Library" package="FIDUCIAL_1MM" value="" x="16.2" y="8.5">
+<attribute name="MFG_PN" value="DNP" x="16.2" y="8.5" size="1.778" layer="27" display="off"/>
 </element>
 <element name="MARK2" library="PR_Parts_Library" package="FIDUCIAL_1MM" value="" x="33" y="67">
 <attribute name="MFG_PN" value="DNP" x="33" y="67" size="1.778" layer="27" display="off"/>
@@ -3256,7 +3256,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VOLTAGE" value="6.3V" x="43.6" y="51.7" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C24" library="PR_Parts_Library" package="0603_CPL" value="1uF" x="31.1" y="10.3" smashed="yes" rot="R180">
-<attribute name="NAME" x="27.005" y="10.565" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="NAME" x="27.105" y="10.565" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="31.735" y="12.205" size="1.27" layer="27" rot="R180"/>
 <attribute name="MFG_PN" value="CL10B105KP8NNNC" x="31.1" y="10.3" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOL" value="10%" x="31.1" y="10.3" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3366,7 +3366,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="26.41" y="67.49" extent="1-16" drill="0.6"/>
 <via x="46.35" y="40.8" extent="1-16" drill="0.6"/>
 <via x="43.15" y="4.1" extent="1-16" drill="0.6"/>
-<via x="16.09" y="6.96" extent="1-16" drill="0.6"/>
+<via x="16.79" y="6.66" extent="1-16" drill="0.6"/>
 <via x="21.8" y="13.9" extent="1-16" drill="0.6"/>
 <via x="28.55" y="23.6" extent="1-16" drill="0.6"/>
 <via x="39.95" y="23.1" extent="1-16" drill="0.6"/>
@@ -4206,6 +4206,7 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="1,20,5d6c1f121f635d1d"/>
 <approved hash="6,1,bc5ab7a4cfa4c45a"/>
 <approved hash="1,20,5ef1f48ff53b5f45"/>
+<approved hash="6,1,7ac17b3d633d62c1"/>
 <approved hash="1,20,1a7e0000071f1d61"/>
 <approved hash="1,20,9e4a8c348de09f9e"/>
 <approved hash="1,20,1a4a003401e31b9d"/>
@@ -4216,6 +4217,7 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="1,20,9e70b40eb31a9964"/>
 <approved hash="1,20,5140133e136b5115"/>
 <approved hash="1,20,9afc408241029b7c"/>
+<approved hash="1,20,9e6c1c121322915c"/>
 <approved hash="1,20,9e61b41e4b2a6155"/>
 <approved hash="1,20,4261801e7f2abd55"/>
 <approved hash="1,20,5e081476152b5f55"/>
@@ -4368,7 +4370,7 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="19,1,1423144314621402"/>
 <approved hash="19,1,f42054405464f404"/>
 <approved hash="19,1,997719171e169e76"/>
-<approved hash="6,1,7ac17b3d633d62c1"/>
+<approved hash="6,1,5c6352711a711463"/>
 <approved hash="6,1,7fa97163696367a9"/>
 <approved hash="6,1,5b19595f915f9319"/>
 <approved hash="6,16,6b44decad24a8621"/>
