@@ -3133,7 +3133,6 @@ Production Board </text>
 </instance>
 <instance part="R40" gate="G$1" x="38.1" y="121.92" smashed="yes" rot="R180">
 <attribute name="NAME" x="36.83" y="117.8814" size="1.778" layer="95"/>
-<attribute name="VALUE" x="36.322" y="115.57" size="1.778" layer="96"/>
 </instance>
 <instance part="D1" gate="G$1" x="-10.16" y="25.4" rot="R180"/>
 <instance part="JP5" gate="BATT" x="10.16" y="121.92" rot="R90"/>

@@ -3243,7 +3243,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VOLTAGE" value="6.3V" x="43.6" y="51.7" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C24" library="PR_Parts_Library" package="0603_CPL" value="1uF" x="31.1" y="10.3" smashed="yes" rot="R180">
-<attribute name="NAME" x="27.305" y="10.365" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="NAME" x="27.005" y="10.665" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="31.735" y="12.205" size="1.27" layer="27" rot="R180"/>
 <attribute name="MFG_PN" value="CL10B105KP8NNNC" x="31.1" y="10.3" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TOL" value="10%" x="31.1" y="10.3" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3322,17 +3322,21 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="61.66" y="51.27" size="1.27" layer="27" rot="R270"/>
 <attribute name="MFG_PN" value="LY R976-PS-36" x="64.2" y="50" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R25" library="PR_Parts_Library" package="0805_ADAFRUIT" value="0 ohm" x="30.9" y="12" rot="R180">
+<element name="R25" library="PR_Parts_Library" package="0805_ADAFRUIT" value="0 ohm" x="30.9" y="12" smashed="yes" rot="R180">
 <attribute name="TOL" value="" x="30.9" y="12" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFG_PN" value="ERJ-6GEY0R00V
 " x="30.9" y="12" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="POWER" value="" x="30.9" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="29.389" y="13.484" size="0.8128" layer="25" ratio="16" rot="R180"/>
+<attribute name="VALUE" x="31.789" y="14.286" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R26" library="PR_Parts_Library" package="0805_ADAFRUIT" value="0 ohm" x="31.1" y="6.1" rot="R180">
+<element name="R26" library="PR_Parts_Library" package="0805_ADAFRUIT" value="0 ohm" x="31.1" y="6.1" smashed="yes" rot="R180">
 <attribute name="TOL" value="" x="31.1" y="6.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFG_PN" value="ERJ-6GEY0R00V
 " x="31.1" y="6.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="POWER" value="" x="31.1" y="6.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="29.289" y="6.184" size="0.8128" layer="25" ratio="16" rot="R180"/>
+<attribute name="VALUE" x="31.989" y="8.386" size="1.27" layer="27" rot="R180"/>
 </element>
 </elements>
 <signals>
