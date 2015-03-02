@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -2844,16 +2844,6 @@ Source: http://www.osram.convergy.de/</description>
 <attribute name="MFG_PN" value="2 of BK92 - supplied by CL Labs"/>
 </part>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="FB2" library="PR_Parts_Library" deviceset="L_SMT" device="_0805_ADAFRUIT">
-<attribute name="CURRENT" value="2A"/>
-<attribute name="DCR" value="45m"/>
-<attribute name="MFG_PN" value="HI0805R800R-10"/>
-</part>
-<part name="FB3" library="PR_Parts_Library" deviceset="L_SMT" device="_0805_ADAFRUIT">
-<attribute name="CURRENT" value="2A"/>
-<attribute name="DCR" value="45m"/>
-<attribute name="MFG_PN" value="HI0805R800R-10"/>
-</part>
 <part name="R30" library="PR_Parts_Library" deviceset="R_SMT" device="_R0603_CPL" value="10K">
 <attribute name="MFG_PN" value="ERJ-3GEYJ103V"/>
 <attribute name="POWER" value="1/10W"/>
@@ -3012,6 +3002,14 @@ Source: http://www.osram.convergy.de/</description>
 <part name="LED" library="adafruit" deviceset="LED" device="CHIPLED_0805">
 <attribute name="MFG_PN" value="LY R976-PS-36"/>
 </part>
+<part name="R25" library="PR_Parts_Library" deviceset="R_SMT" device="_0805_ADAFRUIT" value="0 ohm">
+<attribute name="MFG_PN" value="ERJ-6GEY0R00V
+"/>
+</part>
+<part name="R26" library="PR_Parts_Library" deviceset="R_SMT" device="_0805_ADAFRUIT" value="0 ohm">
+<attribute name="MFG_PN" value="ERJ-6GEY0R00V
+"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -3141,14 +3139,6 @@ Production Board </text>
 <instance part="JP5" gate="BATT" x="10.16" y="121.92" rot="R90"/>
 <instance part="JP6" gate="BATT" x="10.16" y="106.68" rot="R90"/>
 <instance part="GND10" gate="1" x="10.16" y="93.98"/>
-<instance part="FB2" gate="G$1" x="241.3" y="33.02" smashed="yes" rot="R90">
-<attribute name="NAME" x="238.76" y="35.56" size="1.778" layer="95"/>
-<attribute name="VALUE" x="246.38" y="35.56" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="FB3" gate="G$1" x="241.3" y="30.48" smashed="yes" rot="R270">
-<attribute name="NAME" x="243.84" y="27.94" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="236.22" y="27.94" size="1.778" layer="96" rot="R270"/>
-</instance>
 <instance part="R30" gate="G$1" x="200.66" y="127" smashed="yes" rot="R270">
 <attribute name="NAME" x="203.6826" y="124.206" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="205.994" y="123.952" size="1.778" layer="96" rot="R90"/>
@@ -3239,6 +3229,14 @@ Production Board </text>
 </instance>
 <instance part="LED" gate="G$1" x="205.74" y="101.6">
 <attribute name="MFG_PN" x="205.74" y="101.6" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R25" gate="G$1" x="241.3" y="33.02" smashed="yes">
+<attribute name="NAME" x="237.49" y="37.0586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="237.49" y="34.798" size="1.778" layer="96"/>
+</instance>
+<instance part="R26" gate="G$1" x="241.3" y="30.48" smashed="yes">
+<attribute name="NAME" x="237.49" y="26.8986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="237.49" y="24.638" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -3804,9 +3802,9 @@ Production Board </text>
 <label x="60.96" y="116.84" size="1.27" layer="95"/>
 </segment>
 <segment>
-<pinref part="FB2" gate="G$1" pin="2"/>
 <pinref part="SPKR_PLUG" gate="G$1" pin="1"/>
-<wire x1="248.92" y1="33.02" x2="254" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="33.02" x2="254" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="R25" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="SPK_OUT-" class="0">
@@ -3816,9 +3814,9 @@ Production Board </text>
 <label x="71.12" y="116.84" size="1.27" layer="95"/>
 </segment>
 <segment>
-<pinref part="FB3" gate="G$1" pin="1"/>
 <pinref part="SPKR_PLUG" gate="G$1" pin="2"/>
-<wire x1="248.92" y1="30.48" x2="254" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="30.48" x2="254" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="R26" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -3908,22 +3906,22 @@ Production Board </text>
 <net name="N$4" class="0">
 <segment>
 <pinref part="AMP" gate="G$1" pin="OUT+"/>
-<pinref part="FB2" gate="G$1" pin="1"/>
 <wire x1="218.44" y1="33.02" x2="223.52" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="R23" gate="G$1" pin="2"/>
-<wire x1="223.52" y1="33.02" x2="233.68" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="33.02" x2="236.22" y2="33.02" width="0.1524" layer="91"/>
 <junction x="223.52" y="33.02"/>
+<pinref part="R25" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="AMP" gate="G$1" pin="OUT-"/>
-<pinref part="FB3" gate="G$1" pin="2"/>
 <wire x1="218.44" y1="30.48" x2="223.52" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="R24" gate="G$1" pin="1"/>
-<wire x1="223.52" y1="30.48" x2="233.68" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="30.48" x2="236.22" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="27.94" x2="223.52" y2="30.48" width="0.1524" layer="91"/>
 <junction x="223.52" y="30.48"/>
+<pinref part="R26" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
