@@ -2831,7 +2831,7 @@ Source: http://www.osram.convergy.de/</description>
 <attribute name="TOL" value="10%"/>
 <attribute name="VOLTAGE" value="16V"/>
 </part>
-<part name="R40" library="PR_Parts_Library" deviceset="R_SMT" device="_R0603_CPL" value="DNP">
+<part name="R40" library="PR_Parts_Library" deviceset="R_SMT" device="_R0603_CPL">
 <attribute name="MFG_PN" value="ERJ-3GEY0R00V"/>
 </part>
 <part name="D1" library="PR_Parts_Library" deviceset="BAV99" device="">

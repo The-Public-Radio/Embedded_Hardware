@@ -3013,7 +3013,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="TOL" value="10%" x="31.1" y="9.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VOLTAGE" value="16V" x="31.1" y="9.1" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R40" library="PR_Parts_Library" package="0603_CPL" value="DNP" x="31.6" y="17.6" smashed="yes" rot="R180">
+<element name="R40" library="PR_Parts_Library" package="0603_CPL" value="" x="31.6" y="17.6" smashed="yes" rot="R180">
 <attribute name="NAME" x="27.665" y="17.17" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="32.235" y="20.14" size="1.27" layer="27" rot="R180"/>
 <attribute name="MFG_PN" value="ERJ-3GEY0R00V" x="31.6" y="17.6" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3326,14 +3326,14 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="TOL" value="" x="30.7" y="11.9" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFG_PN" value="ERJ-6GEY0R00V" x="30.7" y="11.9" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="POWER" value="" x="30.7" y="11.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="28.889" y="12.884" size="0.8128" layer="25" ratio="16" rot="R180"/>
+<attribute name="NAME" x="26.911" y="12.816" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="31.589" y="14.186" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="R26" library="PR_Parts_Library" package="0805_ADAFRUIT" value="0 ohm" x="31.1" y="6.1" smashed="yes" rot="R180">
 <attribute name="TOL" value="" x="31.1" y="6.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFG_PN" value="ERJ-6GEY0R00V" x="31.1" y="6.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="POWER" value="" x="31.1" y="6.1" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="29.089" y="6.284" size="0.8128" layer="25" ratio="16" rot="R180"/>
+<attribute name="NAME" x="27.111" y="5.416" size="0.8128" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="31.989" y="8.386" size="1.27" layer="27" rot="R180"/>
 </element>
 </elements>
