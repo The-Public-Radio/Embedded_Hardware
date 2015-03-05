@@ -477,6 +477,28 @@ chip</description>
 <smd name="P$2" x="3.975" y="2.25" dx="1.55" dy="1.3" layer="1"/>
 <circle x="0" y="0" radius="1.75" width="0.127" layer="21"/>
 </package>
+<package name="SFUN_POCKETPROGRAMMER">
+<hole x="-12.7" y="20.32" drill="3.2"/>
+<hole x="12.7" y="20.32" drill="3.2"/>
+<hole x="-12.7" y="-21.59" drill="3.2"/>
+<hole x="12.7" y="-21.59" drill="3.2"/>
+<wire x1="-15.24" y1="22.86" x2="15.24" y2="22.86" width="0.127" layer="21"/>
+<wire x1="15.24" y1="22.86" x2="15.24" y2="-24.13" width="0.127" layer="21"/>
+<wire x1="15.24" y1="-24.13" x2="3.81" y2="-24.13" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-24.13" x2="-3.81" y2="-24.13" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-24.13" x2="-15.24" y2="-24.13" width="0.127" layer="21"/>
+<wire x1="-15.24" y1="-24.13" x2="-15.24" y2="22.86" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-24.13" x2="-3.81" y2="-25.4" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-25.4" x2="3.81" y2="-25.4" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-25.4" x2="3.81" y2="-24.13" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-24.13" x2="3.81" y2="-21.59" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-21.59" x2="-3.81" y2="-21.59" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-21.59" x2="-3.81" y2="-24.13" width="0.127" layer="21"/>
+<wire x1="8.89" y1="17.78" x2="-8.89" y2="17.78" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="17.78" x2="-8.89" y2="21.59" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="21.59" x2="8.89" y2="21.59" width="0.127" layer="21"/>
+<wire x1="8.89" y1="21.59" x2="8.89" y2="17.78" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="0908MILL_MAX_SPRINGPIN">
@@ -612,6 +634,12 @@ chip</description>
 <pin name="P$3" x="-5.08" y="-5.08" visible="off" length="short"/>
 <pin name="P$4" x="5.08" y="-5.08" visible="off" length="short" rot="R180"/>
 <wire x1="0" y1="2.54" x2="0" y2="0" width="0.254" layer="94"/>
+</symbol>
+<symbol name="SFUN_POCKETPROGRAMMER">
+<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -779,6 +807,18 @@ chip</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="SFUN_POCKETPROGRAMMER">
+<gates>
+<gate name="G$1" symbol="SFUN_POCKETPROGRAMMER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SFUN_POCKETPROGRAMMER">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="adafruit">
@@ -878,28 +918,6 @@ chip</description>
 <pad name="6" x="1.27" y="-2.54" drill="0.9" diameter="1.6256"/>
 <text x="-3.048" y="-3.048" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="-3.048" y="3.556" size="1.016" layer="21" font="vector">1</text>
-</package>
-<package name="AVRISP-BOX">
-<pad name="3" x="-1.143" y="0" drill="0.9" diameter="1.6256"/>
-<pad name="4" x="1.143" y="0" drill="0.9" diameter="1.6256"/>
-<pad name="2" x="1.397" y="2.54" drill="0.9" diameter="1.6256"/>
-<pad name="1" x="-1.397" y="2.54" drill="0.9" diameter="1.6256"/>
-<pad name="5" x="-1.397" y="-2.54" drill="0.9" diameter="1.6256"/>
-<pad name="6" x="1.397" y="-2.54" drill="0.9" diameter="1.6256"/>
-<text x="-6.048" y="-2.948" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<wire x1="-4.4" y1="7.6" x2="4.4" y2="7.6" width="0.127" layer="21"/>
-<wire x1="4.4" y1="7.6" x2="4.4" y2="-7.6" width="0.127" layer="21"/>
-<wire x1="4.4" y1="-7.6" x2="-4.4" y2="-7.6" width="0.127" layer="21"/>
-<wire x1="-4.4" y1="-7.6" x2="-4.4" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="-4.4" y1="-1.5" x2="-4.4" y2="1.5" width="0.127" layer="21"/>
-<wire x1="-4.4" y1="1.5" x2="-4.4" y2="7.6" width="0.127" layer="21"/>
-<wire x1="-4.4" y1="1.5" x2="-3.3" y2="1.5" width="0.127" layer="21"/>
-<wire x1="-3.3" y1="1.5" x2="-3.3" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="-3.3" y1="-1.5" x2="-4.4" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="-3.2" y1="6.5" x2="3.2" y2="6.5" width="0.127" layer="21"/>
-<wire x1="3.2" y1="6.5" x2="3.2" y2="-6.5" width="0.127" layer="21"/>
-<wire x1="3.2" y1="-6.5" x2="-3.2" y2="-6.5" width="0.127" layer="21"/>
-<wire x1="-3.2" y1="-6.5" x2="-3.2" y2="6.5" width="0.127" layer="21"/>
 </package>
 <package name="1206">
 <description>&lt;b&gt;CHICAGO MINIATURE LAMP, INC.&lt;/b&gt;&lt;p&gt;
@@ -1854,19 +1872,6 @@ Standard 6 pin header for AVR programming</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-BOX" package="AVRISP-BOX">
-<connects>
-<connect gate="G$1" pin="GND" pad="6"/>
-<connect gate="G$1" pin="MISO" pad="1"/>
-<connect gate="G$1" pin="MOSI" pad="4"/>
-<connect gate="G$1" pin="RST" pad="5"/>
-<connect gate="G$1" pin="SCK" pad="3"/>
-<connect gate="G$1" pin="VCC" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
 </devices>
 </deviceset>
 <deviceset name="LED" prefix="LED" uservalue="yes">
@@ -2415,12 +2420,13 @@ Standard LM317 adjustable voltage regulator. AOI (Adjust Output Input). Google '
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="LED2" library="adafruit" deviceset="LED" device="CHIP-LED0805"/>
-<part name="LED3" library="adafruit" deviceset="LED" device="CHIP-LED0805"/>
+<part name="FAIL" library="adafruit" deviceset="LED" device="CHIP-LED0805"/>
+<part name="PASS" library="adafruit" deviceset="LED" device="CHIP-LED0805"/>
 <part name="R1" library="PR_Parts_Library" deviceset="R_SMT" device="_0805_ADAFRUIT" value="1k"/>
 <part name="R3" library="PR_Parts_Library" deviceset="R_SMT" device="_0805_ADAFRUIT" value="1k"/>
 <part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND12" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="U$25" library="PR_Parts_Library" deviceset="SFUN_POCKETPROGRAMMER" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2485,12 +2491,13 @@ Standard LM317 adjustable voltage regulator. AOI (Adjust Output Input). Google '
 <instance part="GND8" gate="1" x="205.74" y="116.84"/>
 <instance part="GND9" gate="1" x="205.74" y="106.68"/>
 <instance part="GND10" gate="1" x="205.74" y="96.52"/>
-<instance part="LED2" gate="G$1" x="132.08" y="114.3" rot="R270"/>
-<instance part="LED3" gate="G$1" x="142.24" y="111.76" rot="R270"/>
+<instance part="FAIL" gate="G$1" x="132.08" y="114.3" rot="R270"/>
+<instance part="PASS" gate="G$1" x="142.24" y="111.76" rot="R270"/>
 <instance part="R1" gate="G$1" x="121.92" y="109.22" rot="R90"/>
 <instance part="R3" gate="G$1" x="134.62" y="106.68" rot="R90"/>
 <instance part="GND11" gate="1" x="134.62" y="99.06"/>
 <instance part="GND12" gate="1" x="121.92" y="99.06"/>
+<instance part="U$25" gate="G$1" x="251.46" y="-2.54"/>
 </instances>
 <busses>
 </busses>
@@ -2758,27 +2765,27 @@ Standard LM317 adjustable voltage regulator. AOI (Adjust Output Input). Google '
 <net name="N$7" class="0">
 <segment>
 <pinref part="RPI_GPIO" gate="G$1" pin="GPIO21"/>
-<pinref part="LED2" gate="G$1" pin="A"/>
+<pinref part="FAIL" gate="G$1" pin="A"/>
 <wire x1="134.62" y1="114.3" x2="152.4" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="RPI_GPIO" gate="G$1" pin="GPIO23"/>
-<pinref part="LED3" gate="G$1" pin="A"/>
+<pinref part="PASS" gate="G$1" pin="A"/>
 <wire x1="144.78" y1="111.76" x2="152.4" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="LED2" gate="G$1" pin="C"/>
+<pinref part="FAIL" gate="G$1" pin="C"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="121.92" y1="114.3" x2="127" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="LED3" gate="G$1" pin="C"/>
+<pinref part="PASS" gate="G$1" pin="C"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="134.62" y1="111.76" x2="137.16" y2="111.76" width="0.1524" layer="91"/>
 </segment>
