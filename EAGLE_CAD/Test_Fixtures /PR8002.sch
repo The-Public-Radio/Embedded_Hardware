@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -229,9 +229,12 @@ We've spent an enormous amount of time creating and checking these footprints an
 </library>
 <library name="PR_Parts_Library">
 <packages>
-<package name="0908MILL_MAX_SPRINGPIN">
-<pad name="P$1" x="0" y="0" drill="0.6" diameter="1.27"/>
-<circle x="0" y="0" radius="0.9525" width="0.127" layer="21"/>
+<package name="IDI-R2">
+<pad name="P$1" x="0" y="0" drill="1.4478" diameter="1.4224" shape="offset"/>
+<wire x1="-1.27" y1="1.27" x2="3.81" y2="1.27" width="0.127" layer="21"/>
+<wire x1="3.81" y1="1.27" x2="3.81" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-1.27" x2="-1.27" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="1.27" width="0.127" layer="21"/>
 </package>
 <package name="JST-B2B-PH-SM4-TB">
 <description>2-Pin JST PH Series top entry Connector</description>
@@ -373,7 +376,7 @@ chip</description>
 </package>
 </packages>
 <symbols>
-<symbol name="0908MILL_MAX_SPRINGPIN">
+<symbol name="IDI-R2">
 <wire x1="3.81" y1="0" x2="-3.81" y2="0" width="0.254" layer="94"/>
 <wire x1="-3.81" y1="0" x2="-3.81" y2="7.62" width="0.254" layer="94"/>
 <wire x1="-3.81" y1="7.62" x2="-2.54" y2="8.89" width="0.254" layer="94"/>
@@ -486,20 +489,17 @@ chip</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="0908MILL_MAX_SPRINGPIN">
-<description>MFG# 0908-1-15-20-75-14-11-0</description>
+<deviceset name="IDI-R2">
 <gates>
-<gate name="G$1" symbol="0908MILL_MAX_SPRINGPIN" x="0" y="-5.08"/>
+<gate name="G$1" symbol="IDI-R2" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="0908MILL_MAX_SPRINGPIN">
+<device name="" package="IDI-R2">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="MFG#" value="0908-1-15-20-75-14-11-0 " constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -3243,6 +3243,40 @@ Metric Code Size 5664</description>
 <rectangle x1="-1.15" y1="-0.15" x2="1.15" y2="0.15" layer="51"/>
 <rectangle x1="-0.15" y1="-1.15" x2="0.15" y2="1.15" layer="51"/>
 </package>
+<package name="AVRISP-BOX">
+<pad name="3" x="-1.143" y="0" drill="0.9" diameter="1.6256"/>
+<pad name="4" x="1.143" y="0" drill="0.9" diameter="1.6256"/>
+<pad name="2" x="1.397" y="2.54" drill="0.9" diameter="1.6256"/>
+<pad name="1" x="-1.397" y="2.54" drill="0.9" diameter="1.6256"/>
+<pad name="5" x="-1.397" y="-2.54" drill="0.9" diameter="1.6256"/>
+<pad name="6" x="1.397" y="-2.54" drill="0.9" diameter="1.6256"/>
+<text x="-6.048" y="-2.948" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<wire x1="-4.4" y1="7.6" x2="4.4" y2="7.6" width="0.127" layer="21"/>
+<wire x1="4.4" y1="7.6" x2="4.4" y2="-7.6" width="0.127" layer="21"/>
+<wire x1="4.4" y1="-7.6" x2="-4.4" y2="-7.6" width="0.127" layer="21"/>
+<wire x1="-4.4" y1="-7.6" x2="-4.4" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-4.4" y1="-1.5" x2="-4.4" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-4.4" y1="1.5" x2="-4.4" y2="7.6" width="0.127" layer="21"/>
+<wire x1="-4.4" y1="1.5" x2="-3.3" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-3.3" y1="1.5" x2="-3.3" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-3.3" y1="-1.5" x2="-4.4" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-3.2" y1="6.5" x2="3.2" y2="6.5" width="0.127" layer="21"/>
+<wire x1="3.2" y1="6.5" x2="3.2" y2="-6.5" width="0.127" layer="21"/>
+<wire x1="3.2" y1="-6.5" x2="-3.2" y2="-6.5" width="0.127" layer="21"/>
+<wire x1="-3.2" y1="-6.5" x2="-3.2" y2="6.5" width="0.127" layer="21"/>
+</package>
+<package name="TRIM-3386">
+<pad name="2" x="0" y="-2.8575" drill="0.9" diameter="1.778"/>
+<pad name="1" x="-2.54" y="-2.8575" drill="0.9" diameter="1.778"/>
+<pad name="3" x="2.54" y="-2.8575" drill="0.9" diameter="1.778"/>
+<wire x1="-4.7625" y1="-4.7625" x2="4.7625" y2="-4.7625" width="0.127" layer="21"/>
+<wire x1="4.7625" y1="-4.7625" x2="4.7625" y2="4.7625" width="0.127" layer="21"/>
+<wire x1="4.7625" y1="4.7625" x2="-4.7625" y2="4.7625" width="0.127" layer="21"/>
+<wire x1="-4.7625" y1="4.7625" x2="-4.7625" y2="-4.7625" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="3.302" width="0.127" layer="21"/>
+<text x="-5.08" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="6.35" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="POWERJACK-1">
@@ -3375,6 +3409,19 @@ Standard 6 pin header for AVR programming</description>
 </gates>
 <devices>
 <device name="-6" package="AVRISP">
+<connects>
+<connect gate="G$1" pin="GND" pad="6"/>
+<connect gate="G$1" pin="MISO" pad="1"/>
+<connect gate="G$1" pin="MOSI" pad="4"/>
+<connect gate="G$1" pin="RST" pad="5"/>
+<connect gate="G$1" pin="SCK" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-BOX" package="AVRISP-BOX">
 <connects>
 <connect gate="G$1" pin="GND" pad="6"/>
 <connect gate="G$1" pin="MISO" pad="1"/>
@@ -4444,7 +4491,7 @@ With round pins</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TRIMPOT" uservalue="yes">
+<deviceset name="TRIMPOT" prefix="TM" uservalue="yes">
 <description>SMT trimmer potentiometer part number TC33X
 &lt;p&gt;http://www.ladyada.net/library/eagle&lt;/p&gt;</description>
 <gates>
@@ -4452,6 +4499,16 @@ With round pins</description>
 </gates>
 <devices>
 <device name="TC33X" package="TC33X">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="E" pad="3"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3386" package="TRIM-3386">
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="E" pad="3"/>
@@ -4515,8 +4572,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <devicesets>
 <deviceset name="V_REG_MIC5219" prefix="U" uservalue="yes">
 <description>&lt;b&gt;V_REG MIC5219&lt;/b&gt;
-Standard 500mA LDO voltage regulator in SOT-23 layout. Micrel part MIC5219. BP (by-pass) pin is used to lower output noise with 470pF cap,
-may be left open.</description>
+Standard 3.3V and 5V 500mA LDO voltage regulator in SOT-23 layout. Micrel part MIC5219. BP (by-pass) pin is used to lower output noise with 470pF cap, may be left open.</description>
 <gates>
 <gate name="G$1" symbol="V-REG-LDO" x="2.54" y="0"/>
 </gates>
@@ -4758,18 +4814,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <hole x="0" y="2.2" drill="0.9"/>
 <hole x="0" y="-2.2" drill="0.9"/>
 </package>
-<package name="USB-A-PCB">
-<wire x1="-5" y1="6" x2="3.7" y2="6" width="0.127" layer="51"/>
-<wire x1="3.7" y1="6" x2="3.7" y2="-6" width="0.127" layer="51"/>
-<wire x1="3.7" y1="-6" x2="-5" y2="-6" width="0.127" layer="51"/>
-<wire x1="-5" y1="-6" x2="-5" y2="6" width="0.127" layer="51"/>
-<smd name="5V" x="-0.2" y="-3.5" dx="7.5" dy="1.5" layer="1"/>
-<smd name="USB_M" x="0.3" y="-1" dx="6.5" dy="1" layer="1"/>
-<smd name="USB_P" x="0.3" y="1" dx="6.5" dy="1" layer="1"/>
-<smd name="GND" x="-0.2" y="3.5" dx="7.5" dy="1.5" layer="1"/>
-<text x="-1.27" y="5.08" size="0.4064" layer="25">&gt;Name</text>
-<text x="-1.27" y="-5.08" size="0.4064" layer="27">&gt;Value</text>
-</package>
 <package name="USB-B-PTH-VERTICAL">
 <description>&lt;b&gt;USB Series B Hole Mounted&lt;/b&gt;</description>
 <wire x1="0" y1="0" x2="11.938" y2="0" width="0.254" layer="21"/>
@@ -4809,25 +4853,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <smd name="D+" x="3.45" y="-1" dx="3" dy="0.9" layer="1"/>
 <smd name="GND" x="3.45" y="-3" dx="3" dy="0.9" layer="1"/>
 <text x="5.715" y="3.81" size="1.27" layer="51" rot="R90">&gt;NAME</text>
-</package>
-<package name="USB-A-S-NOSILK-FEMALE">
-<wire x1="3.6957" y1="6.5659" x2="-10.287" y2="6.5659" width="0.127" layer="51"/>
-<wire x1="3.6957" y1="-6.5659" x2="-10.287" y2="-6.5659" width="0.127" layer="51"/>
-<wire x1="-10.287" y1="6.477" x2="-10.287" y2="-6.477" width="0.127" layer="51"/>
-<wire x1="3.7084" y1="6.5024" x2="3.7084" y2="-6.5024" width="0.127" layer="51"/>
-<wire x1="-2.54" y1="-5.08" x2="-8.89" y2="-4.445" width="0.127" layer="51"/>
-<wire x1="-8.89" y1="-4.445" x2="-8.89" y2="-1.27" width="0.127" layer="51"/>
-<wire x1="-8.89" y1="-1.27" x2="-2.54" y2="-0.635" width="0.127" layer="51"/>
-<wire x1="-2.54" y1="5.08" x2="-8.89" y2="4.445" width="0.127" layer="51"/>
-<wire x1="-8.89" y1="4.445" x2="-8.89" y2="1.27" width="0.127" layer="51"/>
-<wire x1="-8.89" y1="1.27" x2="-2.54" y2="0.635" width="0.127" layer="51"/>
-<pad name="P$5" x="0" y="-6.5659" drill="2.3114" rot="R270"/>
-<pad name="P$6" x="0" y="6.5659" drill="2.3114" rot="R270"/>
-<smd name="D-" x="4.212" y="1" dx="3" dy="0.9" layer="1"/>
-<smd name="VBUS" x="4.212" y="3.5" dx="3" dy="0.9" layer="1"/>
-<smd name="D+" x="4.212" y="-1" dx="3" dy="0.9" layer="1"/>
-<smd name="GND" x="4.212" y="-3.5" dx="3" dy="0.9" layer="1"/>
-<text x="8.46" y="-7.205" size="1.27" layer="51" rot="R180">&gt;NAME</text>
 </package>
 <package name="USB-MINIB-NOSTOP">
 <wire x1="-1.3" y1="3.8" x2="0.8" y2="3.8" width="0.2032" layer="21"/>
@@ -4921,40 +4946,116 @@ We've spent an enormous amount of time creating and checking these footprints an
 <smd name="P$1" x="-1.27" y="0" dx="1.9" dy="1.9" layer="1"/>
 <smd name="P$2" x="1.27" y="0" dx="1.9" dy="1.9" layer="1"/>
 </package>
+<package name="USB-A-PCB">
+<description>Card-edge USB A connector.
+
+For boards designed to be plugged directly into a USB slot. If possible, ensure that your PCB is about 2.4mm thick to fit snugly.</description>
+<wire x1="-5" y1="6" x2="3.7" y2="6" width="0.127" layer="51"/>
+<wire x1="3.7" y1="6" x2="3.7" y2="-6" width="0.127" layer="51" style="shortdash"/>
+<wire x1="3.7" y1="-6" x2="-5" y2="-6" width="0.127" layer="51"/>
+<wire x1="-5" y1="-6" x2="-5" y2="6" width="0.127" layer="51"/>
+<smd name="5V" x="-0.2" y="-3.5" dx="7.5" dy="1.5" layer="1"/>
+<smd name="USB_M" x="0.3" y="-1" dx="6.5" dy="1" layer="1"/>
+<smd name="USB_P" x="0.3" y="1" dx="6.5" dy="1" layer="1"/>
+<smd name="GND" x="-0.2" y="3.5" dx="7.5" dy="1.5" layer="1"/>
+<text x="-1.27" y="5.08" size="0.4064" layer="25">&gt;Name</text>
+<text x="-1.27" y="-5.08" size="0.4064" layer="27">&gt;Value</text>
+<text x="-6.35" y="-3.81" size="1.016" layer="48" rot="R90">Card edge</text>
+</package>
+<package name="USB-A-S-NOSILK-FEMALE">
+<wire x1="3.6957" y1="6.5659" x2="-10.287" y2="6.5659" width="0.127" layer="51"/>
+<wire x1="3.6957" y1="-6.5659" x2="-10.287" y2="-6.5659" width="0.127" layer="51"/>
+<wire x1="-10.287" y1="6.477" x2="-10.287" y2="-6.477" width="0.127" layer="51"/>
+<wire x1="3.7084" y1="6.5024" x2="3.7084" y2="-6.5024" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="-5.08" x2="-8.89" y2="-4.445" width="0.127" layer="51"/>
+<wire x1="-8.89" y1="-4.445" x2="-8.89" y2="-1.27" width="0.127" layer="51"/>
+<wire x1="-8.89" y1="-1.27" x2="-2.54" y2="-0.635" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="5.08" x2="-8.89" y2="4.445" width="0.127" layer="51"/>
+<wire x1="-8.89" y1="4.445" x2="-8.89" y2="1.27" width="0.127" layer="51"/>
+<wire x1="-8.89" y1="1.27" x2="-2.54" y2="0.635" width="0.127" layer="51"/>
+<pad name="S1" x="0" y="-6.5659" drill="2.3114" rot="R270"/>
+<pad name="S2" x="0" y="6.5659" drill="2.3114" rot="R270"/>
+<smd name="D-" x="4.212" y="1" dx="3" dy="0.9" layer="1"/>
+<smd name="VBUS" x="4.212" y="3.5" dx="3" dy="0.9" layer="1"/>
+<smd name="D+" x="4.212" y="-1" dx="3" dy="0.9" layer="1"/>
+<smd name="GND" x="4.212" y="-3.5" dx="3" dy="0.9" layer="1"/>
+<text x="8.46" y="-7.205" size="1.27" layer="51" rot="R180">&gt;NAME</text>
+</package>
 <package name="USB-A-SMT-MALE">
-<wire x1="6" y1="16.53" x2="-6" y2="16.53" width="0.2032" layer="51"/>
-<wire x1="6" y1="1.73" x2="-6" y2="1.73" width="0.2032" layer="21"/>
-<wire x1="6" y1="1.73" x2="6" y2="16.53" width="0.2032" layer="51"/>
-<wire x1="-6" y1="1.73" x2="-6" y2="16.53" width="0.2032" layer="51"/>
-<wire x1="6" y1="1.73" x2="6" y2="0.73" width="0.2032" layer="21"/>
-<wire x1="-6" y1="1.73" x2="-6" y2="0.73" width="0.2032" layer="21"/>
-<wire x1="-4" y1="-2.27" x2="4" y2="-2.27" width="0.2032" layer="21"/>
-<wire x1="4.3" y1="12.23" x2="1.9" y2="12.23" width="0.2032" layer="51"/>
-<wire x1="1.9" y1="12.23" x2="1.9" y2="9.93" width="0.2032" layer="51"/>
-<wire x1="1.9" y1="9.93" x2="4.3" y2="9.93" width="0.2032" layer="51"/>
-<wire x1="4.3" y1="9.93" x2="4.3" y2="12.23" width="0.2032" layer="51"/>
-<wire x1="-1.9" y1="12.23" x2="-4.3" y2="12.23" width="0.2032" layer="51"/>
-<wire x1="-4.3" y1="12.23" x2="-4.3" y2="9.93" width="0.2032" layer="51"/>
-<wire x1="-4.3" y1="9.93" x2="-1.9" y2="9.93" width="0.2032" layer="51"/>
-<wire x1="-1.9" y1="9.93" x2="-1.9" y2="12.23" width="0.2032" layer="51"/>
-<smd name="GND1" x="3.5" y="-3.67" dx="2" dy="1.2" layer="1" rot="R270"/>
-<smd name="D+1" x="1.027" y="-3.67" dx="2" dy="1.2" layer="1" rot="R270"/>
-<smd name="D-1" x="-1.027" y="-3.67" dx="2" dy="1.2" layer="1" rot="R270"/>
-<smd name="VBUS1" x="-3.5" y="-3.67" dx="2" dy="1.2" layer="1" rot="R270"/>
-<text x="-2.7" y="-7.12" size="1.27" layer="25">&gt;NAME</text>
-<text x="-4.4" y="2.63" size="1.27" layer="51">PCB Edge</text>
-<hole x="2.25" y="-1.17" drill="1.1"/>
-<hole x="-2.25" y="-1.17" drill="1.1"/>
-<hole x="-5.85" y="-1.5" drill="0.8"/>
-<hole x="-5.85" y="-1.9" drill="0.8"/>
-<hole x="-5.85" y="-0.7" drill="0.8"/>
-<hole x="-5.85" y="-0.3" drill="0.8"/>
-<pad name="P$3" x="-5.85" y="-1.1" drill="0.8" diameter="1.5" shape="long" rot="R90"/>
-<hole x="5.85" y="-1.5" drill="0.8"/>
-<hole x="5.85" y="-1.9" drill="0.8"/>
-<hole x="5.85" y="-0.7" drill="0.8"/>
-<hole x="5.85" y="-0.3" drill="0.8"/>
-<pad name="P$1" x="5.85" y="-1.1" drill="0.8" diameter="1.5" shape="long" rot="R90"/>
+<wire x1="6" y1="14.58" x2="-6" y2="14.58" width="0.2032" layer="51"/>
+<wire x1="6" y1="0" x2="-6" y2="0" width="0.2032" layer="21"/>
+<wire x1="6" y1="0" x2="6" y2="14.58" width="0.2032" layer="51"/>
+<wire x1="-6" y1="0" x2="-6" y2="14.58" width="0.2032" layer="51"/>
+<wire x1="6" y1="0" x2="6" y2="-1.22" width="0.2032" layer="21"/>
+<wire x1="-6" y1="0" x2="-6" y2="-1.22" width="0.2032" layer="21"/>
+<wire x1="-4" y1="-4.22" x2="4" y2="-4.22" width="0.2032" layer="21"/>
+<wire x1="4.3" y1="10.28" x2="1.9" y2="10.28" width="0.2032" layer="51"/>
+<wire x1="1.9" y1="10.28" x2="1.9" y2="7.98" width="0.2032" layer="51"/>
+<wire x1="1.9" y1="7.98" x2="4.3" y2="7.98" width="0.2032" layer="51"/>
+<wire x1="4.3" y1="7.98" x2="4.3" y2="10.28" width="0.2032" layer="51"/>
+<wire x1="-1.9" y1="10.28" x2="-4.3" y2="10.28" width="0.2032" layer="51"/>
+<wire x1="-4.3" y1="10.28" x2="-4.3" y2="7.98" width="0.2032" layer="51"/>
+<wire x1="-4.3" y1="7.98" x2="-1.9" y2="7.98" width="0.2032" layer="51"/>
+<wire x1="-1.9" y1="7.98" x2="-1.9" y2="10.28" width="0.2032" layer="51"/>
+<smd name="D+1" x="1.027" y="-5.87" dx="2.5" dy="0.8" layer="1" rot="R270"/>
+<smd name="D-1" x="-1.027" y="-5.87" dx="2.5" dy="0.8" layer="1" rot="R270"/>
+<smd name="GND1" x="3.5508" y="-5.87" dx="2.5" dy="0.8" layer="1" rot="R270"/>
+<pad name="P$1" x="5.85" y="-3.05" drill="0.8" diameter="1.778" shape="long" rot="R90"/>
+<pad name="P$3" x="-5.85" y="-3.05" drill="0.8" diameter="1.778" shape="long" rot="R90"/>
+<smd name="VBUS1" x="-3.5" y="-5.87" dx="2.5" dy="0.8" layer="1" rot="R270"/>
+<text x="-2.7" y="-9.07" size="1.27" layer="25">&gt;NAME</text>
+<text x="-4.4" y="0.68" size="1.27" layer="51">PCB Edge</text>
+<hole x="2.25" y="-3.12" drill="1.1"/>
+<hole x="-2.25" y="-3.12" drill="1.1"/>
+<hole x="-5.85" y="-3.45" drill="0.8"/>
+<hole x="-5.85" y="-3.85" drill="0.8"/>
+<hole x="-5.85" y="-2.65" drill="0.8"/>
+<hole x="-5.85" y="-2.25" drill="0.8"/>
+<hole x="5.85" y="-3.45" drill="0.8"/>
+<hole x="5.85" y="-3.85" drill="0.8"/>
+<hole x="5.85" y="-2.65" drill="0.8"/>
+<hole x="5.85" y="-2.25" drill="0.8"/>
+</package>
+<package name="USB-A-SMT-MALE-LOCKING">
+<wire x1="6" y1="14.58" x2="-6" y2="14.58" width="0.2032" layer="51"/>
+<wire x1="6" y1="0" x2="-6" y2="0" width="0.2032" layer="21"/>
+<wire x1="6" y1="0" x2="6" y2="14.58" width="0.2032" layer="51"/>
+<wire x1="-6" y1="0" x2="-6" y2="14.58" width="0.2032" layer="51"/>
+<wire x1="6" y1="0" x2="6" y2="-1.22" width="0.2032" layer="21"/>
+<wire x1="-6" y1="0" x2="-6" y2="-1.22" width="0.2032" layer="21"/>
+<wire x1="-4" y1="-4.22" x2="4" y2="-4.22" width="0.2032" layer="21"/>
+<wire x1="4.3" y1="10.28" x2="1.9" y2="10.28" width="0.2032" layer="51"/>
+<wire x1="1.9" y1="10.28" x2="1.9" y2="7.98" width="0.2032" layer="51"/>
+<wire x1="1.9" y1="7.98" x2="4.3" y2="7.98" width="0.2032" layer="51"/>
+<wire x1="4.3" y1="7.98" x2="4.3" y2="10.28" width="0.2032" layer="51"/>
+<wire x1="-1.9" y1="10.28" x2="-4.3" y2="10.28" width="0.2032" layer="51"/>
+<wire x1="-4.3" y1="10.28" x2="-4.3" y2="7.98" width="0.2032" layer="51"/>
+<wire x1="-4.3" y1="7.98" x2="-1.9" y2="7.98" width="0.2032" layer="51"/>
+<wire x1="-1.9" y1="7.98" x2="-1.9" y2="10.28" width="0.2032" layer="51"/>
+<smd name="D+1" x="1.027" y="-5.87" dx="2.5" dy="0.8" layer="1" rot="R270"/>
+<smd name="D-1" x="-1.027" y="-5.87" dx="2.5" dy="0.8" layer="1" rot="R270"/>
+<smd name="GND1" x="3.5508" y="-5.87" dx="2.5" dy="0.8" layer="1" rot="R270"/>
+<pad name="P$1" x="5.6468" y="-3.05" drill="0.8" diameter="1.778" shape="long" rot="R90"/>
+<pad name="P$3" x="-5.6468" y="-3.05" drill="0.8" diameter="1.778" shape="long" rot="R90"/>
+<smd name="VBUS1" x="-3.5" y="-5.87" dx="2.5" dy="0.8" layer="1" rot="R270"/>
+<text x="-2.7" y="-9.07" size="1.27" layer="25">&gt;NAME</text>
+<text x="-4.4" y="0.68" size="1.27" layer="51">PCB Edge</text>
+<hole x="2.25" y="-3.12" drill="1.1"/>
+<hole x="-2.25" y="-3.12" drill="1.1"/>
+<hole x="-5.6468" y="-3.45" drill="0.8"/>
+<hole x="-5.6468" y="-3.85" drill="0.8"/>
+<hole x="-5.6468" y="-2.65" drill="0.8"/>
+<hole x="-5.6468" y="-2.25" drill="0.8"/>
+<hole x="5.6468" y="-3.45" drill="0.8"/>
+<hole x="5.6468" y="-3.85" drill="0.8"/>
+<hole x="5.6468" y="-2.65" drill="0.8"/>
+<hole x="5.6468" y="-2.25" drill="0.8"/>
+<wire x1="-5.9944" y1="-4.064" x2="-5.9944" y2="-2.0828" width="0" layer="51"/>
+<wire x1="-6.1849" y1="-4.064" x2="-6.1849" y2="-2.032" width="0" layer="51"/>
+<wire x1="-5.6642" y1="-4.064" x2="-5.6642" y2="-2.0828" width="0" layer="51"/>
+<rectangle x1="-5.9944" y1="-4.064" x2="-5.6642" y2="-2.032" layer="51"/>
+<wire x1="6.1849" y1="-2.032" x2="6.1849" y2="-4.064" width="0" layer="51"/>
+<rectangle x1="5.6642" y1="-4.064" x2="5.9944" y2="-2.032" layer="51" rot="R180"/>
 </package>
 </packages>
 <symbols>
@@ -5072,7 +5173,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <connect gate="G$1" pin="VBUS" pad="VBUS"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-08193" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="PCB" package="USB-A-PCB">
@@ -5157,6 +5260,17 @@ We've spent an enormous amount of time creating and checking these footprints an
 </technologies>
 </device>
 <device name="A-SMD-MALE" package="USB-A-SMT-MALE">
+<connects>
+<connect gate="G$1" pin="D+" pad="D+1"/>
+<connect gate="G$1" pin="D-" pad="D-1"/>
+<connect gate="G$1" pin="GND" pad="GND1"/>
+<connect gate="G$1" pin="VBUS" pad="VBUS1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="A-SMD-MALE-LOCKING" package="USB-A-SMT-MALE-LOCKING">
 <connects>
 <connect gate="G$1" pin="D+" pad="D+1"/>
 <connect gate="G$1" pin="D-" pad="D-1"/>
@@ -5847,28 +5961,28 @@ We've spent an enormous amount of time creating and checking these footprints an
 </class>
 </classes>
 <parts>
-<part name="U$2" library="PR_Parts_Library" deviceset="0908MILL_MAX_SPRINGPIN" device=""/>
-<part name="U$3" library="PR_Parts_Library" deviceset="0908MILL_MAX_SPRINGPIN" device=""/>
-<part name="U$4" library="PR_Parts_Library" deviceset="0908MILL_MAX_SPRINGPIN" device=""/>
-<part name="U$5" library="PR_Parts_Library" deviceset="0908MILL_MAX_SPRINGPIN" device=""/>
-<part name="U$6" library="PR_Parts_Library" deviceset="0908MILL_MAX_SPRINGPIN" device=""/>
-<part name="U$7" library="PR_Parts_Library" deviceset="0908MILL_MAX_SPRINGPIN" device=""/>
-<part name="U$8" library="PR_Parts_Library" deviceset="0908MILL_MAX_SPRINGPIN" device=""/>
-<part name="U$9" library="PR_Parts_Library" deviceset="0908MILL_MAX_SPRINGPIN" device=""/>
-<part name="U$10" library="PR_Parts_Library" deviceset="0908MILL_MAX_SPRINGPIN" device=""/>
-<part name="U$11" library="PR_Parts_Library" deviceset="0908MILL_MAX_SPRINGPIN" device=""/>
-<part name="U$12" library="PR_Parts_Library" deviceset="0908MILL_MAX_SPRINGPIN" device=""/>
-<part name="U$13" library="PR_Parts_Library" deviceset="0908MILL_MAX_SPRINGPIN" device=""/>
-<part name="U$14" library="PR_Parts_Library" deviceset="0908MILL_MAX_SPRINGPIN" device=""/>
-<part name="U$15" library="PR_Parts_Library" deviceset="0908MILL_MAX_SPRINGPIN" device=""/>
-<part name="U$16" library="PR_Parts_Library" deviceset="0908MILL_MAX_SPRINGPIN" device=""/>
-<part name="U$17" library="PR_Parts_Library" deviceset="0908MILL_MAX_SPRINGPIN" device=""/>
-<part name="U$18" library="PR_Parts_Library" deviceset="0908MILL_MAX_SPRINGPIN" device=""/>
+<part name="U$2" library="PR_Parts_Library" deviceset="IDI-R2" device=""/>
+<part name="U$3" library="PR_Parts_Library" deviceset="IDI-R2" device=""/>
+<part name="U$4" library="PR_Parts_Library" deviceset="IDI-R2" device=""/>
+<part name="U$5" library="PR_Parts_Library" deviceset="IDI-R2" device=""/>
+<part name="U$6" library="PR_Parts_Library" deviceset="IDI-R2" device=""/>
+<part name="U$7" library="PR_Parts_Library" deviceset="IDI-R2" device=""/>
+<part name="U$8" library="PR_Parts_Library" deviceset="IDI-R2" device=""/>
+<part name="U$9" library="PR_Parts_Library" deviceset="IDI-R2" device=""/>
+<part name="U$10" library="PR_Parts_Library" deviceset="IDI-R2" device=""/>
+<part name="U$11" library="PR_Parts_Library" deviceset="IDI-R2" device=""/>
+<part name="U$12" library="PR_Parts_Library" deviceset="IDI-R2" device=""/>
+<part name="U$13" library="PR_Parts_Library" deviceset="IDI-R2" device=""/>
+<part name="U$14" library="PR_Parts_Library" deviceset="IDI-R2" device=""/>
+<part name="U$15" library="PR_Parts_Library" deviceset="IDI-R2" device=""/>
+<part name="U$16" library="PR_Parts_Library" deviceset="IDI-R2" device=""/>
+<part name="U$17" library="PR_Parts_Library" deviceset="IDI-R2" device=""/>
+<part name="U$18" library="PR_Parts_Library" deviceset="IDI-R2" device=""/>
 <part name="U$19" library="adafruit" deviceset="2.1MMJACK" device="THM"/>
 <part name="ISP1" library="adafruit" deviceset="AVRISP" device="-6"/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="U$21" library="PR_Parts_Library" deviceset="0908MILL_MAX_SPRINGPIN" device=""/>
+<part name="U$21" library="PR_Parts_Library" deviceset="IDI-R2" device=""/>
 <part name="CN1" library="PR_Parts_Library" deviceset="JST_2PIN" device="-SMT-RA"/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="U$20" library="PR_Parts_Library" deviceset="C&amp;K_PTS645" device=""/>
@@ -5882,7 +5996,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="R3" library="PR_Parts_Library" deviceset="R_SMT" device="_0805_ADAFRUIT" value="1k"/>
 <part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND12" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="5205" library="SparkFun-PowerIC" deviceset="V_REG_MIC5219" device="3.3V" value="MIC5205 3.3V">
+<part name="5205" library="SparkFun-PowerIC" deviceset="V_REG_MIC5219" device="3.3V" value="MIC5219 3.3V">
 <attribute name="PROD_ID" value="VREG-5205-3.0"/>
 </part>
 <part name="R4" library="PR_Parts_Library" deviceset="R_SMT" device="_0805_ADAFRUIT" value="4.7k"/>
