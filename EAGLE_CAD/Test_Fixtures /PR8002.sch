@@ -165,12 +165,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="-1.016" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="3.3V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
-<symbol name="5V">
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<text x="-1.016" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="5V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="GND">
@@ -190,19 +184,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="3.3V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="5V" prefix="SUPPLY">
-<description>5V supply symbol</description>
-<gates>
-<gate name="G$1" symbol="5V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -6071,8 +6052,8 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <part name="R14" library="PR_Parts_Library" deviceset="R_SMT" device="_0805_ADAFRUIT" value="0 OHM"/>
 <part name="VOL" library="adafruit" deviceset="TRIMPOT" device="TC33X"/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
-<part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
+<part name="P+2" library="supply1" deviceset="+5V" device=""/>
+<part name="P+4" library="supply1" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6120,7 +6101,7 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <instance part="GND4" gate="1" x="284.48" y="-55.88"/>
 <instance part="GND6" gate="1" x="88.9" y="7.62"/>
 <instance part="U$21" gate="G$1" x="121.92" y="-45.72"/>
-<instance part="CN1" gate="G$1" x="81.28" y="-60.96" rot="R270"/>
+<instance part="CN1" gate="G$1" x="83.82" y="-55.88" rot="R90"/>
 <instance part="GND2" gate="1" x="271.78" y="-55.88"/>
 <instance part="U$20" gate="G$1" x="205.74" y="22.86" rot="R270"/>
 <instance part="U$22" gate="G$1" x="205.74" y="7.62" rot="R270"/>
@@ -6240,8 +6221,12 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 </instance>
 <instance part="VOL" gate="G$1" x="200.66" y="-55.88" rot="R270"/>
 <instance part="GND1" gate="1" x="205.74" y="-66.04"/>
-<instance part="SUPPLY1" gate="G$1" x="30.48" y="152.4"/>
-<instance part="SUPPLY2" gate="G$1" x="114.3" y="142.24"/>
+<instance part="P+2" gate="1" x="30.48" y="154.94" smashed="yes">
+<attribute name="VALUE" x="30.48" y="157.48" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="P+4" gate="1" x="114.3" y="144.78" smashed="yes">
+<attribute name="VALUE" x="114.3" y="147.32" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6428,8 +6413,8 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <wire x1="76.2" y1="-48.26" x2="76.2" y2="-50.8" width="0.1524" layer="91"/>
 <label x="66.04" y="-53.34" size="1.778" layer="95"/>
 <wire x1="76.2" y1="-50.8" x2="81.28" y2="-50.8" width="0.1524" layer="91"/>
+<pinref part="CN1" gate="G$1" pin="1"/>
 <wire x1="81.28" y1="-58.42" x2="81.28" y2="-50.8" width="0.1524" layer="91"/>
-<pinref part="CN1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="SPK_OUT-" class="0">
@@ -6437,9 +6422,9 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <pinref part="U$8" gate="G$1" pin="P$1"/>
 <wire x1="88.9" y1="-48.26" x2="88.9" y2="-50.8" width="0.1524" layer="91"/>
 <label x="88.9" y="-53.34" size="1.778" layer="95"/>
-<wire x1="83.82" y1="-58.42" x2="83.82" y2="-50.8" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="-50.8" x2="88.9" y2="-50.8" width="0.1524" layer="91"/>
-<pinref part="CN1" gate="G$1" pin="1"/>
+<pinref part="CN1" gate="G$1" pin="2"/>
+<wire x1="83.82" y1="-58.42" x2="83.82" y2="-50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MISO" class="0">
@@ -6741,6 +6726,27 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <wire x1="50.8" y1="106.68" x2="55.88" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="P+3" gate="1" pin="+5V"/>
 </segment>
+<segment>
+<pinref part="U$19" gate="G$1" pin="TIP"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="147.32" x2="20.32" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="147.32" x2="15.24" y2="147.32" width="0.1524" layer="91"/>
+<junction x="20.32" y="147.32"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<pinref part="5205" gate="G$1" pin="IN"/>
+<junction x="25.4" y="147.32"/>
+<wire x1="35.56" y1="147.32" x2="30.48" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="147.32" x2="25.4" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="147.32" x2="30.48" y2="152.4" width="0.1524" layer="91"/>
+<junction x="30.48" y="147.32"/>
+<pinref part="P+2" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="G$1" pin="VBUS"/>
+<wire x1="124.46" y1="144.78" x2="124.46" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="142.24" x2="114.3" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="P+4" gate="1" pin="+5V"/>
+</segment>
 </net>
 <net name="GPIO4" class="0">
 <segment>
@@ -6905,29 +6911,6 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <segment>
 <pinref part="PASS" gate="G$1" pin="A"/>
 <pinref part="R3" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="5V" class="0">
-<segment>
-<pinref part="U$19" gate="G$1" pin="TIP"/>
-<pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="25.4" y1="147.32" x2="20.32" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="147.32" x2="15.24" y2="147.32" width="0.1524" layer="91"/>
-<junction x="20.32" y="147.32"/>
-<pinref part="C6" gate="G$1" pin="1"/>
-<pinref part="5205" gate="G$1" pin="IN"/>
-<junction x="25.4" y="147.32"/>
-<wire x1="35.56" y1="147.32" x2="30.48" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="SUPPLY1" gate="G$1" pin="5V"/>
-<wire x1="30.48" y1="147.32" x2="25.4" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="147.32" x2="30.48" y2="152.4" width="0.1524" layer="91"/>
-<junction x="30.48" y="147.32"/>
-</segment>
-<segment>
-<pinref part="JP1" gate="G$1" pin="VBUS"/>
-<wire x1="124.46" y1="144.78" x2="124.46" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="142.24" x2="114.3" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="SUPPLY2" gate="G$1" pin="5V"/>
 </segment>
 </net>
 <net name="GPIO3" class="0">
