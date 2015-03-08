@@ -6198,7 +6198,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <instance part="P+4" gate="1" x="114.3" y="144.78" smashed="yes">
 <attribute name="VALUE" x="114.3" y="147.32" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="JP2" gate="G$1" x="83.82" y="-71.12" rot="R90"/>
+<instance part="JP2" gate="G$1" x="83.82" y="-76.2" rot="R90"/>
 <instance part="JP3" gate="G$1" x="124.46" y="154.94" rot="R270"/>
 </instances>
 <busses>
@@ -6388,7 +6388,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <wire x1="76.2" y1="-50.8" x2="81.28" y2="-50.8" width="0.1524" layer="91"/>
 <pinref part="CN1" gate="G$1" pin="1"/>
 <wire x1="81.28" y1="-58.42" x2="81.28" y2="-50.8" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="-58.42" x2="81.28" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="-58.42" x2="81.28" y2="-68.58" width="0.1524" layer="91"/>
 <junction x="81.28" y="-58.42"/>
 <pinref part="JP2" gate="G$1" pin="2"/>
 </segment>
@@ -6401,9 +6401,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <wire x1="83.82" y1="-50.8" x2="88.9" y2="-50.8" width="0.1524" layer="91"/>
 <pinref part="CN1" gate="G$1" pin="2"/>
 <wire x1="83.82" y1="-58.42" x2="83.82" y2="-50.8" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="G$1" pin="1"/>
-<wire x1="83.82" y1="-63.5" x2="83.82" y2="-58.42" width="0.1524" layer="91"/>
-<junction x="83.82" y="-58.42"/>
 </segment>
 </net>
 <net name="MISO" class="0">

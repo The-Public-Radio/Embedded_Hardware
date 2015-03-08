@@ -3418,14 +3418,12 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="49.5" y1="18.8" x2="100.3" y2="18.8" width="0.6096" layer="16"/>
 <wire x1="100.3" y1="18.8" x2="108" y2="26.5" width="0.6096" layer="16"/>
 <wire x1="108" y1="39.875" x2="107.925" y2="39.95" width="0.6096" layer="16"/>
-<contactref element="JP2" pad="1"/>
 <wire x1="108" y1="26.5" x2="108" y2="30.5" width="0.6096" layer="16"/>
 <wire x1="108" y1="30.5" x2="107.5" y2="31" width="0.6096" layer="16"/>
-<wire x1="107.5" y1="31" x2="106" y2="31" width="0.6096" layer="16"/>
-<wire x1="106" y1="31" x2="108" y2="31" width="0.6096" layer="16"/>
 <wire x1="108" y1="31" x2="109" y2="32" width="0.6096" layer="16"/>
 <wire x1="109" y1="32" x2="109" y2="38.875" width="0.6096" layer="16"/>
 <wire x1="109" y1="38.875" x2="107.925" y2="39.95" width="0.6096" layer="16"/>
+<wire x1="108" y1="30.5" x2="108" y2="31" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="MISO">
 <contactref element="U$11" pad="P$1"/>
