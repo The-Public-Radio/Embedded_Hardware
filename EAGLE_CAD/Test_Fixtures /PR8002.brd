@@ -3380,9 +3380,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="89.55" y1="53.65" x2="87.75" y2="53.65" width="0.6096" layer="16"/>
 <wire x1="87.75" y1="53.65" x2="87.5" y2="53.4" width="0.6096" layer="16"/>
 </signal>
-<signal name="RESET">
-<contactref element="U$13" pad="P$1"/>
-</signal>
 <signal name="SW_OUT">
 <contactref element="U$16" pad="P$1"/>
 <contactref element="R14" pad="1"/>
@@ -3423,21 +3420,9 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="108" y1="31" x2="109" y2="32" width="0.6096" layer="16"/>
 <wire x1="109" y1="32" x2="109" y2="38.875" width="0.6096" layer="16"/>
 <wire x1="109" y1="38.875" x2="107.925" y2="39.95" width="0.6096" layer="16"/>
-<wire x1="108" y1="30.5" x2="108" y2="31" width="0" layer="19" extent="16-16"/>
-</signal>
-<signal name="MISO">
-<contactref element="U$11" pad="P$1"/>
-<contactref element="ISP1" pad="1"/>
-<wire x1="84.005" y1="81.46" x2="74.16" y2="81.46" width="0.4064" layer="16"/>
-<wire x1="74.16" y1="81.46" x2="70.5" y2="77.8" width="0.4064" layer="16"/>
-</signal>
-<signal name="SCK">
-<contactref element="ISP1" pad="3"/>
-<contactref element="U$12" pad="P$1"/>
-<wire x1="84.005" y1="84" x2="67.4" y2="84" width="0.4064" layer="16"/>
-<wire x1="67.4" y1="84" x2="63.15" y2="79.75" width="0.4064" layer="16"/>
-<wire x1="63.15" y1="79.75" x2="59.55" y2="79.75" width="0.4064" layer="16"/>
-<wire x1="59.55" y1="79.75" x2="58.5" y2="80.8" width="0.4064" layer="16"/>
+<contactref element="JP2" pad="1"/>
+<wire x1="106" y1="31" x2="107.5" y2="31" width="0.4064" layer="16"/>
+<wire x1="107.5" y1="31" x2="108" y2="31" width="0.4064" layer="16"/>
 </signal>
 <signal name="MOSI">
 <contactref element="U$14" pad="P$1"/>
@@ -3449,6 +3434,11 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="RST">
 <contactref element="ISP1" pad="5"/>
+<contactref element="U$13" pad="P$1"/>
+<wire x1="84.005" y1="86.54" x2="71.54" y2="86.54" width="0.6096" layer="1"/>
+<wire x1="71.54" y1="86.54" x2="62.5" y2="77.5" width="0.6096" layer="1"/>
+<wire x1="62.5" y1="77.5" x2="58.8" y2="77.5" width="0.6096" layer="1"/>
+<wire x1="58.8" y1="77.5" x2="58.5" y2="77.8" width="0.6096" layer="1"/>
 </signal>
 <signal name="ANT">
 <contactref element="U$21" pad="P$1"/>
@@ -3481,7 +3471,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="70.575" y1="74.875" x2="70.6" y2="74.9" width="0.4064" layer="16"/>
 </signal>
 <signal name="DEV_PRES">
-<contactref element="U$2" pad="P$1"/>
 <contactref element="GPIO" pad="3"/>
 <contactref element="R2" pad="2"/>
 <wire x1="54.745" y1="42.47" x2="54.745" y2="44.75" width="0.4064" layer="1"/>
@@ -3490,11 +3479,12 @@ Please make sure your boards conform to these design rules.</description>
 <via x="54.75" y="49.5" extent="1-16" drill="0.6" diameter="0.6096"/>
 <wire x1="54.75" y1="49.5" x2="54.75" y2="47.15" width="0.4064" layer="16"/>
 <wire x1="54.75" y1="47.15" x2="55.05" y2="46.85" width="0.4064" layer="16"/>
-<wire x1="32.1" y1="58.4" x2="49.35" y2="58.4" width="0.4064" layer="1"/>
 <wire x1="49.35" y1="58.4" x2="50.875" y2="56.875" width="0.4064" layer="1"/>
 <wire x1="50.875" y1="56.875" x2="50.875" y2="47" width="0.4064" layer="1"/>
 <wire x1="50.875" y1="47" x2="53.125" y2="44.75" width="0.4064" layer="1"/>
 <wire x1="53.125" y1="44.75" x2="54.745" y2="44.75" width="0.4064" layer="1"/>
+<contactref element="U$2" pad="P$1"/>
+<wire x1="49.35" y1="58.4" x2="32.1" y2="58.4" width="0.4064" layer="1"/>
 </signal>
 <signal name="TAC4">
 <contactref element="U$24" pad="P$4"/>
@@ -3881,6 +3871,22 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="GPIO3">
 <contactref element="GPIO" pad="5"/>
+</signal>
+<signal name="MISO">
+<contactref element="ISP1" pad="1"/>
+<contactref element="U$11" pad="P$1"/>
+<wire x1="70.5" y1="77.8" x2="70.5" y2="78.5" width="0.6096" layer="16"/>
+<wire x1="70.5" y1="78.5" x2="73.5" y2="81.5" width="0.6096" layer="16"/>
+<wire x1="73.5" y1="81.5" x2="83.965" y2="81.5" width="0.6096" layer="16"/>
+<wire x1="83.965" y1="81.5" x2="84.005" y2="81.46" width="0.6096" layer="16"/>
+</signal>
+<signal name="SCK">
+<contactref element="ISP1" pad="3"/>
+<contactref element="U$12" pad="P$1"/>
+<wire x1="84.005" y1="84" x2="71" y2="84" width="0.6096" layer="16"/>
+<wire x1="71" y1="84" x2="67" y2="80" width="0.6096" layer="16"/>
+<wire x1="67" y1="80" x2="59.3" y2="80" width="0.6096" layer="16"/>
+<wire x1="59.3" y1="80" x2="58.5" y2="80.8" width="0.6096" layer="16"/>
 </signal>
 </signals>
 <errors>

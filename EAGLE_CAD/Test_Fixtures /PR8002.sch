@@ -6051,7 +6051,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <text x="243.84" y="30.48" size="1.9304" layer="97">LED Indication</text>
 </plain>
 <instances>
-<instance part="U$2" gate="G$1" x="177.8" y="137.16"/>
+<instance part="U$2" gate="G$1" x="177.8" y="134.62"/>
 <instance part="U$3" gate="G$1" x="271.78" y="-50.8"/>
 <instance part="U$4" gate="G$1" x="284.48" y="-50.8"/>
 <instance part="U$5" gate="G$1" x="297.18" y="-50.8"/>
@@ -6060,9 +6060,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <instance part="U$8" gate="G$1" x="88.9" y="-45.72"/>
 <instance part="U$9" gate="G$1" x="147.32" y="91.44"/>
 <instance part="U$10" gate="G$1" x="27.94" y="-45.72"/>
-<instance part="U$11" gate="G$1" x="55.88" y="33.02"/>
-<instance part="U$12" gate="G$1" x="48.26" y="22.86"/>
-<instance part="U$13" gate="G$1" x="40.64" y="12.7"/>
+<instance part="U$11" gate="G$1" x="58.42" y="25.4"/>
+<instance part="U$12" gate="G$1" x="48.26" y="15.24"/>
+<instance part="U$13" gate="G$1" x="38.1" y="12.7"/>
 <instance part="U$14" gate="G$1" x="101.6" y="15.24"/>
 <instance part="U$15" gate="G$1" x="218.44" y="-45.72"/>
 <instance part="U$16" gate="G$1" x="236.22" y="-45.72"/>
@@ -6364,13 +6364,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <wire x1="218.44" y1="-55.88" x2="220.98" y2="-55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="RESET" class="0">
-<segment>
-<pinref part="U$13" gate="G$1" pin="P$1"/>
-<wire x1="40.64" y1="10.16" x2="55.88" y2="10.16" width="0.1524" layer="91"/>
-<label x="30.48" y="10.16" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="SW_OUT" class="0">
 <segment>
 <label x="243.84" y="-43.18" size="1.778" layer="95"/>
@@ -6401,26 +6394,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <wire x1="83.82" y1="-50.8" x2="88.9" y2="-50.8" width="0.1524" layer="91"/>
 <pinref part="CN1" gate="G$1" pin="2"/>
 <wire x1="83.82" y1="-58.42" x2="83.82" y2="-50.8" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="MISO" class="0">
-<segment>
-<pinref part="U$11" gate="G$1" pin="P$1"/>
-<wire x1="55.88" y1="30.48" x2="55.88" y2="15.24" width="0.1524" layer="91"/>
-<label x="58.42" y="30.48" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="ISP1" gate="G$1" pin="MISO"/>
-<wire x1="58.42" y1="15.24" x2="55.88" y2="15.24" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="SCK" class="0">
-<segment>
-<pinref part="ISP1" gate="G$1" pin="SCK"/>
-<wire x1="58.42" y1="12.7" x2="48.26" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="U$12" gate="G$1" pin="P$1"/>
-<wire x1="48.26" y1="12.7" x2="48.26" y2="20.32" width="0.1524" layer="91"/>
-<label x="48.26" y="20.32" size="1.778" layer="95"/>
+<pinref part="JP2" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="-68.58" x2="83.82" y2="-58.42" width="0.1524" layer="91"/>
+<junction x="83.82" y="-58.42"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -6434,7 +6410,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <net name="RST" class="0">
 <segment>
 <pinref part="ISP1" gate="G$1" pin="RST"/>
-<wire x1="58.42" y1="10.16" x2="55.88" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="10.16" x2="38.1" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="U$13" gate="G$1" pin="P$1"/>
+<label x="38.1" y="10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ANT" class="0">
@@ -6470,16 +6448,13 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </net>
 <net name="DEV_PRES" class="0">
 <segment>
-<wire x1="177.8" y1="132.08" x2="177.8" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="P$1"/>
-</segment>
-<segment>
 <pinref part="GPIO" gate="A" pin="3"/>
-<wire x1="215.9" y1="132.08" x2="185.42" y2="132.08" width="0.1524" layer="91"/>
-<label x="177.8" y="132.08" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="215.9" y1="132.08" x2="177.8" y2="132.08" width="0.1524" layer="91"/>
+<label x="175.26" y="132.08" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="185.42" y1="132.08" x2="177.8" y2="132.08" width="0.1524" layer="91"/>
-<junction x="185.42" y="132.08"/>
+<pinref part="U$2" gate="G$1" pin="P$1"/>
+<junction x="177.8" y="132.08"/>
+<wire x1="177.8" y1="132.08" x2="185.42" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TAC4" class="0">
@@ -6740,6 +6715,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="259.08" y1="20.32" x2="259.08" y2="25.4" width="0.1524" layer="91"/>
+<label x="259.08" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FAIL" class="0">
@@ -6752,6 +6728,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="276.86" y1="17.78" x2="279.4" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="279.4" y1="17.78" x2="279.4" y2="22.86" width="0.1524" layer="91"/>
+<label x="281.94" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PASS" class="0">
@@ -6764,6 +6741,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="297.18" y1="12.7" x2="299.72" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="299.72" y1="12.7" x2="299.72" y2="17.78" width="0.1524" layer="91"/>
+<label x="302.26" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO10" class="0">
@@ -6896,9 +6874,53 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <label x="154.94" y="129.54" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
+<net name="MISO" class="0">
+<segment>
+<pinref part="ISP1" gate="G$1" pin="MISO"/>
+<pinref part="U$11" gate="G$1" pin="P$1"/>
+<wire x1="58.42" y1="22.86" x2="58.42" y2="15.24" width="0.1524" layer="91"/>
+<label x="58.42" y="20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SCK" class="0">
+<segment>
+<pinref part="ISP1" gate="G$1" pin="SCK"/>
+<pinref part="U$12" gate="G$1" pin="P$1"/>
+<wire x1="48.26" y1="12.7" x2="58.42" y2="12.7" width="0.1524" layer="91"/>
+<label x="50.8" y="12.7" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="101,1,27.94,-48.26,U$10,P$1,,,,"/>
+<approved hash="104,1,86.36,15.24,ISP1,VCC,3.3V,,,"/>
+<approved hash="106,1,215.9,129.54,GPIO3,,,,,"/>
+<approved hash="106,1,215.9,127,GPIO4,,,,,"/>
+<approved hash="106,1,215.9,99.06,GPIO5,,,,,"/>
+<approved hash="106,1,215.9,96.52,GPIO6,,,,,"/>
+<approved hash="106,1,223.52,104.14,GPIO7,,,,,"/>
+<approved hash="106,1,223.52,106.68,GPIO8,,,,,"/>
+<approved hash="106,1,215.9,109.22,GPIO9,,,,,"/>
+<approved hash="106,1,215.9,111.76,GPIO10,,,,,"/>
+<approved hash="106,1,215.9,106.68,GPIO11,,,,,"/>
+<approved hash="106,1,223.52,96.52,GPIO12,,,,,"/>
+<approved hash="106,1,215.9,93.98,GPIO13,,,,,"/>
+<approved hash="106,1,223.52,91.44,GPIO16,,,,,"/>
+<approved hash="106,1,215.9,91.44,GPIO19,,,,,"/>
+<approved hash="106,1,223.52,114.3,GPIO24,,,,,"/>
+<approved hash="106,1,223.52,109.22,GPIO25,,,,,"/>
+<approved hash="106,1,223.52,101.6,ID_SC,,,,,"/>
+<approved hash="106,1,215.9,101.6,ID_SD,,,,,"/>
+<approved hash="113,1,81.1488,-58.1829,CN1,,,,,"/>
+<approved hash="113,1,262.89,17.4583,FAIL,,,,,"/>
+<approved hash="113,1,283.21,12.3783,PASS,,,,,"/>
+<approved hash="113,1,245.11,19.9983,PRG,,,,,"/>
+<approved hash="113,1,137.397,-34.1588,ANT,,,,,"/>
+<approved hash="113,1,219.668,111.891,GPIO,,,,,"/>
+<approved hash="113,1,200.66,-56.4092,VOL,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
