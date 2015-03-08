@@ -6026,6 +6026,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
 <part name="JP2" library="SparkFun-Connectors" deviceset="M02" device="PTH3"/>
 <part name="JP3" library="SparkFun-Connectors" deviceset="M02" device="PTH3"/>
+<part name="R15" library="PR_Parts_Library" deviceset="R_SMT" device="_0805_ADAFRUIT" value="3.3K"/>
+<part name="R16" library="PR_Parts_Library" deviceset="R_SMT" device="_0805_ADAFRUIT" value="2.2K"/>
+<part name="GND20" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6044,7 +6047,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <text x="35.56" y="-38.1" size="1.27" layer="97">Verifies radio's LED</text>
 <text x="208.28" y="40.64" size="3.81" layer="97">Interface </text>
 <text x="20.32" y="124.46" size="1.016" layer="97">GPIO24</text>
-<text x="20.32" y="96.52" size="1.016" layer="97">GPIO26</text>
+<text x="7.62" y="86.36" size="1.016" layer="97">GPIO26</text>
 <text x="78.74" y="132.08" size="1.016" layer="97">ZXCT1009</text>
 <text x="114.3" y="22.86" size="1.778" layer="97">USBTiny</text>
 <text x="200.66" y="30.48" size="1.9304" layer="97">Momentary Buttons</text>
@@ -6200,6 +6203,15 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </instance>
 <instance part="JP2" gate="G$1" x="83.82" y="-76.2" rot="R90"/>
 <instance part="JP3" gate="G$1" x="124.46" y="154.94" rot="R270"/>
+<instance part="R15" gate="G$1" x="25.4" y="93.98" smashed="yes" rot="R270">
+<attribute name="NAME" x="26.8986" y="95.25" size="1.778" layer="95"/>
+<attribute name="VALUE" x="27.178" y="92.71" size="1.778" layer="96"/>
+</instance>
+<instance part="R16" gate="G$1" x="25.4" y="81.28" smashed="yes" rot="R270">
+<attribute name="NAME" x="26.8986" y="82.55" size="1.778" layer="95"/>
+<attribute name="VALUE" x="27.178" y="80.01" size="1.778" layer="96"/>
+</instance>
+<instance part="GND20" gate="1" x="25.4" y="73.66"/>
 </instances>
 <busses>
 </busses>
@@ -6345,6 +6357,10 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pinref part="PASS" gate="G$1" pin="C"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 <wire x1="279.4" y1="10.16" x2="279.4" y2="12.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R16" gate="G$1" pin="2"/>
+<pinref part="GND20" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="A_OUT" class="0">
@@ -6611,14 +6627,17 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </net>
 <net name="COMPARATOR" class="0">
 <segment>
-<pinref part="TSM931" gate="G$1" pin="OUT"/>
-<wire x1="33.02" y1="99.06" x2="25.4" y2="99.06" width="0.1524" layer="91"/>
-<label x="20.32" y="99.06" size="1.016" layer="95"/>
-</segment>
-<segment>
 <pinref part="GPIO" gate="A" pin="40"/>
 <wire x1="223.52" y1="86.36" x2="261.62" y2="86.36" width="0.1524" layer="91"/>
 <label x="261.62" y="86.36" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R15" gate="G$1" pin="2"/>
+<pinref part="R16" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="86.36" x2="25.4" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="88.9" x2="15.24" y2="88.9" width="0.1524" layer="91"/>
+<junction x="25.4" y="88.9"/>
+<label x="7.62" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -6888,6 +6907,13 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pinref part="U$12" gate="G$1" pin="P$1"/>
 <wire x1="48.26" y1="12.7" x2="58.42" y2="12.7" width="0.1524" layer="91"/>
 <label x="50.8" y="12.7" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="TSM931" gate="G$1" pin="OUT"/>
+<pinref part="R15" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="99.06" x2="33.02" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
