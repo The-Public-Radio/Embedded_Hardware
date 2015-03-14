@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3129,6 +3129,27 @@ chip</description>
 <wire x1="2.54" y1="-1.27" x2="-1.27" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="-1.27" y1="-1.27" x2="-1.27" y2="1.27" width="0.127" layer="21"/>
 </package>
+<package name="PR9020_TESTPOINTS">
+<circle x="35" y="35" radius="35" width="0.127" layer="21"/>
+<pad name="P$1" x="10.6" y="44.6" drill="1.3" diameter="1.3" shape="offset"/>
+<pad name="P$2" x="60" y="35" drill="1.3" diameter="1.3" shape="offset"/>
+<pad name="P$3" x="60" y="30" drill="1.3" diameter="1.3" shape="offset"/>
+<pad name="P$4" x="60" y="40" drill="1.3" diameter="1.3" shape="offset"/>
+<pad name="P$5" x="34" y="64" drill="1.3" diameter="1.3" shape="offset" rot="R180"/>
+<pad name="P$6" x="19" y="6" drill="1.3" diameter="1.3" shape="offset"/>
+<pad name="P$7" x="28" y="5" drill="1.3" diameter="1.3" shape="offset"/>
+<pad name="P$8" x="51" y="63" drill="1.3" diameter="1.3" shape="offset"/>
+<pad name="P$9" x="54" y="62" drill="1.3" diameter="1.3" shape="offset"/>
+<pad name="P$10" x="49" y="64" drill="1.3" diameter="1.3" shape="offset" rot="R180"/>
+<pad name="P$11" x="37" y="67" drill="1.3" diameter="1.3" shape="offset" rot="R180"/>
+<pad name="P$12" x="37" y="64" drill="1.3" diameter="1.3" shape="offset"/>
+<pad name="P$13" x="39" y="68" drill="1.3" diameter="1.3" shape="offset"/>
+<pad name="P$14" x="66" y="24.5" drill="1.3" diameter="1.3" shape="offset"/>
+<pad name="P$15" x="66" y="45.5" drill="1.3" diameter="1.3" shape="offset"/>
+<pad name="P$16" x="53" y="27" drill="1.3" diameter="1.3" shape="offset"/>
+<pad name="P$17" x="48" y="37" drill="1.3" diameter="1.3" shape="offset"/>
+<pad name="P$18" x="10.6" y="38.25" drill="1.3" diameter="1.3" shape="offset"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CE32A_DAYTON_SPKR">
@@ -3674,6 +3695,30 @@ chip</description>
 <wire x1="2.54" y1="7.62" x2="-2.54" y2="8.89" width="0.254" layer="94"/>
 </symbol>
 <symbol name="PR9020FOOTPRINT">
+</symbol>
+<symbol name="PR9020_TESTPOINTS">
+<wire x1="10.16" y1="-12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<pin name="GND" x="-15.24" y="10.16" visible="pin" length="middle"/>
+<pin name="GND2" x="-15.24" y="7.62" visible="pin" length="middle"/>
+<pin name="DUT" x="-15.24" y="5.08" visible="pin" length="middle"/>
+<pin name="VCC" x="-15.24" y="2.54" visible="pin" length="middle"/>
+<pin name="VCC2" x="-15.24" y="0" visible="pin" length="middle"/>
+<pin name="SPK+" x="-15.24" y="-2.54" visible="pin" length="middle"/>
+<pin name="SPK-" x="-15.24" y="-5.08" visible="pin" length="middle"/>
+<pin name="TAC" x="-15.24" y="-7.62" visible="pin" length="middle"/>
+<pin name="LED" x="-15.24" y="-10.16" visible="pin" length="middle"/>
+<pin name="MISO" x="15.24" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="SCK" x="15.24" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="RESET" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="MOSI" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="SW_IN" x="15.24" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="SW_OUT" x="15.24" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="A_IN" x="15.24" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="A_OUT" x="15.24" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="ANT" x="15.24" y="-10.16" visible="pin" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -4534,6 +4579,38 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 <device name="" package="IDI-R2">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PR9020_TESTPOINTS">
+<gates>
+<gate name="G$1" symbol="PR9020_TESTPOINTS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PR9020_TESTPOINTS">
+<connects>
+<connect gate="G$1" pin="ANT" pad="P$18"/>
+<connect gate="G$1" pin="A_IN" pad="P$16"/>
+<connect gate="G$1" pin="A_OUT" pad="P$17"/>
+<connect gate="G$1" pin="DUT" pad="P$3"/>
+<connect gate="G$1" pin="GND" pad="P$1"/>
+<connect gate="G$1" pin="GND2" pad="P$2"/>
+<connect gate="G$1" pin="LED" pad="P$9"/>
+<connect gate="G$1" pin="MISO" pad="P$10"/>
+<connect gate="G$1" pin="MOSI" pad="P$13"/>
+<connect gate="G$1" pin="RESET" pad="P$12"/>
+<connect gate="G$1" pin="SCK" pad="P$11"/>
+<connect gate="G$1" pin="SPK+" pad="P$6"/>
+<connect gate="G$1" pin="SPK-" pad="P$7"/>
+<connect gate="G$1" pin="SW_IN" pad="P$14"/>
+<connect gate="G$1" pin="SW_OUT" pad="P$15"/>
+<connect gate="G$1" pin="TAC" pad="P$8"/>
+<connect gate="G$1" pin="VCC" pad="P$4"/>
+<connect gate="G$1" pin="VCC2" pad="P$5"/>
 </connects>
 <technologies>
 <technology name=""/>
