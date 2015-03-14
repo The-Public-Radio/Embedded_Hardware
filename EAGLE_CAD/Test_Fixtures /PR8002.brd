@@ -179,6 +179,8 @@
 <hole x="116.5" y="2.5" drill="2.75"/>
 <hole x="93.9" y="26.05" drill="2.75"/>
 <text x="107.5" y="70.5" size="1.27" layer="22" font="vector" ratio="18" rot="MR270">+   -</text>
+<dimension x1="0.5" y1="-0.7" x2="37.75" y2="99.25" x3="126" y3="49.275" textsize="1.27" textratio="18" layer="20" dtype="vertical" unit="inch"/>
+<dimension x1="0.5" y1="99.675" x2="119" y2="99.3" x3="59.75" y3="102.5" textsize="1.27" textratio="18" layer="20" dtype="horizontal" unit="inch"/>
 </plain>
 <libraries>
 <library name="PR_Parts_Library">
@@ -2380,7 +2382,7 @@
 <rectangle x1="-2.0475" y1="3.0225" x2="-1.7745" y2="3.0615" layer="25"/>
 </package>
 <package name="IDI-R2">
-<pad name="P$1" x="0" y="0" drill="1.2319" diameter="1.2319" shape="offset"/>
+<pad name="P$1" x="0" y="0" drill="1.3" diameter="1.3" shape="offset"/>
 <wire x1="-1.27" y1="1.27" x2="2.54" y2="1.27" width="0.127" layer="21"/>
 <wire x1="2.54" y1="1.27" x2="2.54" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="2.54" y1="-1.27" x2="-1.27" y2="-1.27" width="0.127" layer="21"/>
@@ -3283,14 +3285,14 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="JP2" library="SparkFun-Connectors" package="1X02_LONGPADS" value="M02PTH3" x="106" y="31" rot="R90"/>
 <element name="JP3" library="SparkFun-Connectors" package="1X02_LONGPADS" value="M02PTH3" x="104" y="66.5" rot="R90"/>
-<element name="R15" library="PR_Parts_Library" package="0805_ADAFRUIT" value="3.3K" x="12.5" y="49" smashed="yes" rot="MR270">
+<element name="R15" library="PR_Parts_Library" package="0805_ADAFRUIT" value="2.2K" x="12.5" y="49" smashed="yes" rot="MR270">
 <attribute name="TOL" value="" x="12.5" y="49" size="1.27" layer="28" font="vector" ratio="18" rot="MR270" display="off"/>
 <attribute name="MFG_PN" value="" x="12.5" y="49" size="1.27" layer="28" font="vector" ratio="18" rot="MR270" display="off"/>
 <attribute name="POWER" value="" x="12.5" y="49" size="1.27" layer="28" font="vector" ratio="18" rot="MR270" display="off"/>
 <attribute name="NAME" x="12.984" y="54.389" size="1.27" layer="26" font="vector" ratio="16" rot="MR270"/>
 <attribute name="VALUE" x="14.786" y="49.889" size="1.27" layer="28" rot="MR270"/>
 </element>
-<element name="R16" library="PR_Parts_Library" package="0805_ADAFRUIT" value="2.2K" x="9.5" y="49" smashed="yes" rot="MR270">
+<element name="R16" library="PR_Parts_Library" package="0805_ADAFRUIT" value="3.3K" x="9.5" y="49" smashed="yes" rot="MR270">
 <attribute name="TOL" value="" x="9.5" y="49" size="1.27" layer="28" font="vector" ratio="18" rot="MR270" display="off"/>
 <attribute name="MFG_PN" value="" x="9.5" y="49" size="1.27" layer="28" font="vector" ratio="18" rot="MR270" display="off"/>
 <attribute name="POWER" value="" x="9.5" y="49" size="1.27" layer="28" font="vector" ratio="18" rot="MR270" display="off"/>
@@ -3303,16 +3305,16 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U$4" pad="P$1"/>
 <contactref element="ISP1" pad="6"/>
 <polygon width="0.6096" layer="1">
-<vertex x="0.5" y="100.925"/>
-<vertex x="119.875" y="100.425"/>
+<vertex x="0.5" y="99.675"/>
+<vertex x="119.875" y="99.175"/>
 <vertex x="118.875" y="-0.2"/>
 <vertex x="0.5" y="-0.7"/>
 </polygon>
 <polygon width="0.4064" layer="16">
 <vertex x="0.5" y="-0.7"/>
 <vertex x="119" y="-0.325"/>
-<vertex x="120" y="101.175"/>
-<vertex x="0" y="101.3"/>
+<vertex x="120" y="99.675"/>
+<vertex x="0" y="99.8"/>
 </polygon>
 <contactref element="U$3" pad="P$1"/>
 <contactref element="C3" pad="2"/>
