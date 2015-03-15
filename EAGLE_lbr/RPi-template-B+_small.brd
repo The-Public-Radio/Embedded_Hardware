@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -88,6 +88,9 @@
 <circle x="3.5" y="3.5" radius="3.1" width="0" layer="29"/>
 <circle x="61.5" y="3.5" radius="3.1" width="0" layer="29"/>
 <circle x="61.5" y="3.5" radius="3.1" width="0" layer="30"/>
+<dimension x1="3.5" y1="51.125" x2="3.5" y2="53.875" x3="1" y3="52.5" textsize="1.778" layer="19" dtype="diameter"/>
+<dimension x1="61.5" y1="52.5" x2="61" y2="56" x3="72" y3="54.25" textsize="1.778" layer="19" dtype="vertical"/>
+<dimension x1="61.5" y1="52.5" x2="3.5" y2="52.5" x3="32.5" y3="68" textsize="1.778" layer="19" dtype="horizontal"/>
 </plain>
 <libraries>
 <library name="pinhead">

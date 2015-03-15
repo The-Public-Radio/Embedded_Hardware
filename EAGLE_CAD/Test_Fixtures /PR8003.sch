@@ -350,6 +350,7 @@ chip</description>
 <pad name="P$16" x="53" y="27" drill="1.3" diameter="1.3" shape="offset"/>
 <pad name="P$17" x="48" y="37" drill="1.3" diameter="1.3" shape="offset"/>
 <pad name="P$18" x="6.8" y="38" drill="1.3" diameter="1.3" shape="offset"/>
+<circle x="35" y="35" radius="42" width="0.127" layer="21"/>
 </package>
 <package name="JST-B2B-PH-SM4-TB">
 <description>2-Pin JST PH Series top entry Connector</description>
