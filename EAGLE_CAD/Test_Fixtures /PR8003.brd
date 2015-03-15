@@ -3042,8 +3042,8 @@ Please make sure your boards conform to these design rules.</description>
 <element name="ISP" library="adafruit" package="AVRISP" value="AVRISP-6" x="65" y="85" smashed="yes" rot="R270">
 <attribute name="NAME" x="60.8145" y="83.298" size="1.778" layer="25" font="vector" ratio="16" rot="R90"/>
 </element>
-<element name="U$20" library="PR_Parts_Library" package="C&amp;K_PTS645_SMT" value="C&amp;K_PTS645" x="5.75" y="11" rot="R90">
-<attribute name="MFG_PN" value="PTS645SM43SMTR92 LFS" x="5.75" y="11" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="U$20" library="PR_Parts_Library" package="C&amp;K_PTS645_SMT" value="C&amp;K_PTS645" x="6" y="11" rot="R90">
+<attribute name="MFG_PN" value="PTS645SM43SMTR92 LFS" x="6" y="11" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="U$22" library="PR_Parts_Library" package="C&amp;K_PTS645_SMT" value="C&amp;K_PTS645" x="6" y="43" rot="R90">
 <attribute name="MFG_PN" value="PTS645SM43SMTR92 LFS" x="6" y="43" size="1.778" layer="27" rot="R90" display="off"/>
@@ -3589,7 +3589,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="15.375" y1="82.375" x2="15.125" y2="82.625" width="0.3048" layer="16"/>
 <wire x1="15.125" y1="82.625" x2="15.125" y2="84.905" width="0.3048" layer="16"/>
 <wire x1="15.125" y1="84.905" x2="15.375" y2="85.155" width="0.3048" layer="16"/>
-<wire x1="8" y1="14.975" x2="11.475" y2="14.975" width="0.4064" layer="1"/>
+<wire x1="8.25" y1="14.975" x2="11.475" y2="14.975" width="0.4064" layer="1"/>
 <wire x1="11.475" y1="14.975" x2="14" y2="17.5" width="0.4064" layer="1"/>
 <wire x1="14" y1="17.5" x2="14" y2="61" width="0.4064" layer="1"/>
 <wire x1="14" y1="61" x2="17.25" y2="64.25" width="0.4064" layer="1"/>
