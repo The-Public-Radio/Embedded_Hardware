@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -180,7 +180,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <packages>
 </packages>
 <symbols>
-<symbol name="VCC">
+<symbol name="VCC2">
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
 <text x="-1.016" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
@@ -196,7 +196,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <deviceset name="VCC" prefix="SUPPLY">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
-<gate name="G$1" symbol="VCC" x="0" y="0"/>
+<gate name="1" symbol="VCC2" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -335,10 +335,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <rectangle x1="-27.94" y1="-5.08" x2="-15.24" y2="5.08" layer="41"/>
 <rectangle x1="15.24" y1="-5.08" x2="27.94" y2="5.08" layer="41"/>
 </package>
-<package name="M3_BOLT_HOLE">
-<pad name="P$1" x="0" y="0" drill="3.2" diameter="10"/>
-<circle x="0" y="0" radius="7.5" width="0.127" layer="41"/>
-<circle x="0" y="0" radius="7.5" width="0.127" layer="42"/>
+<package name="PEM_M3">
+<pad name="P$2" x="0" y="0" drill="4.22" diameter="6.22"/>
+<circle x="0" y="0" radius="5" width="0.127" layer="41"/>
+<circle x="0" y="0" radius="5" width="0.127" layer="42"/>
 </package>
 <package name="RV170SF_SW_POT">
 <circle x="0" y="0" radius="10.5" width="0.1" layer="21"/>
@@ -576,21 +576,6 @@ MSOP&lt;br&gt;
 <smd name="TP" x="0" y="0" dx="2" dy="2" layer="1" roundness="100" cream="no"/>
 <text x="-1" y="1.05" size="1.27" layer="25">&gt;NAME</text>
 <text x="-0.762" y="-1.016" size="0.0254" layer="27">&gt;VALUE</text>
-</package>
-<package name="JST-B2B-PH-SM4-TB">
-<description>2-Pin JST PH Series top entry Connector</description>
-<wire x1="-3.975" y1="2" x2="3.975" y2="2" width="0.127" layer="21"/>
-<wire x1="3.975" y1="2" x2="3.975" y2="-3" width="0.127" layer="21"/>
-<wire x1="-3.975" y1="-3" x2="-3.975" y2="2" width="0.127" layer="21"/>
-<smd name="2" x="-1" y="-2.75" dx="1" dy="5.5" layer="1"/>
-<smd name="1" x="1" y="-2.75" dx="1" dy="5.5" layer="1"/>
-<smd name="NC1" x="-3.4" y="-0.5" dx="3" dy="1.6" layer="1" rot="R90"/>
-<smd name="NC2" x="3.4" y="-0.5" dx="3" dy="1.6" layer="1" rot="R90"/>
-<text x="-2.54" y="2.81" size="1.27" layer="25" font="vector">&gt;Name</text>
-<text x="-2.54" y="-7.62" size="1.27" layer="27" font="vector">&gt;Value</text>
-<text x="2.286" y="-4.596" size="1.4224" layer="21" ratio="12">+</text>
-<text x="-3.429" y="-4.596" size="1.4224" layer="21" ratio="12">-</text>
-<wire x1="-3.975" y1="-3" x2="3.975" y2="-3" width="0.127" layer="21"/>
 </package>
 <package name="2X3-NS">
 <wire x1="-3.81" y1="-1.905" x2="-3.175" y2="-2.54" width="0.2032" layer="51"/>
@@ -918,16 +903,6 @@ chip</description>
 <text x="-1.27" y="1.27" size="1.778" layer="95">&gt;NAME</text>
 <pin name="TP" x="0" y="-2.54" visible="off" length="short" direction="in" rot="R90"/>
 </symbol>
-<symbol name="PINHD2">
-<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="-6.35" y1="5.08" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
-<text x="-6.35" y="5.715" size="1.778" layer="95">&gt;NAME</text>
-<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
-</symbol>
 <symbol name="AVR_SPI_PROGRAMMER_6">
 <wire x1="-5.08" y1="-5.08" x2="7.62" y2="-5.08" width="0.4064" layer="94"/>
 <wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.4064" layer="94"/>
@@ -969,20 +944,17 @@ chip</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="M3_SCREW_POST" prefix="J">
-<description>Antenna mounting hole for M3 screw.</description>
+<deviceset name="M3_PEMNUT">
 <gates>
-<gate name="G$1" symbol="M3_SCREW_POST" x="0" y="0"/>
+<gate name="G$1" symbol="M3_SCREW_POST" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="" package="M3_BOLT_HOLE">
+<device name="" package="PEM_M3">
 <connects>
-<connect gate="G$1" pin="ANT" pad="P$1"/>
+<connect gate="G$1" pin="ANT" pad="P$2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="MFG_PN" value="DNP"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -1395,25 +1367,6 @@ MFG# ABS25-32.768KHZ-T</description>
 <technologies>
 <technology name="">
 <attribute name="MFG_PN" value="DNP"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="JST_2PIN" prefix="CN" uservalue="yes">
-<description>JST 2-pin connector</description>
-<gates>
-<gate name="G$1" symbol="PINHD2" x="2.54" y="0"/>
-</gates>
-<devices>
-<device name="-SMT-RA" package="JST-B2B-PH-SM4-TB">
-<connects>
-<connect gate="G$1" pin="1" pad="2"/>
-<connect gate="G$1" pin="2" pad="1"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MFG_PN" value="B2B-PH-SM4-TB(LF)(SN)"/>
 </technology>
 </technologies>
 </device>
@@ -2774,7 +2727,7 @@ Source: http://www.osram.convergy.de/</description>
 </part>
 <part name="GND24" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
-<part name="ANT_MOUNT" library="PR_Parts_Library" deviceset="M3_SCREW_POST" device="" value="DNP"/>
+<part name="ANT_MOUNT" library="PR_Parts_Library" deviceset="M3_PEMNUT" device="" value="DNP"/>
 <part name="R1" library="PR_Parts_Library" deviceset="RV170SF_TAIWANA_POT_SW" device="" value="">
 <attribute name="MFG_PN" value="RV170SF-43-20F-A10K - supplied by CL Labs"/>
 </part>
@@ -2799,7 +2752,6 @@ Source: http://www.osram.convergy.de/</description>
 <attribute name="POWER" value="1/10W"/>
 <attribute name="TOL" value="1%"/>
 </part>
-<part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="L1" library="PR_Parts_Library" deviceset="L_SMT" device="_0805_ADAFRUIT" value="180nH">
 <attribute name="CURRENT" value="400mA"/>
 <attribute name="DCR" value="640m"/>
@@ -2836,12 +2788,6 @@ Source: http://www.osram.convergy.de/</description>
 <attribute name="TOL" value="5%"/>
 </part>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="SPKR_PLUG" library="PR_Parts_Library" deviceset="JST_2PIN" device="-SMT-RA"/>
-<part name="C5" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value="DNP">
-<attribute name="MFG_PN" value="DNP"/>
-<attribute name="TOL" value="2%"/>
-<attribute name="VOLTAGE" value="50V"/>
-</part>
 <part name="C14" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value="47pF">
 <attribute name="MFG_PN" value="CL10C470JB8NCNC"/>
 <attribute name="TOL" value="5%"/>
@@ -3023,7 +2969,7 @@ ZONE 0x-1x</text>
 ZONE 2x</text>
 <text x="157.48" y="144.78" size="2.54" layer="96">MCU
 ZONE 3x</text>
-<text x="-27.94" y="162.56" size="3.81" layer="96">PUBLIC RADIO PR9020
+<text x="-27.94" y="162.56" size="3.81" layer="96">PUBLIC RADIO PR9022
 Production Board </text>
 <text x="22.098" y="109.474" size="2.54" layer="96">Fiducials </text>
 <text x="71.12" y="147.574" size="2.54" layer="96">Test Points </text>
@@ -3048,7 +2994,7 @@ Production Board </text>
 <instance part="GND17" gate="1" x="78.74" y="55.88"/>
 <instance part="GND20" gate="1" x="63.5" y="55.88"/>
 <instance part="GND9" gate="1" x="27.94" y="15.24"/>
-<instance part="SUPPLY5" gate="G$1" x="10.16" y="73.66"/>
+<instance part="SUPPLY5" gate="1" x="10.16" y="73.66"/>
 <instance part="R21" gate="G$1" x="215.9" y="12.7" smashed="yes">
 <attribute name="NAME" x="221.488" y="11.6586" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="221.488" y="8.89" size="1.778" layer="96" rot="R180"/>
@@ -3089,22 +3035,21 @@ Production Board </text>
 <instance part="GND12" gate="1" x="48.26" y="116.84"/>
 <instance part="GND3" gate="1" x="-27.94" y="129.54"/>
 <instance part="MCU" gate="G$1" x="175.26" y="124.46"/>
-<instance part="SUPPLY8" gate="G$1" x="154.94" y="132.08"/>
+<instance part="SUPPLY8" gate="1" x="154.94" y="132.08"/>
 <instance part="GND25" gate="1" x="154.94" y="116.84"/>
 <instance part="GND23" gate="1" x="139.7" y="121.92"/>
 <instance part="GND22" gate="1" x="129.54" y="121.92"/>
-<instance part="SUPPLY6" gate="G$1" x="129.54" y="139.7"/>
-<instance part="SUPPLY7" gate="G$1" x="139.7" y="139.7"/>
+<instance part="SUPPLY6" gate="1" x="129.54" y="139.7"/>
+<instance part="SUPPLY7" gate="1" x="139.7" y="139.7"/>
 <instance part="GND31" gate="1" x="226.06" y="106.68"/>
 <instance part="ISP" gate="G$1" x="220.98" y="127"/>
 <instance part="GND30" gate="1" x="205.74" y="91.44"/>
-<instance part="SUPPLY9" gate="G$1" x="231.14" y="137.16"/>
+<instance part="SUPPLY9" gate="1" x="231.14" y="137.16"/>
 <instance part="GND32" gate="1" x="231.14" y="116.84"/>
 <instance part="R31" gate="G$1" x="198.12" y="104.14" smashed="yes" rot="R180">
 <attribute name="NAME" x="195.326" y="101.1174" size="1.778" layer="95"/>
 <attribute name="VALUE" x="195.072" y="98.806" size="1.778" layer="96"/>
 </instance>
-<instance part="GND6" gate="1" x="7.62" y="15.24"/>
 <instance part="L1" gate="G$1" x="22.86" y="25.4" smashed="yes">
 <attribute name="NAME" x="22.86" y="22.86" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="15.24" y="20.32" size="1.778" layer="96"/>
@@ -3126,9 +3071,7 @@ Production Board </text>
 <attribute name="NAME" x="203.6826" y="124.206" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="205.994" y="123.952" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SUPPLY1" gate="G$1" x="200.66" y="139.7"/>
-<instance part="SPKR_PLUG" gate="G$1" x="256.54" y="30.48"/>
-<instance part="C5" gate="G$1" x="7.62" y="30.48"/>
+<instance part="SUPPLY1" gate="1" x="200.66" y="139.7"/>
 <instance part="C14" gate="G$1" x="15.24" y="33.02" rot="R90"/>
 <instance part="C11" gate="G$1" x="35.56" y="15.24"/>
 <instance part="C10" gate="G$1" x="45.72" y="15.24"/>
@@ -3312,11 +3255,6 @@ Production Board </text>
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
 <pinref part="L1" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="GND6" gate="1" pin="GND"/>
-<wire x1="7.62" y1="25.4" x2="7.62" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="C5" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="GND16" gate="1" pin="GND"/>
@@ -3579,33 +3517,33 @@ Production Board </text>
 </segment>
 <segment>
 <pinref part="MCU" gate="G$1" pin="VCC"/>
-<pinref part="SUPPLY8" gate="G$1" pin="VCC"/>
+<pinref part="SUPPLY8" gate="1" pin="VCC"/>
 <wire x1="160.02" y1="132.08" x2="154.94" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="L02" gate="G$1" pin="1"/>
-<pinref part="SUPPLY5" gate="G$1" pin="VCC"/>
+<pinref part="SUPPLY5" gate="1" pin="VCC"/>
 <wire x1="17.78" y1="73.66" x2="10.16" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="ISP" gate="G$1" pin="2"/>
 <wire x1="231.14" y1="137.16" x2="231.14" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="SUPPLY9" gate="G$1" pin="VCC"/>
+<pinref part="SUPPLY9" gate="1" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="SUPPLY6" gate="G$1" pin="VCC"/>
+<pinref part="SUPPLY6" gate="1" pin="VCC"/>
 <pinref part="C33" gate="G$1" pin="1"/>
 <wire x1="129.54" y1="139.7" x2="129.54" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SUPPLY7" gate="G$1" pin="VCC"/>
+<pinref part="SUPPLY7" gate="1" pin="VCC"/>
 <wire x1="139.7" y1="139.7" x2="139.7" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="C32" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="R30" gate="G$1" pin="1"/>
 <wire x1="200.66" y1="132.08" x2="200.66" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="SUPPLY1" gate="G$1" pin="VCC"/>
+<pinref part="SUPPLY1" gate="1" pin="VCC"/>
 </segment>
 <segment>
 <pinref part="T4" gate="G$1" pin="TP"/>
@@ -3761,9 +3699,7 @@ Production Board </text>
 <pinref part="D1" gate="G$1" pin="COM"/>
 <wire x1="-20.32" y1="33.02" x2="-10.16" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="C14" gate="G$1" pin="1"/>
-<pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="7.62" y1="33.02" x2="12.7" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="33.02" x2="7.62" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="33.02" x2="12.7" y2="33.02" width="0.1524" layer="91"/>
 <label x="-20.32" y="40.64" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
@@ -3785,9 +3721,13 @@ Production Board </text>
 <label x="60.96" y="116.84" size="1.27" layer="95"/>
 </segment>
 <segment>
-<pinref part="SPKR_PLUG" gate="G$1" pin="1"/>
 <wire x1="246.38" y1="33.02" x2="254" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="R25" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="SPKR_PLACE" gate="G$1" pin="-"/>
+<wire x1="27.94" y1="129.54" x2="27.94" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="121.92" x2="25.4" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SPK_OUT-" class="0">
@@ -3797,9 +3737,13 @@ Production Board </text>
 <label x="71.12" y="116.84" size="1.27" layer="95"/>
 </segment>
 <segment>
-<pinref part="SPKR_PLUG" gate="G$1" pin="2"/>
 <wire x1="246.38" y1="30.48" x2="254" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="R26" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="SPKR_PLACE" gate="G$1" pin="+"/>
+<wire x1="22.86" y1="129.54" x2="22.86" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="124.46" x2="20.32" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">

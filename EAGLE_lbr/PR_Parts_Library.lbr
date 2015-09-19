@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3681,6 +3681,11 @@ chip</description>
 <pad name="P$5" x="-12.26" y="-7.08" drill="2.7" shape="octagon" rot="R120"/>
 <pad name="P$6" x="12.26" y="-7.08" drill="2.7" shape="octagon" rot="R60"/>
 </package>
+<package name="PEM_M3">
+<pad name="P$2" x="0" y="0" drill="4.22" diameter="6.22"/>
+<circle x="0" y="0" radius="5" width="0.127" layer="41"/>
+<circle x="0" y="0" radius="5" width="0.127" layer="42"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CE32A_DAYTON_SPKR">
@@ -5283,6 +5288,21 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 <connect gate="G$1" pin="+" pad="P$5"/>
 <connect gate="G$1" pin="-" pad="P$6"/>
 <connect gate="G$1" pin="LID_GND" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="M3_PEMNUT">
+<gates>
+<gate name="G$1" symbol="M3_SCREW_POST" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="PEM_M3">
+<connects>
+<connect gate="G$1" pin="ANT" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
