@@ -1,0 +1,63 @@
+PR9020 BUTTON UI 
+
+Tuning Functionality
+
+-Radio ships pre-tuned, frequency stored in EEPROM 
+-Tactile switch allows for manual retuning, saving and overwriting old station. 
+-Due to international orders, the valid frequency range is the entire FM band of the IC (76-108 MHZ).
+
+User Feedback Options
+-Audio
+	o Listening to a station as you tune to verify.
+-LED
+	o Provides feedback based on which tuning mode the user is relying on:
+		* Manual Re-tune Mode
+		* Scan Mode 
+		* Save Mode 
+		* Timed Out Mode
+
+LED Displays
+
+-Tune Mode = 1000ms HIGH, 1000ms LOW
+-Scan Mode = 80ms   HIGH, 80ms   LOW 
+-Save Mode = 300ms  HIGH, 300ms  LOW 
+				*followed by* 
+             100ms  HIGH, 300ms  LOW
+
+-Timed Out = 50ms   HIGH, 50ms   LOW
+
+Tuning Modes
+
+-Begin Manual re-tune
+	o Initialized by a >= 2 second button depress.  
+	o LED loops tuning mode display until new command is called.
+	o Single button presses >= 300 ms apart increments station frequency 
+      by 100Khz.
+    o FM band wrapped at 76 & 108 Mhz. 
+
+-Scan Mode 
+	o Initialized by *2* button presses <300 ms apart. 
+	o LED loops scan mode display *5* times.
+	o Radio scans up to next available frequency.  
+	o Returns to Manual Re-tune Mode.
+
+-Save Mode 
+	o Initialized by a >= 2 sec button depress.
+	o Led loops save mode display *2* times.
+	o Frequency is stored as the new default station.
+
+-Timed Out Mode
+	o Initialized by >=10 seconds of no user input.
+	o Led loops timed out mode display *20* times. 
+	o Breaks from Timed Out Mode if button depress received from user and  
+	  	*returns to manual re-tune mode.
+	o If no new command is called radio returns to last programmed station.
+		*LED resumes PWM display of station reception.  
+
+-Factory Reset
+	o Initialized by a >= 4 sec button depress 
+	o Led loops save mode display *2* times.
+	o Radio returns to initially stored station.  
+
+
+
