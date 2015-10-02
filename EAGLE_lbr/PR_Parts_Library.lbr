@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3674,17 +3674,21 @@ chip</description>
 <wire x1="16.002" y1="16.002" x2="-16.002" y2="16.002" width="0.127" layer="21"/>
 <wire x1="-16.002" y1="16.002" x2="-16.002" y2="-16.002" width="0.127" layer="21"/>
 <circle x="0" y="0" radius="11.5062" width="0.127" layer="20"/>
-<pad name="P$4" x="-13.24" y="-13.24" drill="4.22" diameter="6.2"/>
-<pad name="P$1" x="-13.24" y="13.24" drill="4.22" diameter="6.2"/>
-<pad name="P$2" x="13.24" y="13.24" drill="4.22" diameter="6.2"/>
-<pad name="P$3" x="13.24" y="-13.24" drill="4.22" diameter="6.2"/>
 <pad name="P$5" x="-12.26" y="-7.08" drill="2.7" shape="octagon" rot="R120"/>
 <pad name="P$6" x="12.26" y="-7.08" drill="2.7" shape="octagon" rot="R60"/>
+<circle x="-13.24" y="13.24" radius="3.1" width="0.127" layer="21"/>
+<circle x="13.24" y="13.24" radius="3.1" width="0.127" layer="21"/>
+<circle x="-13.24" y="-13.24" radius="3.1" width="0.127" layer="21"/>
+<circle x="-336.296" y="-336.296" radius="3.1" width="0.127" layer="21"/>
+<circle x="13.24" y="-13.24" radius="3.1" width="0.127" layer="21"/>
 </package>
 <package name="PEM_M3">
 <pad name="P$2" x="0" y="0" drill="4.22" diameter="6.22"/>
 <circle x="0" y="0" radius="5" width="0.127" layer="41"/>
 <circle x="0" y="0" radius="5" width="0.127" layer="42"/>
+</package>
+<package name="PEM_M3_NOKEEPAWAY">
+<pad name="P$2" x="0" y="0" drill="4.22" diameter="6.22"/>
 </package>
 </packages>
 <symbols>
@@ -4303,7 +4307,6 @@ chip</description>
 <pin name="P$40" x="0" y="-20.32" visible="off" length="short"/>
 </symbol>
 <symbol name="PR9024_SPKR">
-<pin name="LID_GND" x="0" y="-7.62" visible="pin" length="short" rot="R90"/>
 <wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="0" y1="-5.08" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
@@ -4311,8 +4314,33 @@ chip</description>
 <wire x1="2.54" y1="7.62" x2="0" y2="5.08" width="0.254" layer="94"/>
 <wire x1="0" y1="5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
-<pin name="+" x="-5.08" y="2.54" length="short"/>
-<pin name="-" x="-5.08" y="-2.54" length="short"/>
+<pin name="+" x="-5.08" y="-2.54" length="short"/>
+<pin name="-" x="-5.08" y="2.54" length="short"/>
+</symbol>
+<symbol name="PEM_M3">
+<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
+</symbol>
+<symbol name="PEM_M3_PIN">
+<pin name="P$1" x="0" y="-5.08" length="short" rot="R90"/>
+<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -5287,7 +5315,6 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 <connects>
 <connect gate="G$1" pin="+" pad="P$5"/>
 <connect gate="G$1" pin="-" pad="P$6"/>
-<connect gate="G$1" pin="LID_GND" pad="P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -5304,6 +5331,33 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 <connects>
 <connect gate="G$1" pin="ANT" pad="P$2"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PEM_M3_W/PIN">
+<gates>
+<gate name="G$1" symbol="PEM_M3_PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PEM_M3_NOKEEPAWAY">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PEM_M3_NOPIN">
+<gates>
+<gate name="G$1" symbol="PEM_M3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PEM_M3_NOKEEPAWAY">
 <technologies>
 <technology name=""/>
 </technologies>
