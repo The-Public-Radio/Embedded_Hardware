@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -461,13 +461,24 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="16.002" y1="16.002" x2="-16.002" y2="16.002" width="0.127" layer="21"/>
 <wire x1="-16.002" y1="16.002" x2="-16.002" y2="-16.002" width="0.127" layer="21"/>
 <circle x="0" y="0" radius="11.5062" width="0.127" layer="20"/>
-<pad name="P$5" x="-12.26" y="-7.08" drill="2.7" shape="octagon" rot="R120"/>
-<pad name="P$6" x="12.26" y="-7.08" drill="2.7" shape="octagon" rot="R60"/>
-<circle x="-13.24" y="13.24" radius="3.1" width="0.127" layer="21"/>
-<circle x="13.24" y="13.24" radius="3.1" width="0.127" layer="21"/>
-<circle x="-13.24" y="-13.24" radius="3.1" width="0.127" layer="21"/>
-<circle x="-336.296" y="-336.296" radius="3.1" width="0.127" layer="21"/>
-<circle x="13.24" y="-13.24" radius="3.1" width="0.127" layer="21"/>
+<pad name="P$5" x="-12.556" y="-7.249" drill="3.2" rot="R120"/>
+<pad name="P$6" x="12.556" y="-7.249" drill="3.2" rot="R60"/>
+<wire x1="-18.75" y1="6.5" x2="-18.75" y2="18.75" width="0.127" layer="21"/>
+<wire x1="-18.75" y1="18.75" x2="18.75" y2="18.75" width="0.127" layer="21"/>
+<wire x1="18.75" y1="18.75" x2="18.75" y2="6.5" width="0.127" layer="21"/>
+<wire x1="18.75" y1="6.5" x2="25.5" y2="6.5" width="0.127" layer="21"/>
+<wire x1="25.5" y1="6.5" x2="25.5" y2="-6.5" width="0.127" layer="21" curve="-180"/>
+<wire x1="25.5" y1="-6.5" x2="18.75" y2="-6.5" width="0.127" layer="21"/>
+<wire x1="18.75" y1="-6.5" x2="18.75" y2="-18.75" width="0.127" layer="21"/>
+<wire x1="18.75" y1="-18.75" x2="-18.75" y2="-18.75" width="0.127" layer="21"/>
+<wire x1="-18.75" y1="-18.75" x2="-18.75" y2="-6.5" width="0.127" layer="21"/>
+<wire x1="-18.75" y1="-6.5" x2="-25.5" y2="-6.5" width="0.127" layer="21"/>
+<wire x1="-25.5" y1="-6.5" x2="-25.5" y2="6.5" width="0.127" layer="21" curve="-180"/>
+<wire x1="-25.5" y1="6.5" x2="-18.75" y2="6.5" width="0.127" layer="21"/>
+<pad name="P$1" x="-14.142" y="14.142" drill="3.2" diameter="5.6"/>
+<pad name="P$2" x="14.142" y="14.142" drill="3.2" diameter="5.6"/>
+<pad name="P$3" x="14.142" y="-14.142" drill="3.2" diameter="5.6"/>
+<pad name="P$4" x="-14.142" y="-14.142" drill="3.2" diameter="5.6"/>
 </package>
 <package name="0402_WAI">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
@@ -905,18 +916,6 @@ chip</description>
 <pin name="4" x="10.16" y="0" visible="pad" direction="pas" function="dot" rot="R180"/>
 <pin name="5" x="-7.62" y="-2.54" visible="pad" direction="pas" function="dot"/>
 <pin name="6" x="10.16" y="-2.54" visible="pad" direction="pas" function="dot" rot="R180"/>
-</symbol>
-<symbol name="PEM_M3">
-<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="1.27" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
 </symbol>
 <symbol name="PEM_M3_PIN">
 <pin name="P$1" x="0" y="-5.08" length="short" rot="R90"/>
@@ -1387,18 +1386,6 @@ MFG# ABS25-32.768KHZ-T</description>
 <attribute name="POWER" value="" constant="no"/>
 <attribute name="TOL" value="" constant="no"/>
 </technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="PEM_M3_NOPIN">
-<gates>
-<gate name="G$1" symbol="PEM_M3" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="PEM_M3_NOKEEPAWAY">
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -2916,9 +2903,6 @@ Source: http://www.osram.convergy.de/</description>
 <part name="R26" library="PR_Parts_Library" deviceset="R_SMT" device="_0805_ADAFRUIT" value="0 ohm">
 <attribute name="MFG_PN" value="ERJ-6GEY0R00V "/>
 </part>
-<part name="U$2" library="PR_Parts_Library" deviceset="PEM_M3_NOPIN" device=""/>
-<part name="U$3" library="PR_Parts_Library" deviceset="PEM_M3_NOPIN" device=""/>
-<part name="U$4" library="PR_Parts_Library" deviceset="PEM_M3_NOPIN" device=""/>
 <part name="U$5" library="PR_Parts_Library" deviceset="PEM_M3_W/PIN" device=""/>
 </parts>
 <sheets>
@@ -3144,9 +3128,6 @@ Production Board </text>
 <attribute name="NAME" x="237.49" y="26.8986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="237.49" y="24.638" size="1.778" layer="96"/>
 </instance>
-<instance part="U$2" gate="G$1" x="20.32" y="137.16"/>
-<instance part="U$3" gate="G$1" x="27.94" y="137.16"/>
-<instance part="U$4" gate="G$1" x="35.56" y="137.16"/>
 <instance part="U$5" gate="G$1" x="43.18" y="137.16"/>
 </instances>
 <busses>
