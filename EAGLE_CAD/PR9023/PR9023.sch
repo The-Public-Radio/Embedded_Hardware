@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -636,9 +636,6 @@ chip</description>
 <rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
 <rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
 </package>
-<package name="PEM_M3_NOKEEPAWAY">
-<pad name="P$2" x="0" y="0" drill="4.22" diameter="6.22"/>
-</package>
 </packages>
 <symbols>
 <symbol name="AA_BATTERY">
@@ -781,8 +778,9 @@ chip</description>
 <wire x1="2.54" y1="7.62" x2="0" y2="5.08" width="0.254" layer="94"/>
 <wire x1="0" y1="5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
-<pin name="+" x="-5.08" y="-2.54" length="short"/>
-<pin name="-" x="-5.08" y="2.54" length="short"/>
+<pin name="+" x="-5.08" y="2.54" length="short"/>
+<pin name="-" x="-5.08" y="-2.54" length="short"/>
+<pin name="GN" x="0" y="-7.62" visible="pin" length="short" rot="R90"/>
 </symbol>
 <symbol name="CAP_SMT">
 <wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
@@ -916,19 +914,6 @@ chip</description>
 <pin name="4" x="10.16" y="0" visible="pad" direction="pas" function="dot" rot="R180"/>
 <pin name="5" x="-7.62" y="-2.54" visible="pad" direction="pas" function="dot"/>
 <pin name="6" x="10.16" y="-2.54" visible="pad" direction="pas" function="dot" rot="R180"/>
-</symbol>
-<symbol name="PEM_M3_PIN">
-<pin name="P$1" x="0" y="-5.08" length="short" rot="R90"/>
-<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="1.27" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1113,8 +1098,9 @@ MFG# ABS25-32.768KHZ-T</description>
 <devices>
 <device name="" package="PR2024_SPKR_PLACE">
 <connects>
-<connect gate="G$1" pin="+" pad="P$5"/>
-<connect gate="G$1" pin="-" pad="P$6"/>
+<connect gate="G$1" pin="+" pad="P$6"/>
+<connect gate="G$1" pin="-" pad="P$5"/>
+<connect gate="G$1" pin="GN" pad="P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1386,21 +1372,6 @@ MFG# ABS25-32.768KHZ-T</description>
 <attribute name="POWER" value="" constant="no"/>
 <attribute name="TOL" value="" constant="no"/>
 </technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="PEM_M3_W/PIN">
-<gates>
-<gate name="G$1" symbol="PEM_M3_PIN" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="PEM_M3_NOKEEPAWAY">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -2903,7 +2874,6 @@ Source: http://www.osram.convergy.de/</description>
 <part name="R26" library="PR_Parts_Library" deviceset="R_SMT" device="_0805_ADAFRUIT" value="0 ohm">
 <attribute name="MFG_PN" value="ERJ-6GEY0R00V "/>
 </part>
-<part name="U$5" library="PR_Parts_Library" deviceset="PEM_M3_W/PIN" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2928,7 +2898,7 @@ Source: http://www.osram.convergy.de/</description>
 <text x="-27.94" y="71.12" size="2.54" layer="96">FM_IC
 ZONE 0x-1x</text>
 <text x="-35.814" y="142.24" size="2.54" layer="96">Switch / Power  </text>
-<text x="17.78" y="142.494" size="2.54" layer="96">Lid Mounting</text>
+<text x="238.76" y="18.034" size="2.1844" layer="96">Lid Grounding</text>
 <text x="134.62" y="68.58" size="2.54" layer="96">Audio Amplifier 
 ZONE 2x</text>
 <text x="157.48" y="144.78" size="2.54" layer="96">MCU
@@ -2996,7 +2966,7 @@ Production Board </text>
 <instance part="R1" gate="G$1" x="-10.16" y="109.22" smashed="yes" rot="R90"/>
 <instance part="GND5" gate="1" x="-20.32" y="99.06"/>
 <instance part="GND2" gate="1" x="-35.56" y="111.76"/>
-<instance part="GND12" gate="1" x="43.18" y="119.38"/>
+<instance part="GND12" gate="1" x="264.16" y="5.08"/>
 <instance part="GND3" gate="1" x="-27.94" y="129.54"/>
 <instance part="MCU" gate="G$1" x="175.26" y="124.46"/>
 <instance part="SUPPLY8" gate="G$1" x="154.94" y="132.08"/>
@@ -3024,8 +2994,8 @@ Production Board </text>
 <attribute name="NAME" x="177.038" y="20.193" size="1.778" layer="95"/>
 <attribute name="VALUE" x="176.276" y="17.653" size="1.778" layer="96"/>
 </instance>
-<instance part="R40" gate="G$1" x="43.18" y="127" smashed="yes" rot="R270">
-<attribute name="NAME" x="47.2186" y="125.73" size="1.778" layer="95" rot="R90"/>
+<instance part="R40" gate="G$1" x="264.16" y="12.7" smashed="yes" rot="R270">
+<attribute name="NAME" x="263.1186" y="11.43" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="D1" gate="G$1" x="-10.16" y="25.4" rot="R180"/>
 <instance part="JP5" gate="BATT" x="10.16" y="121.92" rot="R90"/>
@@ -3128,7 +3098,6 @@ Production Board </text>
 <attribute name="NAME" x="237.49" y="26.8986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="237.49" y="24.638" size="1.778" layer="96"/>
 </instance>
-<instance part="U$5" gate="G$1" x="43.18" y="137.16"/>
 </instances>
 <busses>
 </busses>
@@ -3685,7 +3654,7 @@ Production Board </text>
 <segment>
 <wire x1="246.38" y1="33.02" x2="254" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="R25" gate="G$1" pin="2"/>
-<pinref part="SPKR_PLACE" gate="G$1" pin="-"/>
+<pinref part="SPKR_PLACE" gate="G$1" pin="+"/>
 <wire x1="254" y1="33.02" x2="254" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -3697,8 +3666,8 @@ Production Board </text>
 </segment>
 <segment>
 <pinref part="R26" gate="G$1" pin="2"/>
-<pinref part="SPKR_PLACE" gate="G$1" pin="+"/>
 <wire x1="246.38" y1="30.48" x2="259.08" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="SPKR_PLACE" gate="G$1" pin="-"/>
 <wire x1="259.08" y1="30.48" x2="259.08" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -3802,8 +3771,9 @@ Production Board </text>
 </net>
 <net name="N$6" class="0">
 <segment>
+<pinref part="SPKR_PLACE" gate="G$1" pin="GN"/>
 <pinref part="R40" gate="G$1" pin="1"/>
-<pinref part="U$5" gate="G$1" pin="P$1"/>
+<wire x1="264.16" y1="40.64" x2="264.16" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

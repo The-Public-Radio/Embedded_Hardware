@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -155,15 +155,15 @@ Born + tuned in Brooklyn
 http://thepublicrad.io</text>
 <circle x="46.34" y="60.76" radius="0.5" width="0.8128" layer="26"/>
 <wire x1="59.75" y1="55.6" x2="60.85" y2="55.6" width="0.4064" layer="21"/>
-<wire x1="2" y1="19" x2="2" y2="52" width="0.4064" layer="20"/>
-<wire x1="18" y1="68" x2="52" y2="68" width="0.4064" layer="20"/>
-<wire x1="16" y1="5" x2="53" y2="5" width="0.4064" layer="20"/>
-<wire x1="65" y1="17" x2="65" y2="55" width="0.4064" layer="20"/>
+<wire x1="2" y1="23.5" x2="2" y2="47" width="0.4064" layer="20"/>
+<wire x1="23.5" y1="68" x2="46.5" y2="68" width="0.3048" layer="20"/>
+<wire x1="17" y1="5" x2="53" y2="5" width="0.3048" layer="20"/>
+<wire x1="65" y1="17" x2="65" y2="53" width="0.4064" layer="20"/>
 <circle x="35" y="35" radius="35" width="0.254" layer="20"/>
-<wire x1="2" y1="19" x2="16" y2="5" width="0.4064" layer="20"/>
 <wire x1="53" y1="5" x2="65" y2="17" width="0.4064" layer="20"/>
-<wire x1="2" y1="52" x2="18" y2="68" width="0.4064" layer="20"/>
-<wire x1="65" y1="55" x2="52" y2="68" width="0.4064" layer="20"/>
+<wire x1="2" y1="47" x2="23.5" y2="68" width="0.3048" layer="20" curve="-50.798865"/>
+<wire x1="46.5" y1="68" x2="65" y2="53" width="0.3048" layer="20" curve="-39.646795"/>
+<wire x1="17" y1="5" x2="2" y2="23.5" width="0.3048" layer="20" curve="-39.823572"/>
 </plain>
 <libraries>
 <library name="PR_Parts_Library">
@@ -2694,9 +2694,6 @@ chip</description>
 <rectangle x1="-1.8525" y1="2.9835" x2="-1.7355" y2="3.0225" layer="25"/>
 <rectangle x1="-2.0475" y1="3.0225" x2="-1.7745" y2="3.0615" layer="25"/>
 </package>
-<package name="PEM_M3_NOKEEPAWAY">
-<pad name="P$2" x="0" y="0" drill="4.22" diameter="6.22"/>
-</package>
 </packages>
 </library>
 <library name="adafruit">
@@ -2822,9 +2819,6 @@ Please make sure your boards conform to these design rules.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
-<param name="AutoGrid" value="1"/>
-<param name="Efforts" value="0"/>
-<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -3315,7 +3309,6 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="30.134" y="17.591" size="0.8128" layer="25" ratio="16" rot="R90"/>
 <attribute name="VALUE" x="32.336" y="14.891" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="U$5" library="PR_Parts_Library" package="PEM_M3_NOKEEPAWAY" value="PEM_M3_W/PIN" x="81.76" y="28.76"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -3904,21 +3897,21 @@ Please make sure your boards conform to these design rules.</description>
 <via x="38.8" y="21" extent="1-16" drill="0.6"/>
 <wire x1="38.8" y1="21" x2="39.8" y2="21" width="0.6096" layer="1"/>
 <wire x1="39.8" y1="21" x2="40.07" y2="20.73" width="0.6096" layer="1"/>
-<contactref element="SPKR_PLACE" pad="P$6"/>
 <wire x1="38.53" y1="16.77" x2="38.53" y2="19.19" width="0.6096" layer="1"/>
-<wire x1="40.07" y1="20.73" x2="47.091" y2="27.751" width="0.6096" layer="1"/>
-<wire x1="47.091" y1="27.751" x2="47.556" y2="27.751" width="0.6096" layer="1"/>
+<contactref element="SPKR_PLACE" pad="P$6"/>
+<wire x1="47.556" y1="27.751" x2="40.535" y2="20.73" width="0.6096" layer="1"/>
+<wire x1="40.535" y1="20.73" x2="40.07" y2="20.73" width="0.6096" layer="1"/>
 </signal>
 <signal name="SPK_OUT-">
 <contactref element="T7" pad="TP"/>
 <contactref element="R26" pad="2"/>
 <wire x1="32" y1="21" x2="29.7" y2="21" width="0.6096" layer="16"/>
 <via x="29.7" y="21" extent="1-16" drill="0.6"/>
-<contactref element="SPKR_PLACE" pad="P$5"/>
 <wire x1="30.05" y1="16.63" x2="30.05" y2="20.65" width="0.6096" layer="1"/>
 <wire x1="30.05" y1="20.65" x2="29.7" y2="21" width="0.6096" layer="1"/>
-<wire x1="29.7" y1="21" x2="22.949" y2="27.751" width="0.6096" layer="1"/>
-<wire x1="22.949" y1="27.751" x2="22.444" y2="27.751" width="0.6096" layer="1"/>
+<contactref element="SPKR_PLACE" pad="P$5"/>
+<wire x1="22.444" y1="27.751" x2="29.195" y2="21" width="0.6096" layer="1"/>
+<wire x1="29.195" y1="21" x2="29.7" y2="21" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$9">
 <contactref element="U1" pad="14"/>
@@ -4059,10 +4052,10 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="30.55" y1="14.71" x2="30.7" y2="14.56" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$6">
+<contactref element="SPKR_PLACE" pad="P$4"/>
 <contactref element="R40" pad="1"/>
-<contactref element="U$5" pad="P$2"/>
-<wire x1="24.2" y1="16.15" x2="24.2" y2="19.32" width="0.6096" layer="1"/>
-<wire x1="24.2" y1="19.32" x2="81.76" y2="28.76" width="0" layer="19" extent="1-1"/>
+<wire x1="24.2" y1="16.15" x2="24.2" y2="17.516" width="0.6096" layer="1"/>
+<wire x1="24.2" y1="17.516" x2="20.858" y2="20.858" width="0.6096" layer="1"/>
 </signal>
 </signals>
 <errors>

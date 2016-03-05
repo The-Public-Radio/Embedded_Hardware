@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="10" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4363,8 +4363,9 @@ chip</description>
 <wire x1="2.54" y1="7.62" x2="0" y2="5.08" width="0.254" layer="94"/>
 <wire x1="0" y1="5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
-<pin name="+" x="-5.08" y="-2.54" length="short"/>
-<pin name="-" x="-5.08" y="2.54" length="short"/>
+<pin name="+" x="-5.08" y="2.54" length="short"/>
+<pin name="-" x="-5.08" y="-2.54" length="short"/>
+<pin name="GN" x="0" y="-7.62" visible="pin" length="short" rot="R90"/>
 </symbol>
 <symbol name="PEM_M3">
 <wire x1="2.54" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
@@ -5345,10 +5346,13 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 </deviceset>
 <deviceset name="PR_2024_SPKR">
 <gates>
-<gate name="G$1" symbol="CE32A_SPKR_LID_GND" x="0" y="0"/>
+<gate name="G$1" symbol="PR9024_SPKR" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="PR2024_SPKR_PLACE">
+<connects>
+<connect gate="G$1" pin="GN" pad="P$4"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -5362,8 +5366,9 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 <devices>
 <device name="" package="PR2024_SPKR_PLACE">
 <connects>
-<connect gate="G$1" pin="+" pad="P$5"/>
-<connect gate="G$1" pin="-" pad="P$6"/>
+<connect gate="G$1" pin="+" pad="P$6"/>
+<connect gate="G$1" pin="-" pad="P$5"/>
+<connect gate="G$1" pin="GN" pad="P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
