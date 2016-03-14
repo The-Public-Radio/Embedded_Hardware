@@ -460,9 +460,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="16.002" y1="-16.002" x2="16.002" y2="16.002" width="0.127" layer="21"/>
 <wire x1="16.002" y1="16.002" x2="-16.002" y2="16.002" width="0.127" layer="21"/>
 <wire x1="-16.002" y1="16.002" x2="-16.002" y2="-16.002" width="0.127" layer="21"/>
-<circle x="0" y="0" radius="11.5062" width="0.127" layer="20"/>
-<pad name="P$5" x="-12.556" y="-7.249" drill="3.2" rot="R120"/>
-<pad name="P$6" x="12.556" y="-7.249" drill="3.2" rot="R60"/>
+<circle x="0" y="0" radius="10.25" width="0.127" layer="20"/>
+<pad name="P$5" x="-12.341" y="-7.125" drill="3.2"/>
+<pad name="P$6" x="12.341" y="-7.125" drill="3.2"/>
 <wire x1="-18.75" y1="6.5" x2="-18.75" y2="18.75" width="0.127" layer="21"/>
 <wire x1="-18.75" y1="18.75" x2="18.75" y2="18.75" width="0.127" layer="21"/>
 <wire x1="18.75" y1="18.75" x2="18.75" y2="6.5" width="0.127" layer="21"/>
@@ -475,10 +475,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="-18.75" y1="-6.5" x2="-25.5" y2="-6.5" width="0.127" layer="21"/>
 <wire x1="-25.5" y1="-6.5" x2="-25.5" y2="6.5" width="0.127" layer="21" curve="-180"/>
 <wire x1="-25.5" y1="6.5" x2="-18.75" y2="6.5" width="0.127" layer="21"/>
-<pad name="P$1" x="-14.142" y="14.142" drill="4.22" diameter="6.2"/>
-<pad name="P$2" x="14.142" y="14.142" drill="4.22" diameter="6.2"/>
-<pad name="P$3" x="14.142" y="-14.142" drill="4.22" diameter="6.2"/>
-<pad name="P$4" x="-14.142" y="-14.142" drill="4.22" diameter="6.2"/>
+<pad name="P$1" x="-13.5" y="13.5" drill="4.22" diameter="6.2"/>
+<pad name="P$2" x="13.5" y="13.5" drill="4.22" diameter="6.2"/>
+<pad name="P$3" x="13.5" y="-13.5" drill="4.22" diameter="6.2"/>
+<pad name="P$4" x="-13.5" y="-13.5" drill="4.22" diameter="6.2"/>
 </package>
 <package name="0402_WAI">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
