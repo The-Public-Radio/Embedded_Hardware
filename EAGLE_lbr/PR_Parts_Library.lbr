@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3739,6 +3739,35 @@ chip</description>
 <wire x1="1.75" y1="1.25" x2="1.75" y2="2.25" width="0.127" layer="21"/>
 <circle x="0" y="0" radius="1.25" width="0.127" layer="21"/>
 </package>
+<package name="PR2024_SPKR_PLACE(SMD)">
+<smd name="P$4" x="-13.5" y="-13.5" dx="6.2" dy="6.2" layer="1" roundness="99"/>
+<hole x="-13.5" y="-13.5" drill="4.22"/>
+<wire x1="-16.002" y1="-16.002" x2="16.002" y2="-16.002" width="0.127" layer="21"/>
+<wire x1="16.002" y1="-16.002" x2="16.002" y2="16.002" width="0.127" layer="21"/>
+<wire x1="16.002" y1="16.002" x2="-16.002" y2="16.002" width="0.127" layer="21"/>
+<wire x1="-16.002" y1="16.002" x2="-16.002" y2="-16.002" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="10.25" width="0.127" layer="20"/>
+<pad name="P$5" x="-12.341" y="-7.125" drill="3.2"/>
+<pad name="P$6" x="12.341" y="-7.125" drill="3.2"/>
+<wire x1="-18.75" y1="6.5" x2="-18.75" y2="18.75" width="0.127" layer="21"/>
+<wire x1="-18.75" y1="18.75" x2="18.75" y2="18.75" width="0.127" layer="21"/>
+<wire x1="18.75" y1="18.75" x2="18.75" y2="6.5" width="0.127" layer="21"/>
+<wire x1="18.75" y1="6.5" x2="25.5" y2="6.5" width="0.127" layer="21"/>
+<wire x1="25.5" y1="6.5" x2="25.5" y2="-6.5" width="0.127" layer="21" curve="-180"/>
+<wire x1="25.5" y1="-6.5" x2="18.75" y2="-6.5" width="0.127" layer="21"/>
+<wire x1="18.75" y1="-6.5" x2="18.75" y2="-18.75" width="0.127" layer="21"/>
+<wire x1="18.75" y1="-18.75" x2="-18.75" y2="-18.75" width="0.127" layer="21"/>
+<wire x1="-18.75" y1="-18.75" x2="-18.75" y2="-6.5" width="0.127" layer="21"/>
+<wire x1="-18.75" y1="-6.5" x2="-25.5" y2="-6.5" width="0.127" layer="21"/>
+<wire x1="-25.5" y1="-6.5" x2="-25.5" y2="6.5" width="0.127" layer="21" curve="-180"/>
+<wire x1="-25.5" y1="6.5" x2="-18.75" y2="6.5" width="0.127" layer="21"/>
+<hole x="-13.5" y="13.5" drill="4.22"/>
+<smd name="P$1" x="-13.5" y="13.5" dx="6.2" dy="6.2" layer="1" roundness="99"/>
+<smd name="P$3" x="13.5" y="-13.5" dx="6.2" dy="6.2" layer="1" roundness="99"/>
+<hole x="13.5" y="-13.5" drill="4.22"/>
+<hole x="13.5" y="13.5" drill="4.22"/>
+<smd name="P$2" x="13.5" y="13.5" dx="6.2" dy="6.2" layer="1" roundness="99"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CE32A_DAYTON_SPKR">
@@ -5456,6 +5485,23 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 <technology name="">
 <attribute name="MFG_PN" value="TL3315NF100Q" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PR2024_SPKR_SMD">
+<gates>
+<gate name="G$1" symbol="PR9024_SPKR" x="5.08" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="PR2024_SPKR_PLACE(SMD)">
+<connects>
+<connect gate="G$1" pin="+" pad="P$6"/>
+<connect gate="G$1" pin="-" pad="P$5"/>
+<connect gate="G$1" pin="GN" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>

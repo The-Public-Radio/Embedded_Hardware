@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -455,7 +455,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <smd name="2" x="-1.1" y="-0.95" dx="1" dy="1.4" layer="1" rot="R270"/>
 <smd name="1" x="-1.1" y="0.95" dx="1" dy="1.4" layer="1" rot="R270"/>
 </package>
-<package name="PR2024_SPKR_PLACE">
+<package name="PR2024_SPKR_PLACE(SMD)">
+<smd name="P$4" x="-13.5" y="-13.5" dx="6.2" dy="6.2" layer="1" roundness="99"/>
+<hole x="-13.5" y="-13.5" drill="4.22"/>
 <wire x1="-16.002" y1="-16.002" x2="16.002" y2="-16.002" width="0.127" layer="21"/>
 <wire x1="16.002" y1="-16.002" x2="16.002" y2="16.002" width="0.127" layer="21"/>
 <wire x1="16.002" y1="16.002" x2="-16.002" y2="16.002" width="0.127" layer="21"/>
@@ -475,10 +477,12 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="-18.75" y1="-6.5" x2="-25.5" y2="-6.5" width="0.127" layer="21"/>
 <wire x1="-25.5" y1="-6.5" x2="-25.5" y2="6.5" width="0.127" layer="21" curve="-180"/>
 <wire x1="-25.5" y1="6.5" x2="-18.75" y2="6.5" width="0.127" layer="21"/>
-<pad name="P$1" x="-13.5" y="13.5" drill="4.22" diameter="6.2"/>
-<pad name="P$2" x="13.5" y="13.5" drill="4.22" diameter="6.2"/>
-<pad name="P$3" x="13.5" y="-13.5" drill="4.22" diameter="6.2"/>
-<pad name="P$4" x="-13.5" y="-13.5" drill="4.22" diameter="6.2"/>
+<hole x="-13.5" y="13.5" drill="4.22"/>
+<smd name="P$1" x="-13.5" y="13.5" dx="6.2" dy="6.2" layer="1" roundness="99"/>
+<smd name="P$3" x="13.5" y="-13.5" dx="6.2" dy="6.2" layer="1" roundness="99"/>
+<hole x="13.5" y="-13.5" drill="4.22"/>
+<hole x="13.5" y="13.5" drill="4.22"/>
+<smd name="P$2" x="13.5" y="13.5" dx="6.2" dy="6.2" layer="1" roundness="99"/>
 </package>
 <package name="0402_WAI">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
@@ -1091,12 +1095,12 @@ MFG# ABS25-32.768KHZ-T</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PR9024_SPKR">
+<deviceset name="PR2024_SPKR_SMD">
 <gates>
-<gate name="G$1" symbol="PR9024_SPKR" x="0" y="0"/>
+<gate name="G$1" symbol="PR9024_SPKR" x="5.08" y="2.54"/>
 </gates>
 <devices>
-<device name="" package="PR2024_SPKR_PLACE">
+<device name="" package="PR2024_SPKR_PLACE(SMD)">
 <connects>
 <connect gate="G$1" pin="+" pad="P$6"/>
 <connect gate="G$1" pin="-" pad="P$5"/>
@@ -2837,7 +2841,7 @@ Source: http://www.osram.convergy.de/</description>
 <part name="FET1" library="PR_Parts_Library" deviceset="AO3435" device="" value="">
 <attribute name="MFG_PN" value="AO3435"/>
 </part>
-<part name="SPKR_PLACE" library="PR_Parts_Library" deviceset="PR9024_SPKR" device="" value="DNP"/>
+<part name="SPKR_PLACE" library="PR_Parts_Library" deviceset="PR2024_SPKR_SMD" device="" value="DNP"/>
 <part name="T14" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
 <part name="T15" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
 <part name="T16" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
