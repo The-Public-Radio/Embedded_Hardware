@@ -3740,8 +3740,6 @@ chip</description>
 <circle x="0" y="0" radius="1.25" width="0.127" layer="21"/>
 </package>
 <package name="PR2024_SPKR_PLACE(SMD)">
-<smd name="P$4" x="-13.5" y="-13.5" dx="6.2" dy="6.2" layer="1" roundness="99"/>
-<hole x="-13.5" y="-13.5" drill="4.22"/>
 <wire x1="-16.002" y1="-16.002" x2="16.002" y2="-16.002" width="0.127" layer="21"/>
 <wire x1="16.002" y1="-16.002" x2="16.002" y2="16.002" width="0.127" layer="21"/>
 <wire x1="16.002" y1="16.002" x2="-16.002" y2="16.002" width="0.127" layer="21"/>
@@ -3761,6 +3759,14 @@ chip</description>
 <wire x1="-18.75" y1="-6.5" x2="-25.5" y2="-6.5" width="0.127" layer="21"/>
 <wire x1="-25.5" y1="-6.5" x2="-25.5" y2="6.5" width="0.127" layer="21" curve="-180"/>
 <wire x1="-25.5" y1="6.5" x2="-18.75" y2="6.5" width="0.127" layer="21"/>
+</package>
+<package name="PEM_SMT">
+<hole x="0" y="0" drill="4.22"/>
+<smd name="P$1" x="0" y="0" dx="6.2" dy="6.2" layer="1" roundness="100"/>
+</package>
+<package name="PR2024_SPKR_PEM_NUTS">
+<smd name="P$4" x="-13.5" y="-13.5" dx="6.2" dy="6.2" layer="1" roundness="99"/>
+<hole x="-13.5" y="-13.5" drill="4.22"/>
 <hole x="-13.5" y="13.5" drill="4.22"/>
 <smd name="P$1" x="-13.5" y="13.5" dx="6.2" dy="6.2" layer="1" roundness="99"/>
 <smd name="P$3" x="13.5" y="-13.5" dx="6.2" dy="6.2" layer="1" roundness="99"/>
@@ -4420,6 +4426,17 @@ chip</description>
 <wire x1="2.54" y1="-2.54" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="-1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
 <wire x1="2.54" y1="0" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
+</symbol>
+<symbol name="PR9025_SPKR">
+<wire x1="0" y1="5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<pin name="+" x="-2.54" y="2.54" length="short"/>
+<pin name="-" x="-2.54" y="-2.54" length="short"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -5397,7 +5414,6 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 <connects>
 <connect gate="G$1" pin="+" pad="P$6"/>
 <connect gate="G$1" pin="-" pad="P$5"/>
-<connect gate="G$1" pin="GN" pad="P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -5491,15 +5507,26 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 </deviceset>
 <deviceset name="PR2024_SPKR_SMD">
 <gates>
-<gate name="G$1" symbol="PR9024_SPKR" x="5.08" y="2.54"/>
+<gate name="G$1" symbol="PR9025_SPKR" x="-2.54" y="0"/>
 </gates>
 <devices>
 <device name="" package="PR2024_SPKR_PLACE(SMD)">
 <connects>
 <connect gate="G$1" pin="+" pad="P$6"/>
 <connect gate="G$1" pin="-" pad="P$5"/>
-<connect gate="G$1" pin="GN" pad="P$4"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PEM_SMT">
+<gates>
+<gate name="G$1" symbol="PEM_M3" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="PEM_SMT">
 <technologies>
 <technology name=""/>
 </technologies>

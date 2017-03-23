@@ -165,8 +165,6 @@ http://thepublicrad.io</text>
 <library name="PR_Parts_Library">
 <packages>
 <package name="PR2024_SPKR_PLACE(SMD)">
-<smd name="P$4" x="-13.5" y="-13.5" dx="6.2" dy="6.2" layer="1" roundness="99"/>
-<hole x="-13.5" y="-13.5" drill="4.22"/>
 <wire x1="-16.002" y1="-16.002" x2="16.002" y2="-16.002" width="0.127" layer="21"/>
 <wire x1="16.002" y1="-16.002" x2="16.002" y2="16.002" width="0.127" layer="21"/>
 <wire x1="16.002" y1="16.002" x2="-16.002" y2="16.002" width="0.127" layer="21"/>
@@ -186,12 +184,6 @@ http://thepublicrad.io</text>
 <wire x1="-18.75" y1="-6.5" x2="-25.5" y2="-6.5" width="0.127" layer="21"/>
 <wire x1="-25.5" y1="-6.5" x2="-25.5" y2="6.5" width="0.127" layer="21" curve="-180"/>
 <wire x1="-25.5" y1="6.5" x2="-18.75" y2="6.5" width="0.127" layer="21"/>
-<hole x="-13.5" y="13.5" drill="4.22"/>
-<smd name="P$1" x="-13.5" y="13.5" dx="6.2" dy="6.2" layer="1" roundness="99"/>
-<smd name="P$3" x="13.5" y="-13.5" dx="6.2" dy="6.2" layer="1" roundness="99"/>
-<hole x="13.5" y="-13.5" drill="4.22"/>
-<hole x="13.5" y="13.5" drill="4.22"/>
-<smd name="P$2" x="13.5" y="13.5" dx="6.2" dy="6.2" layer="1" roundness="99"/>
 </package>
 <package name="BK92_AA_BATT">
 <pad name="NEG@2" x="-16.764" y="0" drill="1.778" shape="long" rot="R180"/>
@@ -2693,6 +2685,10 @@ chip</description>
 <rectangle x1="-1.8525" y1="2.9835" x2="-1.7355" y2="3.0225" layer="25"/>
 <rectangle x1="-2.0475" y1="3.0225" x2="-1.7745" y2="3.0615" layer="25"/>
 </package>
+<package name="PEM_SMT">
+<hole x="0" y="0" drill="4.22"/>
+<smd name="P$1" x="0" y="0" dx="6.2" dy="6.2" layer="1" roundness="100"/>
+</package>
 </packages>
 </library>
 <library name="adafruit">
@@ -3309,6 +3305,10 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="30.134" y="17.591" size="0.8128" layer="25" ratio="16" rot="R90"/>
 <attribute name="VALUE" x="32.336" y="14.891" size="1.27" layer="27" rot="R90"/>
 </element>
+<element name="U$2" library="PR_Parts_Library" package="PEM_SMT" value="PEM_SMT" x="21.5" y="48.5" locked="yes"/>
+<element name="U$3" library="PR_Parts_Library" package="PEM_SMT" value="PEM_SMT" x="48.5" y="48.5" locked="yes"/>
+<element name="U$4" library="PR_Parts_Library" package="PEM_SMT" value="PEM_SMT" x="48.5" y="21.5" locked="yes"/>
+<element name="U$5" library="PR_Parts_Library" package="PEM_SMT" value="PEM_SMT" x="21.5" y="21.5" locked="yes"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -3338,7 +3338,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="18.45" y="7.23625" extent="1-16" drill="0.6"/>
 <via x="21.8" y="13.9" extent="1-16" drill="0.6"/>
 <via x="39.95" y="23.1" extent="1-16" drill="0.6"/>
-<via x="52.25" y="32.8" extent="1-16" drill="0.6"/>
+<via x="51.9375" y="32.4875" extent="1-16" drill="0.6"/>
 <via x="21.15375" y="64.95375" extent="1-16" drill="0.6"/>
 <contactref element="SW1" pad="P$1"/>
 <contactref element="C40" pad="P$2"/>
@@ -3406,8 +3406,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="27.15" y1="54.8" x2="27.75" y2="54.1" width="0.254" layer="1"/>
 <via x="32.7" y="54.45" extent="1-16" drill="0.6"/>
 <via x="41.1" y="17.21" extent="1-16" drill="0.6"/>
-<via x="47.8" y="35.12" extent="1-16" drill="0.6"/>
-<via x="54.55" y="37.5" extent="1-16" drill="0.6"/>
+<via x="47.1125" y="34.495" extent="1-16" drill="0.6"/>
+<via x="54.4875" y="37.875" extent="1-16" drill="0.6"/>
 <via x="54.95" y="31.6" extent="1-16" drill="0.6"/>
 <via x="54.45" y="47.3" extent="1-16" drill="0.6"/>
 <via x="30.25" y="56.5" extent="1-16" drill="0.254"/>
@@ -4022,12 +4022,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="32.2" y1="13.23" x2="32.795" y2="13.825" width="0.254" layer="1"/>
 <wire x1="30.7" y1="14.56" x2="32.06" y2="14.56" width="0.3048" layer="1"/>
 <wire x1="30.55" y1="14.71" x2="30.7" y2="14.56" width="0.3048" layer="1"/>
-</signal>
-<signal name="N$6">
-<contactref element="SPKR_PLACE" pad="P$4"/>
-<contactref element="R40" pad="1"/>
-<wire x1="21.5" y1="21.5" x2="24.2" y2="18.8" width="0.6096" layer="1"/>
-<wire x1="24.2" y1="18.8" x2="24.2" y2="16.15" width="0.6096" layer="1"/>
 </signal>
 </signals>
 <errors>

@@ -448,8 +448,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <smd name="1" x="-1.1" y="0.95" dx="1" dy="1.4" layer="1" rot="R270"/>
 </package>
 <package name="PR2024_SPKR_PLACE(SMD)">
-<smd name="P$4" x="-13.5" y="-13.5" dx="6.2" dy="6.2" layer="1" roundness="99"/>
-<hole x="-13.5" y="-13.5" drill="4.22"/>
 <wire x1="-16.002" y1="-16.002" x2="16.002" y2="-16.002" width="0.127" layer="21"/>
 <wire x1="16.002" y1="-16.002" x2="16.002" y2="16.002" width="0.127" layer="21"/>
 <wire x1="16.002" y1="16.002" x2="-16.002" y2="16.002" width="0.127" layer="21"/>
@@ -469,12 +467,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="-18.75" y1="-6.5" x2="-25.5" y2="-6.5" width="0.127" layer="21"/>
 <wire x1="-25.5" y1="-6.5" x2="-25.5" y2="6.5" width="0.127" layer="21" curve="-180"/>
 <wire x1="-25.5" y1="6.5" x2="-18.75" y2="6.5" width="0.127" layer="21"/>
-<hole x="-13.5" y="13.5" drill="4.22"/>
-<smd name="P$1" x="-13.5" y="13.5" dx="6.2" dy="6.2" layer="1" roundness="99"/>
-<smd name="P$3" x="13.5" y="-13.5" dx="6.2" dy="6.2" layer="1" roundness="99"/>
-<hole x="13.5" y="-13.5" drill="4.22"/>
-<hole x="13.5" y="13.5" drill="4.22"/>
-<smd name="P$2" x="13.5" y="13.5" dx="6.2" dy="6.2" layer="1" roundness="99"/>
 </package>
 <package name="0402_WAI">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
@@ -659,6 +651,10 @@ chip</description>
 <text x="-3.175" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <text x="-5.715" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 </package>
+<package name="PEM_SMT">
+<hole x="0" y="0" drill="4.22"/>
+<smd name="P$1" x="0" y="0" dx="6.2" dy="6.2" layer="1" roundness="100"/>
+</package>
 </packages>
 <symbols>
 <symbol name="AA_BATTERY">
@@ -793,17 +789,16 @@ chip</description>
 <pin name="SOURCE" x="2.54" y="-5.08" length="point"/>
 <wire x1="0" y1="4.826" x2="0" y2="7.62" width="0.254" layer="94"/>
 </symbol>
-<symbol name="PR9024_SPKR">
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="-5.08" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-7.62" x2="2.54" y2="7.62" width="0.254" layer="94"/>
-<wire x1="2.54" y1="7.62" x2="0" y2="5.08" width="0.254" layer="94"/>
+<symbol name="PR9025_SPKR">
 <wire x1="0" y1="5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
-<pin name="+" x="-5.08" y="2.54" length="short"/>
-<pin name="-" x="-5.08" y="-2.54" length="short"/>
-<pin name="GN" x="0" y="-7.62" visible="pin" length="short" rot="R90"/>
+<wire x1="0" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<pin name="+" x="-2.54" y="2.54" length="short"/>
+<pin name="-" x="-2.54" y="-2.54" length="short"/>
 </symbol>
 <symbol name="CAP_SMT">
 <wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
@@ -937,6 +932,18 @@ chip</description>
 <pin name="4" x="10.16" y="0" visible="pad" direction="pas" function="dot" rot="R180"/>
 <pin name="5" x="-7.62" y="-2.54" visible="pad" direction="pas" function="dot"/>
 <pin name="6" x="10.16" y="-2.54" visible="pad" direction="pas" function="dot" rot="R180"/>
+</symbol>
+<symbol name="PEM_M3">
+<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1117,14 +1124,13 @@ MFG# ABS25-32.768KHZ-T</description>
 </deviceset>
 <deviceset name="PR2024_SPKR_SMD">
 <gates>
-<gate name="G$1" symbol="PR9024_SPKR" x="5.08" y="2.54"/>
+<gate name="G$1" symbol="PR9025_SPKR" x="-2.54" y="0"/>
 </gates>
 <devices>
 <device name="" package="PR2024_SPKR_PLACE(SMD)">
 <connects>
 <connect gate="G$1" pin="+" pad="P$6"/>
 <connect gate="G$1" pin="-" pad="P$5"/>
-<connect gate="G$1" pin="GN" pad="P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1453,6 +1459,18 @@ MFG# ABS25-32.768KHZ-T</description>
 <attribute name="POWER" value="" constant="no"/>
 <attribute name="TOL" value="" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PEM_SMT">
+<gates>
+<gate name="G$1" symbol="PEM_M3" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="PEM_SMT">
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -2955,6 +2973,10 @@ Source: http://www.osram.convergy.de/</description>
 <part name="R26" library="PR_Parts_Library" deviceset="R_SMT" device="_0805_ADAFRUIT" value="0 ohm">
 <attribute name="MFG_PN" value="ERJ-6GEY0R00V "/>
 </part>
+<part name="U$2" library="PR_Parts_Library" deviceset="PEM_SMT" device=""/>
+<part name="U$3" library="PR_Parts_Library" deviceset="PEM_SMT" device=""/>
+<part name="U$4" library="PR_Parts_Library" deviceset="PEM_SMT" device=""/>
+<part name="U$5" library="PR_Parts_Library" deviceset="PEM_SMT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2979,7 +3001,7 @@ Source: http://www.osram.convergy.de/</description>
 <text x="-27.94" y="71.12" size="2.54" layer="96">FM_IC
 ZONE 0x-1x</text>
 <text x="-35.814" y="142.24" size="2.54" layer="96">Switch / Power  </text>
-<text x="238.76" y="18.034" size="2.1844" layer="96">Lid Grounding</text>
+<text x="30.48" y="104.394" size="2.1844" layer="96">Lid Grounding</text>
 <text x="134.62" y="68.58" size="2.54" layer="96">Audio Amplifier 
 ZONE 2x</text>
 <text x="157.48" y="144.78" size="2.54" layer="96">MCU
@@ -3047,7 +3069,7 @@ Production Board </text>
 <instance part="R1" gate="G$1" x="-10.16" y="109.22" smashed="yes" rot="R90"/>
 <instance part="GND5" gate="1" x="-20.32" y="99.06"/>
 <instance part="GND2" gate="1" x="-35.56" y="111.76"/>
-<instance part="GND12" gate="1" x="264.16" y="5.08"/>
+<instance part="GND12" gate="1" x="50.8" y="109.22"/>
 <instance part="GND3" gate="1" x="-27.94" y="129.54"/>
 <instance part="MCU" gate="G$1" x="175.26" y="124.46"/>
 <instance part="SUPPLY8" gate="G$1" x="154.94" y="132.08"/>
@@ -3075,8 +3097,8 @@ Production Board </text>
 <attribute name="NAME" x="177.038" y="20.193" size="1.778" layer="95"/>
 <attribute name="VALUE" x="176.276" y="17.653" size="1.778" layer="96"/>
 </instance>
-<instance part="R40" gate="G$1" x="264.16" y="12.7" smashed="yes" rot="R270">
-<attribute name="NAME" x="263.1186" y="11.43" size="1.778" layer="95" rot="R90"/>
+<instance part="R40" gate="G$1" x="50.8" y="116.84" smashed="yes" rot="R270">
+<attribute name="NAME" x="47.2186" y="115.57" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="D1" gate="G$1" x="-10.16" y="25.4" rot="R180"/>
 <instance part="JP5" gate="BATT" x="10.16" y="121.92" rot="R90"/>
@@ -3179,6 +3201,10 @@ Production Board </text>
 <attribute name="NAME" x="237.49" y="26.8986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="237.49" y="24.638" size="1.778" layer="96"/>
 </instance>
+<instance part="U$2" gate="G$1" x="27.94" y="129.54"/>
+<instance part="U$3" gate="G$1" x="38.1" y="129.54"/>
+<instance part="U$4" gate="G$1" x="27.94" y="119.38"/>
+<instance part="U$5" gate="G$1" x="38.1" y="119.38"/>
 </instances>
 <busses>
 </busses>
@@ -3736,7 +3762,7 @@ Production Board </text>
 <wire x1="246.38" y1="33.02" x2="254" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="R25" gate="G$1" pin="2"/>
 <pinref part="SPKR_PLACE" gate="G$1" pin="+"/>
-<wire x1="254" y1="33.02" x2="254" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="254" y1="33.02" x2="254" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SPK_OUT-" class="0">
@@ -3749,7 +3775,7 @@ Production Board </text>
 <pinref part="R26" gate="G$1" pin="2"/>
 <wire x1="246.38" y1="30.48" x2="259.08" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="SPKR_PLACE" gate="G$1" pin="-"/>
-<wire x1="259.08" y1="30.48" x2="259.08" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="30.48" x2="259.08" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -3848,13 +3874,6 @@ Production Board </text>
 <wire x1="223.52" y1="27.94" x2="223.52" y2="30.48" width="0.1524" layer="91"/>
 <junction x="223.52" y="30.48"/>
 <pinref part="R26" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="SPKR_PLACE" gate="G$1" pin="GN"/>
-<pinref part="R40" gate="G$1" pin="1"/>
-<wire x1="264.16" y1="40.64" x2="264.16" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
