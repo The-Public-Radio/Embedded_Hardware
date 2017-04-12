@@ -933,6 +933,19 @@ chip</description>
 <pin name="5" x="-7.62" y="-2.54" visible="pad" direction="pas" function="dot"/>
 <pin name="6" x="10.16" y="-2.54" visible="pad" direction="pas" function="dot" rot="R180"/>
 </symbol>
+<symbol name="PEM_M3_PIN">
+<pin name="P$1" x="0" y="-5.08" length="short" rot="R90"/>
+<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
+</symbol>
 <symbol name="PEM_M3">
 <wire x1="2.54" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
@@ -1459,6 +1472,21 @@ MFG# ABS25-32.768KHZ-T</description>
 <attribute name="POWER" value="" constant="no"/>
 <attribute name="TOL" value="" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PEM_M3_SMT_W/PIN">
+<gates>
+<gate name="G$1" symbol="PEM_M3_PIN" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="PEM_SMT">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -2976,7 +3004,7 @@ Source: http://www.osram.convergy.de/</description>
 <part name="U$2" library="PR_Parts_Library" deviceset="PEM_SMT" device=""/>
 <part name="U$3" library="PR_Parts_Library" deviceset="PEM_SMT" device=""/>
 <part name="U$4" library="PR_Parts_Library" deviceset="PEM_SMT" device=""/>
-<part name="U$5" library="PR_Parts_Library" deviceset="PEM_SMT" device=""/>
+<part name="U$5" library="PR_Parts_Library" deviceset="PEM_M3_SMT_W/PIN" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3001,7 +3029,7 @@ Source: http://www.osram.convergy.de/</description>
 <text x="-27.94" y="71.12" size="2.54" layer="96">FM_IC
 ZONE 0x-1x</text>
 <text x="-35.814" y="142.24" size="2.54" layer="96">Switch / Power  </text>
-<text x="30.48" y="104.394" size="2.1844" layer="96">Lid Grounding</text>
+<text x="27.686" y="104.14" size="2.1844" layer="96">Lid Grounding</text>
 <text x="134.62" y="68.58" size="2.54" layer="96">Audio Amplifier 
 ZONE 2x</text>
 <text x="157.48" y="144.78" size="2.54" layer="96">MCU
@@ -3020,6 +3048,7 @@ Production Board </text>
 <wire x1="58.42" y1="88.9" x2="58.42" y2="152.4" width="0.8128" layer="95"/>
 <text x="134.62" y="66.04" size="1.778" layer="97">8X Gain, 60Hz HPF</text>
 <text x="-35.814" y="147.32" size="2.54" layer="96">ZONE 4x</text>
+<text x="27.686" y="144.78" size="2.1844" layer="96">PEM Nuts</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="68.58" y="35.56" smashed="yes">
@@ -3069,7 +3098,7 @@ Production Board </text>
 <instance part="R1" gate="G$1" x="-10.16" y="109.22" smashed="yes" rot="R90"/>
 <instance part="GND5" gate="1" x="-20.32" y="99.06"/>
 <instance part="GND2" gate="1" x="-35.56" y="111.76"/>
-<instance part="GND12" gate="1" x="50.8" y="109.22"/>
+<instance part="GND12" gate="1" x="40.64" y="109.22"/>
 <instance part="GND3" gate="1" x="-27.94" y="129.54"/>
 <instance part="MCU" gate="G$1" x="175.26" y="124.46"/>
 <instance part="SUPPLY8" gate="G$1" x="154.94" y="132.08"/>
@@ -3097,8 +3126,8 @@ Production Board </text>
 <attribute name="NAME" x="177.038" y="20.193" size="1.778" layer="95"/>
 <attribute name="VALUE" x="176.276" y="17.653" size="1.778" layer="96"/>
 </instance>
-<instance part="R40" gate="G$1" x="50.8" y="116.84" smashed="yes" rot="R270">
-<attribute name="NAME" x="47.2186" y="115.57" size="1.778" layer="95" rot="R90"/>
+<instance part="R40" gate="G$1" x="40.64" y="116.84" smashed="yes" rot="R270">
+<attribute name="NAME" x="37.0586" y="115.57" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="D1" gate="G$1" x="-10.16" y="25.4" rot="R180"/>
 <instance part="JP5" gate="BATT" x="10.16" y="121.92" rot="R90"/>
@@ -3201,10 +3230,10 @@ Production Board </text>
 <attribute name="NAME" x="237.49" y="26.8986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="237.49" y="24.638" size="1.778" layer="96"/>
 </instance>
-<instance part="U$2" gate="G$1" x="27.94" y="129.54"/>
-<instance part="U$3" gate="G$1" x="38.1" y="129.54"/>
-<instance part="U$4" gate="G$1" x="27.94" y="119.38"/>
-<instance part="U$5" gate="G$1" x="38.1" y="119.38"/>
+<instance part="U$2" gate="G$1" x="30.48" y="139.7"/>
+<instance part="U$3" gate="G$1" x="40.64" y="139.7"/>
+<instance part="U$4" gate="G$1" x="30.48" y="129.54"/>
+<instance part="U$5" gate="G$1" x="40.64" y="129.54"/>
 </instances>
 <busses>
 </busses>
@@ -3874,6 +3903,13 @@ Production Board </text>
 <wire x1="223.52" y1="27.94" x2="223.52" y2="30.48" width="0.1524" layer="91"/>
 <junction x="223.52" y="30.48"/>
 <pinref part="R26" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="P$1"/>
+<pinref part="R40" gate="G$1" pin="1"/>
+<wire x1="40.64" y1="121.92" x2="40.64" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
