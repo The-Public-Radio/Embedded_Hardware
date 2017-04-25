@@ -145,6 +145,9 @@
 <circle x="80.5" y="37.5" radius="0.69876875" width="0.4064" layer="25"/>
 <text x="87" y="28.0625" size="0.8128" layer="25" rot="R90">led1</text>
 <text x="86.9375" y="30.875" size="0.8128" layer="25" rot="R90">led2</text>
+<hole x="55" y="55" drill="3.2"/>
+<text x="61.6875" y="46.25" size="1.4224" layer="26" rot="MR0">PR9001 Fixture
+For Use With PR9024 </text>
 </plain>
 <libraries>
 <library name="PR_Parts_Library">
@@ -441,35 +444,35 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MFG_PN" value="M20-9980346" x="84" y="40" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="T2" library="PR_Parts_Library" package="PR9001_TESTPOINT" value="PR9001_TESTPOINT" x="59" y="35" locked="yes" smashed="yes" rot="MR0">
-<attribute name="NAME" x="54.425" y="34.8876" size="0.6096" layer="25" font="vector" ratio="16"/>
+<attribute name="NAME" x="53.05" y="34.7001" size="1.4224" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="59.508" y="34.238" size="0.254" layer="28" rot="MR0"/>
 </element>
 <element name="T3" library="PR_Parts_Library" package="PR9001_TESTPOINT" value="PR9001_TESTPOINT" x="59" y="30" locked="yes" smashed="yes" rot="MR0">
-<attribute name="NAME" x="54.475" y="29.8751" size="0.6096" layer="25" font="vector" ratio="16"/>
+<attribute name="NAME" x="53.1" y="29.4376" size="1.4224" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="59.508" y="29.238" size="0.254" layer="28" rot="MR0"/>
 </element>
 <element name="T4" library="PR_Parts_Library" package="PR9001_TESTPOINT" value="PR9001_TESTPOINT" x="59" y="40" locked="yes" smashed="yes" rot="MR0">
-<attribute name="NAME" x="54.4875" y="39.9126" size="0.6096" layer="25" font="vector" ratio="16"/>
+<attribute name="NAME" x="53.3" y="39.4126" size="1.4224" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="59.508" y="39.238" size="0.254" layer="28" rot="MR0"/>
 </element>
 <element name="T5" library="PR_Parts_Library" package="PR9001_TESTPOINT" value="PR9001_TESTPOINT" x="33" y="62.5" locked="yes" smashed="yes" rot="MR0">
-<attribute name="NAME" x="28.45" y="62.2876" size="0.6096" layer="25" font="vector" ratio="16"/>
+<attribute name="NAME" x="27.2" y="61.8501" size="1.4224" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="33.508" y="61.738" size="0.254" layer="28" rot="MR0"/>
 </element>
 <element name="T10" library="PR_Parts_Library" package="PR9001_TESTPOINT" value="PR9001_TESTPOINT" x="47" y="65.5" locked="yes" smashed="yes" rot="MR0">
-<attribute name="NAME" x="49.79" y="65.3451" size="0.6096" layer="25" font="vector" ratio="16"/>
+<attribute name="NAME" x="48.3525" y="64.9076" size="1.4224" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="47.508" y="64.738" size="0.254" layer="28" rot="MR0"/>
 </element>
 <element name="T11" library="PR_Parts_Library" package="PR9001_TESTPOINT" value="PR9001_TESTPOINT" x="36" y="65.5" locked="yes" smashed="yes" rot="MR180">
-<attribute name="NAME" x="40.7625" y="65.7124" size="0.6096" layer="25" font="vector" ratio="16" rot="R180"/>
+<attribute name="NAME" x="43.0125" y="66.2124" size="1.4224" layer="25" font="vector" ratio="16" rot="R180"/>
 <attribute name="VALUE" x="35.492" y="66.262" size="0.254" layer="28" rot="MR180"/>
 </element>
 <element name="T12" library="PR_Parts_Library" package="PR9001_TESTPOINT" value="PR9001_TESTPOINT" x="36" y="62.5" locked="yes" smashed="yes" rot="MR180">
-<attribute name="NAME" x="40.875" y="62.7999" size="0.6096" layer="25" font="vector" ratio="16" rot="R180"/>
+<attribute name="NAME" x="43.0625" y="63.2374" size="1.4224" layer="25" font="vector" ratio="16" rot="R180"/>
 <attribute name="VALUE" x="35.492" y="63.262" size="0.254" layer="28" rot="MR180"/>
 </element>
 <element name="T13" library="PR_Parts_Library" package="PR9001_TESTPOINT" value="PR9001_TESTPOINT" x="33" y="65.5" locked="yes" smashed="yes" rot="MR0">
-<attribute name="NAME" x="28.075" y="65.3251" size="0.6096" layer="25" font="vector" ratio="16"/>
+<attribute name="NAME" x="26.2" y="64.9501" size="1.4224" layer="25" font="vector" ratio="16"/>
 <attribute name="VALUE" x="33.508" y="64.738" size="0.254" layer="28" rot="MR0"/>
 </element>
 <element name="PASS" library="adafruit" package="LED5MM" value="" x="83.9375" y="49.625" smashed="yes">
@@ -514,27 +517,45 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="!RST">
 <contactref element="ISP" pad="1"/>
 <contactref element="T10" pad="P$1"/>
-<wire x1="82.73" y1="37.46" x2="49.2275" y2="37.46" width="0.4064" layer="1"/>
-<wire x1="49.2275" y1="37.46" x2="47" y2="39.6875" width="0.4064" layer="1"/>
+<wire x1="49.6875" y1="37" x2="47" y2="39.6875" width="0.4064" layer="1"/>
 <via x="47" y="39.6875" extent="1-16" drill="0.6"/>
 <wire x1="47" y1="39.6875" x2="47" y2="65.5" width="0.4064" layer="16"/>
+<wire x1="49.6875" y1="37" x2="82.27" y2="37" width="0.4064" layer="1"/>
+<wire x1="82.27" y1="37" x2="82.73" y2="37.46" width="0.4064" layer="1"/>
 </signal>
 <signal name="SCLK">
 <contactref element="T11" pad="P$1"/>
+<contactref element="ISP" pad="3"/>
+<wire x1="82.73" y1="40" x2="82.25" y2="40" width="0.4064" layer="1"/>
+<wire x1="82.25" y1="40" x2="80.6875" y2="38.4375" width="0.4064" layer="1"/>
+<wire x1="80.6875" y1="38.4375" x2="64.0625" y2="38.4375" width="0.4064" layer="1"/>
+<via x="58.4375" y="59.6875" extent="1-16" drill="0.6"/>
+<wire x1="58.4375" y1="59.6875" x2="44" y2="59.6875" width="0.4064" layer="1"/>
+<wire x1="44" y1="59.6875" x2="38.1875" y2="65.5" width="0.4064" layer="1"/>
+<wire x1="38.1875" y1="65.5" x2="36" y2="65.5" width="0.4064" layer="1"/>
+<wire x1="64.0625" y1="38.4375" x2="62.8125" y2="39.6875" width="0.4064" layer="1"/>
+<via x="62.8125" y="39.6875" extent="1-16" drill="0.6"/>
+<wire x1="62.8125" y1="39.6875" x2="62.8125" y2="55.3125" width="0.4064" layer="16"/>
+<wire x1="62.8125" y1="55.3125" x2="58.4375" y2="59.6875" width="0.4064" layer="16"/>
 </signal>
 <signal name="SDIO">
 <contactref element="ISP" pad="4"/>
 <contactref element="T13" pad="P$1"/>
-<wire x1="85.27" y1="40" x2="68.6875" y2="40" width="0.4064" layer="1"/>
-<wire x1="68.6875" y1="40" x2="68.375" y2="40.3125" width="0.4064" layer="1"/>
-<via x="68.375" y="40.3125" extent="1-16" drill="0.6"/>
-<wire x1="68.375" y1="40.3125" x2="68.375" y2="57.875" width="0.4064" layer="16"/>
 <wire x1="68.375" y1="57.875" x2="64.375" y2="61.875" width="0.4064" layer="16"/>
 <via x="64.375" y="61.875" extent="1-16" drill="0.6"/>
 <wire x1="64.375" y1="61.875" x2="45.375" y2="61.875" width="0.4064" layer="1"/>
 <wire x1="45.375" y1="61.875" x2="40.125" y2="67.125" width="0.4064" layer="1"/>
 <wire x1="40.125" y1="67.125" x2="34.625" y2="67.125" width="0.4064" layer="1"/>
 <wire x1="34.625" y1="67.125" x2="33" y2="65.5" width="0.4064" layer="1"/>
+<wire x1="80.0625" y1="40" x2="81.25" y2="41.1875" width="0.4064" layer="1"/>
+<wire x1="81.25" y1="41.1875" x2="81.3125" y2="41.1875" width="0.254" layer="1"/>
+<wire x1="81.3125" y1="41.1875" x2="81.4375" y2="41.3125" width="0.254" layer="1"/>
+<wire x1="81.4375" y1="41.3125" x2="83.9575" y2="41.3125" width="0.254" layer="1"/>
+<wire x1="83.9575" y1="41.3125" x2="85.27" y2="40" width="0.254" layer="1"/>
+<wire x1="80.0625" y1="40" x2="69.4375" y2="40" width="0.4064" layer="1"/>
+<wire x1="69.4375" y1="40" x2="68.375" y2="41.0625" width="0.4064" layer="1"/>
+<via x="68.375" y="41.0625" extent="1-16" drill="0.6"/>
+<wire x1="68.375" y1="41.0625" x2="68.375" y2="57.875" width="0.4064" layer="16"/>
 </signal>
 <signal name="VCC">
 <contactref element="ISP" pad="2"/>
@@ -1015,4 +1036,10 @@ Please make sure your boards conform to these design rules.</description>
 </errors>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>

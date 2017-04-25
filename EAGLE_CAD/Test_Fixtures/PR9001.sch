@@ -2811,6 +2811,10 @@ Production Board </text>
 <pinref part="T11" gate="G$1" pin="TP"/>
 <wire x1="76.2" y1="106.68" x2="76.2" y2="104.14" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="ISP" gate="G$1" pin="3"/>
+<wire x1="213.36" y1="127" x2="210.82" y2="127" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="SDIO" class="0">
 <segment>
