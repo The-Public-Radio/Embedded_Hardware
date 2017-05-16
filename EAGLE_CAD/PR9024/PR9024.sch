@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -340,13 +340,13 @@ We've spent an enormous amount of time creating and checking these footprints an
 <circle x="0" y="0" radius="5" width="0.127" layer="41"/>
 <circle x="0" y="0" radius="5" width="0.127" layer="42"/>
 </package>
-<package name="RV170SF_SW_POT">
-<circle x="0" y="0" radius="10.5" width="0.1" layer="21"/>
-<pad name="WIPER" x="0" y="-10.5" drill="1.6" shape="offset" rot="R90"/>
-<pad name="SIGNAL" x="5.25" y="-9.09" drill="1.6" shape="offset" rot="R90"/>
-<pad name="GND" x="-5.25" y="-9.09" drill="1.6" shape="offset" rot="R90"/>
-<pad name="SW_OUT" x="-10.5" y="0" drill="2.8" shape="long" rot="R90"/>
-<pad name="SW_IN" x="10.5" y="0" drill="2.8" shape="long" rot="R90"/>
+<package name="H17112NS_A10K_L20F-002">
+<circle x="0" y="0" radius="8.25" width="0.1" layer="21"/>
+<pad name="WIPER" x="0" y="-8" drill="1.4" shape="offset" rot="R90"/>
+<pad name="SIGNAL" x="4" y="-7" drill="1.4" shape="offset" rot="R90"/>
+<pad name="GND" x="-4" y="-7" drill="1.4" shape="offset" rot="R90"/>
+<pad name="SW_OUT" x="-8.25" y="0" drill="2" shape="long" rot="R90"/>
+<pad name="SW_IN" x="8.25" y="0" drill="2" shape="long" rot="R90"/>
 </package>
 <package name="C&amp;K_PTS645_SMT">
 <wire x1="-4.5" y1="3" x2="4.5" y2="3" width="0.127" layer="21"/>
@@ -994,13 +994,13 @@ chip</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="RV170SF_TAIWANA_POT_SW" prefix="R">
-<description>Thru hole switched potentiometer.</description>
+<deviceset name="VOLUME_POT">
+<description>Switched potentiometer, vertical mount, 10K audio taper</description>
 <gates>
 <gate name="G$1" symbol="P170_BOURNS_POT_SW" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="RV170SF_SW_POT">
+<device name="" package="H17112NS_A10K_L20F-002">
 <connects>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="SIGNAL" pad="SIGNAL"/>
@@ -1009,9 +1009,7 @@ chip</description>
 <connect gate="G$1" pin="WIPER" pad="WIPER"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="MFG_PN" value="RV170SF-43-20F-A10K"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -2789,9 +2787,7 @@ Source: http://www.osram.convergy.de/</description>
 <part name="GND24" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="ANT_MOUNT" library="PR_Parts_Library" deviceset="M3_PEMNUT" device="" value="DNP"/>
-<part name="R1" library="PR_Parts_Library" deviceset="RV170SF_TAIWANA_POT_SW" device="" value="">
-<attribute name="MFG_PN" value="RV170SF-43-20F-A10K - supplied by CL Labs"/>
-</part>
+<part name="R1" library="PR_Parts_Library" deviceset="VOLUME_POT" device="" value="VOLUME_POT"/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND12" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -3034,7 +3030,7 @@ ZONE 0x-1x</text>
 ZONE 2x</text>
 <text x="157.48" y="144.78" size="2.54" layer="96">MCU
 ZONE 3x</text>
-<text x="-27.94" y="162.56" size="3.81" layer="96">PUBLIC RADIO PR9023
+<text x="-27.94" y="162.56" size="3.81" layer="96">PUBLIC RADIO PR9024
 Production Board </text>
 <text x="24.638" y="99.314" size="2.54" layer="96">Fiducials </text>
 <text x="71.12" y="147.574" size="2.54" layer="96">Test Points </text>
