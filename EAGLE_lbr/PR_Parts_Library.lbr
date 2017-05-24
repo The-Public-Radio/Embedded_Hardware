@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="1" altunitdist="mm" altunit="mm"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.5" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -78,6 +78,7 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="ReferenceLS" color="7" fill="1" visible="no" active="no"/>
+<layer number="114" name="Cutout" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
@@ -3673,7 +3674,7 @@ chip</description>
 <wire x1="16.002" y1="-16.002" x2="16.002" y2="16.002" width="0.127" layer="21"/>
 <wire x1="16.002" y1="16.002" x2="-16.002" y2="16.002" width="0.127" layer="21"/>
 <wire x1="-16.002" y1="16.002" x2="-16.002" y2="-16.002" width="0.127" layer="21"/>
-<circle x="0" y="0" radius="10.25" width="0.127" layer="20"/>
+<circle x="0" y="0" radius="10.25" width="0.127" layer="114"/>
 <pad name="P$5" x="-12.341" y="-7.125" drill="3.2"/>
 <pad name="P$6" x="12.341" y="-7.125" drill="3.2"/>
 <wire x1="-18.75" y1="6.5" x2="-18.75" y2="18.75" width="0.127" layer="21"/>
@@ -3775,7 +3776,7 @@ chip</description>
 <smd name="P$2" x="13.5" y="13.5" dx="6.2" dy="6.2" layer="1" roundness="99"/>
 </package>
 <package name="PR9001_TESTPOINT">
-<pad name="P$1" x="0" y="0" drill="1.3" diameter="1.3" shape="offset"/>
+<pad name="P$1" x="0" y="0" drill="1.45" shape="offset"/>
 </package>
 <package name="H17112NS_A10K_L20F-002">
 <circle x="0" y="0" radius="8.25" width="0.1" layer="21"/>
