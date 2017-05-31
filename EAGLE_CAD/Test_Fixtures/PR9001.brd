@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -147,7 +147,7 @@
 <text x="87" y="28.0625" size="0.8128" layer="25" rot="R90">led1</text>
 <text x="86.9375" y="30.875" size="0.8128" layer="25" rot="R90">led2</text>
 <hole x="55" y="55" drill="3.2"/>
-<text x="61.6875" y="46.25" size="1.4224" layer="26" rot="MR0">PR9001 Fixture
+<text x="48.3125" y="30.3125" size="1.4224" layer="26" rot="MR0">PR9001 Fixture
 For Use With PR9024 </text>
 </plain>
 <libraries>
@@ -348,9 +348,6 @@ Please make sure your boards conform to these design rules.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
-<param name="AutoGrid" value="1"/>
-<param name="Efforts" value="0"/>
-<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
