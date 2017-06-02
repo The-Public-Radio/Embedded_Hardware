@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -88,6 +88,7 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="114" name="Cutout" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
@@ -353,15 +354,15 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="4.5" y1="3" x2="4.5" y2="-3" width="0.127" layer="21"/>
 <wire x1="4.5" y1="-3" x2="-4.5" y2="-3" width="0.127" layer="21"/>
 <wire x1="-4.5" y1="-3" x2="-4.5" y2="3" width="0.127" layer="21"/>
-<smd name="P$1" x="-3.975" y="2.25" dx="1.55" dy="1.3" layer="1"/>
-<smd name="P$3" x="-3.975" y="-2.25" dx="1.55" dy="1.3" layer="1"/>
-<smd name="P$4" x="3.975" y="-2.25" dx="1.55" dy="1.3" layer="1"/>
-<smd name="P$2" x="3.975" y="2.25" dx="1.55" dy="1.3" layer="1"/>
+<smd name="P$1" x="-3.975" y="2.25" dx="1.6" dy="1.3" layer="1"/>
+<smd name="P$3" x="-3.975" y="-2.25" dx="1.6" dy="1.3" layer="1"/>
+<smd name="P$4" x="3.975" y="-2.25" dx="1.6" dy="1.3" layer="1"/>
+<smd name="P$2" x="3.975" y="2.25" dx="1.6" dy="1.3" layer="1"/>
 <circle x="0" y="0" radius="1.75" width="0.127" layer="21"/>
 </package>
 <package name="NICHICON_UD_63">
-<smd name="P$1" x="0" y="2.3" dx="2.6" dy="1" layer="1" rot="R90"/>
-<smd name="P$2" x="0" y="-2.3" dx="2.6" dy="1" layer="1" rot="R90"/>
+<smd name="P$1" x="0" y="2.3" dx="3.2" dy="1.6" layer="1" rot="R90"/>
+<smd name="P$2" x="0" y="-2.3" dx="3.2" dy="1.6" layer="1" rot="R90"/>
 <wire x1="3.3" y1="-3.3" x2="-3.3" y2="-3.3" width="0.127" layer="21"/>
 <wire x1="-3.3" y1="-3.3" x2="-3.3" y2="2.1" width="0.127" layer="21"/>
 <wire x1="-3.3" y1="2.1" x2="-2.1" y2="3.3" width="0.127" layer="21"/>
