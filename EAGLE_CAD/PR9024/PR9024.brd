@@ -155,7 +155,6 @@
 Born + tuned in Brooklyn
 http://thepublicrad.io</text>
 <circle x="44.09" y="60.635" radius="0.5" width="0.8128" layer="26"/>
-<wire x1="61.4375" y1="55.9125" x2="61.4125" y2="56.5375" width="0.4064" layer="21"/>
 <circle x="35" y="35" radius="35" width="0.254" layer="20"/>
 <wire x1="2" y1="68" x2="68" y2="68" width="0.3048" layer="20"/>
 <wire x1="68" y1="68" x2="68" y2="2" width="0.3048" layer="20"/>
@@ -163,6 +162,7 @@ http://thepublicrad.io</text>
 <wire x1="2" y1="2" x2="2" y2="68" width="0.3048" layer="20"/>
 <wire x1="46.0625" y1="14.625" x2="47.5" y2="14.625" width="0.3048" layer="25"/>
 <wire x1="46.8125" y1="13.9375" x2="46.8125" y2="15.25" width="0.3048" layer="25"/>
+<wire x1="61.625" y1="56.5" x2="61.625" y2="55.8125" width="0.254" layer="21"/>
 </plain>
 <libraries>
 <library name="PR_Parts_Library">
@@ -2692,34 +2692,10 @@ chip</description>
 <hole x="0" y="0" drill="4.22"/>
 <smd name="P$1" x="0" y="0" dx="6.2" dy="6.2" layer="1" roundness="100"/>
 </package>
-</packages>
-</library>
-<library name="adafruit">
-<packages>
-<package name="CHIPLED_0805">
-<description>&lt;b&gt;CHIPLED&lt;/b&gt;&lt;p&gt;
-Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
-<wire x1="-0.35" y1="1" x2="0.35" y2="1" width="0.1016" layer="51" curve="180" cap="flat"/>
-<wire x1="-0.35" y1="-1" x2="0.35" y2="-1" width="0.1016" layer="51" curve="-180" cap="flat"/>
-<wire x1="0.575" y1="0.525" x2="0.575" y2="-0.525" width="0.1016" layer="51"/>
-<wire x1="-0.575" y1="-0.5" x2="-0.575" y2="0.925" width="0.1016" layer="51"/>
-<circle x="-0.45" y="0.85" radius="0.103" width="0.1016" layer="51"/>
-<smd name="C" x="0" y="1.05" dx="1.2" dy="1.2" layer="1"/>
-<smd name="A" x="0" y="-1.05" dx="1.2" dy="1.2" layer="1"/>
-<text x="-1.27" y="-1.27" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="2.54" y="-1.27" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="0.3" y1="0.5" x2="0.625" y2="1" layer="51"/>
-<rectangle x1="-0.325" y1="0.5" x2="-0.175" y2="0.75" layer="51"/>
-<rectangle x1="0.175" y1="0.5" x2="0.325" y2="0.75" layer="51"/>
-<rectangle x1="-0.2" y1="0.5" x2="0.2" y2="0.675" layer="51"/>
-<rectangle x1="0.3" y1="-1" x2="0.625" y2="-0.5" layer="51"/>
-<rectangle x1="-0.625" y1="-1" x2="-0.3" y2="-0.5" layer="51"/>
-<rectangle x1="0.175" y1="-0.75" x2="0.325" y2="-0.5" layer="51"/>
-<rectangle x1="-0.325" y1="-0.75" x2="-0.175" y2="-0.5" layer="51"/>
-<rectangle x1="-0.2" y1="-0.675" x2="0.2" y2="-0.5" layer="51"/>
-<rectangle x1="-0.1" y1="0" x2="0.1" y2="0.2" layer="21"/>
-<rectangle x1="-0.6" y1="0.5" x2="-0.3" y2="0.8" layer="51"/>
-<rectangle x1="-0.625" y1="0.925" x2="-0.4" y2="1" layer="51"/>
+<package name="HSMC-C265_REVERSE_MOUN_LED">
+<smd name="P$1" x="-1.85" y="0" dx="1.4" dy="1.25" layer="1"/>
+<smd name="P$2" x="1.85" y="0" dx="1.4" dy="1.25" layer="1"/>
+<hole x="0" y="0" drill="2.2"/>
 </package>
 </packages>
 </library>
@@ -3113,8 +3089,8 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="TOL" value="10%" x="24.7" y="59.6" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="16V" x="24.7" y="59.6" size="1.778" layer="27" display="off"/>
 </element>
-<element name="SW1" library="PR_Parts_Library" package="C&amp;K_PTS645_SMT" value="C&amp;K_PTS645" x="52.65" y="60.3" rot="R145">
-<attribute name="MFG_PN" value="PTS645SM43SMTR92 LFS" x="52.65" y="60.3" size="1.778" layer="27" rot="R145" display="off"/>
+<element name="SW1" library="PR_Parts_Library" package="C&amp;K_PTS645_SMT" value="C&amp;K_PTS645" x="52.275" y="60.6125" rot="R145">
+<attribute name="MFG_PN" value="PTS645SM43SMTR92 LFS" x="52.275" y="60.6125" size="1.778" layer="27" rot="R145" display="off"/>
 </element>
 <element name="C40" library="PR_Parts_Library" package="NICHICON_UD_63" value="220uF" x="46.75" y="9.51" smashed="yes">
 <attribute name="MFG_PN" value="UUD1C221MCL1GS" x="46.75" y="9.51" size="1.778" layer="27" display="off"/>
@@ -3287,10 +3263,10 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="POWER" value="1/10W" x="37.4425" y="12.1075" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U$1" library="PR_Parts_Library" package="PR_LOGO" value="" x="35" y="9" rot="MR0"/>
-<element name="LED" library="adafruit" package="CHIPLED_0805" value="" x="59.125" y="56.55" smashed="yes" rot="R270">
-<attribute name="NAME" x="58.065" y="57.55" size="0.8128" layer="25" font="vector" ratio="16"/>
-<attribute name="VALUE" x="57.855" y="54.01" size="1.27" layer="27"/>
-<attribute name="MFG_PN" value="LY R976-PS-36" x="59.125" y="56.55" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="LED" library="PR_Parts_Library" package="HSMC-C265_REVERSE_MOUN_LED" value="HSMC-C265_REVERSE_MOUNT_LED" x="58.5" y="56.675" smashed="yes">
+<attribute name="NAME" x="55.8125" y="52.9275" size="0.8128" layer="25" font="vector" ratio="16" rot="R90"/>
+<attribute name="VALUE" x="61.04" y="55.405" size="1.27" layer="27" rot="R90"/>
+<attribute name="MFG_PN" value="HSMC-C265" x="58.5" y="56.675" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R25" library="PR_Parts_Library" package="0805_ADAFRUIT" value="0 ohm" x="38.53" y="15.92" smashed="yes" rot="R90">
 <attribute name="TOL" value="" x="38.53" y="15.92" size="1.778" layer="27" rot="R90" display="off"/>
@@ -3420,7 +3396,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="31.45" y="52.5" extent="1-16" drill="0.254"/>
 <via x="33.36" y="59.265" extent="1-16" drill="0.5"/>
 <via x="54.81" y="27.76" extent="1-16" drill="0.5"/>
-<contactref element="LED" pad="C"/>
+<contactref element="LED" pad="P$2"/>
 <via x="44.2175" y="6.60875" extent="1-16" drill="0.6"/>
 <via x="34.55" y="22.2" extent="1-16" drill="0.6"/>
 <via x="28.45" y="24.2" extent="1-16" drill="0.6"/>
@@ -3774,12 +3750,14 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="N$7">
 <contactref element="R31" pad="1"/>
-<contactref element="LED" pad="A"/>
-<wire x1="58.075" y1="56.55" x2="56.95" y2="56.55" width="0.254" layer="1"/>
-<wire x1="56.95" y1="56.55" x2="55.5" y2="58" width="0.254" layer="1"/>
-<wire x1="55.5" y1="58" x2="53.025" y2="58" width="0.254" layer="1"/>
+<contactref element="LED" pad="P$1"/>
 <wire x1="51.7" y1="56.175" x2="51.7" y2="56.675" width="0.254" layer="1"/>
-<wire x1="51.7" y1="56.675" x2="53.025" y2="58" width="0.254" layer="1"/>
+<wire x1="56.65" y1="56.675" x2="57.0125" y2="56.4875" width="0.254" layer="1"/>
+<wire x1="51.7" y1="56.175" x2="51.7" y2="57.0125" width="0.254" layer="1"/>
+<wire x1="51.7" y1="57.0125" x2="53.125" y2="58.4375" width="0.254" layer="1"/>
+<wire x1="53.125" y1="58.4375" x2="55.2" y2="58.4375" width="0.254" layer="1"/>
+<wire x1="56.65" y1="56.675" x2="56.65" y2="56.9875" width="0.254" layer="1"/>
+<wire x1="56.65" y1="56.9875" x2="55.2" y2="58.4375" width="0.254" layer="1"/>
 </signal>
 <signal name="SW">
 <contactref element="MCU" pad="2"/>
@@ -3792,14 +3770,14 @@ Please make sure your boards conform to these design rules.</description>
 <via x="44.5" y="56.5" extent="1-16" drill="0.6"/>
 <wire x1="44.5" y1="56.5" x2="44.5" y2="60.25" width="0.254" layer="16"/>
 <wire x1="44.5" y1="60.25" x2="47" y2="63" width="0.254" layer="16"/>
-<wire x1="50.684415625" y1="64.42305625" x2="57.196675" y2="59.863125" width="0.254" layer="1"/>
-<wire x1="50.684415625" y1="64.42305625" x2="48.92305625" y2="64.42305625" width="0.254" layer="1"/>
-<wire x1="48.92305625" y1="64.42305625" x2="48.625" y2="64.125" width="0.254" layer="1"/>
+<wire x1="50.309415625" y1="64.73555625" x2="56.821675" y2="60.175625" width="0.254" layer="1"/>
 <via x="48.625" y="64.125" extent="1-16" drill="0.6"/>
 <wire x1="47.625" y1="62.625" x2="47.375" y2="62.625" width="0.254" layer="16"/>
 <wire x1="47.375" y1="62.625" x2="47" y2="63" width="0.254" layer="16"/>
 <wire x1="48.625" y1="64.125" x2="48.125" y2="64.125" width="0.254" layer="16"/>
 <wire x1="48.125" y1="64.125" x2="47" y2="63" width="0.254" layer="16"/>
+<wire x1="50.309415625" y1="64.73555625" x2="49.23555625" y2="64.73555625" width="0.254" layer="1"/>
+<wire x1="49.23555625" y1="64.73555625" x2="48.625" y2="64.125" width="0.254" layer="1"/>
 </signal>
 <signal name="LED/PB4">
 <contactref element="R31" pad="2"/>
