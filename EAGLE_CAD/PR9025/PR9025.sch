@@ -1676,16 +1676,6 @@ MFG# ABS25-32.768KHZ-T</description>
 <attribute name="TOL" value="10%"/>
 <attribute name="VOLTAGE" value="16V"/>
 </part>
-<part name="R4" library="PR_Parts_Library" deviceset="R_SMT" device="_R0603_CPL" value="330">
-<attribute name="MFG_PN" value="MCR03ERTJ331"/>
-<attribute name="POWER" value="1/10W"/>
-<attribute name="TOL" value="5%"/>
-</part>
-<part name="R5" library="PR_Parts_Library" deviceset="R_SMT" device="_R0603_CPL" value="330">
-<attribute name="MFG_PN" value="MCR03ERTJ331"/>
-<attribute name="POWER" value="1/10W"/>
-<attribute name="TOL" value="5%"/>
-</part>
 <part name="C2" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value="22nF">
 <attribute name="MFG_PN" value="CL10B223KB8NNNC"/>
 <attribute name="TOL" value="10%"/>
@@ -1782,6 +1772,9 @@ MFG# ABS25-32.768KHZ-T</description>
 <part name="U$3" library="PR_Parts_Library" deviceset="PEM_SMT" device=""/>
 <part name="U$4" library="PR_Parts_Library" deviceset="PEM_SMT" device=""/>
 <part name="U$5" library="PR_Parts_Library" deviceset="PEM_M3_SMT_W/PIN" device=""/>
+<part name="R31" library="PR_Parts_Library" deviceset="R_SMT" device="_R0603_CPL" value="1K">
+<attribute name="MFG_PN" value="311-1.00KHRCT-ND"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -1906,14 +1899,6 @@ Production Board </text>
 <instance part="C10" gate="G$1" x="45.72" y="15.24"/>
 <instance part="C1" gate="G$1" x="55.88" y="63.5"/>
 <instance part="C3" gate="G$1" x="78.74" y="63.5"/>
-<instance part="R4" gate="G$1" x="2.54" y="40.64" smashed="yes">
-<attribute name="NAME" x="-1.27" y="42.1386" size="1.778" layer="95"/>
-<attribute name="VALUE" x="3.81" y="42.418" size="1.778" layer="96"/>
-</instance>
-<instance part="R5" gate="G$1" x="2.54" y="38.1" smashed="yes">
-<attribute name="NAME" x="-1.27" y="34.5186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="3.81" y="34.798" size="1.778" layer="96"/>
-</instance>
 <instance part="C2" gate="G$1" x="63.5" y="63.5"/>
 <instance part="SW1" gate="G$1" x="210.82" y="111.76" rot="R270"/>
 <instance part="C40" gate="G$1" x="-35.56" y="124.46"/>
@@ -1989,6 +1974,7 @@ Production Board </text>
 <instance part="U$3" gate="G$1" x="40.64" y="139.7"/>
 <instance part="U$4" gate="G$1" x="30.48" y="129.54"/>
 <instance part="U$5" gate="G$1" x="40.64" y="129.54"/>
+<instance part="R31" gate="G$1" x="195.58" y="104.14"/>
 </instances>
 <busses>
 </busses>
@@ -2160,20 +2146,6 @@ Production Board </text>
 <wire x1="35.56" y1="22.86" x2="35.56" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="SCLK-L" class="0">
-<segment>
-<wire x1="50.8" y1="40.64" x2="7.62" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="SCLK"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="SDIO-L" class="0">
-<segment>
-<wire x1="50.8" y1="38.1" x2="7.62" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="SDIO"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-</segment>
-</net>
 <net name="!RST" class="0">
 <segment>
 <pinref part="ISP" gate="G$1" pin="1"/>
@@ -2201,9 +2173,9 @@ Production Board </text>
 </net>
 <net name="SCLK" class="0">
 <segment>
-<wire x1="-2.54" y1="40.64" x2="-10.16" y2="40.64" width="0.1524" layer="91"/>
 <label x="-12.7" y="40.64" size="1.778" layer="95"/>
-<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="40.64" x2="-10.16" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="SCLK"/>
 </segment>
 <segment>
 <pinref part="MCU" gate="G$1" pin="PB2(SCK/ADC1)"/>
@@ -2221,9 +2193,9 @@ Production Board </text>
 </net>
 <net name="SDIO" class="0">
 <segment>
-<wire x1="-2.54" y1="38.1" x2="-10.16" y2="38.1" width="0.1524" layer="91"/>
 <label x="-12.7" y="38.1" size="1.778" layer="95"/>
-<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="38.1" x2="-10.16" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="SDIO"/>
 </segment>
 <segment>
 <wire x1="233.68" y1="134.62" x2="233.68" y2="127" width="0.1524" layer="91"/>
@@ -2259,8 +2231,9 @@ Production Board </text>
 <net name="3.3V" class="0">
 <segment>
 <pinref part="L02" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="73.66" x2="33.02" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="73.66" x2="43.18" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="VD"/>
+<wire x1="43.18" y1="73.66" x2="33.02" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="50.8" x2="60.96" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="50.8" x2="60.96" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
@@ -2283,6 +2256,10 @@ Production Board </text>
 <wire x1="78.74" y1="73.66" x2="78.74" y2="66.04" width="0.1524" layer="91"/>
 <junction x="63.5" y="73.66"/>
 <junction x="78.74" y="66.04"/>
+<pinref part="U1" gate="G$1" pin="!SEN"/>
+<wire x1="50.8" y1="43.18" x2="43.18" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="43.18" x2="43.18" y2="73.66" width="0.1524" layer="91"/>
+<junction x="43.18" y="73.66"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -2423,8 +2400,7 @@ Production Board </text>
 <wire x1="190.5" y1="121.92" x2="187.96" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="MCU" gate="G$1" pin="PB4(ADC2)"/>
 <label x="205.74" y="104.14" size="1.778" layer="95"/>
-<pinref part="LED" gate="G$1" pin="A"/>
-<wire x1="190.5" y1="104.14" x2="205.74" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="R31" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="T9" gate="G$1" pin="TP"/>
@@ -2599,6 +2575,13 @@ Production Board </text>
 <pinref part="U$5" gate="G$1" pin="P$1"/>
 <pinref part="R40" gate="G$1" pin="1"/>
 <wire x1="40.64" y1="121.92" x2="40.64" y2="124.46" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="LED" gate="G$1" pin="A"/>
+<pinref part="R31" gate="G$1" pin="2"/>
+<wire x1="200.66" y1="104.14" x2="205.74" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
