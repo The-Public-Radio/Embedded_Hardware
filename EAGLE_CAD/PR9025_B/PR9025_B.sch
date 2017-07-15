@@ -1628,9 +1628,6 @@ MFG# ABS25-32.768KHZ-T</description>
 <attribute name="TOL" value="10%"/>
 <attribute name="VOLTAGE" value="16V"/>
 </part>
-<part name="R40" library="PR_Parts_Library" deviceset="R_SMT" device="_R0603_CPL" value="DNP">
-<attribute name="MFG_PN" value="ERJ-3GEY0R00V"/>
-</part>
 <part name="D1" library="PR_Parts_Library" deviceset="BAV99" device="">
 <attribute name="MFG_PN" value="BAV99,215"/>
 </part>
@@ -1842,7 +1839,7 @@ Production Board </text>
 <instance part="R1" gate="G$1" x="-10.16" y="109.22" smashed="yes" rot="R90"/>
 <instance part="GND5" gate="1" x="-20.32" y="99.06"/>
 <instance part="GND2" gate="1" x="-35.56" y="111.76"/>
-<instance part="GND12" gate="1" x="40.64" y="109.22"/>
+<instance part="GND12" gate="1" x="40.64" y="119.38"/>
 <instance part="GND3" gate="1" x="-27.94" y="129.54"/>
 <instance part="MCU" gate="G$1" x="175.26" y="124.46"/>
 <instance part="SUPPLY8" gate="G$1" x="154.94" y="132.08"/>
@@ -1865,9 +1862,6 @@ Production Board </text>
 <instance part="C23" gate="G$1" x="177.8" y="27.94" smashed="yes">
 <attribute name="NAME" x="177.038" y="20.193" size="1.778" layer="95"/>
 <attribute name="VALUE" x="176.276" y="17.653" size="1.778" layer="96"/>
-</instance>
-<instance part="R40" gate="G$1" x="40.64" y="116.84" smashed="yes" rot="R270">
-<attribute name="NAME" x="37.0586" y="115.57" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="D1" gate="G$1" x="-10.16" y="25.4" rot="R180"/>
 <instance part="JP5" gate="BATT" x="10.16" y="121.92" rot="R90"/>
@@ -2110,8 +2104,9 @@ Production Board </text>
 <pinref part="GND17" gate="1" pin="GND"/>
 </segment>
 <segment>
+<pinref part="U$5" gate="G$1" pin="P$1"/>
+<wire x1="40.64" y1="121.92" x2="40.64" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="GND12" gate="1" pin="GND"/>
-<pinref part="R40" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -2536,13 +2531,6 @@ Production Board </text>
 <wire x1="223.52" y1="27.94" x2="223.52" y2="30.48" width="0.1524" layer="91"/>
 <junction x="223.52" y="30.48"/>
 <pinref part="R26" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="U$5" gate="G$1" pin="P$1"/>
-<pinref part="R40" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="121.92" x2="40.64" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
