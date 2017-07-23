@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3791,6 +3791,18 @@ chip</description>
 <smd name="P$2" x="1.85" y="0" dx="1.4" dy="1.25" layer="1"/>
 <hole x="0" y="0" drill="2.2"/>
 </package>
+<package name="ISP_POGOBED_S19_501">
+<pad name="P$2" x="1.27" y="-2.54" drill="1.4" shape="octagon"/>
+<pad name="P$1" x="-1.27" y="-2.54" drill="1.4" shape="square"/>
+<pad name="P$4" x="1.27" y="0" drill="1.4" shape="octagon"/>
+<pad name="P$3" x="-1.27" y="0" drill="1.4" shape="octagon"/>
+<pad name="P$6" x="1.27" y="2.54" drill="1.4" shape="octagon"/>
+<pad name="P$5" x="-1.27" y="2.54" drill="1.4" shape="octagon"/>
+<wire x1="-2.54" y1="3.81" x2="2.54" y2="3.81" width="0.127" layer="21"/>
+<wire x1="2.54" y1="3.81" x2="2.54" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-3.81" x2="-2.54" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-3.81" x2="-2.54" y2="3.81" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CE32A_DAYTON_SPKR">
@@ -4454,6 +4466,48 @@ chip</description>
 <wire x1="0" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
 <pin name="+" x="-2.54" y="2.54" length="short"/>
 <pin name="-" x="-2.54" y="-2.54" length="short"/>
+</symbol>
+<symbol name="ISP_POGOBED_S19_501">
+<wire x1="-2.54" y1="-6.985" x2="5.08" y2="-6.985" width="0.254" layer="94"/>
+<wire x1="5.08" y1="1.905" x2="-2.54" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.905" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<text x="-1.27" y="0" size="0.8128" layer="95">1</text>
+<text x="3.81" y="0" size="0.8128" layer="95">2</text>
+<text x="-1.27" y="-2.54" size="0.8128" layer="95">3</text>
+<text x="3.81" y="-2.54" size="0.8128" layer="95">4</text>
+<text x="-1.27" y="-5.08" size="0.8128" layer="95">5</text>
+<text x="3.81" y="-5.08" size="0.8128" layer="95">6</text>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="-6.985" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-6.985" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="1.905" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<circle x="0" y="-5.08" radius="0.635" width="0.127" layer="94"/>
+<circle x="2.54" y="-5.08" radius="0.635" width="0.127" layer="94"/>
+<circle x="2.54" y="-2.54" radius="0.635" width="0.127" layer="94"/>
+<circle x="0" y="-2.54" radius="0.635" width="0.127" layer="94"/>
+<circle x="2.54" y="0" radius="0.635" width="0.127" layer="94"/>
+<circle x="0" y="0" radius="0.635" width="0.127" layer="94"/>
+<text x="5.715" y="-4.445" size="0.8128" layer="94">GND</text>
+<text x="5.715" y="-1.905" size="0.8128" layer="94">MOSI</text>
+<text x="-5.715" y="0.635" size="0.8128" layer="94">MISO</text>
+<text x="-5.715" y="-1.905" size="0.8128" layer="94">SCK</text>
+<text x="-5.715" y="-4.445" size="0.8128" layer="94">RST</text>
+<text x="5.715" y="0.635" size="0.8128" layer="94">+5V</text>
+<pin name="P$1" x="-5.08" y="0" visible="off" length="short"/>
+<pin name="P$2" x="7.62" y="0" visible="off" length="short" rot="R180"/>
+<pin name="P$3" x="-5.08" y="-2.54" visible="off" length="short"/>
+<pin name="P$4" x="7.62" y="-2.54" visible="off" length="short" rot="R180"/>
+<pin name="P$5" x="-5.08" y="-5.08" visible="off" length="short"/>
+<pin name="P$6" x="7.62" y="-5.08" visible="off" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -5610,6 +5664,26 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 <connects>
 <connect gate="G$1" pin="A" pad="P$1"/>
 <connect gate="G$1" pin="C" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ISP_POGOBED_S19_501">
+<gates>
+<gate name="G$1" symbol="ISP_POGOBED_S19_501" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="ISP_POGOBED_S19_501">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+<connect gate="G$1" pin="P$5" pad="P$5"/>
+<connect gate="G$1" pin="P$6" pad="P$6"/>
 </connects>
 <technologies>
 <technology name=""/>
