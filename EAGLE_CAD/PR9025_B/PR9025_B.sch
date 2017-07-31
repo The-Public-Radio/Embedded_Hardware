@@ -1561,6 +1561,9 @@ MFG# ABS25-32.768KHZ-T</description>
 <class number="1" name="antenna" width="0" drill="0">
 <clearance class="1" value="1.27"/>
 </class>
+<class number="2" name="audio" width="0" drill="0">
+<clearance class="2" value="0.254"/>
+</class>
 </classes>
 <parts>
 <part name="U1" library="PR_Parts_Library" deviceset="SI4702-C19-GMR" device="" value="">
@@ -2420,7 +2423,7 @@ Production Board </text>
 <label x="-20.32" y="40.64" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="N$16" class="1">
+<net name="N$16" class="0">
 <segment>
 <pinref part="L1" gate="G$1" pin="1"/>
 <wire x1="20.32" y1="33.02" x2="22.86" y2="33.02" width="0.1524" layer="91"/>
