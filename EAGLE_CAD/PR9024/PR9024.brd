@@ -3394,7 +3394,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="26.65" y1="55.565" x2="26.65" y2="56.45" width="0.254" layer="1"/>
 <wire x1="26.65" y1="56.45" x2="26.55" y2="56.55" width="0.254" layer="1"/>
 <via x="31.45" y="52.5" extent="1-16" drill="0.254"/>
-<via x="33.36" y="59.265" extent="1-16" drill="0.5"/>
+<via x="33.36" y="59.5775" extent="1-16" drill="0.5"/>
 <via x="54.81" y="27.76" extent="1-16" drill="0.5"/>
 <contactref element="LED" pad="P$2"/>
 <via x="44.2175" y="6.60875" extent="1-16" drill="0.6"/>
