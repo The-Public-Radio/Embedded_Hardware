@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -1721,7 +1721,7 @@ MFG# ABS25-32.768KHZ-T</description>
 <part name="FET1" library="PR_Parts_Library" deviceset="AO3435" device="" value="">
 <attribute name="MFG_PN" value="AO3435"/>
 </part>
-<part name="SPKR_PLACE" library="PR_Parts_Library" deviceset="PR2024_SPKR_SMD" device="" value="DNP"/>
+<part name="SPKR_PLACE" library="PR_Parts_Library" deviceset="PR2024_SPKR_SMD" device="" value=""/>
 <part name="T14" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
 <part name="T15" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
 <part name="T16" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
