@@ -446,6 +446,69 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
+<library name="adafruit">
+<packages>
+<package name="1X01">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.9304" shape="octagon"/>
+<text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+</package>
+<package name="1X01-CLEANBIG">
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.778"/>
+<text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="PINHD1">
+<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="-6.35" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="-6.35" y1="2.54" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
+<text x="-6.35" y="3.175" size="1.778" layer="95">&gt;NAME</text>
+<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PINHD-1X1" prefix="JP" uservalue="yes">
+<description>&lt;b&gt;Pin header 1x1 for 0.1" spacing&lt;/b&gt;
+&lt;p&gt;
+With round pins</description>
+<gates>
+<gate name="G$1" symbol="PINHD1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1X01">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="CB" package="1X01-CLEANBIG">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -456,90 +519,99 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </class>
 </classes>
 <parts>
-<part name="J1" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="NS"/>
-<part name="J2" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="NS"/>
+<part name="POGO" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="NS"/>
+<part name="PROGRAMMER" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="NS"/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
+<part name="VCC" library="adafruit" deviceset="PINHD-1X1" device=""/>
+<part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="J1" gate="G$1" x="20.32" y="17.78"/>
-<instance part="J2" gate="G$1" x="58.42" y="17.78"/>
+<instance part="POGO" gate="G$1" x="20.32" y="17.78"/>
+<instance part="PROGRAMMER" gate="G$1" x="58.42" y="17.78"/>
 <instance part="GND1" gate="1" x="35.56" y="12.7"/>
 <instance part="GND2" gate="1" x="73.66" y="12.7"/>
 <instance part="SUPPLY1" gate="G$1" x="35.56" y="20.32"/>
 <instance part="SUPPLY2" gate="G$1" x="73.66" y="20.32"/>
+<instance part="VCC" gate="G$1" x="17.78" y="-2.54" rot="R180"/>
+<instance part="SUPPLY3" gate="G$1" x="27.94" y="-2.54"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="MISO" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="1"/>
+<pinref part="POGO" gate="G$1" pin="1"/>
 <wire x1="12.7" y1="20.32" x2="7.62" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="1"/>
+<pinref part="PROGRAMMER" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="20.32" x2="45.72" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCK" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="3"/>
+<pinref part="POGO" gate="G$1" pin="3"/>
 <wire x1="12.7" y1="17.78" x2="7.62" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="3"/>
+<pinref part="PROGRAMMER" gate="G$1" pin="3"/>
 <wire x1="50.8" y1="17.78" x2="45.72" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RESET" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="5"/>
+<pinref part="POGO" gate="G$1" pin="5"/>
 <wire x1="12.7" y1="15.24" x2="7.62" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="5"/>
+<pinref part="PROGRAMMER" gate="G$1" pin="5"/>
 <wire x1="50.8" y1="15.24" x2="45.72" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="4"/>
+<pinref part="POGO" gate="G$1" pin="4"/>
 <wire x1="30.48" y1="17.78" x2="35.56" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="4"/>
+<pinref part="PROGRAMMER" gate="G$1" pin="4"/>
 <wire x1="68.58" y1="17.78" x2="73.66" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="6"/>
+<pinref part="POGO" gate="G$1" pin="6"/>
 <wire x1="30.48" y1="15.24" x2="35.56" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="6"/>
+<pinref part="PROGRAMMER" gate="G$1" pin="6"/>
 <wire x1="68.58" y1="15.24" x2="73.66" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="VCC" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="2"/>
+<pinref part="POGO" gate="G$1" pin="2"/>
 <wire x1="30.48" y1="20.32" x2="35.56" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="2"/>
+<pinref part="PROGRAMMER" gate="G$1" pin="2"/>
 <wire x1="68.58" y1="20.32" x2="73.66" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="G$1" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="VCC" gate="G$1" pin="1"/>
+<pinref part="SUPPLY3" gate="G$1" pin="VCC"/>
+<wire x1="27.94" y1="-2.54" x2="20.32" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
