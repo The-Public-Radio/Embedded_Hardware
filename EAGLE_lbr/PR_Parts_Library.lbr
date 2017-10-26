@@ -3695,7 +3695,7 @@ chip</description>
 <pad name="P$4" x="-13.5" y="-13.5" drill="4.22" diameter="6.2"/>
 </package>
 <package name="PEM_M3">
-<pad name="P$2" x="0" y="0" drill="4.22" diameter="6.2"/>
+<pad name="P$2" x="0" y="0" drill="4.22" diameter="6.6"/>
 <circle x="0" y="0" radius="5" width="0.127" layer="41"/>
 <circle x="0" y="0" radius="5" width="0.127" layer="42"/>
 </package>
@@ -3745,7 +3745,7 @@ chip</description>
 <wire x1="16.002" y1="-16.002" x2="16.002" y2="16.002" width="0.127" layer="21"/>
 <wire x1="16.002" y1="16.002" x2="-16.002" y2="16.002" width="0.127" layer="21"/>
 <wire x1="-16.002" y1="16.002" x2="-16.002" y2="-16.002" width="0.127" layer="21"/>
-<circle x="0" y="0" radius="10.25" width="0.127" layer="20"/>
+<circle x="0" y="0" radius="11.25" width="0.127" layer="20"/>
 <pad name="P$5" x="-12.341" y="-7.125" drill="3.2"/>
 <pad name="P$6" x="12.341" y="-7.125" drill="3.2"/>
 <wire x1="-18.75" y1="6.5" x2="-18.75" y2="18.75" width="0.127" layer="21"/>
@@ -3763,7 +3763,7 @@ chip</description>
 </package>
 <package name="PEM_SMT">
 <hole x="0" y="0" drill="4.22"/>
-<smd name="P$1" x="0" y="0" dx="6.2" dy="6.2" layer="1" roundness="100"/>
+<smd name="P$1" x="0" y="0" dx="6.6" dy="6.6" layer="1" roundness="100"/>
 </package>
 <package name="PR2024_SPKR_PEM_NUTS">
 <smd name="P$4" x="-13.5" y="-13.5" dx="6.2" dy="6.2" layer="1" roundness="99"/>
@@ -3802,6 +3802,33 @@ chip</description>
 <wire x1="2.54" y1="3.81" x2="2.54" y2="-3.81" width="0.127" layer="21"/>
 <wire x1="2.54" y1="-3.81" x2="-2.54" y2="-3.81" width="0.127" layer="21"/>
 <wire x1="-2.54" y1="-3.81" x2="-2.54" y2="3.81" width="0.127" layer="21"/>
+</package>
+<package name="PR2024_SPKR_PLACE(SLOTTED)">
+<wire x1="-16.002" y1="-16.002" x2="16.002" y2="-16.002" width="0.127" layer="21"/>
+<wire x1="16.002" y1="-16.002" x2="16.002" y2="16.002" width="0.127" layer="21"/>
+<wire x1="16.002" y1="16.002" x2="-16.002" y2="16.002" width="0.127" layer="21"/>
+<wire x1="-16.002" y1="16.002" x2="-16.002" y2="-16.002" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="10.25" width="0.127" layer="20"/>
+<wire x1="-18.75" y1="6.5" x2="-18.75" y2="18.75" width="0.127" layer="21"/>
+<wire x1="-18.75" y1="18.75" x2="18.75" y2="18.75" width="0.127" layer="21"/>
+<wire x1="18.75" y1="18.75" x2="18.75" y2="6.5" width="0.127" layer="21"/>
+<wire x1="18.75" y1="6.5" x2="25.5" y2="6.5" width="0.127" layer="21"/>
+<wire x1="25.5" y1="6.5" x2="25.5" y2="-6.5" width="0.127" layer="21" curve="-180"/>
+<wire x1="25.5" y1="-6.5" x2="18.75" y2="-6.5" width="0.127" layer="21"/>
+<wire x1="18.75" y1="-6.5" x2="18.75" y2="-18.75" width="0.127" layer="21"/>
+<wire x1="18.75" y1="-18.75" x2="-18.75" y2="-18.75" width="0.127" layer="21"/>
+<wire x1="-18.75" y1="-18.75" x2="-18.75" y2="-6.5" width="0.127" layer="21"/>
+<wire x1="-18.75" y1="-6.5" x2="-25.5" y2="-6.5" width="0.127" layer="21"/>
+<wire x1="-25.5" y1="-6.5" x2="-25.5" y2="6.5" width="0.127" layer="21" curve="-180"/>
+<wire x1="-25.5" y1="6.5" x2="-18.75" y2="6.5" width="0.127" layer="21"/>
+<smd name="P$1" x="-12.341" y="-7.125" dx="5.08" dy="2.54" layer="1" roundness="33" rot="R120"/>
+<smd name="P$2" x="-12.341" y="-7.125" dx="5.08" dy="2.54" layer="16" roundness="33" rot="R120"/>
+<smd name="P$3" x="12.341" y="-7.125" dx="5.08" dy="2.54" layer="1" roundness="33" rot="R240"/>
+<smd name="P$4" x="12.341" y="-7.125" dx="5.08" dy="2.54" layer="16" roundness="33" rot="R240"/>
+<circle x="-13.5" y="13.5" radius="3.6" width="0.3048" layer="21"/>
+<circle x="13.5" y="13.5" radius="3.6" width="0.3048" layer="21"/>
+<circle x="13.5" y="-13.5" radius="3.6" width="0.3048" layer="21"/>
+<circle x="-13.5" y="-13.5" radius="3.6" width="0.3048" layer="21"/>
 </package>
 </packages>
 <symbols>

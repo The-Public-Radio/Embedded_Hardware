@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -337,7 +337,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <rectangle x1="15.24" y1="-5.08" x2="27.94" y2="5.08" layer="41"/>
 </package>
 <package name="PEM_M3">
-<pad name="P$2" x="0" y="0" drill="4.22" diameter="6.2"/>
+<pad name="P$2" x="0" y="0" drill="4.22" diameter="6.6"/>
 <circle x="0" y="0" radius="5" width="0.127" layer="41"/>
 <circle x="0" y="0" radius="5" width="0.127" layer="42"/>
 </package>
@@ -453,7 +453,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="16.002" y1="-16.002" x2="16.002" y2="16.002" width="0.127" layer="21"/>
 <wire x1="16.002" y1="16.002" x2="-16.002" y2="16.002" width="0.127" layer="21"/>
 <wire x1="-16.002" y1="16.002" x2="-16.002" y2="-16.002" width="0.127" layer="21"/>
-<circle x="0" y="0" radius="10.25" width="0.127" layer="20"/>
+<circle x="0" y="0" radius="11.25" width="0.127" layer="20"/>
 <pad name="P$5" x="-12.341" y="-7.125" drill="3.2"/>
 <pad name="P$6" x="12.341" y="-7.125" drill="3.2"/>
 <wire x1="-18.75" y1="6.5" x2="-18.75" y2="18.75" width="0.127" layer="21"/>
@@ -654,7 +654,7 @@ chip</description>
 </package>
 <package name="PEM_SMT">
 <hole x="0" y="0" drill="4.22"/>
-<smd name="P$1" x="0" y="0" dx="6.2" dy="6.2" layer="1" roundness="100"/>
+<smd name="P$1" x="0" y="0" dx="6.6" dy="6.6" layer="1" roundness="100"/>
 </package>
 <package name="HSMC-C265_REVERSE_MOUN_LED">
 <smd name="P$1" x="-1.85" y="0" dx="1.4" dy="1.25" layer="1"/>
@@ -1721,7 +1721,7 @@ MFG# ABS25-32.768KHZ-T</description>
 <part name="FET1" library="PR_Parts_Library" deviceset="AO3435" device="" value="">
 <attribute name="MFG_PN" value="AO3435"/>
 </part>
-<part name="SPKR_PLACE" library="PR_Parts_Library" deviceset="PR2024_SPKR_SMD" device="" value=""/>
+<part name="SPKR_PLACE" library="PR_Parts_Library" deviceset="PR2024_SPKR_SMD" device="" value="PR2024_SPKR_SMD"/>
 <part name="T14" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
 <part name="T15" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
 <part name="T16" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
