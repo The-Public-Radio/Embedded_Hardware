@@ -656,7 +656,8 @@ chip</description>
 <hole x="0" y="0" drill="4.22"/>
 <smd name="P$1" x="0" y="0" dx="6.6" dy="6.6" layer="1" roundness="100"/>
 </package>
-<package name="HSMC-C265_REVERSE_MOUN_LED">
+<package name="HSMA-C265_REVERSE_MOUN_LED">
+<description>HSMA-2625</description>
 <smd name="P$1" x="-1.85" y="0" dx="1.4" dy="1.25" layer="1"/>
 <smd name="P$2" x="1.85" y="0" dx="1.4" dy="1.25" layer="1"/>
 <hole x="0" y="0" drill="2.2"/>
@@ -1532,12 +1533,12 @@ MFG# ABS25-32.768KHZ-T</description>
 </devices>
 </deviceset>
 <deviceset name="HSMC-C265_REVERSE_MOUNT_LED">
-<description>HSMC-C265</description>
+<description>HSMA-C265</description>
 <gates>
 <gate name="G$1" symbol="LED" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="HSMC-C265_REVERSE_MOUN_LED">
+<device name="" package="HSMA-C265_REVERSE_MOUN_LED">
 <connects>
 <connect gate="G$1" pin="A" pad="P$1"/>
 <connect gate="G$1" pin="C" pad="P$2"/>
@@ -1617,7 +1618,8 @@ MFG# ABS25-32.768KHZ-T</description>
 <part name="L1" library="PR_Parts_Library" deviceset="L_SMT" device="_0805_ADAFRUIT" value="180nH">
 <attribute name="CURRENT" value="400mA"/>
 <attribute name="DCR" value="640m"/>
-<attribute name="MFG_PN" value="AISC-0805-R18J-T"/>
+<attribute name="MFG_PN" value="AISC-0805-R18J-T
+"/>
 <attribute name="TOL" value="5%"/>
 </part>
 <part name="GND16" library="SparkFun" deviceset="GND" device=""/>
@@ -1719,7 +1721,7 @@ MFG# ABS25-32.768KHZ-T</description>
 <attribute name="VOLTAGE" value="10V"/>
 </part>
 <part name="FET1" library="PR_Parts_Library" deviceset="AO3435" device="" value="">
-<attribute name="MFG_PN" value="AO3435"/>
+<attribute name="MFG_PN" value="AO3415A"/>
 </part>
 <part name="SPKR_PLACE" library="PR_Parts_Library" deviceset="PR2024_SPKR_SMD" device="" value="PR2024_SPKR_SMD"/>
 <part name="T14" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
@@ -1750,7 +1752,7 @@ MFG# ABS25-32.768KHZ-T</description>
 <attribute name="TOL" value="1%"/>
 </part>
 <part name="LED" library="PR_Parts_Library" deviceset="HSMC-C265_REVERSE_MOUNT_LED" device="">
-<attribute name="MFG_PN" value="HSMC-C265"/>
+<attribute name="MFG_PN" value="HSMA-C265"/>
 </part>
 <part name="U$2" library="PR_Parts_Library" deviceset="PEM_SMT" device=""/>
 <part name="U$3" library="PR_Parts_Library" deviceset="PEM_SMT" device=""/>
