@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -270,29 +270,6 @@
 <pad name="BATT+" x="0" y="-6.35" drill="1.1" shape="long"/>
 <text x="3.5052" y="-8.7122" size="1.27" layer="21" rot="R90">BATT+</text>
 <text x="3.1496" y="3.7592" size="1.27" layer="21" rot="R90">BATT-</text>
-</package>
-<package name="PR2023_SPKR_PLACE">
-<hole x="-12.3698" y="12.3698" drill="2"/>
-<hole x="12.3698" y="12.3698" drill="2"/>
-<hole x="12.3698" y="-12.3698" drill="2"/>
-<wire x1="-16.002" y1="-16.002" x2="16.002" y2="-16.002" width="0.127" layer="21"/>
-<wire x1="16.002" y1="-16.002" x2="16.002" y2="16.002" width="0.127" layer="21"/>
-<wire x1="16.002" y1="16.002" x2="-16.002" y2="16.002" width="0.127" layer="21"/>
-<wire x1="-16.002" y1="16.002" x2="-16.002" y2="-16.002" width="0.127" layer="21"/>
-<circle x="-12.3698" y="12.3698" radius="5.08" width="0.127" layer="42"/>
-<circle x="12.3698" y="12.3698" radius="5.08" width="0.127" layer="42"/>
-<circle x="12.3698" y="-12.3698" radius="5.08" width="0.127" layer="42"/>
-<circle x="-12.3698" y="-12.3698" radius="5.08" width="0.127" layer="42"/>
-<circle x="0" y="0" radius="11.5062" width="0.127" layer="20"/>
-<pad name="LID_GND" x="-12.3698" y="-12.3698" drill="2" diameter="5"/>
-<wire x1="-12.2" y1="-9.4" x2="12.2" y2="-9.4" width="0.127" layer="20"/>
-<wire x1="12.2" y1="-9.4" x2="14.7" y2="-6.9" width="0.127" layer="20" curve="90"/>
-<wire x1="14.7" y1="-6.9" x2="14.7" y2="-3.5" width="0.127" layer="20"/>
-<wire x1="14.7" y1="-3.5" x2="12.2" y2="-1" width="0.127" layer="20" curve="90"/>
-<wire x1="12.2" y1="-1" x2="-12.2" y2="-1" width="0.127" layer="20"/>
-<wire x1="-12.2" y1="-1" x2="-14.7" y2="-3.5" width="0.127" layer="20" curve="90"/>
-<wire x1="-14.7" y1="-3.5" x2="-14.7" y2="-6.9" width="0.127" layer="20"/>
-<wire x1="-14.7" y1="-6.9" x2="-12.2" y2="-9.4" width="0.127" layer="20" curve="90"/>
 </package>
 <package name="C&amp;K_PTS645_SMT">
 <wire x1="-4.5" y1="3" x2="4.5" y2="3" width="0.127" layer="21"/>
@@ -3669,31 +3646,6 @@ chip</description>
 <rectangle x1="23.876" y1="1.016" x2="24.384" y2="1.524" layer="51"/>
 <rectangle x1="23.876" y1="-1.524" x2="24.384" y2="-1.016" layer="51"/>
 </package>
-<package name="PR2024_SPKR_PLACE">
-<wire x1="-16.002" y1="-16.002" x2="16.002" y2="-16.002" width="0.127" layer="21"/>
-<wire x1="16.002" y1="-16.002" x2="16.002" y2="16.002" width="0.127" layer="21"/>
-<wire x1="16.002" y1="16.002" x2="-16.002" y2="16.002" width="0.127" layer="21"/>
-<wire x1="-16.002" y1="16.002" x2="-16.002" y2="-16.002" width="0.127" layer="21"/>
-<circle x="0" y="0" radius="10.25" width="0.127" layer="114"/>
-<pad name="P$5" x="-12.341" y="-7.125" drill="3.2"/>
-<pad name="P$6" x="12.341" y="-7.125" drill="3.2"/>
-<wire x1="-18.75" y1="6.5" x2="-18.75" y2="18.75" width="0.127" layer="21"/>
-<wire x1="-18.75" y1="18.75" x2="18.75" y2="18.75" width="0.127" layer="21"/>
-<wire x1="18.75" y1="18.75" x2="18.75" y2="6.5" width="0.127" layer="21"/>
-<wire x1="18.75" y1="6.5" x2="25.5" y2="6.5" width="0.127" layer="21"/>
-<wire x1="25.5" y1="6.5" x2="25.5" y2="-6.5" width="0.127" layer="21" curve="-180"/>
-<wire x1="25.5" y1="-6.5" x2="18.75" y2="-6.5" width="0.127" layer="21"/>
-<wire x1="18.75" y1="-6.5" x2="18.75" y2="-18.75" width="0.127" layer="21"/>
-<wire x1="18.75" y1="-18.75" x2="-18.75" y2="-18.75" width="0.127" layer="21"/>
-<wire x1="-18.75" y1="-18.75" x2="-18.75" y2="-6.5" width="0.127" layer="21"/>
-<wire x1="-18.75" y1="-6.5" x2="-25.5" y2="-6.5" width="0.127" layer="21"/>
-<wire x1="-25.5" y1="-6.5" x2="-25.5" y2="6.5" width="0.127" layer="21" curve="-180"/>
-<wire x1="-25.5" y1="6.5" x2="-18.75" y2="6.5" width="0.127" layer="21"/>
-<pad name="P$1" x="-13.5" y="13.5" drill="4.22" diameter="6.2"/>
-<pad name="P$2" x="13.5" y="13.5" drill="4.22" diameter="6.2"/>
-<pad name="P$3" x="13.5" y="-13.5" drill="4.22" diameter="6.2"/>
-<pad name="P$4" x="-13.5" y="-13.5" drill="4.22" diameter="6.2"/>
-</package>
 <package name="PEM_M3">
 <pad name="P$2" x="0" y="0" drill="4.22" diameter="6.6"/>
 <circle x="0" y="0" radius="5" width="0.127" layer="41"/>
@@ -3740,14 +3692,14 @@ chip</description>
 <wire x1="1.75" y1="1.25" x2="1.75" y2="2.25" width="0.127" layer="21"/>
 <circle x="0" y="0" radius="1.25" width="0.127" layer="21"/>
 </package>
-<package name="PR2024_SPKR_PLACE(SMD)">
+<package name="PR2023_GROUND_UP_SPEAKER">
 <wire x1="-16.002" y1="-16.002" x2="16.002" y2="-16.002" width="0.127" layer="21"/>
 <wire x1="16.002" y1="-16.002" x2="16.002" y2="16.002" width="0.127" layer="21"/>
 <wire x1="16.002" y1="16.002" x2="-16.002" y2="16.002" width="0.127" layer="21"/>
 <wire x1="-16.002" y1="16.002" x2="-16.002" y2="-16.002" width="0.127" layer="21"/>
-<circle x="0" y="0" radius="11.25" width="0.127" layer="20"/>
-<pad name="P$5" x="-12.341" y="-7.125" drill="3.2"/>
-<pad name="P$6" x="12.341" y="-7.125" drill="3.2"/>
+<circle x="0" y="0" radius="12" width="0.127" layer="20"/>
+<pad name="P$5" x="-12.341" y="-7.125" drill="3.2" diameter="4"/>
+<pad name="P$6" x="12.341" y="-7.125" drill="3.2" diameter="4"/>
 <wire x1="-18.75" y1="6.5" x2="-18.75" y2="18.75" width="0.127" layer="21"/>
 <wire x1="-18.75" y1="18.75" x2="18.75" y2="18.75" width="0.127" layer="21"/>
 <wire x1="18.75" y1="18.75" x2="18.75" y2="6.5" width="0.127" layer="21"/>
@@ -3761,19 +3713,9 @@ chip</description>
 <wire x1="-25.5" y1="-6.5" x2="-25.5" y2="6.5" width="0.127" layer="21" curve="-180"/>
 <wire x1="-25.5" y1="6.5" x2="-18.75" y2="6.5" width="0.127" layer="21"/>
 </package>
-<package name="PEM_SMT">
+<package name="PEM_M3_ONE_SIDE">
 <hole x="0" y="0" drill="4.22"/>
 <smd name="P$1" x="0" y="0" dx="6.6" dy="6.6" layer="1" roundness="100"/>
-</package>
-<package name="PR2024_SPKR_PEM_NUTS">
-<smd name="P$4" x="-13.5" y="-13.5" dx="6.2" dy="6.2" layer="1" roundness="99"/>
-<hole x="-13.5" y="-13.5" drill="4.22"/>
-<hole x="-13.5" y="13.5" drill="4.22"/>
-<smd name="P$1" x="-13.5" y="13.5" dx="6.2" dy="6.2" layer="1" roundness="99"/>
-<smd name="P$3" x="13.5" y="-13.5" dx="6.2" dy="6.2" layer="1" roundness="99"/>
-<hole x="13.5" y="-13.5" drill="4.22"/>
-<hole x="13.5" y="13.5" drill="4.22"/>
-<smd name="P$2" x="13.5" y="13.5" dx="6.2" dy="6.2" layer="1" roundness="99"/>
 </package>
 <package name="PR9001_TESTPOINT">
 <pad name="P$1" x="0" y="0" drill="1.45" shape="offset"/>
@@ -3803,33 +3745,6 @@ chip</description>
 <wire x1="2.54" y1="3.81" x2="2.54" y2="-3.81" width="0.127" layer="21"/>
 <wire x1="2.54" y1="-3.81" x2="-2.54" y2="-3.81" width="0.127" layer="21"/>
 <wire x1="-2.54" y1="-3.81" x2="-2.54" y2="3.81" width="0.127" layer="21"/>
-</package>
-<package name="PR2024_SPKR_PLACE(SLOTTED)">
-<wire x1="-16.002" y1="-16.002" x2="16.002" y2="-16.002" width="0.127" layer="21"/>
-<wire x1="16.002" y1="-16.002" x2="16.002" y2="16.002" width="0.127" layer="21"/>
-<wire x1="16.002" y1="16.002" x2="-16.002" y2="16.002" width="0.127" layer="21"/>
-<wire x1="-16.002" y1="16.002" x2="-16.002" y2="-16.002" width="0.127" layer="21"/>
-<circle x="0" y="0" radius="10.25" width="0.127" layer="20"/>
-<wire x1="-18.75" y1="6.5" x2="-18.75" y2="18.75" width="0.127" layer="21"/>
-<wire x1="-18.75" y1="18.75" x2="18.75" y2="18.75" width="0.127" layer="21"/>
-<wire x1="18.75" y1="18.75" x2="18.75" y2="6.5" width="0.127" layer="21"/>
-<wire x1="18.75" y1="6.5" x2="25.5" y2="6.5" width="0.127" layer="21"/>
-<wire x1="25.5" y1="6.5" x2="25.5" y2="-6.5" width="0.127" layer="21" curve="-180"/>
-<wire x1="25.5" y1="-6.5" x2="18.75" y2="-6.5" width="0.127" layer="21"/>
-<wire x1="18.75" y1="-6.5" x2="18.75" y2="-18.75" width="0.127" layer="21"/>
-<wire x1="18.75" y1="-18.75" x2="-18.75" y2="-18.75" width="0.127" layer="21"/>
-<wire x1="-18.75" y1="-18.75" x2="-18.75" y2="-6.5" width="0.127" layer="21"/>
-<wire x1="-18.75" y1="-6.5" x2="-25.5" y2="-6.5" width="0.127" layer="21"/>
-<wire x1="-25.5" y1="-6.5" x2="-25.5" y2="6.5" width="0.127" layer="21" curve="-180"/>
-<wire x1="-25.5" y1="6.5" x2="-18.75" y2="6.5" width="0.127" layer="21"/>
-<smd name="P$1" x="-12.341" y="-7.125" dx="5.08" dy="2.54" layer="1" roundness="33" rot="R120"/>
-<smd name="P$2" x="-12.341" y="-7.125" dx="5.08" dy="2.54" layer="16" roundness="33" rot="R120"/>
-<smd name="P$3" x="12.341" y="-7.125" dx="5.08" dy="2.54" layer="1" roundness="33" rot="R240"/>
-<smd name="P$4" x="12.341" y="-7.125" dx="5.08" dy="2.54" layer="16" roundness="33" rot="R240"/>
-<circle x="-13.5" y="13.5" radius="3.6" width="0.3048" layer="21"/>
-<circle x="13.5" y="13.5" radius="3.6" width="0.3048" layer="21"/>
-<circle x="13.5" y="-13.5" radius="3.6" width="0.3048" layer="21"/>
-<circle x="-13.5" y="-13.5" radius="3.6" width="0.3048" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -4447,18 +4362,6 @@ chip</description>
 <pin name="P$39" x="-5.08" y="-20.32" visible="off" length="short" rot="R180"/>
 <pin name="P$40" x="0" y="-20.32" visible="off" length="short"/>
 </symbol>
-<symbol name="PR9024_SPKR">
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="-5.08" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-7.62" x2="2.54" y2="7.62" width="0.254" layer="94"/>
-<wire x1="2.54" y1="7.62" x2="0" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
-<pin name="+" x="-5.08" y="2.54" length="short"/>
-<pin name="-" x="-5.08" y="-2.54" length="short"/>
-<pin name="GN" x="0" y="-7.62" visible="pin" length="short" rot="R90"/>
-</symbol>
 <symbol name="PEM_M3">
 <wire x1="2.54" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
@@ -4484,7 +4387,7 @@ chip</description>
 <wire x1="-2.54" y1="-1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
 <wire x1="2.54" y1="0" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
 </symbol>
-<symbol name="PR9025_SPKR">
+<symbol name="PR9023_GROUND_UP_SPEAKER">
 <wire x1="0" y1="5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="0" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-5.08" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
@@ -4711,29 +4614,6 @@ chip</description>
 <technology name="">
 <attribute name="MFG_PN" value="" constant="no"/>
 </technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="PR2023_SPKR" uservalue="yes">
-<description>Speaker placement for PR2023.</description>
-<gates>
-<gate name="G$1" symbol="CE32A_SPKR_LID_GND" x="-2.54" y="0"/>
-</gates>
-<devices>
-<device name="" package="PR2023_SPKR_PLACE">
-<connects>
-<connect gate="G$1" pin="LID_GND" pad="LID_GND"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MFG_PN" value="DNP"/>
-</technology>
-</technologies>
-</device>
-<device name="QZFCE_32X32" package="PR2023_SPKR_PLACE">
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -5199,7 +5079,7 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 </device>
 </devices>
 </deviceset>
-<deviceset name="TP" prefix="TP" uservalue="yes">
+<deviceset name="TP" prefix="TP">
 <description>&lt;b&gt;Test pad&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="TP" x="0" y="0"/>
@@ -5489,38 +5369,7 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 </device>
 </devices>
 </deviceset>
-<deviceset name="PR_2024_SPKR">
-<gates>
-<gate name="G$1" symbol="PR9024_SPKR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="PR2024_SPKR_PLACE">
-<connects>
-<connect gate="G$1" pin="GN" pad="P$4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="PR9024_SPKR">
-<gates>
-<gate name="G$1" symbol="PR9024_SPKR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="PR2024_SPKR_PLACE">
-<connects>
-<connect gate="G$1" pin="+" pad="P$6"/>
-<connect gate="G$1" pin="-" pad="P$5"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="M3_PEMNUT">
+<deviceset name="PEM_M3">
 <gates>
 <gate name="G$1" symbol="M3_SCREW_POST" x="0" y="2.54"/>
 </gates>
@@ -5529,33 +5378,6 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 <connects>
 <connect gate="G$1" pin="ANT" pad="P$2"/>
 </connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="PEM_M3_W/PIN">
-<gates>
-<gate name="G$1" symbol="PEM_M3_PIN" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="PEM_M3_NOKEEPAWAY">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="PEM_M3_NOPIN">
-<gates>
-<gate name="G$1" symbol="PEM_M3" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="PEM_M3_NOKEEPAWAY">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -5604,12 +5426,12 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 </device>
 </devices>
 </deviceset>
-<deviceset name="PR2024_SPKR_SMD">
+<deviceset name="PR2023_GROUND_UP_SPEAKER">
 <gates>
-<gate name="G$1" symbol="PR9025_SPKR" x="-2.54" y="0"/>
+<gate name="G$1" symbol="PR9023_GROUND_UP_SPEAKER" x="-2.54" y="0"/>
 </gates>
 <devices>
-<device name="" package="PR2024_SPKR_PLACE(SMD)">
+<device name="" package="PR2023_GROUND_UP_SPEAKER">
 <connects>
 <connect gate="G$1" pin="+" pad="P$6"/>
 <connect gate="G$1" pin="-" pad="P$5"/>
@@ -5620,24 +5442,24 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 </device>
 </devices>
 </deviceset>
-<deviceset name="PEM_SMT">
+<deviceset name="PEM_M3_ONE_SIDE">
 <gates>
 <gate name="G$1" symbol="PEM_M3" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="" package="PEM_SMT">
+<device name="" package="PEM_M3_ONE_SIDE">
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PEM_M3_SMT_W/PIN">
+<deviceset name="PEM_M3_ONE_SIDE_W/PIN">
 <gates>
 <gate name="G$1" symbol="PEM_M3_PIN" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="" package="PEM_SMT">
+<device name="" package="PEM_M3_ONE_SIDE">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 </connects>

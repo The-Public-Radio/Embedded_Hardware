@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="dots" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -448,14 +448,14 @@ We've spent an enormous amount of time creating and checking these footprints an
 <smd name="2" x="-1.1" y="-0.95" dx="1" dy="1.4" layer="1" rot="R270"/>
 <smd name="1" x="-1.1" y="0.95" dx="1" dy="1.4" layer="1" rot="R270"/>
 </package>
-<package name="PR2024_SPKR_PLACE(SMD)">
+<package name="PR2023_GROUND_UP_SPEAKER">
 <wire x1="-16.002" y1="-16.002" x2="16.002" y2="-16.002" width="0.127" layer="21"/>
 <wire x1="16.002" y1="-16.002" x2="16.002" y2="16.002" width="0.127" layer="21"/>
 <wire x1="16.002" y1="16.002" x2="-16.002" y2="16.002" width="0.127" layer="21"/>
 <wire x1="-16.002" y1="16.002" x2="-16.002" y2="-16.002" width="0.127" layer="21"/>
-<circle x="0" y="0" radius="11.25" width="0.127" layer="20"/>
-<pad name="P$5" x="-12.341" y="-7.125" drill="3.2"/>
-<pad name="P$6" x="12.341" y="-7.125" drill="3.2"/>
+<circle x="0" y="0" radius="12" width="0.127" layer="20"/>
+<pad name="P$5" x="-12.341" y="-7.125" drill="3.2" diameter="4"/>
+<pad name="P$6" x="12.341" y="-7.125" drill="3.2" diameter="4"/>
 <wire x1="-18.75" y1="6.5" x2="-18.75" y2="18.75" width="0.127" layer="21"/>
 <wire x1="-18.75" y1="18.75" x2="18.75" y2="18.75" width="0.127" layer="21"/>
 <wire x1="18.75" y1="18.75" x2="18.75" y2="6.5" width="0.127" layer="21"/>
@@ -652,7 +652,7 @@ chip</description>
 <text x="-3.175" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <text x="-5.715" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 </package>
-<package name="PEM_SMT">
+<package name="PEM_M3_ONE_SIDE">
 <hole x="0" y="0" drill="4.22"/>
 <smd name="P$1" x="0" y="0" dx="6.6" dy="6.6" layer="1" roundness="100"/>
 </package>
@@ -796,7 +796,7 @@ chip</description>
 <pin name="SOURCE" x="2.54" y="-5.08" length="point"/>
 <wire x1="0" y1="4.826" x2="0" y2="7.62" width="0.254" layer="94"/>
 </symbol>
-<symbol name="PR9025_SPKR">
+<symbol name="PR9023_GROUND_UP_SPEAKER">
 <wire x1="0" y1="5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="0" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-5.08" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
@@ -1010,7 +1010,7 @@ chip</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="M3_PEMNUT">
+<deviceset name="PEM_M3">
 <gates>
 <gate name="G$1" symbol="M3_SCREW_POST" x="0" y="2.54"/>
 </gates>
@@ -1164,12 +1164,12 @@ MFG# ABS25-32.768KHZ-T</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PR2024_SPKR_SMD">
+<deviceset name="PR2023_GROUND_UP_SPEAKER">
 <gates>
-<gate name="G$1" symbol="PR9025_SPKR" x="-2.54" y="0"/>
+<gate name="G$1" symbol="PR9023_GROUND_UP_SPEAKER" x="-2.54" y="0"/>
 </gates>
 <devices>
-<device name="" package="PR2024_SPKR_PLACE(SMD)">
+<device name="" package="PR2023_GROUND_UP_SPEAKER">
 <connects>
 <connect gate="G$1" pin="+" pad="P$6"/>
 <connect gate="G$1" pin="-" pad="P$5"/>
@@ -1417,7 +1417,7 @@ MFG# ABS25-32.768KHZ-T</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TP" prefix="TP" uservalue="yes">
+<deviceset name="TP" prefix="TP">
 <description>&lt;b&gt;Test pad&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="TP" x="0" y="0"/>
@@ -1505,12 +1505,12 @@ MFG# ABS25-32.768KHZ-T</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PEM_M3_SMT_W/PIN">
+<deviceset name="PEM_M3_ONE_SIDE_W/PIN">
 <gates>
 <gate name="G$1" symbol="PEM_M3_PIN" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="" package="PEM_SMT">
+<device name="" package="PEM_M3_ONE_SIDE">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 </connects>
@@ -1520,12 +1520,12 @@ MFG# ABS25-32.768KHZ-T</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PEM_SMT">
+<deviceset name="PEM_M3_ONE_SIDE">
 <gates>
 <gate name="G$1" symbol="PEM_M3" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="" package="PEM_SMT">
+<device name="" package="PEM_M3_ONE_SIDE">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1567,7 +1567,7 @@ MFG# ABS25-32.768KHZ-T</description>
 </class>
 </classes>
 <parts>
-<part name="U1" library="PR_Parts_Library" deviceset="SI4702-C19-GMR" device="" value="">
+<part name="U1" library="PR_Parts_Library" deviceset="SI4702-C19-GMR" device="" value="FMIC">
 <attribute name="MFG_PN" value="Si4702 C19 GM - supplied by CL Labs"/>
 </part>
 <part name="GND13" library="SparkFun" deviceset="GND" device=""/>
@@ -1597,7 +1597,7 @@ MFG# ABS25-32.768KHZ-T</description>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND24" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
-<part name="ANT_MOUNT" library="PR_Parts_Library" deviceset="M3_PEMNUT" device="" value="DNP"/>
+<part name="ANT_MOUNT" library="PR_Parts_Library" deviceset="PEM_M3" device="" value="PEM_M3"/>
 <part name="R1" library="PR_Parts_Library" deviceset="VOLUME_POT" device="" value="VOLUME_POT"/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -1618,8 +1618,7 @@ MFG# ABS25-32.768KHZ-T</description>
 <part name="L1" library="PR_Parts_Library" deviceset="L_SMT" device="_0805_ADAFRUIT" value="180nH">
 <attribute name="CURRENT" value="400mA"/>
 <attribute name="DCR" value="640m"/>
-<attribute name="MFG_PN" value="AISC-0805-R18J-T
-"/>
+<attribute name="MFG_PN" value="AISC-0805-R18J-T "/>
 <attribute name="TOL" value="5%"/>
 </part>
 <part name="GND16" library="SparkFun" deviceset="GND" device=""/>
@@ -1723,7 +1722,7 @@ MFG# ABS25-32.768KHZ-T</description>
 <part name="FET1" library="PR_Parts_Library" deviceset="AO3435" device="" value="">
 <attribute name="MFG_PN" value="AO3415A"/>
 </part>
-<part name="SPKR_PLACE" library="PR_Parts_Library" deviceset="PR2024_SPKR_SMD" device="" value="PR2024_SPKR_SMD"/>
+<part name="SPEAKER" library="PR_Parts_Library" deviceset="PR2023_GROUND_UP_SPEAKER" device="" value="PR2023_GROUND_UP_SPEAKER"/>
 <part name="T14" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
 <part name="T15" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
 <part name="T16" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
@@ -1754,10 +1753,10 @@ MFG# ABS25-32.768KHZ-T</description>
 <part name="LED" library="PR_Parts_Library" deviceset="HSMC-C265_REVERSE_MOUNT_LED" device="">
 <attribute name="MFG_PN" value="HSMA-C265"/>
 </part>
-<part name="U$2" library="PR_Parts_Library" deviceset="PEM_SMT" device=""/>
-<part name="U$3" library="PR_Parts_Library" deviceset="PEM_SMT" device=""/>
-<part name="U$4" library="PR_Parts_Library" deviceset="PEM_SMT" device=""/>
-<part name="U$5" library="PR_Parts_Library" deviceset="PEM_M3_SMT_W/PIN" device=""/>
+<part name="SPEAKER_PEM_1" library="PR_Parts_Library" deviceset="PEM_M3_ONE_SIDE" device=""/>
+<part name="SPEAKER_PEM_2" library="PR_Parts_Library" deviceset="PEM_M3_ONE_SIDE" device=""/>
+<part name="SPEAKER_PEM_4" library="PR_Parts_Library" deviceset="PEM_M3_ONE_SIDE" device=""/>
+<part name="SPEAKER_PEM_3" library="PR_Parts_Library" deviceset="PEM_M3_ONE_SIDE_W/PIN" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1787,7 +1786,8 @@ ZONE 0x-1x</text>
 ZONE 2x</text>
 <text x="157.48" y="144.78" size="2.54" layer="96">MCU
 ZONE 3x</text>
-<text x="-27.94" y="162.56" size="3.81" layer="96">THE PUBLIC RADIO</text>
+<text x="-27.94" y="162.56" size="3.81" layer="96">THE PUBLIC RADIO
+&gt;DRAWING_NAME</text>
 <text x="24.638" y="99.314" size="2.54" layer="96">Fiducials </text>
 <text x="71.12" y="147.574" size="2.54" layer="96">Test Points </text>
 <text x="60.96" y="101.6" size="1.27" layer="95">MISO</text>
@@ -1906,7 +1906,7 @@ ZONE 3x</text>
 </instance>
 <instance part="C8" gate="G$1" x="88.9" y="30.48" rot="R90"/>
 <instance part="FET1" gate="G$1" x="-20.32" y="129.54" rot="R270"/>
-<instance part="SPKR_PLACE" gate="G$1" x="256.54" y="40.64" rot="R90"/>
+<instance part="SPEAKER" gate="G$1" x="256.54" y="40.64" rot="R90"/>
 <instance part="T14" gate="G$1" x="66.04" y="99.06"/>
 <instance part="T15" gate="G$1" x="76.2" y="99.06"/>
 <instance part="T16" gate="G$1" x="86.36" y="99.06"/>
@@ -1933,10 +1933,10 @@ ZONE 3x</text>
 <instance part="LED" gate="G$1" x="205.74" y="101.6">
 <attribute name="MFG_PN" x="205.74" y="101.6" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="U$2" gate="G$1" x="30.48" y="139.7"/>
-<instance part="U$3" gate="G$1" x="40.64" y="139.7"/>
-<instance part="U$4" gate="G$1" x="30.48" y="129.54"/>
-<instance part="U$5" gate="G$1" x="40.64" y="129.54"/>
+<instance part="SPEAKER_PEM_1" gate="G$1" x="30.48" y="139.7"/>
+<instance part="SPEAKER_PEM_2" gate="G$1" x="40.64" y="139.7"/>
+<instance part="SPEAKER_PEM_4" gate="G$1" x="30.48" y="129.54"/>
+<instance part="SPEAKER_PEM_3" gate="G$1" x="40.64" y="129.54"/>
 </instances>
 <busses>
 </busses>
@@ -2094,7 +2094,7 @@ ZONE 3x</text>
 <pinref part="GND17" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$5" gate="G$1" pin="P$1"/>
+<pinref part="SPEAKER_PEM_3" gate="G$1" pin="P$1"/>
 <wire x1="40.64" y1="121.92" x2="40.64" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 </segment>
@@ -2428,7 +2428,7 @@ ZONE 3x</text>
 <label x="60.96" y="116.84" size="1.27" layer="95"/>
 </segment>
 <segment>
-<pinref part="SPKR_PLACE" gate="G$1" pin="+"/>
+<pinref part="SPEAKER" gate="G$1" pin="+"/>
 <wire x1="254" y1="33.02" x2="254" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="AMP" gate="G$1" pin="OUT+"/>
 <wire x1="218.44" y1="33.02" x2="223.52" y2="33.02" width="0.1524" layer="91"/>
@@ -2444,7 +2444,7 @@ ZONE 3x</text>
 <label x="71.12" y="116.84" size="1.27" layer="95"/>
 </segment>
 <segment>
-<pinref part="SPKR_PLACE" gate="G$1" pin="-"/>
+<pinref part="SPEAKER" gate="G$1" pin="-"/>
 <wire x1="259.08" y1="30.48" x2="259.08" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="AMP" gate="G$1" pin="OUT-"/>
 <wire x1="218.44" y1="30.48" x2="223.52" y2="30.48" width="0.1524" layer="91"/>
