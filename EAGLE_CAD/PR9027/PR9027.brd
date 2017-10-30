@@ -3756,10 +3756,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="24.7" y1="54.75" x2="23.1" y2="54.75" width="0.8128" layer="1"/>
 <wire x1="23.1" y1="54.75" x2="23" y2="54.65" width="0.8128" layer="1"/>
 </signal>
-<signal name="N$21">
-<polygon width="0.4064" layer="16">
-</polygon>
-</signal>
 <signal name="SPK_OUT+">
 <contactref element="T6" pad="TP"/>
 <wire x1="37" y1="21" x2="38.8" y2="21" width="0.6096" layer="16"/>
