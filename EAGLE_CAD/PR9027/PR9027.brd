@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -24,7 +24,7 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
@@ -2799,9 +2799,6 @@ Please make sure your boards conform to these design rules.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
-<param name="AutoGrid" value="1"/>
-<param name="Efforts" value="0"/>
-<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -2896,7 +2893,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="U1" library="PR_Parts_Library" package="SI470X_20_QFN" value="FMIC" x="26.9" y="56.9" locked="yes" smashed="yes" rot="R90">
 <attribute name="NAME" x="23.78" y="56.6" size="0.8128" layer="25" font="vector" ratio="18"/>
 <attribute name="VALUE" x="24.741" y="55.63" size="0.762" layer="27" rot="R90"/>
-<attribute name="MFG_PN" value="Si4702 C19 GM - supplied by CL Labs" x="26.9" y="56.9" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFG_PN" value="SI4702-C19-GMR" x="26.9" y="56.9" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R21" library="PR_Parts_Library" package="0603_CPL" value="12K" x="37.39" y="7.11625" smashed="yes" rot="R180">
 <attribute name="NAME" x="36.441" y="5.42525" size="0.8128" layer="25" font="vector" ratio="18"/>
@@ -2919,24 +2916,34 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="TOL" value="10%" x="41.11125" y="7.11625" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VOLTAGE" value="16V" x="41.11125" y="7.11625" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="ANT_MOUNT" library="PR_Parts_Library" package="PEM_M3" value="PEM_M3" x="9.5" y="35" locked="yes" smashed="yes"/>
-<element name="R1" library="PR_Parts_Library" package="H17112NS_A10K_L20F-002" value="VOLUME_POT" x="60.5" y="35" locked="yes" rot="R270"/>
+<element name="ANT_MOUNT" library="PR_Parts_Library" package="PEM_M3" value="PEM_M3" x="9.5" y="35" locked="yes" smashed="yes">
+<attribute name="CENTERLINE_PN" value="PR2040" x="9.5" y="35" size="1.778" layer="27" display="off"/>
+<attribute name="MFG_PN" value="Consigned" x="9.5" y="35" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R1" library="PR_Parts_Library" package="H17112NS_A10K_L20F-002" value="VOLUME_POT" x="60.5" y="35" locked="yes" rot="R270">
+<attribute name="CENTERLINE_PN" value="PR2030" x="60.5" y="35" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFG_PN" value="Consigned" x="60.5" y="35" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
 <element name="MCU" library="PR_Parts_Library" package="8-SOIC" value="" x="43.075" y="56.775" smashed="yes" rot="R90">
 <attribute name="NAME" x="40.073" y="59.675" size="0.8128" layer="25" font="vector" ratio="18"/>
-<attribute name="MFG_PN" value="ATTINY45-20SUR" x="43.075" y="56.775" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFG_PN" value="ATTINY25-20SUR
+" x="43.075" y="56.775" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="ISP" library="PR_Parts_Library" package="2X3-NS" value="" x="35" y="64.5" locked="yes" smashed="yes" rot="MR0">
 <attribute name="NAME" x="35.585" y="61.2" size="0.8128" layer="26" font="vector" ratio="16" rot="MR0"/>
 <attribute name="VALUE" x="40.06" y="65.755" size="1.27" layer="28" rot="MR270"/>
-<attribute name="MFG_PN" value="M20-9980346" x="35" y="64.5" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MFG_PN" value="DNP" x="35" y="64.5" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="L1" library="PR_Parts_Library" package="0805_ADAFRUIT" value="180nH" x="23" y="55.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="21.8745" y="56.013" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
 <attribute name="VALUE" x="24.397" y="54.484" size="0.4064" layer="27" rot="R90"/>
-<attribute name="MFG_PN" value="AISC-0805-R18J-T " x="23" y="55.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFG_PN" value="AISC-0805-R18J-T
+" x="23" y="55.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="CURRENT" value="400mA" x="23" y="55.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="TOL" value="5%" x="23" y="55.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DCR" value="640m" x="23" y="55.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="ALTERNATE_MFG_PN" value="AISC-0805-R18G-T
+" x="23" y="55.5" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C33" library="PR_Parts_Library" package="0603_CPL" value=".1uF" x="40.525" y="52.65" smashed="yes" rot="R270">
 <attribute name="NAME" x="41.262" y="50.7005" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
@@ -2958,10 +2965,12 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MFG_PN" value="BAV99,215" x="16.4" y="43.5" size="1.778" layer="27" rot="R315" display="off"/>
 </element>
 <element name="JP5" library="PR_Parts_Library" package="BK92_AA_BATT" value="" x="35" y="53.5" locked="yes" rot="MR180">
-<attribute name="MFG_PN" value="2 of BK92 - supplied by CL Labs" x="35" y="53.5" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MFG_PN" value="Consigned" x="35" y="53.5" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="CENTERLINE_PN" value="PR2003" x="35" y="53.5" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="JP6" library="PR_Parts_Library" package="BK92_AA_BATT" value="" x="35" y="16.5" locked="yes" rot="MR0">
-<attribute name="MFG_PN" value="2 of BK92 - supplied by CL Labs" x="35" y="16.5" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MFG_PN" value="Consigned" x="35" y="16.5" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="CENTERLINE_PN" value="PR2003" x="35" y="16.5" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="C14" library="PR_Parts_Library" package="0603_CPL" value="47pF" x="24.7" y="53.9" smashed="yes" rot="R90">
 <attribute name="NAME" x="24.975" y="51.535" size="0.8128" layer="25" font="vector" ratio="16"/>
@@ -3123,9 +3132,13 @@ Please make sure your boards conform to these design rules.</description>
 <element name="FET1" library="PR_Parts_Library" package="SOT23_CPL" value="" x="62.9" y="21.5" smashed="yes">
 <attribute name="NAME" x="65.6245" y="24.103" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
 <attribute name="VALUE" x="61.884" y="21.3095" size="0.4064" layer="27"/>
-<attribute name="MFG_PN" value="AO3415A" x="62.9" y="21.5" size="1.778" layer="27" display="off"/>
+<attribute name="MFG_PN" value="AO3435" x="62.9" y="21.5" size="1.778" layer="27" display="off"/>
+<attribute name="ALTERNATE_MFG_PN" value="AO3415A" x="62.9" y="21.5" size="1.778" layer="27" display="off"/>
 </element>
-<element name="SPEAKER" library="PR_Parts_Library" package="PR2023_GROUND_UP_SPEAKER" value="PR2023_GROUND_UP_SPEAKER" x="35" y="35" locked="yes"/>
+<element name="SPEAKER" library="PR_Parts_Library" package="PR2023_GROUND_UP_SPEAKER" value="PR2023_GROUND_UP_SPEAKER" x="35" y="35" locked="yes">
+<attribute name="CENTERLINE_PN" value="PR2033" x="35" y="35" size="1.778" layer="27" display="off"/>
+<attribute name="MFG_PN" value="Consigned" x="35" y="35" size="1.778" layer="27" display="off"/>
+</element>
 <element name="T14" library="PR_Parts_Library" package="TP20R" value="TPTP20R" x="62" y="30" smashed="yes" rot="MR0">
 <attribute name="NAME" x="62.3936" y="31.5416" size="0.6096" layer="26" font="vector" ratio="16" rot="MR0"/>
 <attribute name="VALUE" x="62.762" y="28.984" size="0.0254" layer="28" rot="MR0"/>
@@ -3184,10 +3197,22 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="63.355" y="45.885" size="1.27" layer="27"/>
 <attribute name="MFG_PN" value="HSMA-C265" x="64.625" y="48.425" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="SPEAKER_PEM_1" library="PR_Parts_Library" package="PEM_M3_ONE_SIDE" value="PEM_M3_ONE_SIDE" x="21.5" y="48.5" locked="yes"/>
-<element name="SPEAKER_PEM_2" library="PR_Parts_Library" package="PEM_M3_ONE_SIDE" value="PEM_M3_ONE_SIDE" x="48.5" y="48.5" locked="yes"/>
-<element name="SPEAKER_PEM_4" library="PR_Parts_Library" package="PEM_M3_ONE_SIDE" value="PEM_M3_ONE_SIDE" x="48.5" y="21.5" locked="yes"/>
-<element name="SPEAKER_PEM_3" library="PR_Parts_Library" package="PEM_M3_ONE_SIDE" value="PEM_M3_ONE_SIDE_W/PIN" x="21.5" y="21.5" locked="yes"/>
+<element name="SPEAKER_PEM_1" library="PR_Parts_Library" package="PEM_M3_ONE_SIDE" value="PEM_M3_ONE_SIDE" x="21.5" y="48.5" locked="yes">
+<attribute name="CENTERLINE_PN" value="PR2040" x="21.5" y="48.5" size="1.778" layer="27" display="off"/>
+<attribute name="MFG_PN" value="Consigned" x="21.5" y="48.5" size="1.778" layer="27" display="off"/>
+</element>
+<element name="SPEAKER_PEM_2" library="PR_Parts_Library" package="PEM_M3_ONE_SIDE" value="PEM_M3_ONE_SIDE" x="48.5" y="48.5" locked="yes">
+<attribute name="CENTERLINE_PN" value="PR2040" x="48.5" y="48.5" size="1.778" layer="27" display="off"/>
+<attribute name="MFG_PN" value="Consigned" x="48.5" y="48.5" size="1.778" layer="27" display="off"/>
+</element>
+<element name="SPEAKER_PEM_4" library="PR_Parts_Library" package="PEM_M3_ONE_SIDE" value="PEM_M3_ONE_SIDE" x="48.5" y="21.5" locked="yes">
+<attribute name="CENTERLINE_PN" value="PR2040" x="48.5" y="21.5" size="1.778" layer="27" display="off"/>
+<attribute name="MFG_PN" value="Consigned" x="48.5" y="21.5" size="1.778" layer="27" display="off"/>
+</element>
+<element name="SPEAKER_PEM_3" library="PR_Parts_Library" package="PEM_M3_ONE_SIDE" value="PEM_M3_ONE_SIDE_W/PIN" x="21.5" y="21.5" locked="yes">
+<attribute name="CENTERLINE_PN" value="PR2040" x="21.5" y="21.5" size="1.778" layer="27" display="off"/>
+<attribute name="MFG_PN" value="Consigned" x="21.5" y="21.5" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -3898,35 +3923,35 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="18,29,18efcfb53fcedb5a"/>
 <approved hash="18,29,e61013b8c786f623"/>
 <approved hash="18,29,0bb403429bbd0b54"/>
-<approved hash="18,29,cf2d17ced7c70f24"/>
-<approved hash="18,29,2ad07033b02ceacf"/>
 <approved hash="18,29,b99b623ca2357992"/>
 <approved hash="18,29,5c6605c1c5de9c79"/>
+<approved hash="18,29,cf2d17ced7c70f24"/>
+<approved hash="18,29,2ad07033b02ceacf"/>
 <approved hash="18,29,0c0e737a0b1dfcba"/>
-<approved hash="18,29,c34341e95af87557"/>
 <approved hash="18,29,a55257004c15d15a"/>
-<approved hash="18,29,23e51f4cf902ced1"/>
-<approved hash="18,29,c357ce154e104352"/>
-<approved hash="18,29,30d22190a19fb0dd"/>
-<approved hash="18,29,9b58350629fe475b"/>
+<approved hash="18,29,c34341e95af87557"/>
 <approved hash="18,29,3fe70dcd748351d1"/>
 <approved hash="18,29,4dd65c95dc90cdd3"/>
 <approved hash="18,29,be53b310331f3e5c"/>
 <approved hash="18,29,8758290636fc5b5a"/>
+<approved hash="18,29,23e51f4cf902ced1"/>
+<approved hash="18,29,c357ce154e104352"/>
+<approved hash="18,29,30d22190a19fb0dd"/>
+<approved hash="18,29,9b58350629fe475b"/>
 <approved hash="18,29,437584a43e3ee30e"/>
 <approved hash="18,29,7c3212582e957ce1"/>
 <approved hash="18,29,3335a1153e7adfc4"/>
 <approved hash="18,29,9a69b69e38b55d9d"/>
 <approved hash="18,29,c345c9267ecf329b"/>
-<approved hash="18,29,67536d875e430024"/>
 <approved hash="18,29,cedeee76fa1c81ef"/>
+<approved hash="18,29,67536d875e430024"/>
 <approved hash="18,29,52fe205ce06b92c9"/>
 <approved hash="18,29,54c15c9b3373e12d"/>
 <approved hash="18,29,02d1d0d3bbffb7fd"/>
-<approved hash="18,29,14465859b78a4906"/>
 <approved hash="18,29,6899652bce9e2873"/>
-<approved hash="18,29,82563193f69d6b92"/>
+<approved hash="18,29,14465859b78a4906"/>
 <approved hash="18,29,38423cf1dcc7babc"/>
+<approved hash="18,29,82563193f69d6b92"/>
 <approved hash="18,29,72840062c055b2b3"/>
 <approved hash="18,29,06028378e3d65fc8"/>
 <approved hash="18,29,78eec6ee3060e1c8"/>

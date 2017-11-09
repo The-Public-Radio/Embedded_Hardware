@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="dots" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1568,7 +1568,7 @@ MFG# ABS25-32.768KHZ-T</description>
 </classes>
 <parts>
 <part name="U1" library="PR_Parts_Library" deviceset="SI4702-C19-GMR" device="" value="FMIC">
-<attribute name="MFG_PN" value="Si4702 C19 GM - supplied by CL Labs"/>
+<attribute name="MFG_PN" value="SI4702-C19-GMR"/>
 </part>
 <part name="GND13" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND11" library="SparkFun" deviceset="GND" device=""/>
@@ -1597,13 +1597,22 @@ MFG# ABS25-32.768KHZ-T</description>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND24" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
-<part name="ANT_MOUNT" library="PR_Parts_Library" deviceset="PEM_M3" device="" value="PEM_M3"/>
-<part name="R1" library="PR_Parts_Library" deviceset="VOLUME_POT" device="" value="VOLUME_POT"/>
+<part name="ANT_MOUNT" library="PR_Parts_Library" deviceset="PEM_M3" device="" value="PEM_M3">
+<attribute name="CENTERLINE_PN" value="PR2040"/>
+<attribute name="MFG_PN" value="Consigned"/>
+</part>
+<part name="R1" library="PR_Parts_Library" deviceset="VOLUME_POT" device="" value="VOLUME_POT">
+<attribute name="CENTERLINE_PN" value="PR2030"/>
+<attribute name="MFG_PN" value="Consigned"/>
+</part>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND12" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="MCU" library="PR_Parts_Library" deviceset="ATTINY45" device="TINY45-20-SMT"/>
+<part name="MCU" library="PR_Parts_Library" deviceset="ATTINY45" device="TINY45-20-SMT">
+<attribute name="MFG_PN" value="ATTINY25-20SUR
+"/>
+</part>
 <part name="SUPPLY8" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND25" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND23" library="SparkFun" deviceset="GND" device=""/>
@@ -1611,14 +1620,19 @@ MFG# ABS25-32.768KHZ-T</description>
 <part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="SUPPLY7" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND31" library="SparkFun" deviceset="GND" device=""/>
-<part name="ISP" library="PR_Parts_Library" deviceset="AVR_SPI_PRG_6" device="NS" value=""/>
+<part name="ISP" library="PR_Parts_Library" deviceset="AVR_SPI_PRG_6" device="NS" value="">
+<attribute name="MFG_PN" value="DNP"/>
+</part>
 <part name="GND30" library="SparkFun" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND32" library="SparkFun" deviceset="GND" device=""/>
 <part name="L1" library="PR_Parts_Library" deviceset="L_SMT" device="_0805_ADAFRUIT" value="180nH">
+<attribute name="ALTERNATE_MFG_PN" value="AISC-0805-R18G-T
+"/>
 <attribute name="CURRENT" value="400mA"/>
 <attribute name="DCR" value="640m"/>
-<attribute name="MFG_PN" value="AISC-0805-R18J-T "/>
+<attribute name="MFG_PN" value="AISC-0805-R18J-T
+"/>
 <attribute name="TOL" value="5%"/>
 </part>
 <part name="GND16" library="SparkFun" deviceset="GND" device=""/>
@@ -1636,10 +1650,12 @@ MFG# ABS25-32.768KHZ-T</description>
 <attribute name="MFG_PN" value="BAV99,215"/>
 </part>
 <part name="JP5" library="PR_Parts_Library" deviceset="BK-92_MPD_AA_BATT_CLIP" device="" value="">
-<attribute name="MFG_PN" value="2 of BK92 - supplied by CL Labs"/>
+<attribute name="CENTERLINE_PN" value="PR2003"/>
+<attribute name="MFG_PN" value="Consigned"/>
 </part>
 <part name="JP6" library="PR_Parts_Library" deviceset="BK-92_MPD_AA_BATT_CLIP" device="" value="">
-<attribute name="MFG_PN" value="2 of BK92 - supplied by CL Labs"/>
+<attribute name="CENTERLINE_PN" value="PR2003"/>
+<attribute name="MFG_PN" value="Consigned"/>
 </part>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C14" library="PR_Parts_Library" deviceset="C_SMT" device="_0603_CPL" value="47pF">
@@ -1720,9 +1736,13 @@ MFG# ABS25-32.768KHZ-T</description>
 <attribute name="VOLTAGE" value="10V"/>
 </part>
 <part name="FET1" library="PR_Parts_Library" deviceset="AO3435" device="" value="">
-<attribute name="MFG_PN" value="AO3415A"/>
+<attribute name="ALTERNATE_MFG_PN" value="AO3415A"/>
+<attribute name="MFG_PN" value="AO3435"/>
 </part>
-<part name="SPEAKER" library="PR_Parts_Library" deviceset="PR2023_GROUND_UP_SPEAKER" device="" value="PR2023_GROUND_UP_SPEAKER"/>
+<part name="SPEAKER" library="PR_Parts_Library" deviceset="PR2023_GROUND_UP_SPEAKER" device="" value="PR2023_GROUND_UP_SPEAKER">
+<attribute name="CENTERLINE_PN" value="PR2033"/>
+<attribute name="MFG_PN" value="Consigned"/>
+</part>
 <part name="T14" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
 <part name="T15" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
 <part name="T16" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
@@ -1753,10 +1773,22 @@ MFG# ABS25-32.768KHZ-T</description>
 <part name="LED" library="PR_Parts_Library" deviceset="HSMC-C265_REVERSE_MOUNT_LED" device="">
 <attribute name="MFG_PN" value="HSMA-C265"/>
 </part>
-<part name="SPEAKER_PEM_1" library="PR_Parts_Library" deviceset="PEM_M3_ONE_SIDE" device=""/>
-<part name="SPEAKER_PEM_2" library="PR_Parts_Library" deviceset="PEM_M3_ONE_SIDE" device=""/>
-<part name="SPEAKER_PEM_4" library="PR_Parts_Library" deviceset="PEM_M3_ONE_SIDE" device=""/>
-<part name="SPEAKER_PEM_3" library="PR_Parts_Library" deviceset="PEM_M3_ONE_SIDE_W/PIN" device=""/>
+<part name="SPEAKER_PEM_1" library="PR_Parts_Library" deviceset="PEM_M3_ONE_SIDE" device="">
+<attribute name="CENTERLINE_PN" value="PR2040"/>
+<attribute name="MFG_PN" value="Consigned"/>
+</part>
+<part name="SPEAKER_PEM_2" library="PR_Parts_Library" deviceset="PEM_M3_ONE_SIDE" device="">
+<attribute name="CENTERLINE_PN" value="PR2040"/>
+<attribute name="MFG_PN" value="Consigned"/>
+</part>
+<part name="SPEAKER_PEM_4" library="PR_Parts_Library" deviceset="PEM_M3_ONE_SIDE" device="">
+<attribute name="CENTERLINE_PN" value="PR2040"/>
+<attribute name="MFG_PN" value="Consigned"/>
+</part>
+<part name="SPEAKER_PEM_3" library="PR_Parts_Library" deviceset="PEM_M3_ONE_SIDE_W/PIN" device="">
+<attribute name="CENTERLINE_PN" value="PR2040"/>
+<attribute name="MFG_PN" value="Consigned"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -1833,8 +1865,14 @@ ZONE 3x</text>
 <instance part="GND4" gate="1" x="-10.16" y="15.24"/>
 <instance part="GND24" gate="1" x="177.8" y="35.56"/>
 <instance part="P+1" gate="VCC" x="-35.56" y="139.7"/>
-<instance part="ANT_MOUNT" gate="G$1" x="-25.4" y="33.02" smashed="yes" rot="R90"/>
-<instance part="R1" gate="G$1" x="-10.16" y="109.22" smashed="yes" rot="R90"/>
+<instance part="ANT_MOUNT" gate="G$1" x="-25.4" y="33.02" smashed="yes" rot="R90">
+<attribute name="CENTERLINE_PN" x="-25.4" y="33.02" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MFG_PN" x="-25.4" y="33.02" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R1" gate="G$1" x="-10.16" y="109.22" smashed="yes" rot="R90">
+<attribute name="CENTERLINE_PN" x="-10.16" y="109.22" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MFG_PN" x="-10.16" y="109.22" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="GND5" gate="1" x="-20.32" y="99.06"/>
 <instance part="GND2" gate="1" x="-35.56" y="111.76"/>
 <instance part="GND12" gate="1" x="40.64" y="119.38"/>
@@ -1854,6 +1892,7 @@ ZONE 3x</text>
 <instance part="L1" gate="G$1" x="22.86" y="25.4" smashed="yes">
 <attribute name="NAME" x="22.86" y="22.86" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="15.24" y="20.32" size="1.778" layer="96"/>
+<attribute name="ALTERNATE_MFG_PN" x="22.86" y="25.4" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND16" gate="1" x="55.88" y="55.88"/>
 <instance part="C33" gate="G$1" x="129.54" y="132.08"/>
@@ -1862,8 +1901,12 @@ ZONE 3x</text>
 <attribute name="VALUE" x="176.276" y="17.653" size="1.778" layer="96"/>
 </instance>
 <instance part="D1" gate="G$1" x="-10.16" y="25.4" rot="R180"/>
-<instance part="JP5" gate="BATT" x="10.16" y="121.92" rot="R90"/>
-<instance part="JP6" gate="BATT" x="10.16" y="106.68" rot="R90"/>
+<instance part="JP5" gate="BATT" x="10.16" y="121.92" rot="R90">
+<attribute name="CENTERLINE_PN" x="10.16" y="121.92" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="JP6" gate="BATT" x="10.16" y="106.68" rot="R90">
+<attribute name="CENTERLINE_PN" x="10.16" y="106.68" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="GND10" gate="1" x="10.16" y="93.98"/>
 <instance part="C14" gate="G$1" x="15.24" y="33.02" rot="R90"/>
 <instance part="C11" gate="G$1" x="35.56" y="15.24"/>
@@ -1905,8 +1948,13 @@ ZONE 3x</text>
 <attribute name="VALUE" x="168.656" y="17.399" size="1.778" layer="96"/>
 </instance>
 <instance part="C8" gate="G$1" x="88.9" y="30.48" rot="R90"/>
-<instance part="FET1" gate="G$1" x="-20.32" y="129.54" rot="R270"/>
-<instance part="SPEAKER" gate="G$1" x="256.54" y="40.64" rot="R90"/>
+<instance part="FET1" gate="G$1" x="-20.32" y="129.54" rot="R270">
+<attribute name="ALTERNATE_MFG_PN" x="-20.32" y="129.54" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="SPEAKER" gate="G$1" x="256.54" y="40.64" rot="R90">
+<attribute name="CENTERLINE_PN" x="256.54" y="40.64" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MFG_PN" x="256.54" y="40.64" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="T14" gate="G$1" x="66.04" y="99.06"/>
 <instance part="T15" gate="G$1" x="76.2" y="99.06"/>
 <instance part="T16" gate="G$1" x="86.36" y="99.06"/>
@@ -1933,10 +1981,22 @@ ZONE 3x</text>
 <instance part="LED" gate="G$1" x="205.74" y="101.6">
 <attribute name="MFG_PN" x="205.74" y="101.6" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="SPEAKER_PEM_1" gate="G$1" x="30.48" y="139.7"/>
-<instance part="SPEAKER_PEM_2" gate="G$1" x="40.64" y="139.7"/>
-<instance part="SPEAKER_PEM_4" gate="G$1" x="30.48" y="129.54"/>
-<instance part="SPEAKER_PEM_3" gate="G$1" x="40.64" y="129.54"/>
+<instance part="SPEAKER_PEM_1" gate="G$1" x="30.48" y="139.7">
+<attribute name="CENTERLINE_PN" x="30.48" y="139.7" size="1.778" layer="96" display="off"/>
+<attribute name="MFG_PN" x="30.48" y="139.7" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="SPEAKER_PEM_2" gate="G$1" x="40.64" y="139.7">
+<attribute name="CENTERLINE_PN" x="40.64" y="139.7" size="1.778" layer="96" display="off"/>
+<attribute name="MFG_PN" x="40.64" y="139.7" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="SPEAKER_PEM_4" gate="G$1" x="30.48" y="129.54">
+<attribute name="CENTERLINE_PN" x="30.48" y="129.54" size="1.778" layer="96" display="off"/>
+<attribute name="MFG_PN" x="30.48" y="129.54" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="SPEAKER_PEM_3" gate="G$1" x="40.64" y="129.54">
+<attribute name="CENTERLINE_PN" x="40.64" y="129.54" size="1.778" layer="96" display="off"/>
+<attribute name="MFG_PN" x="40.64" y="129.54" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
