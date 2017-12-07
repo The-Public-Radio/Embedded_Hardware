@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.1">
+<eagle version="8.4.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="dots" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -292,10 +292,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <library name="PR_Parts_Library">
 <packages>
 <package name="BK92_AA_BATT">
-<pad name="NEG@2" x="-16.75" y="0" drill="2" shape="long" rot="R180"/>
-<pad name="POS" x="16.75" y="0" drill="2" shape="long"/>
-<pad name="POS@2" x="24.05" y="0" drill="2" shape="long"/>
-<pad name="NEG" x="-24.05" y="0" drill="2" shape="long"/>
+<pad name="NEG@2" x="-17.25" y="0" drill="2" shape="offset" rot="R180"/>
+<pad name="POS" x="17.25" y="0" drill="2" shape="offset"/>
+<pad name="POS@2" x="24.55" y="0" drill="2" shape="offset" rot="R180"/>
+<pad name="NEG" x="-24.55" y="0" drill="2" shape="offset"/>
 <wire x1="-27.686" y1="6.985" x2="-27.686" y2="4.699" width="0.127" layer="21"/>
 <wire x1="-27.686" y1="-4.699" x2="-27.686" y2="-6.985" width="0.127" layer="21"/>
 <wire x1="-27.686" y1="6.985" x2="-15.748" y2="6.985" width="0.127" layer="21"/>
@@ -344,11 +344,11 @@ We've spent an enormous amount of time creating and checking these footprints an
 </package>
 <package name="H17112NS_A10K_L20F-002">
 <circle x="0" y="0" radius="8.25" width="0.1" layer="21"/>
-<pad name="WIPER" x="0" y="-8" drill="1.4" shape="offset" rot="R90"/>
-<pad name="SIGNAL" x="4" y="-7" drill="1.4" shape="offset" rot="R90"/>
-<pad name="GND" x="-4" y="-7" drill="1.4" shape="offset" rot="R90"/>
-<pad name="SW_OUT" x="-8.25" y="0" drill="2" shape="long" rot="R90"/>
-<pad name="SW_IN" x="8.25" y="0" drill="2" shape="long" rot="R90"/>
+<pad name="WIPER" x="0" y="-9.1" drill="1.4" shape="offset" rot="R90"/>
+<pad name="SIGNAL" x="4.45" y="-7.75" drill="1.4" shape="offset" rot="R90"/>
+<pad name="GND" x="-4.55" y="-7.75" drill="1.4" shape="offset" rot="R90"/>
+<pad name="SW_OUT" x="-8.25" y="0" drill="2.2" shape="long" rot="R90"/>
+<pad name="SW_IN" x="8.25" y="0" drill="2.2" shape="long" rot="R90"/>
 </package>
 <package name="C&amp;K_PTS645_SMT">
 <wire x1="-4.5" y1="3" x2="4.5" y2="3" width="0.127" layer="21"/>
@@ -371,8 +371,11 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="2.2" y1="3.3" x2="3.3" y2="2.2" width="0.127" layer="21"/>
 <wire x1="3.3" y1="2.2" x2="3.3" y2="-3.3" width="0.127" layer="21"/>
 <circle x="0" y="0" radius="3.178046875" width="0.127" layer="21"/>
-<text x="3.81" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="3.81" y="-1.27" size="1.27" layer="27">&gt;VALUE</text>
+<text x="7.01" y="-1.43" size="1.27" layer="25">&gt;NAME</text>
+<text x="7.11" y="-3.27" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="2" y1="4.5" x2="4" y2="4.5" width="0.254" layer="21"/>
+<wire x1="3" y1="5.5" x2="3" y2="3.5" width="0.254" layer="21"/>
+<wire x1="2" y1="-4.5" x2="4" y2="-4.5" width="0.254" layer="21"/>
 </package>
 <package name="4-SOJ">
 <smd name="P$4" x="-2.75" y="1.6" dx="1.3" dy="1.9" layer="1"/>
@@ -662,6 +665,9 @@ chip</description>
 <smd name="P$1" x="-1.85" y="0" dx="1.4" dy="1.25" layer="1"/>
 <smd name="P$2" x="1.85" y="0" dx="1.4" dy="1.25" layer="1"/>
 <hole x="0" y="0" drill="2.2"/>
+<wire x1="-2.4" y1="-1.5" x2="-1.4" y2="-1.5" width="0.2032" layer="21"/>
+<wire x1="-1.9" y1="-1" x2="-1.9" y2="-2" width="0.2032" layer="21"/>
+<wire x1="1.85" y1="-2" x2="1.85" y2="-1" width="0.2032" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -977,8 +983,8 @@ chip</description>
 <wire x1="-2.032" y1="-0.762" x2="-3.429" y2="-2.159" width="0.1524" layer="94"/>
 <wire x1="-1.905" y1="-1.905" x2="-3.302" y2="-3.302" width="0.1524" layer="94"/>
 <text x="3.556" y="-4.572" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<pin name="C" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="A" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="GND" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="VCC" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
 <polygon width="0.1524" layer="94">
 <vertex x="-3.429" y="-2.159"/>
 <vertex x="-3.048" y="-1.27"/>
@@ -1541,8 +1547,8 @@ MFG# ABS25-32.768KHZ-T</description>
 <devices>
 <device name="" package="HSMA-C265_REVERSE_MOUN_LED">
 <connects>
-<connect gate="G$1" pin="A" pad="P$1"/>
-<connect gate="G$1" pin="C" pad="P$2"/>
+<connect gate="G$1" pin="GND" pad="P$2"/>
+<connect gate="G$1" pin="VCC" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1693,7 +1699,6 @@ MFG# ABS25-32.768KHZ-T</description>
 </part>
 <part name="T1" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
 <part name="T2" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
-<part name="T3" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
 <part name="T4" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
 <part name="T5" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
 <part name="T6" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
@@ -1703,7 +1708,6 @@ MFG# ABS25-32.768KHZ-T</description>
 <part name="T10" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="T11" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
@@ -1916,7 +1920,6 @@ ZONE 3x</text>
 <instance part="C40" gate="G$1" x="-35.56" y="124.46"/>
 <instance part="T1" gate="G$1" x="66.04" y="142.24"/>
 <instance part="T2" gate="G$1" x="73.66" y="142.24"/>
-<instance part="T3" gate="G$1" x="81.28" y="142.24"/>
 <instance part="T4" gate="G$1" x="88.9" y="142.24"/>
 <instance part="T5" gate="G$1" x="96.52" y="142.24"/>
 <instance part="T6" gate="G$1" x="66.04" y="127"/>
@@ -1926,7 +1929,6 @@ ZONE 3x</text>
 <instance part="T10" gate="G$1" x="66.04" y="109.22"/>
 <instance part="GND1" gate="1" x="66.04" y="137.16"/>
 <instance part="GND8" gate="1" x="73.66" y="137.16"/>
-<instance part="GND14" gate="1" x="81.28" y="137.16"/>
 <instance part="P+3" gate="VCC" x="88.9" y="137.16" rot="R180"/>
 <instance part="P+4" gate="VCC" x="96.52" y="137.16" rot="R180"/>
 <instance part="T11" gate="G$1" x="76.2" y="109.22"/>
@@ -2075,7 +2077,7 @@ ZONE 3x</text>
 <segment>
 <pinref part="GND30" gate="1" pin="GND"/>
 <wire x1="205.74" y1="96.52" x2="205.74" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="LED" gate="G$1" pin="C"/>
+<pinref part="LED" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
@@ -2123,10 +2125,6 @@ ZONE 3x</text>
 <segment>
 <pinref part="T2" gate="G$1" pin="TP"/>
 <pinref part="GND8" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="T3" gate="G$1" pin="TP"/>
-<pinref part="GND14" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="AMP" gate="G$1" pin="GND@2"/>
@@ -2427,7 +2425,7 @@ ZONE 3x</text>
 <wire x1="190.5" y1="121.92" x2="187.96" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="MCU" gate="G$1" pin="PB4(ADC2)"/>
 <label x="205.74" y="104.14" size="1.778" layer="95"/>
-<pinref part="LED" gate="G$1" pin="A"/>
+<pinref part="LED" gate="G$1" pin="VCC"/>
 <wire x1="190.5" y1="104.14" x2="205.74" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
