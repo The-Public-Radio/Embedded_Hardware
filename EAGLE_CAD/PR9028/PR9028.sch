@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="8.4.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -222,7 +223,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 </deviceset>
 </devicesets>
 </library>
-<library name="supply1">
+<library name="supply1" urn="urn:adsk.eagle:library:371">
 <description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
  GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
  Please keep in mind, that these devices are necessary for the
@@ -233,7 +234,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <packages>
 </packages>
 <symbols>
-<symbol name="VCC">
+<symbol name="VCC" urn="urn:adsk.eagle:symbol:26928/1" library_version="1">
 <wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
 <text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
@@ -241,7 +242,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="VCC" prefix="P+">
+<deviceset name="VCC" urn="urn:adsk.eagle:component:26957/1" prefix="P+" library_version="1">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="VCC" symbol="VCC" x="0" y="0"/>
@@ -291,10 +292,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <library name="PR_Parts_Library">
 <packages>
 <package name="BK92_AA_BATT">
-<pad name="NEG@2" x="-16.764" y="0" drill="1.778" shape="long" rot="R180"/>
-<pad name="POS" x="16.764" y="0" drill="1.778" shape="long"/>
-<pad name="POS@2" x="24.384" y="0" drill="1.778" shape="long"/>
-<pad name="NEG" x="-24.384" y="0" drill="1.778" shape="long"/>
+<pad name="NEG@2" x="-16.75" y="0" drill="2" shape="long" rot="R180"/>
+<pad name="POS" x="16.75" y="0" drill="2" shape="long"/>
+<pad name="POS@2" x="24.05" y="0" drill="2" shape="long"/>
+<pad name="NEG" x="-24.05" y="0" drill="2" shape="long"/>
 <wire x1="-27.686" y1="6.985" x2="-27.686" y2="4.699" width="0.127" layer="21"/>
 <wire x1="-27.686" y1="-4.699" x2="-27.686" y2="-6.985" width="0.127" layer="21"/>
 <wire x1="-27.686" y1="6.985" x2="-15.748" y2="6.985" width="0.127" layer="21"/>
@@ -313,26 +314,26 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="-27.686" y1="-4.699" x2="-15.748" y2="-4.699" width="0.127" layer="21"/>
 <wire x1="15.748" y1="4.699" x2="27.686" y2="4.699" width="0.127" layer="21"/>
 <wire x1="27.686" y1="-4.699" x2="15.748" y2="-4.699" width="0.127" layer="21"/>
-<wire x1="3.81" y1="3.81" x2="3.81" y2="-3.81" width="0.2032" layer="25"/>
-<wire x1="7.62" y1="2.032" x2="7.62" y2="-2.032" width="1.016" layer="25" style="longdash"/>
-<wire x1="5.588" y1="0" x2="9.652" y2="0" width="1.016" layer="25"/>
-<wire x1="-12.7" y1="3.556" x2="-12.7" y2="-3.556" width="0.2032" layer="25"/>
-<wire x1="-12.7" y1="-3.556" x2="-12.446" y2="-3.81" width="0.2032" layer="25" curve="90"/>
-<wire x1="-12.446" y1="-3.81" x2="3.81" y2="-3.81" width="0.2032" layer="25"/>
-<wire x1="-12.7" y1="3.556" x2="-12.446" y2="3.81" width="0.2032" layer="25" curve="-90"/>
-<wire x1="-12.446" y1="3.81" x2="3.81" y2="3.81" width="0.2032" layer="25"/>
-<wire x1="3.81" y1="3.81" x2="11.176" y2="3.81" width="0.2032" layer="25"/>
-<wire x1="11.176" y1="3.81" x2="11.43" y2="3.556" width="0.2032" layer="25" curve="-90"/>
-<wire x1="11.43" y1="3.556" x2="11.43" y2="1.905" width="0.2032" layer="25"/>
-<wire x1="11.43" y1="1.905" x2="11.43" y2="-1.905" width="0.2032" layer="25"/>
-<wire x1="11.43" y1="-1.905" x2="11.43" y2="-3.556" width="0.2032" layer="25"/>
-<wire x1="11.43" y1="-3.556" x2="11.176" y2="-3.81" width="0.2032" layer="25" curve="-90"/>
-<wire x1="11.176" y1="-3.81" x2="3.81" y2="-3.81" width="0.2032" layer="25"/>
-<wire x1="11.43" y1="1.905" x2="12.446" y2="1.905" width="0.2032" layer="25"/>
-<wire x1="12.446" y1="1.905" x2="12.7" y2="1.651" width="0.2032" layer="25" curve="-90"/>
-<wire x1="12.7" y1="1.651" x2="12.7" y2="-1.651" width="0.2032" layer="25"/>
-<wire x1="12.7" y1="-1.651" x2="12.446" y2="-1.905" width="0.2032" layer="25" curve="-90"/>
-<wire x1="12.446" y1="-1.905" x2="11.43" y2="-1.905" width="0.2032" layer="25"/>
+<wire x1="3.81" y1="3.81" x2="3.81" y2="-3.81" width="0.4064" layer="21"/>
+<wire x1="7.62" y1="2.032" x2="7.62" y2="-2.032" width="1.016" layer="21"/>
+<wire x1="5.588" y1="0" x2="9.652" y2="0" width="1.016" layer="21"/>
+<wire x1="-12.7" y1="3.556" x2="-12.7" y2="-3.556" width="0.4064" layer="21"/>
+<wire x1="-12.7" y1="-3.556" x2="-12.446" y2="-3.81" width="0.4064" layer="21" curve="90"/>
+<wire x1="-12.446" y1="-3.81" x2="3.81" y2="-3.81" width="0.4064" layer="21"/>
+<wire x1="-12.7" y1="3.556" x2="-12.446" y2="3.81" width="0.4064" layer="21" curve="-90"/>
+<wire x1="-12.446" y1="3.81" x2="3.81" y2="3.81" width="0.4064" layer="21"/>
+<wire x1="3.81" y1="3.81" x2="11.176" y2="3.81" width="0.4064" layer="21"/>
+<wire x1="11.176" y1="3.81" x2="11.43" y2="3.556" width="0.4064" layer="21" curve="-90"/>
+<wire x1="11.43" y1="3.556" x2="11.43" y2="1.905" width="0.4064" layer="21"/>
+<wire x1="11.43" y1="1.905" x2="11.43" y2="-1.905" width="0.4064" layer="21"/>
+<wire x1="11.43" y1="-1.905" x2="11.43" y2="-3.556" width="0.4064" layer="21"/>
+<wire x1="11.43" y1="-3.556" x2="11.176" y2="-3.81" width="0.4064" layer="21" curve="-90"/>
+<wire x1="11.176" y1="-3.81" x2="3.81" y2="-3.81" width="0.4064" layer="21"/>
+<wire x1="11.43" y1="1.905" x2="12.446" y2="1.905" width="0.4064" layer="21"/>
+<wire x1="12.446" y1="1.905" x2="12.7" y2="1.651" width="0.4064" layer="21" curve="-90"/>
+<wire x1="12.7" y1="1.651" x2="12.7" y2="-1.651" width="0.4064" layer="21"/>
+<wire x1="12.7" y1="-1.651" x2="12.446" y2="-1.905" width="0.4064" layer="21" curve="-90"/>
+<wire x1="12.446" y1="-1.905" x2="11.43" y2="-1.905" width="0.4064" layer="21"/>
 <rectangle x1="-27.94" y1="-5.08" x2="-15.24" y2="5.08" layer="41"/>
 <rectangle x1="15.24" y1="-5.08" x2="27.94" y2="5.08" layer="41"/>
 </package>
@@ -1592,11 +1593,11 @@ MFG# ABS25-32.768KHZ-T</description>
 </part>
 <part name="GND26" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="P+2" library="supply1" deviceset="VCC" device=""/>
+<part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND29" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND24" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="P+1" library="supply1" deviceset="VCC" device=""/>
+<part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="ANT_MOUNT" library="PR_Parts_Library" deviceset="PEM_M3" device="" value="PEM_M3">
 <attribute name="CENTERLINE_PN" value="PR2040"/>
 <attribute name="MFG_PN" value="Consigned"/>
@@ -1610,8 +1611,7 @@ MFG# ABS25-32.768KHZ-T</description>
 <part name="GND12" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="MCU" library="PR_Parts_Library" deviceset="ATTINY45" device="TINY45-20-SMT">
-<attribute name="MFG_PN" value="ATTINY25-20SUR
-"/>
+<attribute name="MFG_PN" value="ATTINY25-20SUR "/>
 </part>
 <part name="SUPPLY8" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND25" library="SparkFun" deviceset="GND" device=""/>
@@ -1627,12 +1627,10 @@ MFG# ABS25-32.768KHZ-T</description>
 <part name="SUPPLY9" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND32" library="SparkFun" deviceset="GND" device=""/>
 <part name="L1" library="PR_Parts_Library" deviceset="L_SMT" device="_0805_ADAFRUIT" value="180nH">
-<attribute name="ALTERNATE_MFG_PN" value="AISC-0805-R18G-T
-"/>
+<attribute name="ALTERNATE_MFG_PN" value="AISC-0805-R18G-T "/>
 <attribute name="CURRENT" value="400mA"/>
 <attribute name="DCR" value="640m"/>
-<attribute name="MFG_PN" value="AISC-0805-R18J-T
-"/>
+<attribute name="MFG_PN" value="AISC-0805-R18J-T "/>
 <attribute name="TOL" value="5%"/>
 </part>
 <part name="GND16" library="SparkFun" deviceset="GND" device=""/>
@@ -1649,11 +1647,11 @@ MFG# ABS25-32.768KHZ-T</description>
 <part name="D1" library="PR_Parts_Library" deviceset="BAV99" device="">
 <attribute name="MFG_PN" value="BAV99,215"/>
 </part>
-<part name="JP5" library="PR_Parts_Library" deviceset="BK-92_MPD_AA_BATT_CLIP" device="" value="">
+<part name="JP5" library="PR_Parts_Library" deviceset="BK-92_MPD_AA_BATT_CLIP" device="" value="BK-92_MPD_AA_BATT_CLIP">
 <attribute name="CENTERLINE_PN" value="PR2003"/>
 <attribute name="MFG_PN" value="Consigned"/>
 </part>
-<part name="JP6" library="PR_Parts_Library" deviceset="BK-92_MPD_AA_BATT_CLIP" device="" value="">
+<part name="JP6" library="PR_Parts_Library" deviceset="BK-92_MPD_AA_BATT_CLIP" device="" value="BK-92_MPD_AA_BATT_CLIP">
 <attribute name="CENTERLINE_PN" value="PR2003"/>
 <attribute name="MFG_PN" value="Consigned"/>
 </part>
@@ -1706,8 +1704,8 @@ MFG# ABS25-32.768KHZ-T</description>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="P+3" library="supply1" deviceset="VCC" device=""/>
-<part name="P+4" library="supply1" deviceset="VCC" device=""/>
+<part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="T11" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
 <part name="T12" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
 <part name="T13" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
@@ -2578,6 +2576,16 @@ ZONE 3x</text>
 <note version="6.3" minversion="6.2.2" severity="warning">
 Since Version 6.2.2 text objects can contain more than one line,
 which will not be processed correctly with this version.
+</note>
+<note version="8.2" severity="warning">
+Since Version 8.2, EAGLE supports online libraries. The ids
+of those online libraries will not be understood (or retained)
+with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>
