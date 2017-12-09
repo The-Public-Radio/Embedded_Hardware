@@ -337,10 +337,12 @@ We've spent an enormous amount of time creating and checking these footprints an
 <rectangle x1="-27.94" y1="-5.08" x2="-15.24" y2="5.08" layer="41"/>
 <rectangle x1="15.24" y1="-5.08" x2="27.94" y2="5.08" layer="41"/>
 </package>
-<package name="PEM_M3">
-<pad name="P$2" x="0" y="0" drill="4.22" diameter="6.6"/>
+<package name="PEM_M3_ANTENNA">
 <circle x="0" y="0" radius="5" width="0.127" layer="41"/>
 <circle x="0" y="0" radius="5" width="0.127" layer="42"/>
+<smd name="P$1" x="0" y="0" dx="6.6" dy="6.6" layer="1" roundness="100"/>
+<smd name="P$2" x="0" y="0" dx="6.6" dy="6.6" layer="16" roundness="100"/>
+<hole x="0" y="0" drill="4.22"/>
 </package>
 <package name="H17112NS_A10K_L20F-002">
 <circle x="0" y="0" radius="8.25" width="0.1" layer="21"/>
@@ -1018,14 +1020,14 @@ chip</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PEM_M3">
+<deviceset name="PEM_M3_ANTENNA">
 <gates>
 <gate name="G$1" symbol="M3_SCREW_POST" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="" package="PEM_M3">
+<device name="" package="PEM_M3_ANTENNA">
 <connects>
-<connect gate="G$1" pin="ANT" pad="P$2"/>
+<connect gate="G$1" pin="ANT" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1605,7 +1607,7 @@ MFG# ABS25-32.768KHZ-T</description>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND24" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="ANT_MOUNT" library="PR_Parts_Library" deviceset="PEM_M3" device="" value="PEM_M3">
+<part name="ANT_MOUNT" library="PR_Parts_Library" deviceset="PEM_M3_ANTENNA" device="" value="PEM_M3_ANTENNA">
 <attribute name="CENTERLINE_PN" value="PR2040"/>
 <attribute name="MFG_PN" value="Consigned"/>
 </part>
@@ -1871,9 +1873,9 @@ ZONE 3x</text>
 <instance part="GND4" gate="1" x="-10.16" y="15.24"/>
 <instance part="GND24" gate="1" x="177.8" y="35.56"/>
 <instance part="P+1" gate="VCC" x="-35.56" y="139.7"/>
-<instance part="ANT_MOUNT" gate="G$1" x="-25.4" y="33.02" smashed="yes" rot="R90">
-<attribute name="CENTERLINE_PN" x="-25.4" y="33.02" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="MFG_PN" x="-25.4" y="33.02" size="1.778" layer="96" rot="R90" display="off"/>
+<instance part="ANT_MOUNT" gate="G$1" x="-27.94" y="33.02" smashed="yes" rot="R90">
+<attribute name="CENTERLINE_PN" x="-27.94" y="33.02" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MFG_PN" x="-27.94" y="33.02" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="R1" gate="G$1" x="-10.16" y="109.22" smashed="yes" rot="R90">
 <attribute name="CENTERLINE_PN" x="-10.16" y="109.22" size="1.778" layer="96" rot="R90" display="off"/>
@@ -2429,7 +2431,7 @@ ZONE 3x</text>
 <segment>
 <pinref part="ANT_MOUNT" gate="G$1" pin="ANT"/>
 <pinref part="D1" gate="G$1" pin="COM"/>
-<wire x1="-20.32" y1="33.02" x2="-10.16" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="33.02" x2="-10.16" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="C14" gate="G$1" pin="1"/>
 <wire x1="-10.16" y1="33.02" x2="12.7" y2="33.02" width="0.1524" layer="91"/>
 <label x="-20.32" y="40.64" size="1.778" layer="95" rot="R180"/>
