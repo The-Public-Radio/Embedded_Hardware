@@ -1,0 +1,70 @@
+Partlist
+
+Exported from PR9028.brd at 12/9/17 2:06 PM
+
+EAGLE Version 8.4.3 Copyright (c) 1988-2017 Autodesk, Inc.
+
+Assembly variant: 
+
+Part          Value                       Package                    Library          Position (mm)         Orientation
+
+AMP                                       8-MSOP                     PR_Parts_Library (34.1 11.28625)       R0
+ANT_MOUNT     PEM_M3                      PEM_M3                     PR_Parts_Library (9.5 35)              R0
+C1            22nF                        0603_CPL                   PR_Parts_Library (29.01 59.6)          R180
+C2            22nF                        0603_CPL                   PR_Parts_Library (24.7 59.6)           R0
+C3            .1uF                        0603_CPL                   PR_Parts_Library (30.615 58.03)        R0
+C8            1uF                         0603_CPL                   PR_Parts_Library (34.2 51.7)           R0
+C10           22pF                        0603_CPL                   PR_Parts_Library (24.7 61.2)           R0
+C11           22pF                        0603_CPL                   PR_Parts_Library (29 61.2)             R180
+C14           47pF                        0603_CPL                   PR_Parts_Library (24.7 53.9)           R90
+C20           .22uF                       0603_CPL                   PR_Parts_Library (32.925 6.68875)      R0
+C21           .22uF                       0603_CPL                   PR_Parts_Library (41.11125 7.11625)    R180
+C22           .22uF                       0603_CPL                   PR_Parts_Library (41.0875 9.23)        R0
+C23           .1uF                        0603_CPL                   PR_Parts_Library (34.4 17.5)           R90
+C24           1uF                         0603_CPL                   PR_Parts_Library (36.3 17.5)           R90
+C25           10uF                        0603_CPL                   PR_Parts_Library (32 17.5)             R90
+C32           10uF                        0603_CPL                   PR_Parts_Library (42.5 52.575)         R270
+C33           .1uF                        0603_CPL                   PR_Parts_Library (40.525 52.65)        R270
+C40           220uF                       NICHICON_UD_63             PR_Parts_Library (46.75 12.51)         R0
+D1                                        SOT23_CPL                  PR_Parts_Library (16.4 43.5)           R315
+FET1                                      SOT23_CPL                  PR_Parts_Library (62.9 21.5)           R0
+ISP                                       2X3-NS                     PR_Parts_Library (35 64.5)             MR0
+JP5           BK-92_MPD_AA_BATT_CLIP      BK92_AA_BATT               PR_Parts_Library (35 53.5)             MR180
+JP6           BK-92_MPD_AA_BATT_CLIP      BK92_AA_BATT               PR_Parts_Library (35 16.5)             MR0
+L1            180nH                       0805_ADAFRUIT              PR_Parts_Library (23 55.5)             R90
+L2            2.2K @ 100Mhz               0603_CPL                   PR_Parts_Library (34.6 59.5)           R180
+L3            2.2K @ 100Mhz               0603_CPL                   PR_Parts_Library (40.3 16.9)           R270
+LED           HSMC-C265_REVERSE_MOUNT_LED HSMA-C265_REVERSE_MOUN_LED PR_Parts_Library (64.625 48.425)       R270
+MARK1                                     FIDUCIAL_1MM               PR_Parts_Library (16.2 8.5)            R0
+MARK2                                     FIDUCIAL_1MM               PR_Parts_Library (18.2 61.9)           R0
+MARK3                                     FIDUCIAL_1MM               PR_Parts_Library (64 35)               R0
+MCU                                       8-SOIC                     PR_Parts_Library (43.075 56.775)       R90
+R1            VOLUME_POT                  H17112NS_A10K_L20F-002     PR_Parts_Library (60.5 35)             R270
+R21           12K                         0603_CPL                   PR_Parts_Library (37.39 7.11625)       R180
+R22           12K                         0603_CPL                   PR_Parts_Library (37.4375 9.1925)      R0
+R23           100K                        0603_CPL                   PR_Parts_Library (37.4425 12.1075)     R0
+R24           100K                        0603_CPL                   PR_Parts_Library (30.80625 11.865)     R270
+SPEAKER       PR2023_GROUND_UP_SPEAKER    PR2023_GROUND_UP_SPEAKER   PR_Parts_Library (35 35)               R0
+SPEAKER_PEM_1 PEM_M3_SPK                  PEM_M3_SPK                 PR_Parts_Library (21.5 48.5)           R0
+SPEAKER_PEM_2 PEM_M3_SPK                  PEM_M3_SPK                 PR_Parts_Library (48.5 48.5)           R0
+SPEAKER_PEM_3 PEM_M3_SPK_GROUND           PEM_M3_SPK                 PR_Parts_Library (21.5 21.5)           R0
+SPEAKER_PEM_4 PEM_M3_SPK                  PEM_M3_SPK                 PR_Parts_Library (48.5 21.5)           R0
+SW1           C&K_PTS645                  C&K_PTS645_SMT             PR_Parts_Library (49.775 61.9875)      R152
+T1            TPTP20R                     TP20R                      PR_Parts_Library (10.6 44.6)           MR0
+T2            TPTP20R                     TP20R                      PR_Parts_Library (60 31)               MR0
+T4            TPTP20R                     TP20R                      PR_Parts_Library (60 35)               MR0
+T5            TPTP20R                     TP20R                      PR_Parts_Library (41 65.5)             MR0
+T6            TPTP20R                     TP20R                      PR_Parts_Library (37 21.5)             MR0
+T7            TPTP20R                     TP20R                      PR_Parts_Library (32 21.5)             MR0
+T8            TPTP20R                     TP20R                      PR_Parts_Library (47 63)               MR0
+T9            TPTP20R                     TP20R                      PR_Parts_Library (47 60.5)             MR0
+T10           TPTP20R                     TP20R                      PR_Parts_Library (47 65.5)             MR0
+T11           TPTP20R                     TP20R                      PR_Parts_Library (41 62.5)             MR0
+T12           TPTP20R                     TP20R                      PR_Parts_Library (44 62.5)             MR0
+T13           TPTP20R                     TP20R                      PR_Parts_Library (44.5 65.5)           MR0
+T14           TPTP20R                     TP20R                      PR_Parts_Library (64 31)               MR0
+T15           TPTP20R                     TP20R                      PR_Parts_Library (64 39)               MR0
+T16           TPTP20R                     TP20R                      PR_Parts_Library (53 27)               MR0
+T17           TPTP20R                     TP20R                      PR_Parts_Library (49.5 38.5)           MR0
+U1            FMIC                        SI470X_20_QFN              PR_Parts_Library (26.9 56.9)           R90
+X1                                        4-SOJ                      PR_Parts_Library (26.7 64.58)          R0

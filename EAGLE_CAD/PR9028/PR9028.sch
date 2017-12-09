@@ -656,9 +656,10 @@ chip</description>
 <text x="-3.175" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <text x="-5.715" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 </package>
-<package name="PEM_M3_ONE_SIDE">
-<hole x="0" y="0" drill="4.22"/>
+<package name="PEM_M3_SPK">
 <smd name="P$1" x="0" y="0" dx="6.6" dy="6.6" layer="1" roundness="100"/>
+<hole x="0" y="0" drill="4.22"/>
+<smd name="P$2" x="0" y="0" dx="4.72" dy="4.72" layer="16" roundness="100"/>
 </package>
 <package name="HSMA-C265_REVERSE_MOUN_LED">
 <description>HSMA-2625</description>
@@ -1512,12 +1513,12 @@ MFG# ABS25-32.768KHZ-T</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PEM_M3_ONE_SIDE_W/PIN">
+<deviceset name="PEM_M3_SPK_GROUND">
 <gates>
 <gate name="G$1" symbol="PEM_M3_PIN" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="" package="PEM_M3_ONE_SIDE">
+<device name="" package="PEM_M3_SPK">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 </connects>
@@ -1527,12 +1528,12 @@ MFG# ABS25-32.768KHZ-T</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PEM_M3_ONE_SIDE">
+<deviceset name="PEM_M3_SPK">
 <gates>
 <gate name="G$1" symbol="PEM_M3" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="" package="PEM_M3_ONE_SIDE">
+<device name="" package="PEM_M3_SPK">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1775,19 +1776,19 @@ MFG# ABS25-32.768KHZ-T</description>
 <part name="LED" library="PR_Parts_Library" deviceset="HSMC-C265_REVERSE_MOUNT_LED" device="">
 <attribute name="MFG_PN" value="HSMA-C265"/>
 </part>
-<part name="SPEAKER_PEM_1" library="PR_Parts_Library" deviceset="PEM_M3_ONE_SIDE" device="">
+<part name="SPEAKER_PEM_1" library="PR_Parts_Library" deviceset="PEM_M3_SPK" device="">
 <attribute name="CENTERLINE_PN" value="PR2040"/>
 <attribute name="MFG_PN" value="Consigned"/>
 </part>
-<part name="SPEAKER_PEM_2" library="PR_Parts_Library" deviceset="PEM_M3_ONE_SIDE" device="">
+<part name="SPEAKER_PEM_2" library="PR_Parts_Library" deviceset="PEM_M3_SPK" device="">
 <attribute name="CENTERLINE_PN" value="PR2040"/>
 <attribute name="MFG_PN" value="Consigned"/>
 </part>
-<part name="SPEAKER_PEM_4" library="PR_Parts_Library" deviceset="PEM_M3_ONE_SIDE" device="">
+<part name="SPEAKER_PEM_4" library="PR_Parts_Library" deviceset="PEM_M3_SPK" device="">
 <attribute name="CENTERLINE_PN" value="PR2040"/>
 <attribute name="MFG_PN" value="Consigned"/>
 </part>
-<part name="SPEAKER_PEM_3" library="PR_Parts_Library" deviceset="PEM_M3_ONE_SIDE_W/PIN" device="">
+<part name="SPEAKER_PEM_3" library="PR_Parts_Library" deviceset="PEM_M3_SPK_GROUND" device="">
 <attribute name="CENTERLINE_PN" value="PR2040"/>
 <attribute name="MFG_PN" value="Consigned"/>
 </part>
@@ -1817,7 +1818,8 @@ MFG# ABS25-32.768KHZ-T</description>
 <text x="-27.94" y="71.12" size="2.54" layer="96">FM_IC
 ZONE 0x-1x</text>
 <text x="-35.814" y="142.24" size="2.54" layer="96">Switch / Power  </text>
-<text x="27.686" y="104.14" size="2.1844" layer="96">Lid Grounding</text>
+<text x="45.466" y="129.54" size="1.27" layer="96">Lid 
+Grounding</text>
 <text x="134.62" y="68.58" size="2.54" layer="96">Audio Amplifier 
 ZONE 2x</text>
 <text x="157.48" y="144.78" size="2.54" layer="96">MCU
