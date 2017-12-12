@@ -1702,7 +1702,6 @@ MFG# ABS25-32.768KHZ-T</description>
 </part>
 <part name="T1" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
 <part name="T2" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
-<part name="T4" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
 <part name="T5" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
 <part name="T6" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
 <part name="T7" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
@@ -1711,7 +1710,6 @@ MFG# ABS25-32.768KHZ-T</description>
 <part name="T10" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="T11" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
 <part name="T12" library="PR_Parts_Library" deviceset="TP" device="TP20R"/>
@@ -1926,7 +1924,6 @@ ZONE 3x</text>
 <instance part="C40" gate="G$1" x="-35.56" y="124.46"/>
 <instance part="T1" gate="G$1" x="66.04" y="142.24"/>
 <instance part="T2" gate="G$1" x="73.66" y="142.24"/>
-<instance part="T4" gate="G$1" x="88.9" y="142.24"/>
 <instance part="T5" gate="G$1" x="96.52" y="142.24"/>
 <instance part="T6" gate="G$1" x="66.04" y="127"/>
 <instance part="T7" gate="G$1" x="76.2" y="127"/>
@@ -1935,7 +1932,6 @@ ZONE 3x</text>
 <instance part="T10" gate="G$1" x="66.04" y="109.22"/>
 <instance part="GND1" gate="1" x="66.04" y="137.16"/>
 <instance part="GND8" gate="1" x="73.66" y="137.16"/>
-<instance part="P+3" gate="VCC" x="88.9" y="137.16" rot="R180"/>
 <instance part="P+4" gate="VCC" x="96.52" y="137.16" rot="R180"/>
 <instance part="T11" gate="G$1" x="76.2" y="109.22"/>
 <instance part="T12" gate="G$1" x="86.36" y="109.22"/>
@@ -2286,10 +2282,6 @@ ZONE 3x</text>
 <pinref part="SUPPLY7" gate="G$1" pin="VCC"/>
 <wire x1="139.7" y1="139.7" x2="139.7" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="C32" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<pinref part="T4" gate="G$1" pin="TP"/>
-<pinref part="P+3" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
 <pinref part="T5" gate="G$1" pin="TP"/>
