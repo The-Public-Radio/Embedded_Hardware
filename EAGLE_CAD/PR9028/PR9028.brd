@@ -3229,6 +3229,13 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="42.735" y="16.805" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="U$1" library="PR_Parts_Library" package="PR_LOGO" value="" x="35" y="8.6" rot="MR0"/>
+<element name="R2" library="PR_Parts_Library" package="0603_CPL" value="1K" x="56.3" y="59.7" smashed="yes" rot="R180">
+<attribute name="MFG_PN" value="RR0816P-102-D" x="56.3" y="59.7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="56.835" y="58.765" size="0.8128" layer="25" font="vector" ratio="18" rot="R180"/>
+<attribute name="POWER" value="1/10W" x="56.3" y="59.7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TOL" value="1%" x="56.3" y="59.7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="56.935" y="61.605" size="1.27" layer="27" rot="R180"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -3341,7 +3348,7 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="70" y="0"/>
 <vertex x="70" y="70"/>
 </polygon>
-<via x="56.3875" y="60.575" extent="1-16" drill="0.5"/>
+<via x="52.3875" y="61.175" extent="1-16" drill="0.5"/>
 <contactref element="SPEAKER_PEM_3" pad="P$1"/>
 <via x="32.1" y="4.3" extent="1-16" drill="0.5"/>
 <via x="46.35" y="3.925" extent="1-16" drill="0.5"/>
@@ -3353,7 +3360,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="28.15" y1="61.2" x2="28.15" y2="61.9575" width="0.254" layer="1"/>
 <wire x1="28.15" y1="61.9575" x2="26.77875" y2="63.32875" width="0.254" layer="1"/>
 <via x="66.35" y="26.9" extent="1-16" drill="0.5"/>
-<via x="48.8875" y="55.775" extent="1-16" drill="0.5"/>
+<via x="47.0875" y="53.275" extent="1-16" drill="0.5"/>
 <wire x1="26.65" y1="55.565" x2="26.65" y2="56.45" width="0.254" layer="1"/>
 <wire x1="26.65" y1="56.45" x2="26.55" y2="56.55" width="0.254" layer="1"/>
 <via x="21.95" y="39.9" extent="1-16" drill="0.5"/>
@@ -3663,11 +3670,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="LED/PB4">
 <contactref element="MCU" pad="3"/>
 <contactref element="T9" pad="TP"/>
-<contactref element="LED" pad="P$1"/>
 <wire x1="47.4008875" y1="60.125" x2="47.35669375" y2="60.14330625" width="0.254" layer="16" curve="-45"/>
-<wire x1="64" y1="53" x2="64" y2="51" width="0.254" layer="1"/>
-<wire x1="64" y1="51" x2="64.625" y2="50.375" width="0.254" layer="1"/>
-<wire x1="64.625" y1="50.375" x2="64.625" y2="50.275" width="0.254" layer="1"/>
 <wire x1="46.5432" y1="57.5" x2="46.4532" y2="57.41" width="0.254" layer="1"/>
 <wire x1="49" y1="57.41" x2="46.4532" y2="57.41" width="0.254" layer="1"/>
 <wire x1="49" y1="58.5" x2="47" y2="60.5" width="0.254" layer="16"/>
@@ -3675,10 +3678,9 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="49" y1="58.5" x2="49" y2="57.41" width="0.254" layer="16"/>
 <wire x1="47" y1="60.5" x2="47.375" y2="60.125" width="0.254" layer="16"/>
 <wire x1="47.375" y1="60.125" x2="47.4008875" y2="60.125" width="0.254" layer="16"/>
-<wire x1="64" y1="53" x2="63.333696875" y2="54.066303125" width="0.254" layer="1"/>
-<wire x1="50.11" y1="56.3" x2="49" y2="57.41" width="0.254" layer="1"/>
-<wire x1="63.333696875" y1="54.066303125" x2="61.1" y2="56.3" width="0.254" layer="1"/>
-<wire x1="61.1" y1="56.3" x2="50.11" y2="56.3" width="0.254" layer="1"/>
+<contactref element="R2" pad="2"/>
+<wire x1="55.45" y1="59.7" x2="51.29" y2="59.7" width="0.254" layer="1"/>
+<wire x1="51.29" y1="59.7" x2="49" y2="57.41" width="0.254" layer="1"/>
 </signal>
 <signal name="N$13">
 <contactref element="JP5" pad="NEG"/>
@@ -3903,6 +3905,14 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="29.765" y1="58.03" x2="29.86" y2="58.125" width="0.254" layer="1"/>
 <wire x1="29.86" y1="58.125" x2="29.86" y2="59.6" width="0.254" layer="1"/>
 <wire x1="25.635" y1="58.165" x2="25.6" y2="58.2" width="0.254" layer="1"/>
+</signal>
+<signal name="N$2">
+<contactref element="R2" pad="1"/>
+<contactref element="LED" pad="P$1"/>
+<wire x1="57.15" y1="59.7" x2="60.55" y2="56.3" width="0.254" layer="1"/>
+<wire x1="60.55" y1="56.3" x2="61.7" y2="56.3" width="0.254" layer="1"/>
+<wire x1="61.7" y1="56.3" x2="64.625" y2="51.619025" width="0.254" layer="1"/>
+<wire x1="64.625" y1="51.619025" x2="64.625" y2="50.275" width="0.254" layer="1"/>
 </signal>
 </signals>
 <errors>

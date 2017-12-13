@@ -1794,6 +1794,11 @@ MFG# ABS25-32.768KHZ-T</description>
 </part>
 <part name="L2" library="PR_Parts_Library" deviceset="L_SMT" device="_0603_CPL" value="2.2K @ 100Mhz"/>
 <part name="L3" library="PR_Parts_Library" deviceset="L_SMT" device="_0603_CPL" value="2.2K @ 100Mhz"/>
+<part name="R2" library="PR_Parts_Library" deviceset="R_SMT" device="_R0603_CPL" value="1K">
+<attribute name="MFG_PN" value="RR0816P-102-D"/>
+<attribute name="POWER" value="1/10W"/>
+<attribute name="TOL" value="1%"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -2004,6 +2009,10 @@ ZONE 3x</text>
 <attribute name="VALUE" x="33.02" y="71.12" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="L3" gate="G$1" x="142.24" y="38.1"/>
+<instance part="R2" gate="G$1" x="195.58" y="104.14" smashed="yes" rot="R180">
+<attribute name="NAME" x="193.802" y="107.7214" size="1.778" layer="95"/>
+<attribute name="VALUE" x="193.802" y="105.41" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -2388,8 +2397,7 @@ ZONE 3x</text>
 <wire x1="190.5" y1="121.92" x2="187.96" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="MCU" gate="G$1" pin="PB4(ADC2)"/>
 <label x="205.74" y="104.14" size="1.778" layer="95"/>
-<pinref part="LED" gate="G$1" pin="VCC"/>
-<wire x1="190.5" y1="104.14" x2="205.74" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="T9" gate="G$1" pin="TP"/>
@@ -2577,6 +2585,13 @@ ZONE 3x</text>
 <junction x="63.5" y="66.04"/>
 <pinref part="U1" gate="G$1" pin="!SEN"/>
 <wire x1="43.18" y1="43.18" x2="50.8" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="LED" gate="G$1" pin="VCC"/>
+<wire x1="200.66" y1="104.14" x2="205.74" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
