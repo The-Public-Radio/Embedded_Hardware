@@ -1,9 +1,9 @@
 # Ignore list for Eagle, a PCB layout tool
 
 # Backup files
-*.s#?
-*.b#?
-*.l#?
+**.s#?
+**.b#?
+**.l#?
 
 # Eagle project file
 # It contains a serial number and references to the file structure
@@ -12,25 +12,26 @@
 eagle.epf
 
 # CAM files
-*.$$$
-*.cmp
-*.ly2
-*.l15
-*.sol
-*.plc
-*.stc
-*.sts
-*.crc
-*.crs
+**.$$$
+**.cmp
+**.ly2
+**.l15
+**.sol
+**.plc
+**.stc
+**.sts
+**.crc
+**.crs
+**.ger
 
-*.dri
-*.drl
-*.gpi
-*.pls
+**.dri
+**.drl
+**.gpi
+**.pls
 
-*.drd
-*.drd.*
+**.drd
+**.drd.*
 
-*.info
+**.info
 
 *.eps
