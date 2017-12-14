@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5497,7 +5497,19 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 <gate name="G$1" symbol="P170_BOURNS_POT_SW" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="H17112NS_A10K_L20F-002">
+<device name="HONGKONGHONGH" package="H17112NS_A10K_L20F-002">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SIGNAL" pad="SIGNAL"/>
+<connect gate="G$1" pin="SW_IN" pad="SW_IN"/>
+<connect gate="G$1" pin="SW_OUT" pad="SW_OUT"/>
+<connect gate="G$1" pin="WIPER" pad="WIPER"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TAIWAN_ALPHA" package="RV170SF_SW_POT">
 <connects>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="SIGNAL" pad="SIGNAL"/>
