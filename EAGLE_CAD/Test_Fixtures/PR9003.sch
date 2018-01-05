@@ -1391,12 +1391,12 @@ With round pins</description>
 <library name="PR_Parts_Library">
 <packages>
 <package name="C&amp;K_D6C_SWITCH">
-<pad name="P$1" x="-2.5" y="2.5" drill="1.1" shape="octagon"/>
-<pad name="P$2" x="2.5" y="2.5" drill="1.1" shape="octagon"/>
-<pad name="P$3" x="2.5" y="-2.5" drill="1.1" shape="octagon"/>
-<pad name="P$4" x="-2.5" y="-2.5" drill="1.1" shape="octagon"/>
-<wire x1="-4.5" y1="2.5" x2="-4.5" y2="-2.5" width="0.127" layer="21" curve="-302.005383"/>
-<wire x1="-4.5" y1="2.5" x2="-4.5" y2="-2.5" width="0.127" layer="21"/>
+<pad name="P$1" x="-2.5" y="2.5" drill="1.1" diameter="2.54" shape="octagon"/>
+<pad name="P$2" x="2.5" y="2.5" drill="1.1" diameter="2.54" shape="octagon"/>
+<pad name="P$3" x="2.5" y="-2.5" drill="1.1" diameter="2.54" shape="octagon"/>
+<pad name="P$4" x="-2.5" y="-2.5" drill="1.1" diameter="2.54" shape="octagon"/>
+<wire x1="-4.5" y1="2.5" x2="-4.5" y2="-2.5" width="0.4064" layer="21" curve="-302.005383"/>
+<wire x1="-4.5" y1="2.5" x2="-4.5" y2="-2.5" width="0.4064" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -1439,12 +1439,12 @@ With round pins</description>
 </classes>
 <parts>
 <part name="POGO" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="NS"/>
-<part name="PROGRAMMER" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="NS"/>
+<part name="ISP" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="NS"/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="VCC" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
+<part name="5V" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="T1" library="adafruit" deviceset="PINHD-1X1" device=""/>
 <part name="T2" library="adafruit" deviceset="PINHD-1X1" device=""/>
@@ -1464,6 +1464,7 @@ With round pins</description>
 <part name="JP1" library="adafruit" deviceset="PINHD-1X15" device=""/>
 <part name="U$1" library="PR_Parts_Library" deviceset="C&amp;K_D6C_SWITCH" device=""/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1474,12 +1475,12 @@ With round pins</description>
 </plain>
 <instances>
 <instance part="POGO" gate="G$1" x="20.32" y="17.78"/>
-<instance part="PROGRAMMER" gate="G$1" x="58.42" y="17.78"/>
+<instance part="ISP" gate="G$1" x="58.42" y="17.78"/>
 <instance part="GND1" gate="1" x="30.48" y="5.08"/>
 <instance part="GND2" gate="1" x="68.58" y="5.08"/>
 <instance part="SUPPLY1" gate="G$1" x="35.56" y="20.32"/>
 <instance part="SUPPLY2" gate="G$1" x="73.66" y="20.32"/>
-<instance part="VCC" gate="G$1" x="104.14" y="12.7"/>
+<instance part="5V" gate="G$1" x="104.14" y="12.7"/>
 <instance part="GND3" gate="1" x="111.76" y="2.54"/>
 <instance part="T1" gate="G$1" x="154.94" y="20.32"/>
 <instance part="T2" gate="G$1" x="180.34" y="20.32"/>
@@ -1499,6 +1500,7 @@ With round pins</description>
 <instance part="JP1" gate="A" x="167.64" y="0"/>
 <instance part="U$1" gate="G$1" x="152.4" y="-45.72"/>
 <instance part="GND4" gate="1" x="144.78" y="-50.8"/>
+<instance part="GND5" gate="1" x="187.96" y="17.78"/>
 </instances>
 <busses>
 </busses>
@@ -1509,7 +1511,7 @@ With round pins</description>
 <wire x1="12.7" y1="20.32" x2="7.62" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PROGRAMMER" gate="G$1" pin="1"/>
+<pinref part="ISP" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="20.32" x2="45.72" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -1519,7 +1521,7 @@ With round pins</description>
 <wire x1="12.7" y1="17.78" x2="7.62" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PROGRAMMER" gate="G$1" pin="3"/>
+<pinref part="ISP" gate="G$1" pin="3"/>
 <wire x1="50.8" y1="17.78" x2="45.72" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -1529,7 +1531,7 @@ With round pins</description>
 <wire x1="12.7" y1="15.24" x2="7.62" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PROGRAMMER" gate="G$1" pin="5"/>
+<pinref part="ISP" gate="G$1" pin="5"/>
 <wire x1="50.8" y1="15.24" x2="45.72" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -1539,7 +1541,7 @@ With round pins</description>
 <wire x1="30.48" y1="17.78" x2="35.56" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PROGRAMMER" gate="G$1" pin="4"/>
+<pinref part="ISP" gate="G$1" pin="4"/>
 <wire x1="68.58" y1="17.78" x2="73.66" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -1550,12 +1552,12 @@ With round pins</description>
 <pinref part="GND1" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="PROGRAMMER" gate="G$1" pin="6"/>
+<pinref part="ISP" gate="G$1" pin="6"/>
 <wire x1="68.58" y1="15.24" x2="68.58" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="VCC" gate="G$1" pin="1"/>
+<pinref part="5V" gate="G$1" pin="1"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="111.76" y1="5.08" x2="111.76" y2="12.7" width="0.1524" layer="91"/>
 </segment>
@@ -1565,6 +1567,15 @@ With round pins</description>
 <pinref part="GND4" gate="1" pin="GND"/>
 <pinref part="U$1" gate="G$1" pin="P$1"/>
 </segment>
+<segment>
+<pinref part="T2" gate="G$1" pin="1"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="187.96" y1="20.32" x2="177.8" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="A" pin="2"/>
+<wire x1="165.1" y1="15.24" x2="177.8" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="15.24" x2="177.8" y2="20.32" width="0.1524" layer="91"/>
+<junction x="177.8" y="20.32"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -1573,7 +1584,7 @@ With round pins</description>
 <pinref part="SUPPLY1" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="PROGRAMMER" gate="G$1" pin="2"/>
+<pinref part="ISP" gate="G$1" pin="2"/>
 <wire x1="68.58" y1="20.32" x2="73.66" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="G$1" pin="VCC"/>
 </segment>
@@ -1584,14 +1595,6 @@ With round pins</description>
 <pinref part="T1" gate="G$1" pin="1"/>
 <wire x1="165.1" y1="17.78" x2="152.4" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="17.78" x2="152.4" y2="20.32" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="JP1" gate="A" pin="2"/>
-<wire x1="165.1" y1="15.24" x2="177.8" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="T2" gate="G$1" pin="1"/>
-<wire x1="177.8" y1="15.24" x2="177.8" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -1678,7 +1681,7 @@ With round pins</description>
 <net name="N$13" class="0">
 <segment>
 <pinref part="T15" gate="G$1" pin="1"/>
-<pinref part="VCC" gate="G$1" pin="2"/>
+<pinref part="5V" gate="G$1" pin="2"/>
 <wire x1="111.76" y1="15.24" x2="111.76" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
