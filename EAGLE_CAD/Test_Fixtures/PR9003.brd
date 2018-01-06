@@ -172,6 +172,7 @@ VCC</text>
 <text x="98.5" y="70" size="0.6096" layer="25" font="vector" ratio="18" rot="R90">A_OUT</text>
 <text x="98" y="73" size="0.6096" layer="25" font="vector" ratio="18" rot="R90">A_IN</text>
 <text x="98.5" y="75.5" size="0.6096" layer="25" font="vector" ratio="18" rot="R90">BUTTON</text>
+<text x="89" y="-9" size="1.778" layer="20" font="vector" ratio="18">Flash</text>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">
